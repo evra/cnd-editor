@@ -1,0 +1,205 @@
+grammar com.github.evra.jcr.Cnd with org.eclipse.xtext.common.Terminals
+//grammar com.github.evra.jcr.Cnd  hidden(WS, ML_COMMENT, SL_COMMENT) 
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+generate cnd "http://www.github.com/evra/jcr/Cnd"
+
+//!! http://www.eclipse.org/forums/index.php/t/489632/
+
+Model :
+	 (mappings+=NsMapping | nodetypes+=NodeTypeDef)*;
+
+NodeTypeDef:
+	NodeTypeName (SuperTypes)? (attributes+=NodeTypeAttribute)* (PropertyDef | ChildNodeDef)*  
+;
+
+ChildNodeDef:
+	NodeName RequiredTypes? DefaultType? NodeAttribute*
+;
+
+NodeAttribute:
+	Autocreated | Mandatory | Protected | Opv | Sns
+;
+
+Sns:
+	('sns' | '*' | 'multiple' /* Jackrabbit feature*/) '?'?
+;
+
+DefaultType:
+	'=' (JcrString | '?')
+;
+
+RequiredTypes:
+	'(' (JcrStringList | '?') ')'
+;
+
+NodeName:
+	'+' (JcrString|'*' /*Jackrabbit feature */)
+;
+
+PropertyDef:
+	PropertyName PropertyType? DefaultValues? PropertyAttribute* ValueConstraints?
+;
+
+ValueConstraints:
+	'<' (JcrStringList | '?')
+;
+
+PropertyAttribute:
+	Autocreated | Mandatory | Protected |Opv | Multiple | QueryOps | NoFullText |NoQueryOrder|Primary
+;
+
+
+NoQueryOrder:
+	('noqueryorder' | 'nqord') '?'?
+;
+
+NoFullText:
+	('nofulltext' | 'nof') '?'?
+;
+
+QueryOps:
+	('queryops' | 'qop') ( JcrString | '?')
+;
+
+//TODO it does not work. queryops sequence is in conflict with STRING terminal
+//QueryOps:
+//	('queryops' | 'qop') (( "'" (Operator ("," Operator)*) "'") | '?')
+//;
+//Operator:
+//	'=' | '<>' | '<' | '<=' | '>' | '>=' | 'LIKE'
+//;
+
+Multiple:
+	('multiple' | 'mul' | '*') '?'?
+;
+
+Opv:
+	//TODO JCR Spec is not clear if '?' is optional
+	'COPY' | 'VERSION' | 'INITIALIZE' | 'COMPUTE' | 'IGNORE' | 'ABORT' | ('OPV' '?') 
+;
+
+Protected:
+	('protected' | 'pro' | 'p') '?'?
+;
+
+Mandatory:
+	('mandatory' | 'man' | 'm') '?'?
+;
+
+Autocreated:
+	('autocreated' | 'aut' | 'a' )'?'?
+;
+
+Primary:
+	
+	//This attribute is not defined by JCR
+	('primary'|'!') /* Jackrabbit feature. */	
+;
+
+
+DefaultValues:
+	'=' (JcrStringList | '?')
+;
+
+PropertyType:
+	'(' ('STRING' | 'BINARY' | 'LONG' | 'DOUBLE' |'BOOLEAN' | 'DATE' | 'NAME' | 'PATH' |
+		'REFERENCE' | 'WEAKREFERENCE' | 'DECIMAL' | 'URI' | 'UNDEFINED' 		
+		| '*' | '?') 
+	')'
+;
+
+PropertyName:
+	'-' (JcrString|'*' /*Jackrabbit feature */)
+;
+
+
+NodeTypeAttribute:
+	Orderable | Mixin | Abstract | Query | PrimaryItem
+;
+
+PrimaryItem:
+	('primaryitem'| '!')(JcrString | '?')
+;
+
+Query:
+	('noquery' | 'nq') | ('query' | 'q' )
+;
+
+Abstract:
+	('abstract' | 'abs' | 'a') '?'?
+;
+
+Mixin:
+	('mixin' | 'mix' | 'm') '?'?
+;
+
+Orderable:
+	('orderable' | 'ord' | 'o') '?'?	
+;
+
+SuperTypes:
+	'>' (JcrStringList|'?') 
+;
+
+
+NodeTypeName:
+	'[' name=JcrString ']'
+;
+
+NsMapping :
+	 '<' name=Prefix '=' uri=Uri '>';
+
+Prefix :
+	 XiD;
+
+Uri: 
+	 JcrString;
+
+JcrStringList:
+	JcrString (',' JcrString)*	
+;
+
+JcrString:
+	STRING | XiD		
+;
+
+XiD:
+	EXID|('mix')
+;
+
+terminal EXID :  ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9'|':'|'*')* ;
+
+//jcr_string:
+//	quoted_string|UNQUOTED_STRING		
+//;
+
+//quoted_string:
+//	"'" UNQUOTED_STRING "'"
+//;
+
+//TODO 
+//According to JCR2.0 string terminal must follow XML char definition  /* see §3.2.2 Local Names */
+
+//terminal NAMESPACE_PREFIX : 
+//	ID
+//;
+
+//terminal STRING	: 
+//			'"' ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* '"' |
+//			"'" ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'" 
+//			|(!('\\'|"'"|'"') )+
+//		; 
+ 
+//terminal NAMESPACE_PREFIX : ('A'..'Z'|'a'..'z'|'0'..'9'|'_')+;
+
+//terminal UNQUOTED_STRING : (XML_CHAR)+;
+//terminal fragment XML_CHAR : ('\u0022'..'\u007E');
+
+//terminal ML_COMMENT	: '/*' -> '*/';
+//terminal SL_COMMENT 	: '//' !('\n'|'\r')* ('\r'? '\n')?;
+//
+//terminal WS			: (' '|'\t'|'\r'|'\n')+;
+
+

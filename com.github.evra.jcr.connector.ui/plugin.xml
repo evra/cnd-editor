@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Sample Category"
+            id="com.github.evra.jcr.connector.ui">
+      </category>
+      <view
+            name="Sample View"
+            icon="icons/sample.gif"
+            category="com.github.evra.jcr.connector.ui"
+            class="com.github.evra.jcr.connector.ui.views.SampleView"
+            id="com.github.evra.jcr.connector.ui.views.SampleView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               ratio="0.5"
+               relative="org.eclipse.ui.views.ProblemView"
+               relationship="right"
+               id="com.github.evra.jcr.connector.ui.views.SampleView">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+   <extension
+         point="org.eclipse.ui.importWizards">
+      <category
+            id="com.github.evra.jcr.connector.ui.importWizards.sampleCategory"
+            name="Sample File Import">
+      </category>
+      <wizard
+            category="com.github.evra.jcr.connector.ui.importWizards.sampleCategory"
+            class="com.github.evra.jcr.connector.ui.importWizards.ImportWizard"
+            icon="icons/sample.gif"
+            id="com.github.evra.jcr.connector.ui.importWizards.ImportWizard"
+            name="Import File">
+         <description>
+            Import a file from the local file system into the workspace.
+         </description>
+      </wizard>
+   </extension>
+
+</plugin>
