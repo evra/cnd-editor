@@ -2,8 +2,10 @@ package com.github.evra.jcr.serializer;
 
 import com.github.evra.jcr.cnd.CndPackage;
 import com.github.evra.jcr.cnd.Model;
-import com.github.evra.jcr.cnd.NodeTypeName;
+import com.github.evra.jcr.cnd.NodeDefinition;
+import com.github.evra.jcr.cnd.NodeTypeDefinition;
 import com.github.evra.jcr.cnd.NsMapping;
+import com.github.evra.jcr.cnd.PropertyDefinition;
 import com.github.evra.jcr.services.CndGrammarAccess;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
@@ -33,13 +35,15 @@ public class CndSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 					return; 
 				}
 				else break;
-			case CndPackage.NODE_TYPE_NAME:
-				if(context == grammarAccess.getNodeTypeDefRule()) {
-					sequence_NodeTypeDef_NodeTypeName(context, (NodeTypeName) semanticObject); 
+			case CndPackage.NODE_DEFINITION:
+				if(context == grammarAccess.getNodeDefinitionRule()) {
+					sequence_NodeDefinition(context, (NodeDefinition) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getNodeTypeNameRule()) {
-					sequence_NodeTypeName(context, (NodeTypeName) semanticObject); 
+				else break;
+			case CndPackage.NODE_TYPE_DEFINITION:
+				if(context == grammarAccess.getNodeTypeDefinitionRule()) {
+					sequence_NodeTypeDefinition(context, (NodeTypeDefinition) semanticObject); 
 					return; 
 				}
 				else break;
@@ -49,13 +53,19 @@ public class CndSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 					return; 
 				}
 				else break;
+			case CndPackage.PROPERTY_DEFINITION:
+				if(context == grammarAccess.getPropertyDefinitionRule()) {
+					sequence_PropertyDefinition(context, (PropertyDefinition) semanticObject); 
+					return; 
+				}
+				else break;
 			}
 		if (errorAcceptor != null) errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
 	}
 	
 	/**
 	 * Constraint:
-	 *     (mappings+=NsMapping | nodetypes+=NodeTypeDef)*
+	 *     (namespaces+=NsMapping | nodeTypes+=NodeTypeDefinition)*
 	 */
 	protected void sequence_Model(EObject context, Model semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -64,18 +74,37 @@ public class CndSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=JcrString attributes+=NodeTypeAttribute*)
+	 *     (
+	 *         (name=JcrString | name='*') 
+	 *         (requiredTypes+=JcrString requiredTypes+=JcrString*)? 
+	 *         defaultType=JcrString? 
+	 *         autocreated?=Autocreated? 
+	 *         manadatory?=Mandatory? 
+	 *         protected?=Protected? 
+	 *         onParentVersion=Opv? 
+	 *         sameNameSiblings?=Sns?
+	 *     )
 	 */
-	protected void sequence_NodeTypeDef_NodeTypeName(EObject context, NodeTypeName semanticObject) {
+	protected void sequence_NodeDefinition(EObject context, NodeDefinition semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     name=JcrString
+	 *     (
+	 *         name=JcrString 
+	 *         (declaredSupertypeNames+=JcrString declaredSupertypeNames+=JcrString*)? 
+	 *         orderable?=Orderable? 
+	 *         mixin?=Mixin? 
+	 *         abstract?=Abstract? 
+	 *         queryable?=Queryable? 
+	 *         notqueryable?=Notqueryable? 
+	 *         primaryItem=PrimaryItem? 
+	 *         (declaredPropertyDefinitions+=PropertyDefinition | declaredChildNodeDefinitions+=NodeDefinition)*
+	 *     )
 	 */
-	protected void sequence_NodeTypeName(EObject context, NodeTypeName semanticObject) {
+	protected void sequence_NodeTypeDefinition(EObject context, NodeTypeDefinition semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -96,5 +125,28 @@ public class CndSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 		feeder.accept(grammarAccess.getNsMappingAccess().getNamePrefixParserRuleCall_1_0(), semanticObject.getName());
 		feeder.accept(grammarAccess.getNsMappingAccess().getUriUriParserRuleCall_3_0(), semanticObject.getUri());
 		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (
+	 *         name=JcrString? 
+	 *         type=PropertyType? 
+	 *         (defaultValues+=JcrString defaultValues+=JcrString*)? 
+	 *         autocreated?=Autocreated? 
+	 *         mandatory?=Mandatory? 
+	 *         protected?=Protected? 
+	 *         onParentVersion=Opv? 
+	 *         multiple?=Multiple? 
+	 *         queryOps=QueryOps? 
+	 *         noFullText?=NoFullText? 
+	 *         noQueryOrder?=NoQueryOrder? 
+	 *         primary?=Primary? 
+	 *         (valueConstraints+=JcrString valueConstraints+=JcrString*)?
+	 *     )
+	 */
+	protected void sequence_PropertyDefinition(EObject context, PropertyDefinition semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
 	}
 }

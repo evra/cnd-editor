@@ -80,14 +80,19 @@ public class CndAdapterFactory extends AdapterFactoryImpl
         return createModelAdapter();
       }
       @Override
-      public Adapter caseNodeTypeDef(NodeTypeDef object)
+      public Adapter caseNodeTypeDefinition(NodeTypeDefinition object)
       {
-        return createNodeTypeDefAdapter();
+        return createNodeTypeDefinitionAdapter();
       }
       @Override
-      public Adapter caseNodeTypeName(NodeTypeName object)
+      public Adapter caseNodeDefinition(NodeDefinition object)
       {
-        return createNodeTypeNameAdapter();
+        return createNodeDefinitionAdapter();
+      }
+      @Override
+      public Adapter casePropertyDefinition(PropertyDefinition object)
+      {
+        return createPropertyDefinitionAdapter();
       }
       @Override
       public Adapter caseNsMapping(NsMapping object)
@@ -132,31 +137,46 @@ public class CndAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link com.github.evra.jcr.cnd.NodeTypeDef <em>Node Type Def</em>}'.
+   * Creates a new adapter for an object of class '{@link com.github.evra.jcr.cnd.NodeTypeDefinition <em>Node Type Definition</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see com.github.evra.jcr.cnd.NodeTypeDef
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition
    * @generated
    */
-  public Adapter createNodeTypeDefAdapter()
+  public Adapter createNodeTypeDefinitionAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link com.github.evra.jcr.cnd.NodeTypeName <em>Node Type Name</em>}'.
+   * Creates a new adapter for an object of class '{@link com.github.evra.jcr.cnd.NodeDefinition <em>Node Definition</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see com.github.evra.jcr.cnd.NodeTypeName
+   * @see com.github.evra.jcr.cnd.NodeDefinition
    * @generated
    */
-  public Adapter createNodeTypeNameAdapter()
+  public Adapter createNodeDefinitionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link com.github.evra.jcr.cnd.PropertyDefinition <em>Property Definition</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition
+   * @generated
+   */
+  public Adapter createPropertyDefinitionAdapter()
   {
     return null;
   }

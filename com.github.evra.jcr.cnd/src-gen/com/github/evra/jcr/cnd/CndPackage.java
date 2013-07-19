@@ -4,6 +4,7 @@ package com.github.evra.jcr.cnd;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -67,22 +68,22 @@ public interface CndPackage extends EPackage
   int MODEL = 0;
 
   /**
-   * The feature id for the '<em><b>Mappings</b></em>' containment reference list.
+   * The feature id for the '<em><b>Namespaces</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MODEL__MAPPINGS = 0;
+  int MODEL__NAMESPACES = 0;
 
   /**
-   * The feature id for the '<em><b>Nodetypes</b></em>' containment reference list.
+   * The feature id for the '<em><b>Node Types</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MODEL__NODETYPES = 1;
+  int MODEL__NODE_TYPES = 1;
 
   /**
    * The number of structural features of the '<em>Model</em>' class.
@@ -94,42 +95,14 @@ public interface CndPackage extends EPackage
   int MODEL_FEATURE_COUNT = 2;
 
   /**
-   * The meta object id for the '{@link com.github.evra.jcr.cnd.impl.NodeTypeDefImpl <em>Node Type Def</em>}' class.
+   * The meta object id for the '{@link com.github.evra.jcr.cnd.impl.NodeTypeDefinitionImpl <em>Node Type Definition</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see com.github.evra.jcr.cnd.impl.NodeTypeDefImpl
-   * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getNodeTypeDef()
+   * @see com.github.evra.jcr.cnd.impl.NodeTypeDefinitionImpl
+   * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getNodeTypeDefinition()
    * @generated
    */
-  int NODE_TYPE_DEF = 1;
-
-  /**
-   * The number of structural features of the '<em>Node Type Def</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int NODE_TYPE_DEF_FEATURE_COUNT = 0;
-
-  /**
-   * The meta object id for the '{@link com.github.evra.jcr.cnd.impl.NodeTypeNameImpl <em>Node Type Name</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see com.github.evra.jcr.cnd.impl.NodeTypeNameImpl
-   * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getNodeTypeName()
-   * @generated
-   */
-  int NODE_TYPE_NAME = 2;
-
-  /**
-   * The feature id for the '<em><b>Attributes</b></em>' attribute list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int NODE_TYPE_NAME__ATTRIBUTES = NODE_TYPE_DEF_FEATURE_COUNT + 0;
+  int NODE_TYPE_DEFINITION = 1;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -138,16 +111,324 @@ public interface CndPackage extends EPackage
    * @generated
    * @ordered
    */
-  int NODE_TYPE_NAME__NAME = NODE_TYPE_DEF_FEATURE_COUNT + 1;
+  int NODE_TYPE_DEFINITION__NAME = 0;
 
   /**
-   * The number of structural features of the '<em>Node Type Name</em>' class.
+   * The feature id for the '<em><b>Declared Supertype Names</b></em>' attribute list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int NODE_TYPE_NAME_FEATURE_COUNT = NODE_TYPE_DEF_FEATURE_COUNT + 2;
+  int NODE_TYPE_DEFINITION__DECLARED_SUPERTYPE_NAMES = 1;
+
+  /**
+   * The feature id for the '<em><b>Orderable</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_TYPE_DEFINITION__ORDERABLE = 2;
+
+  /**
+   * The feature id for the '<em><b>Mixin</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_TYPE_DEFINITION__MIXIN = 3;
+
+  /**
+   * The feature id for the '<em><b>Abstract</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_TYPE_DEFINITION__ABSTRACT = 4;
+
+  /**
+   * The feature id for the '<em><b>Queryable</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_TYPE_DEFINITION__QUERYABLE = 5;
+
+  /**
+   * The feature id for the '<em><b>Notqueryable</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_TYPE_DEFINITION__NOTQUERYABLE = 6;
+
+  /**
+   * The feature id for the '<em><b>Primary Item</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_TYPE_DEFINITION__PRIMARY_ITEM = 7;
+
+  /**
+   * The feature id for the '<em><b>Declared Property Definitions</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_TYPE_DEFINITION__DECLARED_PROPERTY_DEFINITIONS = 8;
+
+  /**
+   * The feature id for the '<em><b>Declared Child Node Definitions</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_TYPE_DEFINITION__DECLARED_CHILD_NODE_DEFINITIONS = 9;
+
+  /**
+   * The number of structural features of the '<em>Node Type Definition</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_TYPE_DEFINITION_FEATURE_COUNT = 10;
+
+  /**
+   * The meta object id for the '{@link com.github.evra.jcr.cnd.impl.NodeDefinitionImpl <em>Node Definition</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see com.github.evra.jcr.cnd.impl.NodeDefinitionImpl
+   * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getNodeDefinition()
+   * @generated
+   */
+  int NODE_DEFINITION = 2;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_DEFINITION__NAME = 0;
+
+  /**
+   * The feature id for the '<em><b>Required Types</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_DEFINITION__REQUIRED_TYPES = 1;
+
+  /**
+   * The feature id for the '<em><b>Default Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_DEFINITION__DEFAULT_TYPE = 2;
+
+  /**
+   * The feature id for the '<em><b>Autocreated</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_DEFINITION__AUTOCREATED = 3;
+
+  /**
+   * The feature id for the '<em><b>Manadatory</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_DEFINITION__MANADATORY = 4;
+
+  /**
+   * The feature id for the '<em><b>Protected</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_DEFINITION__PROTECTED = 5;
+
+  /**
+   * The feature id for the '<em><b>On Parent Version</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_DEFINITION__ON_PARENT_VERSION = 6;
+
+  /**
+   * The feature id for the '<em><b>Same Name Siblings</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_DEFINITION__SAME_NAME_SIBLINGS = 7;
+
+  /**
+   * The number of structural features of the '<em>Node Definition</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NODE_DEFINITION_FEATURE_COUNT = 8;
+
+  /**
+   * The meta object id for the '{@link com.github.evra.jcr.cnd.impl.PropertyDefinitionImpl <em>Property Definition</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see com.github.evra.jcr.cnd.impl.PropertyDefinitionImpl
+   * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getPropertyDefinition()
+   * @generated
+   */
+  int PROPERTY_DEFINITION = 3;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__NAME = 0;
+
+  /**
+   * The feature id for the '<em><b>Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__TYPE = 1;
+
+  /**
+   * The feature id for the '<em><b>Default Values</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__DEFAULT_VALUES = 2;
+
+  /**
+   * The feature id for the '<em><b>Autocreated</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__AUTOCREATED = 3;
+
+  /**
+   * The feature id for the '<em><b>Mandatory</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__MANDATORY = 4;
+
+  /**
+   * The feature id for the '<em><b>Protected</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__PROTECTED = 5;
+
+  /**
+   * The feature id for the '<em><b>On Parent Version</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__ON_PARENT_VERSION = 6;
+
+  /**
+   * The feature id for the '<em><b>Multiple</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__MULTIPLE = 7;
+
+  /**
+   * The feature id for the '<em><b>Query Ops</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__QUERY_OPS = 8;
+
+  /**
+   * The feature id for the '<em><b>No Full Text</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__NO_FULL_TEXT = 9;
+
+  /**
+   * The feature id for the '<em><b>No Query Order</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__NO_QUERY_ORDER = 10;
+
+  /**
+   * The feature id for the '<em><b>Primary</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__PRIMARY = 11;
+
+  /**
+   * The feature id for the '<em><b>Value Constraints</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION__VALUE_CONSTRAINTS = 12;
+
+  /**
+   * The number of structural features of the '<em>Property Definition</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PROPERTY_DEFINITION_FEATURE_COUNT = 13;
 
   /**
    * The meta object id for the '{@link com.github.evra.jcr.cnd.impl.NsMappingImpl <em>Ns Mapping</em>}' class.
@@ -157,7 +438,7 @@ public interface CndPackage extends EPackage
    * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getNsMapping()
    * @generated
    */
-  int NS_MAPPING = 3;
+  int NS_MAPPING = 4;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -186,6 +467,26 @@ public interface CndPackage extends EPackage
    */
   int NS_MAPPING_FEATURE_COUNT = 2;
 
+  /**
+   * The meta object id for the '{@link com.github.evra.jcr.cnd.Opv <em>Opv</em>}' enum.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see com.github.evra.jcr.cnd.Opv
+   * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getOpv()
+   * @generated
+   */
+  int OPV = 5;
+
+  /**
+   * The meta object id for the '{@link com.github.evra.jcr.cnd.PropertyType <em>Property Type</em>}' enum.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see com.github.evra.jcr.cnd.PropertyType
+   * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getPropertyType()
+   * @generated
+   */
+  int PROPERTY_TYPE = 6;
+
 
   /**
    * Returns the meta object for class '{@link com.github.evra.jcr.cnd.Model <em>Model</em>}'.
@@ -198,68 +499,397 @@ public interface CndPackage extends EPackage
   EClass getModel();
 
   /**
-   * Returns the meta object for the containment reference list '{@link com.github.evra.jcr.cnd.Model#getMappings <em>Mappings</em>}'.
+   * Returns the meta object for the containment reference list '{@link com.github.evra.jcr.cnd.Model#getNamespaces <em>Namespaces</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Mappings</em>'.
-   * @see com.github.evra.jcr.cnd.Model#getMappings()
+   * @return the meta object for the containment reference list '<em>Namespaces</em>'.
+   * @see com.github.evra.jcr.cnd.Model#getNamespaces()
    * @see #getModel()
    * @generated
    */
-  EReference getModel_Mappings();
+  EReference getModel_Namespaces();
 
   /**
-   * Returns the meta object for the containment reference list '{@link com.github.evra.jcr.cnd.Model#getNodetypes <em>Nodetypes</em>}'.
+   * Returns the meta object for the containment reference list '{@link com.github.evra.jcr.cnd.Model#getNodeTypes <em>Node Types</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Nodetypes</em>'.
-   * @see com.github.evra.jcr.cnd.Model#getNodetypes()
+   * @return the meta object for the containment reference list '<em>Node Types</em>'.
+   * @see com.github.evra.jcr.cnd.Model#getNodeTypes()
    * @see #getModel()
    * @generated
    */
-  EReference getModel_Nodetypes();
+  EReference getModel_NodeTypes();
 
   /**
-   * Returns the meta object for class '{@link com.github.evra.jcr.cnd.NodeTypeDef <em>Node Type Def</em>}'.
+   * Returns the meta object for class '{@link com.github.evra.jcr.cnd.NodeTypeDefinition <em>Node Type Definition</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Node Type Def</em>'.
-   * @see com.github.evra.jcr.cnd.NodeTypeDef
+   * @return the meta object for class '<em>Node Type Definition</em>'.
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition
    * @generated
    */
-  EClass getNodeTypeDef();
+  EClass getNodeTypeDefinition();
 
   /**
-   * Returns the meta object for class '{@link com.github.evra.jcr.cnd.NodeTypeName <em>Node Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Node Type Name</em>'.
-   * @see com.github.evra.jcr.cnd.NodeTypeName
-   * @generated
-   */
-  EClass getNodeTypeName();
-
-  /**
-   * Returns the meta object for the attribute list '{@link com.github.evra.jcr.cnd.NodeTypeName#getAttributes <em>Attributes</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Attributes</em>'.
-   * @see com.github.evra.jcr.cnd.NodeTypeName#getAttributes()
-   * @see #getNodeTypeName()
-   * @generated
-   */
-  EAttribute getNodeTypeName_Attributes();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeTypeName#getName <em>Name</em>}'.
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Name</em>'.
-   * @see com.github.evra.jcr.cnd.NodeTypeName#getName()
-   * @see #getNodeTypeName()
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition#getName()
+   * @see #getNodeTypeDefinition()
    * @generated
    */
-  EAttribute getNodeTypeName_Name();
+  EAttribute getNodeTypeDefinition_Name();
+
+  /**
+   * Returns the meta object for the attribute list '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#getDeclaredSupertypeNames <em>Declared Supertype Names</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute list '<em>Declared Supertype Names</em>'.
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition#getDeclaredSupertypeNames()
+   * @see #getNodeTypeDefinition()
+   * @generated
+   */
+  EAttribute getNodeTypeDefinition_DeclaredSupertypeNames();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#isOrderable <em>Orderable</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Orderable</em>'.
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition#isOrderable()
+   * @see #getNodeTypeDefinition()
+   * @generated
+   */
+  EAttribute getNodeTypeDefinition_Orderable();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#isMixin <em>Mixin</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Mixin</em>'.
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition#isMixin()
+   * @see #getNodeTypeDefinition()
+   * @generated
+   */
+  EAttribute getNodeTypeDefinition_Mixin();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#isAbstract <em>Abstract</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Abstract</em>'.
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition#isAbstract()
+   * @see #getNodeTypeDefinition()
+   * @generated
+   */
+  EAttribute getNodeTypeDefinition_Abstract();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#isQueryable <em>Queryable</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Queryable</em>'.
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition#isQueryable()
+   * @see #getNodeTypeDefinition()
+   * @generated
+   */
+  EAttribute getNodeTypeDefinition_Queryable();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#isNotqueryable <em>Notqueryable</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Notqueryable</em>'.
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition#isNotqueryable()
+   * @see #getNodeTypeDefinition()
+   * @generated
+   */
+  EAttribute getNodeTypeDefinition_Notqueryable();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#getPrimaryItem <em>Primary Item</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Primary Item</em>'.
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition#getPrimaryItem()
+   * @see #getNodeTypeDefinition()
+   * @generated
+   */
+  EAttribute getNodeTypeDefinition_PrimaryItem();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#getDeclaredPropertyDefinitions <em>Declared Property Definitions</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Declared Property Definitions</em>'.
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition#getDeclaredPropertyDefinitions()
+   * @see #getNodeTypeDefinition()
+   * @generated
+   */
+  EReference getNodeTypeDefinition_DeclaredPropertyDefinitions();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#getDeclaredChildNodeDefinitions <em>Declared Child Node Definitions</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Declared Child Node Definitions</em>'.
+   * @see com.github.evra.jcr.cnd.NodeTypeDefinition#getDeclaredChildNodeDefinitions()
+   * @see #getNodeTypeDefinition()
+   * @generated
+   */
+  EReference getNodeTypeDefinition_DeclaredChildNodeDefinitions();
+
+  /**
+   * Returns the meta object for class '{@link com.github.evra.jcr.cnd.NodeDefinition <em>Node Definition</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Node Definition</em>'.
+   * @see com.github.evra.jcr.cnd.NodeDefinition
+   * @generated
+   */
+  EClass getNodeDefinition();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeDefinition#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see com.github.evra.jcr.cnd.NodeDefinition#getName()
+   * @see #getNodeDefinition()
+   * @generated
+   */
+  EAttribute getNodeDefinition_Name();
+
+  /**
+   * Returns the meta object for the attribute list '{@link com.github.evra.jcr.cnd.NodeDefinition#getRequiredTypes <em>Required Types</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute list '<em>Required Types</em>'.
+   * @see com.github.evra.jcr.cnd.NodeDefinition#getRequiredTypes()
+   * @see #getNodeDefinition()
+   * @generated
+   */
+  EAttribute getNodeDefinition_RequiredTypes();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeDefinition#getDefaultType <em>Default Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Default Type</em>'.
+   * @see com.github.evra.jcr.cnd.NodeDefinition#getDefaultType()
+   * @see #getNodeDefinition()
+   * @generated
+   */
+  EAttribute getNodeDefinition_DefaultType();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeDefinition#isAutocreated <em>Autocreated</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Autocreated</em>'.
+   * @see com.github.evra.jcr.cnd.NodeDefinition#isAutocreated()
+   * @see #getNodeDefinition()
+   * @generated
+   */
+  EAttribute getNodeDefinition_Autocreated();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeDefinition#isManadatory <em>Manadatory</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Manadatory</em>'.
+   * @see com.github.evra.jcr.cnd.NodeDefinition#isManadatory()
+   * @see #getNodeDefinition()
+   * @generated
+   */
+  EAttribute getNodeDefinition_Manadatory();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeDefinition#isProtected <em>Protected</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Protected</em>'.
+   * @see com.github.evra.jcr.cnd.NodeDefinition#isProtected()
+   * @see #getNodeDefinition()
+   * @generated
+   */
+  EAttribute getNodeDefinition_Protected();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeDefinition#getOnParentVersion <em>On Parent Version</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>On Parent Version</em>'.
+   * @see com.github.evra.jcr.cnd.NodeDefinition#getOnParentVersion()
+   * @see #getNodeDefinition()
+   * @generated
+   */
+  EAttribute getNodeDefinition_OnParentVersion();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeDefinition#isSameNameSiblings <em>Same Name Siblings</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Same Name Siblings</em>'.
+   * @see com.github.evra.jcr.cnd.NodeDefinition#isSameNameSiblings()
+   * @see #getNodeDefinition()
+   * @generated
+   */
+  EAttribute getNodeDefinition_SameNameSiblings();
+
+  /**
+   * Returns the meta object for class '{@link com.github.evra.jcr.cnd.PropertyDefinition <em>Property Definition</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Property Definition</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition
+   * @generated
+   */
+  EClass getPropertyDefinition();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.PropertyDefinition#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#getName()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_Name();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.PropertyDefinition#getType <em>Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Type</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#getType()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_Type();
+
+  /**
+   * Returns the meta object for the attribute list '{@link com.github.evra.jcr.cnd.PropertyDefinition#getDefaultValues <em>Default Values</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute list '<em>Default Values</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#getDefaultValues()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_DefaultValues();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.PropertyDefinition#isAutocreated <em>Autocreated</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Autocreated</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#isAutocreated()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_Autocreated();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.PropertyDefinition#isMandatory <em>Mandatory</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Mandatory</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#isMandatory()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_Mandatory();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.PropertyDefinition#isProtected <em>Protected</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Protected</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#isProtected()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_Protected();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.PropertyDefinition#getOnParentVersion <em>On Parent Version</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>On Parent Version</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#getOnParentVersion()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_OnParentVersion();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.PropertyDefinition#isMultiple <em>Multiple</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Multiple</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#isMultiple()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_Multiple();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.PropertyDefinition#getQueryOps <em>Query Ops</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Query Ops</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#getQueryOps()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_QueryOps();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.PropertyDefinition#isNoFullText <em>No Full Text</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>No Full Text</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#isNoFullText()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_NoFullText();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.PropertyDefinition#isNoQueryOrder <em>No Query Order</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>No Query Order</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#isNoQueryOrder()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_NoQueryOrder();
+
+  /**
+   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.PropertyDefinition#isPrimary <em>Primary</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Primary</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#isPrimary()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_Primary();
+
+  /**
+   * Returns the meta object for the attribute list '{@link com.github.evra.jcr.cnd.PropertyDefinition#getValueConstraints <em>Value Constraints</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute list '<em>Value Constraints</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyDefinition#getValueConstraints()
+   * @see #getPropertyDefinition()
+   * @generated
+   */
+  EAttribute getPropertyDefinition_ValueConstraints();
 
   /**
    * Returns the meta object for class '{@link com.github.evra.jcr.cnd.NsMapping <em>Ns Mapping</em>}'.
@@ -292,6 +922,26 @@ public interface CndPackage extends EPackage
    * @generated
    */
   EAttribute getNsMapping_Uri();
+
+  /**
+   * Returns the meta object for enum '{@link com.github.evra.jcr.cnd.Opv <em>Opv</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for enum '<em>Opv</em>'.
+   * @see com.github.evra.jcr.cnd.Opv
+   * @generated
+   */
+  EEnum getOpv();
+
+  /**
+   * Returns the meta object for enum '{@link com.github.evra.jcr.cnd.PropertyType <em>Property Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for enum '<em>Property Type</em>'.
+   * @see com.github.evra.jcr.cnd.PropertyType
+   * @generated
+   */
+  EEnum getPropertyType();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -327,48 +977,30 @@ public interface CndPackage extends EPackage
     EClass MODEL = eINSTANCE.getModel();
 
     /**
-     * The meta object literal for the '<em><b>Mappings</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Namespaces</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference MODEL__MAPPINGS = eINSTANCE.getModel_Mappings();
+    EReference MODEL__NAMESPACES = eINSTANCE.getModel_Namespaces();
 
     /**
-     * The meta object literal for the '<em><b>Nodetypes</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Node Types</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference MODEL__NODETYPES = eINSTANCE.getModel_Nodetypes();
+    EReference MODEL__NODE_TYPES = eINSTANCE.getModel_NodeTypes();
 
     /**
-     * The meta object literal for the '{@link com.github.evra.jcr.cnd.impl.NodeTypeDefImpl <em>Node Type Def</em>}' class.
+     * The meta object literal for the '{@link com.github.evra.jcr.cnd.impl.NodeTypeDefinitionImpl <em>Node Type Definition</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see com.github.evra.jcr.cnd.impl.NodeTypeDefImpl
-     * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getNodeTypeDef()
+     * @see com.github.evra.jcr.cnd.impl.NodeTypeDefinitionImpl
+     * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getNodeTypeDefinition()
      * @generated
      */
-    EClass NODE_TYPE_DEF = eINSTANCE.getNodeTypeDef();
-
-    /**
-     * The meta object literal for the '{@link com.github.evra.jcr.cnd.impl.NodeTypeNameImpl <em>Node Type Name</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see com.github.evra.jcr.cnd.impl.NodeTypeNameImpl
-     * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getNodeTypeName()
-     * @generated
-     */
-    EClass NODE_TYPE_NAME = eINSTANCE.getNodeTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Attributes</b></em>' attribute list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute NODE_TYPE_NAME__ATTRIBUTES = eINSTANCE.getNodeTypeName_Attributes();
+    EClass NODE_TYPE_DEFINITION = eINSTANCE.getNodeTypeDefinition();
 
     /**
      * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -376,7 +1008,267 @@ public interface CndPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute NODE_TYPE_NAME__NAME = eINSTANCE.getNodeTypeName_Name();
+    EAttribute NODE_TYPE_DEFINITION__NAME = eINSTANCE.getNodeTypeDefinition_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Declared Supertype Names</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_TYPE_DEFINITION__DECLARED_SUPERTYPE_NAMES = eINSTANCE.getNodeTypeDefinition_DeclaredSupertypeNames();
+
+    /**
+     * The meta object literal for the '<em><b>Orderable</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_TYPE_DEFINITION__ORDERABLE = eINSTANCE.getNodeTypeDefinition_Orderable();
+
+    /**
+     * The meta object literal for the '<em><b>Mixin</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_TYPE_DEFINITION__MIXIN = eINSTANCE.getNodeTypeDefinition_Mixin();
+
+    /**
+     * The meta object literal for the '<em><b>Abstract</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_TYPE_DEFINITION__ABSTRACT = eINSTANCE.getNodeTypeDefinition_Abstract();
+
+    /**
+     * The meta object literal for the '<em><b>Queryable</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_TYPE_DEFINITION__QUERYABLE = eINSTANCE.getNodeTypeDefinition_Queryable();
+
+    /**
+     * The meta object literal for the '<em><b>Notqueryable</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_TYPE_DEFINITION__NOTQUERYABLE = eINSTANCE.getNodeTypeDefinition_Notqueryable();
+
+    /**
+     * The meta object literal for the '<em><b>Primary Item</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_TYPE_DEFINITION__PRIMARY_ITEM = eINSTANCE.getNodeTypeDefinition_PrimaryItem();
+
+    /**
+     * The meta object literal for the '<em><b>Declared Property Definitions</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference NODE_TYPE_DEFINITION__DECLARED_PROPERTY_DEFINITIONS = eINSTANCE.getNodeTypeDefinition_DeclaredPropertyDefinitions();
+
+    /**
+     * The meta object literal for the '<em><b>Declared Child Node Definitions</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference NODE_TYPE_DEFINITION__DECLARED_CHILD_NODE_DEFINITIONS = eINSTANCE.getNodeTypeDefinition_DeclaredChildNodeDefinitions();
+
+    /**
+     * The meta object literal for the '{@link com.github.evra.jcr.cnd.impl.NodeDefinitionImpl <em>Node Definition</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see com.github.evra.jcr.cnd.impl.NodeDefinitionImpl
+     * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getNodeDefinition()
+     * @generated
+     */
+    EClass NODE_DEFINITION = eINSTANCE.getNodeDefinition();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_DEFINITION__NAME = eINSTANCE.getNodeDefinition_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Required Types</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_DEFINITION__REQUIRED_TYPES = eINSTANCE.getNodeDefinition_RequiredTypes();
+
+    /**
+     * The meta object literal for the '<em><b>Default Type</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_DEFINITION__DEFAULT_TYPE = eINSTANCE.getNodeDefinition_DefaultType();
+
+    /**
+     * The meta object literal for the '<em><b>Autocreated</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_DEFINITION__AUTOCREATED = eINSTANCE.getNodeDefinition_Autocreated();
+
+    /**
+     * The meta object literal for the '<em><b>Manadatory</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_DEFINITION__MANADATORY = eINSTANCE.getNodeDefinition_Manadatory();
+
+    /**
+     * The meta object literal for the '<em><b>Protected</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_DEFINITION__PROTECTED = eINSTANCE.getNodeDefinition_Protected();
+
+    /**
+     * The meta object literal for the '<em><b>On Parent Version</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_DEFINITION__ON_PARENT_VERSION = eINSTANCE.getNodeDefinition_OnParentVersion();
+
+    /**
+     * The meta object literal for the '<em><b>Same Name Siblings</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute NODE_DEFINITION__SAME_NAME_SIBLINGS = eINSTANCE.getNodeDefinition_SameNameSiblings();
+
+    /**
+     * The meta object literal for the '{@link com.github.evra.jcr.cnd.impl.PropertyDefinitionImpl <em>Property Definition</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see com.github.evra.jcr.cnd.impl.PropertyDefinitionImpl
+     * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getPropertyDefinition()
+     * @generated
+     */
+    EClass PROPERTY_DEFINITION = eINSTANCE.getPropertyDefinition();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__NAME = eINSTANCE.getPropertyDefinition_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__TYPE = eINSTANCE.getPropertyDefinition_Type();
+
+    /**
+     * The meta object literal for the '<em><b>Default Values</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__DEFAULT_VALUES = eINSTANCE.getPropertyDefinition_DefaultValues();
+
+    /**
+     * The meta object literal for the '<em><b>Autocreated</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__AUTOCREATED = eINSTANCE.getPropertyDefinition_Autocreated();
+
+    /**
+     * The meta object literal for the '<em><b>Mandatory</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__MANDATORY = eINSTANCE.getPropertyDefinition_Mandatory();
+
+    /**
+     * The meta object literal for the '<em><b>Protected</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__PROTECTED = eINSTANCE.getPropertyDefinition_Protected();
+
+    /**
+     * The meta object literal for the '<em><b>On Parent Version</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__ON_PARENT_VERSION = eINSTANCE.getPropertyDefinition_OnParentVersion();
+
+    /**
+     * The meta object literal for the '<em><b>Multiple</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__MULTIPLE = eINSTANCE.getPropertyDefinition_Multiple();
+
+    /**
+     * The meta object literal for the '<em><b>Query Ops</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__QUERY_OPS = eINSTANCE.getPropertyDefinition_QueryOps();
+
+    /**
+     * The meta object literal for the '<em><b>No Full Text</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__NO_FULL_TEXT = eINSTANCE.getPropertyDefinition_NoFullText();
+
+    /**
+     * The meta object literal for the '<em><b>No Query Order</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__NO_QUERY_ORDER = eINSTANCE.getPropertyDefinition_NoQueryOrder();
+
+    /**
+     * The meta object literal for the '<em><b>Primary</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__PRIMARY = eINSTANCE.getPropertyDefinition_Primary();
+
+    /**
+     * The meta object literal for the '<em><b>Value Constraints</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PROPERTY_DEFINITION__VALUE_CONSTRAINTS = eINSTANCE.getPropertyDefinition_ValueConstraints();
 
     /**
      * The meta object literal for the '{@link com.github.evra.jcr.cnd.impl.NsMappingImpl <em>Ns Mapping</em>}' class.
@@ -403,6 +1295,26 @@ public interface CndPackage extends EPackage
      * @generated
      */
     EAttribute NS_MAPPING__URI = eINSTANCE.getNsMapping_Uri();
+
+    /**
+     * The meta object literal for the '{@link com.github.evra.jcr.cnd.Opv <em>Opv</em>}' enum.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see com.github.evra.jcr.cnd.Opv
+     * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getOpv()
+     * @generated
+     */
+    EEnum OPV = eINSTANCE.getOpv();
+
+    /**
+     * The meta object literal for the '{@link com.github.evra.jcr.cnd.PropertyType <em>Property Type</em>}' enum.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see com.github.evra.jcr.cnd.PropertyType
+     * @see com.github.evra.jcr.cnd.impl.CndPackageImpl#getPropertyType()
+     * @generated
+     */
+    EEnum PROPERTY_TYPE = eINSTANCE.getPropertyType();
 
   }
 

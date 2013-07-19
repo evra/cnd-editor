@@ -8,144 +8,175 @@ generate cnd "http://www.github.com/evra/jcr/Cnd"
 //!! http://www.eclipse.org/forums/index.php/t/489632/
 
 Model :
-	 (mappings+=NsMapping | nodetypes+=NodeTypeDef)*;
+	 (namespaces+=NsMapping | nodeTypes+=NodeTypeDefinition)*;
 
-NodeTypeDef:
-	NodeTypeName (SuperTypes)? (attributes+=NodeTypeAttribute)* (PropertyDef | ChildNodeDef)*  
+NodeTypeDefinition:
+	'[' name=JcrString ']' 
+	
+	('>' declaredSupertypeNames+=JcrString (',' declaredSupertypeNames+=JcrString /*|'?' //variant  */)* )?  
+		
+	(
+		orderable?=Orderable? &
+		mixin?=Mixin? &
+		abstract?=Abstract? & 
+		queryable?=Queryable? &
+		notqueryable?=Notqueryable? & //TODO find a way to map query flags on one field
+		primaryItem=PrimaryItem?
+	)
+	 
+	(	
+	 	declaredPropertyDefinitions+=PropertyDefinition |
+		declaredChildNodeDefinitions+=NodeDefinition
+	)*  
 ;
 
-ChildNodeDef:
-	NodeName RequiredTypes? DefaultType? NodeAttribute*
-;
-
-NodeAttribute:
-	Autocreated | Mandatory | Protected | Opv | Sns
+NodeDefinition:
+	
+	'+' (name=JcrString|name='*' /*Jackrabbit feature */) 
+	
+	('(' (requiredTypes+=JcrString (',' requiredTypes+=JcrString)* /*| '?' //variant  */) ')')?
+	 	
+	('=' (defaultType=JcrString /*| '?' //variant  */))?
+	 
+	(
+		autocreated?=Autocreated? &
+		manadatory?=Mandatory? &
+		protected?=Protected? &
+		onParentVersion=Opv? &
+		sameNameSiblings?=Sns?
+	)
 ;
 
 Sns:
-	('sns' | '*' | 'multiple' /* Jackrabbit feature*/) '?'?
+	('sns' | '*' | 'multiple' /* Jackrabbit feature*/) /* '?' //variant */
 ;
 
-DefaultType:
-	'=' (JcrString | '?')
+PropertyDefinition:
+	
+	{PropertyDefinition} //force creation
+	
+	'-' (name=JcrString|'*' /*Jackrabbit feature */) 
+
+	('(' type=PropertyType')')? 
+
+	('=' (defaultValues+=JcrString (',' defaultValues+=JcrString)* /* | '?' //variant */))?
+	 
+	(
+		autocreated?=Autocreated? & 
+		mandatory?=Mandatory? &
+		protected?=Protected? &
+		onParentVersion=Opv? &
+		multiple?=Multiple? & 
+		queryOps=QueryOps? & 					
+		noFullText?=NoFullText? & 
+		noQueryOrder?=NoQueryOrder? &
+		primary?=Primary?
+	)
+
+	('<' (valueConstraints+=JcrString (',' valueConstraints+=JcrString)* /* | '?' //variant */))?
 ;
 
-RequiredTypes:
-	'(' (JcrStringList | '?') ')'
-;
-
-NodeName:
-	'+' (JcrString|'*' /*Jackrabbit feature */)
-;
-
-PropertyDef:
-	PropertyName PropertyType? DefaultValues? PropertyAttribute* ValueConstraints?
-;
-
-ValueConstraints:
-	'<' (JcrStringList | '?')
-;
-
-PropertyAttribute:
-	Autocreated | Mandatory | Protected |Opv | Multiple | QueryOps | NoFullText |NoQueryOrder|Primary
-;
 
 
 NoQueryOrder:
-	('noqueryorder' | 'nqord') '?'?
+	('noqueryorder' | 'nqord')/* '?' //variant */
 ;
 
 NoFullText:
-	('nofulltext' | 'nof') '?'?
+	('nofulltext' | 'nof') /* '?' //variant */
 ;
 
 QueryOps:
-	('queryops' | 'qop') ( JcrString | '?')
+	('queryops' | 'qop') ( JcrString /*| '?' //variant */)
 ;
 
-//TODO it does not work. queryops sequence is in conflict with STRING terminal
+
+//TODO does not work. probably conflict with STRING terminal: 
+
 //QueryOps:
-//	('queryops' | 'qop') (( "'" (Operator ("," Operator)*) "'") | '?')
+//	(('queryops' | 'qop') "'" queryOperators+=Operator ("," queryOperators+=Operator)* "'" /* | '?' //variant  */)? &
 //;
 //Operator:
 //	'=' | '<>' | '<' | '<=' | '>' | '>=' | 'LIKE'
 //;
 
 Multiple:
-	('multiple' | 'mul' | '*') '?'?
+	('multiple' | 'mul' | '*') /* '?' //variant */
 ;
 
-Opv:
-	//TODO JCR Spec is not clear if '?' is optional
-	'COPY' | 'VERSION' | 'INITIALIZE' | 'COMPUTE' | 'IGNORE' | 'ABORT' | ('OPV' '?') 
+enum Opv:
+	COPY='COPY' |
+	VERSION='VERSION' |
+	INITIALIZE='INITIALIZE' |
+	COMPUTE='COMPUTE' |
+	IGNORE='IGNORE' |
+	ABORT='ABORT' 
+	//| ('OPV' '?') //variant
 ;
 
 Protected:
-	('protected' | 'pro' | 'p') '?'?
+	('protected' | 'pro' | 'p') /* '?' //variant */
 ;
 
 Mandatory:
-	('mandatory' | 'man' | 'm') '?'?
+	('mandatory' | 'man' | 'm') /* '?' //variant */
 ;
 
 Autocreated:
-	('autocreated' | 'aut' | 'a' )'?'?
+	('autocreated' | 'aut' | 'a' )/* '?' //variant */
 ;
 
-Primary:
-	
+Primary:	
 	//This attribute is not defined by JCR
 	('primary'|'!') /* Jackrabbit feature. */	
 ;
 
 
-DefaultValues:
-	'=' (JcrStringList | '?')
+/*
+ *  The order of the enum elements is important. 
+ *  It defines same ordinal as in javax.jcr.PropertyType
+ *  Do not change the order!  
+ */
+enum PropertyType:
+	 UNDEFINED='UNDEFINED'|
+	 TSTRING='STRING' | 
+	 TBINARY='BINARY' |
+	 TLONG='LONG' |
+	 TDOUBLE='DOUBLE' |
+	 DDATE='DATE' |
+	 TBOOLEAN='BOOLEAN' |	
+	 TNAME='NAME' |
+	 TPATH='PATH' |
+	 TREFERENCE='REFERENCE' | 
+	 TWEAKREFERENCE='WEAKREFERENCE' |
+	 TURI='URI' |
+	 TDECIMAL='DECIMAL' 
+	 	 
+	 //| '?' /* variant */	  
 ;
 
-PropertyType:
-	'(' ('STRING' | 'BINARY' | 'LONG' | 'DOUBLE' |'BOOLEAN' | 'DATE' | 'NAME' | 'PATH' |
-		'REFERENCE' | 'WEAKREFERENCE' | 'DECIMAL' | 'URI' | 'UNDEFINED' 		
-		| '*' | '?') 
-	')'
-;
-
-PropertyName:
-	'-' (JcrString|'*' /*Jackrabbit feature */)
-;
-
-
-NodeTypeAttribute:
-	Orderable | Mixin | Abstract | Query | PrimaryItem
-;
 
 PrimaryItem:
-	('primaryitem'| '!')(JcrString | '?')
+	('primaryitem'| '!')(JcrString /* | '?' //variant */ )
 ;
 
-Query:
-	('noquery' | 'nq') | ('query' | 'q' )
+Queryable:
+	('query' | 'q' )
+;
+Notqueryable:
+	('noquery' | 'nq')
 ;
 
 Abstract:
-	('abstract' | 'abs' | 'a') '?'?
+	('abstract' | 'abs' | 'a') /* '?' //variant */
 ;
 
 Mixin:
-	('mixin' | 'mix' | 'm') '?'?
+	('mixin' | 'mix' | 'm') /* '?' //variant */
 ;
 
 Orderable:
-	('orderable' | 'ord' | 'o') '?'?	
-;
-
-SuperTypes:
-	'>' (JcrStringList|'?') 
-;
-
-
-NodeTypeName:
-	'[' name=JcrString ']'
+	('orderable' | 'ord' | 'o') /* '?' //variant */	
 ;
 
 NsMapping :
@@ -156,10 +187,6 @@ Prefix :
 
 Uri: 
 	 JcrString;
-
-JcrStringList:
-	JcrString (',' JcrString)*	
-;
 
 JcrString:
 	STRING | XiD		

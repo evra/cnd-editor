@@ -8,9 +8,6 @@ import org.eclipse.xtext.IGrammarAccess;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.xtext.serializer.analysis.GrammarAlias.AbstractElementAlias;
-import org.eclipse.xtext.serializer.analysis.GrammarAlias.AlternativeAlias;
-import org.eclipse.xtext.serializer.analysis.GrammarAlias.TokenAlias;
-import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynNavigable;
 import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynTransition;
 import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 
@@ -18,58 +15,184 @@ import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 public class CndSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected CndGrammarAccess grammarAccess;
-	protected AbstractElementAlias match_NodeTypeDef_SuperTypesParserRuleCall_1_q;
-	protected AbstractElementAlias match_NodeTypeDef___ChildNodeDefParserRuleCall_3_1_or_PropertyDefParserRuleCall_3_0__a;
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
 		grammarAccess = (CndGrammarAccess) access;
-		match_NodeTypeDef_SuperTypesParserRuleCall_1_q = new TokenAlias(false, true, grammarAccess.getNodeTypeDefAccess().getSuperTypesParserRuleCall_1());
-		match_NodeTypeDef___ChildNodeDefParserRuleCall_3_1_or_PropertyDefParserRuleCall_3_0__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getNodeTypeDefAccess().getChildNodeDefParserRuleCall_3_1()), new TokenAlias(false, false, grammarAccess.getNodeTypeDefAccess().getPropertyDefParserRuleCall_3_0()));
 	}
 	
 	@Override
 	protected String getUnassignedRuleCallToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if(ruleCall.getRule() == grammarAccess.getChildNodeDefRule())
-			return getChildNodeDefToken(semanticObject, ruleCall, node);
-		else if(ruleCall.getRule() == grammarAccess.getPropertyDefRule())
-			return getPropertyDefToken(semanticObject, ruleCall, node);
-		else if(ruleCall.getRule() == grammarAccess.getSuperTypesRule())
-			return getSuperTypesToken(semanticObject, ruleCall, node);
+		if(ruleCall.getRule() == grammarAccess.getAbstractRule())
+			return getAbstractToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getAutocreatedRule())
+			return getAutocreatedToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getMandatoryRule())
+			return getMandatoryToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getMixinRule())
+			return getMixinToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getMultipleRule())
+			return getMultipleToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getNoFullTextRule())
+			return getNoFullTextToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getNoQueryOrderRule())
+			return getNoQueryOrderToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getNotqueryableRule())
+			return getNotqueryableToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getOrderableRule())
+			return getOrderableToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getPrimaryRule())
+			return getPrimaryToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getProtectedRule())
+			return getProtectedToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getQueryableRule())
+			return getQueryableToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getSnsRule())
+			return getSnsToken(semanticObject, ruleCall, node);
 		return "";
 	}
 	
 	/**
-	 * ChildNodeDef:
-	 * 	NodeName RequiredTypes? DefaultType? NodeAttribute*
+	 * Abstract:
+	 * 	('abstract' | 'abs' | 'a') 
 	 * ;
 	 */
-	protected String getChildNodeDefToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+	protected String getAbstractToken(EObject semanticObject, RuleCall ruleCall, INode node) {
 		if (node != null)
 			return getTokenText(node);
-		return "+\"\"";
+		return "abstract";
 	}
 	
 	/**
-	 * PropertyDef:
-	 * 	PropertyName PropertyType? DefaultValues? PropertyAttribute* ValueConstraints?
+	 * Autocreated:
+	 * 	('autocreated' | 'aut' | 'a' )
 	 * ;
 	 */
-	protected String getPropertyDefToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+	protected String getAutocreatedToken(EObject semanticObject, RuleCall ruleCall, INode node) {
 		if (node != null)
 			return getTokenText(node);
-		return "-\"\"";
+		return "autocreated";
 	}
 	
 	/**
-	 * SuperTypes:
-	 * 	'>' (JcrStringList|'?') 
+	 * Mandatory:
+	 * 	('mandatory' | 'man' | 'm') 
 	 * ;
 	 */
-	protected String getSuperTypesToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+	protected String getMandatoryToken(EObject semanticObject, RuleCall ruleCall, INode node) {
 		if (node != null)
 			return getTokenText(node);
-		return ">\"\"";
+		return "mandatory";
+	}
+	
+	/**
+	 * Mixin:
+	 * 	('mixin' | 'mix' | 'm') 
+	 * ;
+	 */
+	protected String getMixinToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "mixin";
+	}
+	
+	/**
+	 * Multiple:
+	 * 	('multiple' | 'mul' | '*') 
+	 * ;
+	 */
+	protected String getMultipleToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "multiple";
+	}
+	
+	/**
+	 * NoFullText:
+	 * 	('nofulltext' | 'nof') 
+	 * ;
+	 */
+	protected String getNoFullTextToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "nofulltext";
+	}
+	
+	/**
+	 * NoQueryOrder:
+	 * 	('noqueryorder' | 'nqord')
+	 * ;
+	 */
+	protected String getNoQueryOrderToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "noqueryorder";
+	}
+	
+	/**
+	 * Notqueryable:
+	 * 	('noquery' | 'nq')
+	 * ;
+	 */
+	protected String getNotqueryableToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "noquery";
+	}
+	
+	/**
+	 * Orderable:
+	 * 	('orderable' | 'ord' | 'o') 	
+	 * ;
+	 */
+	protected String getOrderableToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "orderable";
+	}
+	
+	/**
+	 * Primary:	
+	 * 		('primary'|'!') 	
+	 * ;
+	 */
+	protected String getPrimaryToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "primary";
+	}
+	
+	/**
+	 * Protected:
+	 * 	('protected' | 'pro' | 'p') 
+	 * ;
+	 */
+	protected String getProtectedToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "protected";
+	}
+	
+	/**
+	 * Queryable:
+	 * 	('query' | 'q' )
+	 * ;
+	 */
+	protected String getQueryableToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "query";
+	}
+	
+	/**
+	 * Sns:
+	 * 	('sns' | '*' | 'multiple' ) 
+	 * ;
+	 */
+	protected String getSnsToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "sns";
 	}
 	
 	@Override
@@ -78,28 +201,8 @@ public class CndSyntacticSequencer extends AbstractSyntacticSequencer {
 		List<INode> transitionNodes = collectNodes(fromNode, toNode);
 		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
-			if(match_NodeTypeDef_SuperTypesParserRuleCall_1_q.equals(syntax))
-				emit_NodeTypeDef_SuperTypesParserRuleCall_1_q(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_NodeTypeDef___ChildNodeDefParserRuleCall_3_1_or_PropertyDefParserRuleCall_3_0__a.equals(syntax))
-				emit_NodeTypeDef___ChildNodeDefParserRuleCall_3_1_or_PropertyDefParserRuleCall_3_0__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else acceptNodes(getLastNavigableState(), syntaxNodes);
+			acceptNodes(getLastNavigableState(), syntaxNodes);
 		}
 	}
 
-	/**
-	 * Syntax:
-	 *     SuperTypes?
-	 */
-	protected void emit_NodeTypeDef_SuperTypesParserRuleCall_1_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
-		acceptNodes(transition, nodes);
-	}
-	
-	/**
-	 * Syntax:
-	 *     (ChildNodeDef | PropertyDef)*
-	 */
-	protected void emit_NodeTypeDef___ChildNodeDefParserRuleCall_3_1_or_PropertyDefParserRuleCall_3_0__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
-		acceptNodes(transition, nodes);
-	}
-	
 }

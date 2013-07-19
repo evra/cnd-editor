@@ -4,7 +4,7 @@ package com.github.evra.jcr.cnd.impl;
 
 import com.github.evra.jcr.cnd.CndPackage;
 import com.github.evra.jcr.cnd.Model;
-import com.github.evra.jcr.cnd.NodeTypeDef;
+import com.github.evra.jcr.cnd.NodeTypeDefinition;
 import com.github.evra.jcr.cnd.NsMapping;
 
 import java.util.Collection;
@@ -28,8 +28,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link com.github.evra.jcr.cnd.impl.ModelImpl#getMappings <em>Mappings</em>}</li>
- *   <li>{@link com.github.evra.jcr.cnd.impl.ModelImpl#getNodetypes <em>Nodetypes</em>}</li>
+ *   <li>{@link com.github.evra.jcr.cnd.impl.ModelImpl#getNamespaces <em>Namespaces</em>}</li>
+ *   <li>{@link com.github.evra.jcr.cnd.impl.ModelImpl#getNodeTypes <em>Node Types</em>}</li>
  * </ul>
  * </p>
  *
@@ -38,24 +38,24 @@ import org.eclipse.emf.ecore.util.InternalEList;
 public class ModelImpl extends MinimalEObjectImpl.Container implements Model
 {
   /**
-   * The cached value of the '{@link #getMappings() <em>Mappings</em>}' containment reference list.
+   * The cached value of the '{@link #getNamespaces() <em>Namespaces</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getMappings()
+   * @see #getNamespaces()
    * @generated
    * @ordered
    */
-  protected EList<NsMapping> mappings;
+  protected EList<NsMapping> namespaces;
 
   /**
-   * The cached value of the '{@link #getNodetypes() <em>Nodetypes</em>}' containment reference list.
+   * The cached value of the '{@link #getNodeTypes() <em>Node Types</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getNodetypes()
+   * @see #getNodeTypes()
    * @generated
    * @ordered
    */
-  protected EList<NodeTypeDef> nodetypes;
+  protected EList<NodeTypeDefinition> nodeTypes;
 
   /**
    * <!-- begin-user-doc -->
@@ -83,13 +83,13 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<NsMapping> getMappings()
+  public EList<NsMapping> getNamespaces()
   {
-    if (mappings == null)
+    if (namespaces == null)
     {
-      mappings = new EObjectContainmentEList<NsMapping>(NsMapping.class, this, CndPackage.MODEL__MAPPINGS);
+      namespaces = new EObjectContainmentEList<NsMapping>(NsMapping.class, this, CndPackage.MODEL__NAMESPACES);
     }
-    return mappings;
+    return namespaces;
   }
 
   /**
@@ -97,13 +97,13 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<NodeTypeDef> getNodetypes()
+  public EList<NodeTypeDefinition> getNodeTypes()
   {
-    if (nodetypes == null)
+    if (nodeTypes == null)
     {
-      nodetypes = new EObjectContainmentEList<NodeTypeDef>(NodeTypeDef.class, this, CndPackage.MODEL__NODETYPES);
+      nodeTypes = new EObjectContainmentEList<NodeTypeDefinition>(NodeTypeDefinition.class, this, CndPackage.MODEL__NODE_TYPES);
     }
-    return nodetypes;
+    return nodeTypes;
   }
 
   /**
@@ -116,10 +116,10 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case CndPackage.MODEL__MAPPINGS:
-        return ((InternalEList<?>)getMappings()).basicRemove(otherEnd, msgs);
-      case CndPackage.MODEL__NODETYPES:
-        return ((InternalEList<?>)getNodetypes()).basicRemove(otherEnd, msgs);
+      case CndPackage.MODEL__NAMESPACES:
+        return ((InternalEList<?>)getNamespaces()).basicRemove(otherEnd, msgs);
+      case CndPackage.MODEL__NODE_TYPES:
+        return ((InternalEList<?>)getNodeTypes()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -134,10 +134,10 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case CndPackage.MODEL__MAPPINGS:
-        return getMappings();
-      case CndPackage.MODEL__NODETYPES:
-        return getNodetypes();
+      case CndPackage.MODEL__NAMESPACES:
+        return getNamespaces();
+      case CndPackage.MODEL__NODE_TYPES:
+        return getNodeTypes();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -153,13 +153,13 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case CndPackage.MODEL__MAPPINGS:
-        getMappings().clear();
-        getMappings().addAll((Collection<? extends NsMapping>)newValue);
+      case CndPackage.MODEL__NAMESPACES:
+        getNamespaces().clear();
+        getNamespaces().addAll((Collection<? extends NsMapping>)newValue);
         return;
-      case CndPackage.MODEL__NODETYPES:
-        getNodetypes().clear();
-        getNodetypes().addAll((Collection<? extends NodeTypeDef>)newValue);
+      case CndPackage.MODEL__NODE_TYPES:
+        getNodeTypes().clear();
+        getNodeTypes().addAll((Collection<? extends NodeTypeDefinition>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -175,11 +175,11 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case CndPackage.MODEL__MAPPINGS:
-        getMappings().clear();
+      case CndPackage.MODEL__NAMESPACES:
+        getNamespaces().clear();
         return;
-      case CndPackage.MODEL__NODETYPES:
-        getNodetypes().clear();
+      case CndPackage.MODEL__NODE_TYPES:
+        getNodeTypes().clear();
         return;
     }
     super.eUnset(featureID);
@@ -195,10 +195,10 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case CndPackage.MODEL__MAPPINGS:
-        return mappings != null && !mappings.isEmpty();
-      case CndPackage.MODEL__NODETYPES:
-        return nodetypes != null && !nodetypes.isEmpty();
+      case CndPackage.MODEL__NAMESPACES:
+        return namespaces != null && !namespaces.isEmpty();
+      case CndPackage.MODEL__NODE_TYPES:
+        return nodeTypes != null && !nodeTypes.isEmpty();
     }
     return super.eIsSet(featureID);
   }

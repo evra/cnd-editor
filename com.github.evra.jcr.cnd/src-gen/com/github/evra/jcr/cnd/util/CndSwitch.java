@@ -79,18 +79,24 @@ public class CndSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case CndPackage.NODE_TYPE_DEF:
+      case CndPackage.NODE_TYPE_DEFINITION:
       {
-        NodeTypeDef nodeTypeDef = (NodeTypeDef)theEObject;
-        T result = caseNodeTypeDef(nodeTypeDef);
+        NodeTypeDefinition nodeTypeDefinition = (NodeTypeDefinition)theEObject;
+        T result = caseNodeTypeDefinition(nodeTypeDefinition);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case CndPackage.NODE_TYPE_NAME:
+      case CndPackage.NODE_DEFINITION:
       {
-        NodeTypeName nodeTypeName = (NodeTypeName)theEObject;
-        T result = caseNodeTypeName(nodeTypeName);
-        if (result == null) result = caseNodeTypeDef(nodeTypeName);
+        NodeDefinition nodeDefinition = (NodeDefinition)theEObject;
+        T result = caseNodeDefinition(nodeDefinition);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case CndPackage.PROPERTY_DEFINITION:
+      {
+        PropertyDefinition propertyDefinition = (PropertyDefinition)theEObject;
+        T result = casePropertyDefinition(propertyDefinition);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -122,33 +128,49 @@ public class CndSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Node Type Def</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Node Type Definition</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Node Type Def</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Node Type Definition</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseNodeTypeDef(NodeTypeDef object)
+  public T caseNodeTypeDefinition(NodeTypeDefinition object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Node Type Name</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Node Definition</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Node Type Name</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Node Definition</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseNodeTypeName(NodeTypeName object)
+  public T caseNodeDefinition(NodeDefinition object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Property Definition</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Property Definition</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePropertyDefinition(PropertyDefinition object)
   {
     return null;
   }

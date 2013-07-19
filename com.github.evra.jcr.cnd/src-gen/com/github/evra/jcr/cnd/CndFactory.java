@@ -32,22 +32,31 @@ public interface CndFactory extends EFactory
   Model createModel();
 
   /**
-   * Returns a new object of class '<em>Node Type Def</em>'.
+   * Returns a new object of class '<em>Node Type Definition</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Node Type Def</em>'.
+   * @return a new object of class '<em>Node Type Definition</em>'.
    * @generated
    */
-  NodeTypeDef createNodeTypeDef();
+  NodeTypeDefinition createNodeTypeDefinition();
 
   /**
-   * Returns a new object of class '<em>Node Type Name</em>'.
+   * Returns a new object of class '<em>Node Definition</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Node Type Name</em>'.
+   * @return a new object of class '<em>Node Definition</em>'.
    * @generated
    */
-  NodeTypeName createNodeTypeName();
+  NodeDefinition createNodeDefinition();
+
+  /**
+   * Returns a new object of class '<em>Property Definition</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Property Definition</em>'.
+   * @generated
+   */
+  PropertyDefinition createPropertyDefinition();
 
   /**
    * Returns a new object of class '<em>Ns Mapping</em>'.
