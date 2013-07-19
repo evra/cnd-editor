@@ -165,18 +165,15 @@ ruleNodeTypeDefinition returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesJcrStringParserRuleCall_3_1_0()); 
-	    }
-		lv_declaredSupertypeNames_4_0=ruleJcrString		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getNodeTypeDefinitionRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getNodeTypeDefinitionRule());
 	        }
-       		add(
-       			$current, 
-       			"declaredSupertypeNames",
-        		lv_declaredSupertypeNames_4_0, 
-        		"JcrString");
+        }
+		{ 
+	        newCompositeNode(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_1_0()); 
+	    }
+		ruleJcrString		{ 
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -188,18 +185,15 @@ ruleNodeTypeDefinition returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesJcrStringParserRuleCall_3_2_1_0()); 
-	    }
-		lv_declaredSupertypeNames_6_0=ruleJcrString		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getNodeTypeDefinitionRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getNodeTypeDefinitionRule());
 	        }
-       		add(
-       			$current, 
-       			"declaredSupertypeNames",
-        		lv_declaredSupertypeNames_6_0, 
-        		"JcrString");
+        }
+		{ 
+	        newCompositeNode(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_2_1_0()); 
+	    }
+		ruleJcrString		{ 
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -505,18 +499,15 @@ ruleNodeDefinition returns [EObject current=null]
     }
 ((
 (
-		{ 
-	        newCompositeNode(grammarAccess.getNodeDefinitionAccess().getRequiredTypesJcrStringParserRuleCall_2_1_0_0()); 
-	    }
-		lv_requiredTypes_4_0=ruleJcrString		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getNodeDefinitionRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getNodeDefinitionRule());
 	        }
-       		add(
-       			$current, 
-       			"requiredTypes",
-        		lv_requiredTypes_4_0, 
-        		"JcrString");
+        }
+		{ 
+	        newCompositeNode(grammarAccess.getNodeDefinitionAccess().getRequiredTypesNodeTypeDefinitionCrossReference_2_1_0_0()); 
+	    }
+		ruleJcrString		{ 
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -528,18 +519,15 @@ ruleNodeDefinition returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getNodeDefinitionAccess().getRequiredTypesJcrStringParserRuleCall_2_1_1_1_0()); 
-	    }
-		lv_requiredTypes_6_0=ruleJcrString		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getNodeDefinitionRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getNodeDefinitionRule());
 	        }
-       		add(
-       			$current, 
-       			"requiredTypes",
-        		lv_requiredTypes_6_0, 
-        		"JcrString");
+        }
+		{ 
+	        newCompositeNode(grammarAccess.getNodeDefinitionAccess().getRequiredTypesNodeTypeDefinitionCrossReference_2_1_1_1_0()); 
+	    }
+		ruleJcrString		{ 
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -556,18 +544,15 @@ ruleNodeDefinition returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getNodeDefinitionAccess().getDefaultTypeJcrStringParserRuleCall_3_1_0()); 
-	    }
-		lv_defaultType_9_0=ruleJcrString		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getNodeDefinitionRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getNodeDefinitionRule());
 	        }
-       		set(
-       			$current, 
-       			"defaultType",
-        		lv_defaultType_9_0, 
-        		"JcrString");
+        }
+		{ 
+	        newCompositeNode(grammarAccess.getNodeDefinitionAccess().getDefaultTypeNodeTypeDefinitionCrossReference_3_1_0()); 
+	    }
+		ruleJcrString		{ 
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -2004,21 +1989,14 @@ ruleXiD returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
     }
     @after { leaveRule();
     }:
-(    this_EXID_0=RULE_EXID    {
+    this_EXID_0=RULE_EXID    {
 		$current.merge(this_EXID_0);
     }
 
     { 
-    newLeafNode(this_EXID_0, grammarAccess.getXiDAccess().getEXIDTerminalRuleCall_0()); 
+    newLeafNode(this_EXID_0, grammarAccess.getXiDAccess().getEXIDTerminalRuleCall()); 
     }
 
-    |
-	kw=KEYWORD_23 
-    {
-        $current.merge(kw);
-        newLeafNode(kw, grammarAccess.getXiDAccess().getMixKeyword_1()); 
-    }
-)
     ;
 
 

@@ -76,8 +76,8 @@ public class CndSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 * Constraint:
 	 *     (
 	 *         (name=JcrString | name='*') 
-	 *         (requiredTypes+=JcrString requiredTypes+=JcrString*)? 
-	 *         defaultType=JcrString? 
+	 *         (requiredTypes+=[NodeTypeDefinition|JcrString] requiredTypes+=[NodeTypeDefinition|JcrString]*)? 
+	 *         defaultType=[NodeTypeDefinition|JcrString]? 
 	 *         autocreated?=Autocreated? 
 	 *         manadatory?=Mandatory? 
 	 *         protected?=Protected? 
@@ -94,7 +94,7 @@ public class CndSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 * Constraint:
 	 *     (
 	 *         name=JcrString 
-	 *         (declaredSupertypeNames+=JcrString declaredSupertypeNames+=JcrString*)? 
+	 *         (declaredSupertypeNames+=[NodeTypeDefinition|JcrString] declaredSupertypeNames+=[NodeTypeDefinition|JcrString]*)? 
 	 *         orderable?=Orderable? 
 	 *         mixin?=Mixin? 
 	 *         abstract?=Abstract? 

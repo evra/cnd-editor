@@ -57,7 +57,6 @@ public class CndParser extends AbstractContentAssistParser {
 					put(grammarAccess.getMixinAccess().getAlternatives(), "rule__Mixin__Alternatives");
 					put(grammarAccess.getOrderableAccess().getAlternatives(), "rule__Orderable__Alternatives");
 					put(grammarAccess.getJcrStringAccess().getAlternatives(), "rule__JcrString__Alternatives");
-					put(grammarAccess.getXiDAccess().getAlternatives(), "rule__XiD__Alternatives");
 					put(grammarAccess.getOpvAccess().getAlternatives(), "rule__Opv__Alternatives");
 					put(grammarAccess.getPropertyTypeAccess().getAlternatives(), "rule__PropertyType__Alternatives");
 					put(grammarAccess.getNodeTypeDefinitionAccess().getGroup(), "rule__NodeTypeDefinition__Group__0");

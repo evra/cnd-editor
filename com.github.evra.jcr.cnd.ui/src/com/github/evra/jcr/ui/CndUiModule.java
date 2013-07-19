@@ -4,6 +4,9 @@
 package com.github.evra.jcr.ui;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.eclipse.xtext.linking.ILinkingDiagnosticMessageProvider;
+
+import com.github.evra.jcr.ui.linking.CndLinkingDiagnosticMessageProvider;
 
 /**
  * Use this class to register components to be used within the IDE.
@@ -11,5 +14,9 @@ import org.eclipse.ui.plugin.AbstractUIPlugin;
 public class CndUiModule extends com.github.evra.jcr.ui.AbstractCndUiModule {
 	public CndUiModule(AbstractUIPlugin plugin) {
 		super(plugin);
+	}
+	
+	public Class<? extends ILinkingDiagnosticMessageProvider> bindILinkingDiagnosticMessageProvider() {
+		return CndLinkingDiagnosticMessageProvider.class;
 	}
 }

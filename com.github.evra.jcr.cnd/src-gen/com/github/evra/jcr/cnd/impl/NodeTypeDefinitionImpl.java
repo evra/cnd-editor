@@ -20,8 +20,8 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -69,14 +69,14 @@ public class NodeTypeDefinitionImpl extends MinimalEObjectImpl.Container impleme
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getDeclaredSupertypeNames() <em>Declared Supertype Names</em>}' attribute list.
+   * The cached value of the '{@link #getDeclaredSupertypeNames() <em>Declared Supertype Names</em>}' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getDeclaredSupertypeNames()
    * @generated
    * @ordered
    */
-  protected EList<String> declaredSupertypeNames;
+  protected EList<NodeTypeDefinition> declaredSupertypeNames;
 
   /**
    * The default value of the '{@link #isOrderable() <em>Orderable</em>}' attribute.
@@ -267,11 +267,11 @@ public class NodeTypeDefinitionImpl extends MinimalEObjectImpl.Container impleme
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<String> getDeclaredSupertypeNames()
+  public EList<NodeTypeDefinition> getDeclaredSupertypeNames()
   {
     if (declaredSupertypeNames == null)
     {
-      declaredSupertypeNames = new EDataTypeEList<String>(String.class, this, CndPackage.NODE_TYPE_DEFINITION__DECLARED_SUPERTYPE_NAMES);
+      declaredSupertypeNames = new EObjectResolvingEList<NodeTypeDefinition>(NodeTypeDefinition.class, this, CndPackage.NODE_TYPE_DEFINITION__DECLARED_SUPERTYPE_NAMES);
     }
     return declaredSupertypeNames;
   }
@@ -510,7 +510,7 @@ public class NodeTypeDefinitionImpl extends MinimalEObjectImpl.Container impleme
         return;
       case CndPackage.NODE_TYPE_DEFINITION__DECLARED_SUPERTYPE_NAMES:
         getDeclaredSupertypeNames().clear();
-        getDeclaredSupertypeNames().addAll((Collection<? extends String>)newValue);
+        getDeclaredSupertypeNames().addAll((Collection<? extends NodeTypeDefinition>)newValue);
         return;
       case CndPackage.NODE_TYPE_DEFINITION__ORDERABLE:
         setOrderable((Boolean)newValue);
@@ -633,8 +633,6 @@ public class NodeTypeDefinitionImpl extends MinimalEObjectImpl.Container impleme
     StringBuffer result = new StringBuffer(super.toString());
     result.append(" (name: ");
     result.append(name);
-    result.append(", declaredSupertypeNames: ");
-    result.append(declaredSupertypeNames);
     result.append(", orderable: ");
     result.append(orderable);
     result.append(", mixin: ");

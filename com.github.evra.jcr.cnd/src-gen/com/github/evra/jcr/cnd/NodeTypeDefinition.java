@@ -60,20 +60,20 @@ public interface NodeTypeDefinition extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Declared Supertype Names</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Returns the value of the '<em><b>Declared Supertype Names</b></em>' reference list.
+   * The list contents are of type {@link com.github.evra.jcr.cnd.NodeTypeDefinition}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Declared Supertype Names</em>' attribute list isn't clear,
+   * If the meaning of the '<em>Declared Supertype Names</em>' reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Declared Supertype Names</em>' attribute list.
+   * @return the value of the '<em>Declared Supertype Names</em>' reference list.
    * @see com.github.evra.jcr.cnd.CndPackage#getNodeTypeDefinition_DeclaredSupertypeNames()
-   * @model unique="false"
+   * @model
    * @generated
    */
-  EList<String> getDeclaredSupertypeNames();
+  EList<NodeTypeDefinition> getDeclaredSupertypeNames();
 
   /**
    * Returns the value of the '<em><b>Orderable</b></em>' attribute.

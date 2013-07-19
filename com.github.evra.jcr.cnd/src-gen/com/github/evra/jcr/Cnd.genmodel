@@ -36,7 +36,7 @@
     </genClasses>
     <genClasses ecoreClass="Cnd.ecore#//NodeTypeDefinition">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeTypeDefinition/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeTypeDefinition/declaredSupertypeNames"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Cnd.ecore#//NodeTypeDefinition/declaredSupertypeNames"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeTypeDefinition/orderable"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeTypeDefinition/mixin"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeTypeDefinition/abstract"/>
@@ -48,8 +48,8 @@
     </genClasses>
     <genClasses ecoreClass="Cnd.ecore#//NodeDefinition">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeDefinition/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeDefinition/requiredTypes"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeDefinition/defaultType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Cnd.ecore#//NodeDefinition/requiredTypes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Cnd.ecore#//NodeDefinition/defaultType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeDefinition/autocreated"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeDefinition/manadatory"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeDefinition/protected"/>

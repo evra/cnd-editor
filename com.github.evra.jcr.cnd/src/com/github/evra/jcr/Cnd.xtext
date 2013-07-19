@@ -13,7 +13,7 @@ Model :
 NodeTypeDefinition:
 	'[' name=JcrString ']' 
 	
-	('>' declaredSupertypeNames+=JcrString (',' declaredSupertypeNames+=JcrString /*|'?' //variant  */)* )?  
+	('>' declaredSupertypeNames+=[NodeTypeDefinition|JcrString] (',' declaredSupertypeNames+=[NodeTypeDefinition|JcrString] /*|'?' //variant  */)* )?  
 		
 	(
 		orderable?=Orderable? &
@@ -21,7 +21,13 @@ NodeTypeDefinition:
 		abstract?=Abstract? & 
 		queryable?=Queryable? &
 		notqueryable?=Notqueryable? & //TODO find a way to map query flags on one field
+		
 		primaryItem=PrimaryItem?
+		
+		//TODO property can be also a primary item 
+		//(PropertyDefinitions and NodeDefinitions must have the same super class ItemDeinition)
+		//(('primaryitem'| '!')(primaryItem=[NodeDefinition|JcrString] /* | '?' //variant */ ))?
+		
 	)
 	 
 	(	
@@ -34,9 +40,9 @@ NodeDefinition:
 	
 	'+' (name=JcrString|name='*' /*Jackrabbit feature */) 
 	
-	('(' (requiredTypes+=JcrString (',' requiredTypes+=JcrString)* /*| '?' //variant  */) ')')?
+	('(' (requiredTypes+=[NodeTypeDefinition|JcrString] (',' requiredTypes+=[NodeTypeDefinition|JcrString])* /*| '?' //variant  */) ')')?
 	 	
-	('=' (defaultType=JcrString /*| '?' //variant  */))?
+	('=' (defaultType=[NodeTypeDefinition|JcrString] /*| '?' //variant  */))?
 	 
 	(
 		autocreated?=Autocreated? &
@@ -193,7 +199,8 @@ JcrString:
 ;
 
 XiD:
-	EXID|('mix')
+	//EXID|('mix')
+	EXID
 ;
 
 terminal EXID :  ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9'|':'|'*')* ;

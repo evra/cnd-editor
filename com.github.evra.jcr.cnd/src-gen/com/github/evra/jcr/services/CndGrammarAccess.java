@@ -59,11 +59,13 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
 		private final Keyword cGreaterThanSignKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
 		private final Assignment cDeclaredSupertypeNamesAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
-		private final RuleCall cDeclaredSupertypeNamesJcrStringParserRuleCall_3_1_0 = (RuleCall)cDeclaredSupertypeNamesAssignment_3_1.eContents().get(0);
+		private final CrossReference cDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_1_0 = (CrossReference)cDeclaredSupertypeNamesAssignment_3_1.eContents().get(0);
+		private final RuleCall cDeclaredSupertypeNamesNodeTypeDefinitionJcrStringParserRuleCall_3_1_0_1 = (RuleCall)cDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_1_0.eContents().get(1);
 		private final Group cGroup_3_2 = (Group)cGroup_3.eContents().get(2);
 		private final Keyword cCommaKeyword_3_2_0 = (Keyword)cGroup_3_2.eContents().get(0);
 		private final Assignment cDeclaredSupertypeNamesAssignment_3_2_1 = (Assignment)cGroup_3_2.eContents().get(1);
-		private final RuleCall cDeclaredSupertypeNamesJcrStringParserRuleCall_3_2_1_0 = (RuleCall)cDeclaredSupertypeNamesAssignment_3_2_1.eContents().get(0);
+		private final CrossReference cDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_2_1_0 = (CrossReference)cDeclaredSupertypeNamesAssignment_3_2_1.eContents().get(0);
+		private final RuleCall cDeclaredSupertypeNamesNodeTypeDefinitionJcrStringParserRuleCall_3_2_1_0_1 = (RuleCall)cDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_2_1_0.eContents().get(1);
 		private final UnorderedGroup cUnorderedGroup_4 = (UnorderedGroup)cGroup.eContents().get(4);
 		private final Assignment cOrderableAssignment_4_0 = (Assignment)cUnorderedGroup_4.eContents().get(0);
 		private final RuleCall cOrderableOrderableParserRuleCall_4_0_0 = (RuleCall)cOrderableAssignment_4_0.eContents().get(0);
@@ -85,20 +87,28 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//NodeTypeDefinition:
 		//
-		//	"[" name=JcrString "]" (">" declaredSupertypeNames+=JcrString ("," declaredSupertypeNames+=JcrString)*
+		//	"[" name=JcrString "]" (">" declaredSupertypeNames+=[NodeTypeDefinition|JcrString] (","
 		//
-		//	/ *|'?' //variant  * /)? (orderable?=Orderable? //TODO find a way to map query flags on one field
+		//	declaredSupertypeNames+=[NodeTypeDefinition|JcrString])* / *|'?' //variant  * /)? (orderable?=Orderable? //TODO find a way to map query flags on one field
 		//
-		//	& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & primaryItem=PrimaryItem?)
+		//	& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & primaryItem=PrimaryItem?) //TODO property can be also a primary item 
+		//
+		//	//(PropertyDefinitions and NodeDefinitions must have the same super class ItemDeinition)
+		//
+		//	//(('primaryitem'| '!')(primaryItem=[NodeDefinition|JcrString] / * | '?' //variant * / ))?
 		//
 		//	(declaredPropertyDefinitions+=PropertyDefinition | declaredChildNodeDefinitions+=NodeDefinition)*;
 		public ParserRule getRule() { return rule; }
 
-		//"[" name=JcrString "]" (">" declaredSupertypeNames+=JcrString ("," declaredSupertypeNames+=JcrString)*
+		//"[" name=JcrString "]" (">" declaredSupertypeNames+=[NodeTypeDefinition|JcrString] (","
 		//
-		/// *|'?' //variant  * /)? (orderable?=Orderable? //TODO find a way to map query flags on one field
+		//declaredSupertypeNames+=[NodeTypeDefinition|JcrString])* / *|'?' //variant  * /)? (orderable?=Orderable? //TODO find a way to map query flags on one field
 		//
-		//& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & primaryItem=PrimaryItem?)
+		//& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & primaryItem=PrimaryItem?) //TODO property can be also a primary item 
+		//
+		////(PropertyDefinitions and NodeDefinitions must have the same super class ItemDeinition)
+		//
+		////(('primaryitem'| '!')(primaryItem=[NodeDefinition|JcrString] / * | '?' //variant * / ))?
 		//
 		//(declaredPropertyDefinitions+=PropertyDefinition | declaredChildNodeDefinitions+=NodeDefinition)*
 		public Group getGroup() { return cGroup; }
@@ -115,29 +125,37 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		//"]"
 		public Keyword getRightSquareBracketKeyword_2() { return cRightSquareBracketKeyword_2; }
 
-		//(">" declaredSupertypeNames+=JcrString ("," declaredSupertypeNames+=JcrString)* / *|'?' //variant  * /)?
+		//(">" declaredSupertypeNames+=[NodeTypeDefinition|JcrString] (","
+		//
+		//declaredSupertypeNames+=[NodeTypeDefinition|JcrString])* / *|'?' //variant  * /)?
 		public Group getGroup_3() { return cGroup_3; }
 
 		//">"
 		public Keyword getGreaterThanSignKeyword_3_0() { return cGreaterThanSignKeyword_3_0; }
 
-		//declaredSupertypeNames+=JcrString
+		//declaredSupertypeNames+=[NodeTypeDefinition|JcrString]
 		public Assignment getDeclaredSupertypeNamesAssignment_3_1() { return cDeclaredSupertypeNamesAssignment_3_1; }
 
-		//JcrString
-		public RuleCall getDeclaredSupertypeNamesJcrStringParserRuleCall_3_1_0() { return cDeclaredSupertypeNamesJcrStringParserRuleCall_3_1_0; }
+		//[NodeTypeDefinition|JcrString]
+		public CrossReference getDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_1_0() { return cDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_1_0; }
 
-		//("," declaredSupertypeNames+=JcrString)*
+		//JcrString
+		public RuleCall getDeclaredSupertypeNamesNodeTypeDefinitionJcrStringParserRuleCall_3_1_0_1() { return cDeclaredSupertypeNamesNodeTypeDefinitionJcrStringParserRuleCall_3_1_0_1; }
+
+		//("," declaredSupertypeNames+=[NodeTypeDefinition|JcrString])*
 		public Group getGroup_3_2() { return cGroup_3_2; }
 
 		//","
 		public Keyword getCommaKeyword_3_2_0() { return cCommaKeyword_3_2_0; }
 
-		//declaredSupertypeNames+=JcrString
+		//declaredSupertypeNames+=[NodeTypeDefinition|JcrString]
 		public Assignment getDeclaredSupertypeNamesAssignment_3_2_1() { return cDeclaredSupertypeNamesAssignment_3_2_1; }
 
+		//[NodeTypeDefinition|JcrString]
+		public CrossReference getDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_2_1_0() { return cDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_2_1_0; }
+
 		//JcrString
-		public RuleCall getDeclaredSupertypeNamesJcrStringParserRuleCall_3_2_1_0() { return cDeclaredSupertypeNamesJcrStringParserRuleCall_3_2_1_0; }
+		public RuleCall getDeclaredSupertypeNamesNodeTypeDefinitionJcrStringParserRuleCall_3_2_1_0_1() { return cDeclaredSupertypeNamesNodeTypeDefinitionJcrStringParserRuleCall_3_2_1_0_1; }
 
 		//orderable?=Orderable? //TODO find a way to map query flags on one field
 		//
@@ -209,16 +227,19 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cLeftParenthesisKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
 		private final Group cGroup_2_1 = (Group)cGroup_2.eContents().get(1);
 		private final Assignment cRequiredTypesAssignment_2_1_0 = (Assignment)cGroup_2_1.eContents().get(0);
-		private final RuleCall cRequiredTypesJcrStringParserRuleCall_2_1_0_0 = (RuleCall)cRequiredTypesAssignment_2_1_0.eContents().get(0);
+		private final CrossReference cRequiredTypesNodeTypeDefinitionCrossReference_2_1_0_0 = (CrossReference)cRequiredTypesAssignment_2_1_0.eContents().get(0);
+		private final RuleCall cRequiredTypesNodeTypeDefinitionJcrStringParserRuleCall_2_1_0_0_1 = (RuleCall)cRequiredTypesNodeTypeDefinitionCrossReference_2_1_0_0.eContents().get(1);
 		private final Group cGroup_2_1_1 = (Group)cGroup_2_1.eContents().get(1);
 		private final Keyword cCommaKeyword_2_1_1_0 = (Keyword)cGroup_2_1_1.eContents().get(0);
 		private final Assignment cRequiredTypesAssignment_2_1_1_1 = (Assignment)cGroup_2_1_1.eContents().get(1);
-		private final RuleCall cRequiredTypesJcrStringParserRuleCall_2_1_1_1_0 = (RuleCall)cRequiredTypesAssignment_2_1_1_1.eContents().get(0);
+		private final CrossReference cRequiredTypesNodeTypeDefinitionCrossReference_2_1_1_1_0 = (CrossReference)cRequiredTypesAssignment_2_1_1_1.eContents().get(0);
+		private final RuleCall cRequiredTypesNodeTypeDefinitionJcrStringParserRuleCall_2_1_1_1_0_1 = (RuleCall)cRequiredTypesNodeTypeDefinitionCrossReference_2_1_1_1_0.eContents().get(1);
 		private final Keyword cRightParenthesisKeyword_2_2 = (Keyword)cGroup_2.eContents().get(2);
 		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
 		private final Keyword cEqualsSignKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
 		private final Assignment cDefaultTypeAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
-		private final RuleCall cDefaultTypeJcrStringParserRuleCall_3_1_0 = (RuleCall)cDefaultTypeAssignment_3_1.eContents().get(0);
+		private final CrossReference cDefaultTypeNodeTypeDefinitionCrossReference_3_1_0 = (CrossReference)cDefaultTypeAssignment_3_1.eContents().get(0);
+		private final RuleCall cDefaultTypeNodeTypeDefinitionJcrStringParserRuleCall_3_1_0_1 = (RuleCall)cDefaultTypeNodeTypeDefinitionCrossReference_3_1_0.eContents().get(1);
 		private final UnorderedGroup cUnorderedGroup_4 = (UnorderedGroup)cGroup.eContents().get(4);
 		private final Assignment cAutocreatedAssignment_4_0 = (Assignment)cUnorderedGroup_4.eContents().get(0);
 		private final RuleCall cAutocreatedAutocreatedParserRuleCall_4_0_0 = (RuleCall)cAutocreatedAssignment_4_0.eContents().get(0);
@@ -233,30 +254,28 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//NodeDefinition:
 		//
-		//	"+" (name=JcrString / *Jackrabbit feature * / //TODO check if it is used in Jackrabbit examples
+		//	"+" (name=JcrString / *Jackrabbit feature * / | name="*") ("(" (requiredTypes+=[NodeTypeDefinition|JcrString] (","
 		//
-		//	| name="*") ("(" (requiredTypes+=JcrString ("," requiredTypes+=JcrString)*) / *| '?' //variant  * / ")")? ("="
+		//	requiredTypes+=[NodeTypeDefinition|JcrString])*) / *| '?' //variant  * / ")")? ("="
 		//
-		//	defaultType=JcrString / *| '?' //variant  * /)? (autocreated?=Autocreated? & manadatory?=Mandatory? &
+		//	defaultType=[NodeTypeDefinition|JcrString] / *| '?' //variant  * /)? (autocreated?=Autocreated? &
 		//
-		//	protected?=Protected? & onParentVersion=Opv? & sameNameSiblings?=Sns?);
+		//	manadatory?=Mandatory? & protected?=Protected? & onParentVersion=Opv? & sameNameSiblings?=Sns?);
 		public ParserRule getRule() { return rule; }
 
-		//"+" (name=JcrString / *Jackrabbit feature * / //TODO check if it is used in Jackrabbit examples
+		//"+" (name=JcrString / *Jackrabbit feature * / | name="*") ("(" (requiredTypes+=[NodeTypeDefinition|JcrString] (","
 		//
-		//| name="*") ("(" (requiredTypes+=JcrString ("," requiredTypes+=JcrString)*) / *| '?' //variant  * / ")")? ("="
+		//requiredTypes+=[NodeTypeDefinition|JcrString])*) / *| '?' //variant  * / ")")? ("="
 		//
-		//defaultType=JcrString / *| '?' //variant  * /)? (autocreated?=Autocreated? & manadatory?=Mandatory? &
+		//defaultType=[NodeTypeDefinition|JcrString] / *| '?' //variant  * /)? (autocreated?=Autocreated? & manadatory?=Mandatory?
 		//
-		//protected?=Protected? & onParentVersion=Opv? & sameNameSiblings?=Sns?)
+		//& protected?=Protected? & onParentVersion=Opv? & sameNameSiblings?=Sns?)
 		public Group getGroup() { return cGroup; }
 
 		//"+"
 		public Keyword getPlusSignKeyword_0() { return cPlusSignKeyword_0; }
 
-		//name=JcrString / *Jackrabbit feature * / //TODO check if it is used in Jackrabbit examples
-		//
-		//| name="*"
+		//name=JcrString / *Jackrabbit feature * / | name="*"
 		public Alternatives getAlternatives_1() { return cAlternatives_1; }
 
 		//name=JcrString
@@ -271,47 +290,58 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		//"*"
 		public Keyword getNameAsteriskKeyword_1_1_0() { return cNameAsteriskKeyword_1_1_0; }
 
-		//("(" (requiredTypes+=JcrString ("," requiredTypes+=JcrString)*) / *| '?' //variant  * / ")")?
+		//("(" (requiredTypes+=[NodeTypeDefinition|JcrString] ("," requiredTypes+=[NodeTypeDefinition|JcrString])*)
+		//
+		/// *| '?' //variant  * / ")")?
 		public Group getGroup_2() { return cGroup_2; }
 
 		//"("
 		public Keyword getLeftParenthesisKeyword_2_0() { return cLeftParenthesisKeyword_2_0; }
 
-		//requiredTypes+=JcrString ("," requiredTypes+=JcrString)*
+		//requiredTypes+=[NodeTypeDefinition|JcrString] ("," requiredTypes+=[NodeTypeDefinition|JcrString])*
 		public Group getGroup_2_1() { return cGroup_2_1; }
 
-		//requiredTypes+=JcrString
+		//requiredTypes+=[NodeTypeDefinition|JcrString]
 		public Assignment getRequiredTypesAssignment_2_1_0() { return cRequiredTypesAssignment_2_1_0; }
 
-		//JcrString
-		public RuleCall getRequiredTypesJcrStringParserRuleCall_2_1_0_0() { return cRequiredTypesJcrStringParserRuleCall_2_1_0_0; }
+		//[NodeTypeDefinition|JcrString]
+		public CrossReference getRequiredTypesNodeTypeDefinitionCrossReference_2_1_0_0() { return cRequiredTypesNodeTypeDefinitionCrossReference_2_1_0_0; }
 
-		//("," requiredTypes+=JcrString)*
+		//JcrString
+		public RuleCall getRequiredTypesNodeTypeDefinitionJcrStringParserRuleCall_2_1_0_0_1() { return cRequiredTypesNodeTypeDefinitionJcrStringParserRuleCall_2_1_0_0_1; }
+
+		//("," requiredTypes+=[NodeTypeDefinition|JcrString])*
 		public Group getGroup_2_1_1() { return cGroup_2_1_1; }
 
 		//","
 		public Keyword getCommaKeyword_2_1_1_0() { return cCommaKeyword_2_1_1_0; }
 
-		//requiredTypes+=JcrString
+		//requiredTypes+=[NodeTypeDefinition|JcrString]
 		public Assignment getRequiredTypesAssignment_2_1_1_1() { return cRequiredTypesAssignment_2_1_1_1; }
 
+		//[NodeTypeDefinition|JcrString]
+		public CrossReference getRequiredTypesNodeTypeDefinitionCrossReference_2_1_1_1_0() { return cRequiredTypesNodeTypeDefinitionCrossReference_2_1_1_1_0; }
+
 		//JcrString
-		public RuleCall getRequiredTypesJcrStringParserRuleCall_2_1_1_1_0() { return cRequiredTypesJcrStringParserRuleCall_2_1_1_1_0; }
+		public RuleCall getRequiredTypesNodeTypeDefinitionJcrStringParserRuleCall_2_1_1_1_0_1() { return cRequiredTypesNodeTypeDefinitionJcrStringParserRuleCall_2_1_1_1_0_1; }
 
 		//")"
 		public Keyword getRightParenthesisKeyword_2_2() { return cRightParenthesisKeyword_2_2; }
 
-		//("=" defaultType=JcrString / *| '?' //variant  * /)?
+		//("=" defaultType=[NodeTypeDefinition|JcrString] / *| '?' //variant  * /)?
 		public Group getGroup_3() { return cGroup_3; }
 
 		//"="
 		public Keyword getEqualsSignKeyword_3_0() { return cEqualsSignKeyword_3_0; }
 
-		//defaultType=JcrString
+		//defaultType=[NodeTypeDefinition|JcrString]
 		public Assignment getDefaultTypeAssignment_3_1() { return cDefaultTypeAssignment_3_1; }
 
+		//[NodeTypeDefinition|JcrString]
+		public CrossReference getDefaultTypeNodeTypeDefinitionCrossReference_3_1_0() { return cDefaultTypeNodeTypeDefinitionCrossReference_3_1_0; }
+
 		//JcrString
-		public RuleCall getDefaultTypeJcrStringParserRuleCall_3_1_0() { return cDefaultTypeJcrStringParserRuleCall_3_1_0; }
+		public RuleCall getDefaultTypeNodeTypeDefinitionJcrStringParserRuleCall_3_1_0_1() { return cDefaultTypeNodeTypeDefinitionJcrStringParserRuleCall_3_1_0_1; }
 
 		//autocreated?=Autocreated? & manadatory?=Mandatory? & protected?=Protected? & onParentVersion=Opv? &
 		//
@@ -1047,23 +1077,17 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class XiDElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "XiD");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cEXIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final Keyword cMixKeyword_1 = (Keyword)cAlternatives.eContents().get(1);
+		private final RuleCall cEXIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
 		
-		//XiD:
+		//XiD: //EXID|('mix')
 		//
-		//	EXID | "mix";
+		//	EXID;
 		public ParserRule getRule() { return rule; }
 
-		//EXID | "mix"
-		public Alternatives getAlternatives() { return cAlternatives; }
-
+		////EXID|('mix')
+		//
 		//EXID
-		public RuleCall getEXIDTerminalRuleCall_0() { return cEXIDTerminalRuleCall_0; }
-
-		//"mix"
-		public Keyword getMixKeyword_1() { return cMixKeyword_1; }
+		public RuleCall getEXIDTerminalRuleCall() { return cEXIDTerminalRuleCall; }
 	}
 	
 	
@@ -1346,11 +1370,15 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 
 	//NodeTypeDefinition:
 	//
-	//	"[" name=JcrString "]" (">" declaredSupertypeNames+=JcrString ("," declaredSupertypeNames+=JcrString)*
+	//	"[" name=JcrString "]" (">" declaredSupertypeNames+=[NodeTypeDefinition|JcrString] (","
 	//
-	//	/ *|'?' //variant  * /)? (orderable?=Orderable? //TODO find a way to map query flags on one field
+	//	declaredSupertypeNames+=[NodeTypeDefinition|JcrString])* / *|'?' //variant  * /)? (orderable?=Orderable? //TODO find a way to map query flags on one field
 	//
-	//	& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & primaryItem=PrimaryItem?)
+	//	& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & primaryItem=PrimaryItem?) //TODO property can be also a primary item 
+	//
+	//	//(PropertyDefinitions and NodeDefinitions must have the same super class ItemDeinition)
+	//
+	//	//(('primaryitem'| '!')(primaryItem=[NodeDefinition|JcrString] / * | '?' //variant * / ))?
 	//
 	//	(declaredPropertyDefinitions+=PropertyDefinition | declaredChildNodeDefinitions+=NodeDefinition)*;
 	public NodeTypeDefinitionElements getNodeTypeDefinitionAccess() {
@@ -1363,13 +1391,13 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 
 	//NodeDefinition:
 	//
-	//	"+" (name=JcrString / *Jackrabbit feature * / //TODO check if it is used in Jackrabbit examples
+	//	"+" (name=JcrString / *Jackrabbit feature * / | name="*") ("(" (requiredTypes+=[NodeTypeDefinition|JcrString] (","
 	//
-	//	| name="*") ("(" (requiredTypes+=JcrString ("," requiredTypes+=JcrString)*) / *| '?' //variant  * / ")")? ("="
+	//	requiredTypes+=[NodeTypeDefinition|JcrString])*) / *| '?' //variant  * / ")")? ("="
 	//
-	//	defaultType=JcrString / *| '?' //variant  * /)? (autocreated?=Autocreated? & manadatory?=Mandatory? &
+	//	defaultType=[NodeTypeDefinition|JcrString] / *| '?' //variant  * /)? (autocreated?=Autocreated? &
 	//
-	//	protected?=Protected? & onParentVersion=Opv? & sameNameSiblings?=Sns?);
+	//	manadatory?=Mandatory? & protected?=Protected? & onParentVersion=Opv? & sameNameSiblings?=Sns?);
 	public NodeDefinitionElements getNodeDefinitionAccess() {
 		return (pNodeDefinition != null) ? pNodeDefinition : (pNodeDefinition = new NodeDefinitionElements());
 	}
@@ -1660,9 +1688,9 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		return getJcrStringAccess().getRule();
 	}
 
-	//XiD:
+	//XiD: //EXID|('mix')
 	//
-	//	EXID | "mix";
+	//	EXID;
 	public XiDElements getXiDAccess() {
 		return (pXiD != null) ? pXiD : (pXiD = new XiDElements());
 	}

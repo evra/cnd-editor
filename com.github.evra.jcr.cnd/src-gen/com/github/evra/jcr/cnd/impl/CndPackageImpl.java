@@ -195,9 +195,9 @@ public class CndPackageImpl extends EPackageImpl implements CndPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getNodeTypeDefinition_DeclaredSupertypeNames()
+  public EReference getNodeTypeDefinition_DeclaredSupertypeNames()
   {
-    return (EAttribute)nodeTypeDefinitionEClass.getEStructuralFeatures().get(1);
+    return (EReference)nodeTypeDefinitionEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -305,9 +305,9 @@ public class CndPackageImpl extends EPackageImpl implements CndPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getNodeDefinition_RequiredTypes()
+  public EReference getNodeDefinition_RequiredTypes()
   {
-    return (EAttribute)nodeDefinitionEClass.getEStructuralFeatures().get(1);
+    return (EReference)nodeDefinitionEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -315,9 +315,9 @@ public class CndPackageImpl extends EPackageImpl implements CndPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getNodeDefinition_DefaultType()
+  public EReference getNodeDefinition_DefaultType()
   {
-    return (EAttribute)nodeDefinitionEClass.getEStructuralFeatures().get(2);
+    return (EReference)nodeDefinitionEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -596,7 +596,7 @@ public class CndPackageImpl extends EPackageImpl implements CndPackage
 
     nodeTypeDefinitionEClass = createEClass(NODE_TYPE_DEFINITION);
     createEAttribute(nodeTypeDefinitionEClass, NODE_TYPE_DEFINITION__NAME);
-    createEAttribute(nodeTypeDefinitionEClass, NODE_TYPE_DEFINITION__DECLARED_SUPERTYPE_NAMES);
+    createEReference(nodeTypeDefinitionEClass, NODE_TYPE_DEFINITION__DECLARED_SUPERTYPE_NAMES);
     createEAttribute(nodeTypeDefinitionEClass, NODE_TYPE_DEFINITION__ORDERABLE);
     createEAttribute(nodeTypeDefinitionEClass, NODE_TYPE_DEFINITION__MIXIN);
     createEAttribute(nodeTypeDefinitionEClass, NODE_TYPE_DEFINITION__ABSTRACT);
@@ -608,8 +608,8 @@ public class CndPackageImpl extends EPackageImpl implements CndPackage
 
     nodeDefinitionEClass = createEClass(NODE_DEFINITION);
     createEAttribute(nodeDefinitionEClass, NODE_DEFINITION__NAME);
-    createEAttribute(nodeDefinitionEClass, NODE_DEFINITION__REQUIRED_TYPES);
-    createEAttribute(nodeDefinitionEClass, NODE_DEFINITION__DEFAULT_TYPE);
+    createEReference(nodeDefinitionEClass, NODE_DEFINITION__REQUIRED_TYPES);
+    createEReference(nodeDefinitionEClass, NODE_DEFINITION__DEFAULT_TYPE);
     createEAttribute(nodeDefinitionEClass, NODE_DEFINITION__AUTOCREATED);
     createEAttribute(nodeDefinitionEClass, NODE_DEFINITION__MANADATORY);
     createEAttribute(nodeDefinitionEClass, NODE_DEFINITION__PROTECTED);
@@ -677,7 +677,7 @@ public class CndPackageImpl extends EPackageImpl implements CndPackage
 
     initEClass(nodeTypeDefinitionEClass, NodeTypeDefinition.class, "NodeTypeDefinition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getNodeTypeDefinition_Name(), ecorePackage.getEString(), "name", null, 0, 1, NodeTypeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNodeTypeDefinition_DeclaredSupertypeNames(), ecorePackage.getEString(), "declaredSupertypeNames", null, 0, -1, NodeTypeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getNodeTypeDefinition_DeclaredSupertypeNames(), this.getNodeTypeDefinition(), null, "declaredSupertypeNames", null, 0, -1, NodeTypeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getNodeTypeDefinition_Orderable(), ecorePackage.getEBoolean(), "orderable", null, 0, 1, NodeTypeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getNodeTypeDefinition_Mixin(), ecorePackage.getEBoolean(), "mixin", null, 0, 1, NodeTypeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getNodeTypeDefinition_Abstract(), ecorePackage.getEBoolean(), "abstract", null, 0, 1, NodeTypeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -689,8 +689,8 @@ public class CndPackageImpl extends EPackageImpl implements CndPackage
 
     initEClass(nodeDefinitionEClass, NodeDefinition.class, "NodeDefinition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getNodeDefinition_Name(), ecorePackage.getEString(), "name", null, 0, 1, NodeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNodeDefinition_RequiredTypes(), ecorePackage.getEString(), "requiredTypes", null, 0, -1, NodeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNodeDefinition_DefaultType(), ecorePackage.getEString(), "defaultType", null, 0, 1, NodeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getNodeDefinition_RequiredTypes(), this.getNodeTypeDefinition(), null, "requiredTypes", null, 0, -1, NodeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getNodeDefinition_DefaultType(), this.getNodeTypeDefinition(), null, "defaultType", null, 0, 1, NodeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getNodeDefinition_Autocreated(), ecorePackage.getEBoolean(), "autocreated", null, 0, 1, NodeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getNodeDefinition_Manadatory(), ecorePackage.getEBoolean(), "manadatory", null, 0, 1, NodeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getNodeDefinition_Protected(), ecorePackage.getEBoolean(), "protected", null, 0, 1, NodeDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

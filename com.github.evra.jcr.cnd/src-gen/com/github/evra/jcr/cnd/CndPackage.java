@@ -114,7 +114,7 @@ public interface CndPackage extends EPackage
   int NODE_TYPE_DEFINITION__NAME = 0;
 
   /**
-   * The feature id for the '<em><b>Declared Supertype Names</b></em>' attribute list.
+   * The feature id for the '<em><b>Declared Supertype Names</b></em>' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -223,7 +223,7 @@ public interface CndPackage extends EPackage
   int NODE_DEFINITION__NAME = 0;
 
   /**
-   * The feature id for the '<em><b>Required Types</b></em>' attribute list.
+   * The feature id for the '<em><b>Required Types</b></em>' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -232,7 +232,7 @@ public interface CndPackage extends EPackage
   int NODE_DEFINITION__REQUIRED_TYPES = 1;
 
   /**
-   * The feature id for the '<em><b>Default Type</b></em>' attribute.
+   * The feature id for the '<em><b>Default Type</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -542,15 +542,15 @@ public interface CndPackage extends EPackage
   EAttribute getNodeTypeDefinition_Name();
 
   /**
-   * Returns the meta object for the attribute list '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#getDeclaredSupertypeNames <em>Declared Supertype Names</em>}'.
+   * Returns the meta object for the reference list '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#getDeclaredSupertypeNames <em>Declared Supertype Names</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Declared Supertype Names</em>'.
+   * @return the meta object for the reference list '<em>Declared Supertype Names</em>'.
    * @see com.github.evra.jcr.cnd.NodeTypeDefinition#getDeclaredSupertypeNames()
    * @see #getNodeTypeDefinition()
    * @generated
    */
-  EAttribute getNodeTypeDefinition_DeclaredSupertypeNames();
+  EReference getNodeTypeDefinition_DeclaredSupertypeNames();
 
   /**
    * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeTypeDefinition#isOrderable <em>Orderable</em>}'.
@@ -662,26 +662,26 @@ public interface CndPackage extends EPackage
   EAttribute getNodeDefinition_Name();
 
   /**
-   * Returns the meta object for the attribute list '{@link com.github.evra.jcr.cnd.NodeDefinition#getRequiredTypes <em>Required Types</em>}'.
+   * Returns the meta object for the reference list '{@link com.github.evra.jcr.cnd.NodeDefinition#getRequiredTypes <em>Required Types</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Required Types</em>'.
+   * @return the meta object for the reference list '<em>Required Types</em>'.
    * @see com.github.evra.jcr.cnd.NodeDefinition#getRequiredTypes()
    * @see #getNodeDefinition()
    * @generated
    */
-  EAttribute getNodeDefinition_RequiredTypes();
+  EReference getNodeDefinition_RequiredTypes();
 
   /**
-   * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeDefinition#getDefaultType <em>Default Type</em>}'.
+   * Returns the meta object for the reference '{@link com.github.evra.jcr.cnd.NodeDefinition#getDefaultType <em>Default Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Default Type</em>'.
+   * @return the meta object for the reference '<em>Default Type</em>'.
    * @see com.github.evra.jcr.cnd.NodeDefinition#getDefaultType()
    * @see #getNodeDefinition()
    * @generated
    */
-  EAttribute getNodeDefinition_DefaultType();
+  EReference getNodeDefinition_DefaultType();
 
   /**
    * Returns the meta object for the attribute '{@link com.github.evra.jcr.cnd.NodeDefinition#isAutocreated <em>Autocreated</em>}'.
@@ -1011,12 +1011,12 @@ public interface CndPackage extends EPackage
     EAttribute NODE_TYPE_DEFINITION__NAME = eINSTANCE.getNodeTypeDefinition_Name();
 
     /**
-     * The meta object literal for the '<em><b>Declared Supertype Names</b></em>' attribute list feature.
+     * The meta object literal for the '<em><b>Declared Supertype Names</b></em>' reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute NODE_TYPE_DEFINITION__DECLARED_SUPERTYPE_NAMES = eINSTANCE.getNodeTypeDefinition_DeclaredSupertypeNames();
+    EReference NODE_TYPE_DEFINITION__DECLARED_SUPERTYPE_NAMES = eINSTANCE.getNodeTypeDefinition_DeclaredSupertypeNames();
 
     /**
      * The meta object literal for the '<em><b>Orderable</b></em>' attribute feature.
@@ -1101,20 +1101,20 @@ public interface CndPackage extends EPackage
     EAttribute NODE_DEFINITION__NAME = eINSTANCE.getNodeDefinition_Name();
 
     /**
-     * The meta object literal for the '<em><b>Required Types</b></em>' attribute list feature.
+     * The meta object literal for the '<em><b>Required Types</b></em>' reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute NODE_DEFINITION__REQUIRED_TYPES = eINSTANCE.getNodeDefinition_RequiredTypes();
+    EReference NODE_DEFINITION__REQUIRED_TYPES = eINSTANCE.getNodeDefinition_RequiredTypes();
 
     /**
-     * The meta object literal for the '<em><b>Default Type</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Default Type</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute NODE_DEFINITION__DEFAULT_TYPE = eINSTANCE.getNodeDefinition_DefaultType();
+    EReference NODE_DEFINITION__DEFAULT_TYPE = eINSTANCE.getNodeDefinition_DefaultType();
 
     /**
      * The meta object literal for the '<em><b>Autocreated</b></em>' attribute feature.

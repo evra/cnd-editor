@@ -58,46 +58,46 @@ public interface NodeDefinition extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Required Types</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Returns the value of the '<em><b>Required Types</b></em>' reference list.
+   * The list contents are of type {@link com.github.evra.jcr.cnd.NodeTypeDefinition}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Required Types</em>' attribute list isn't clear,
+   * If the meaning of the '<em>Required Types</em>' reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Required Types</em>' attribute list.
+   * @return the value of the '<em>Required Types</em>' reference list.
    * @see com.github.evra.jcr.cnd.CndPackage#getNodeDefinition_RequiredTypes()
-   * @model unique="false"
+   * @model
    * @generated
    */
-  EList<String> getRequiredTypes();
+  EList<NodeTypeDefinition> getRequiredTypes();
 
   /**
-   * Returns the value of the '<em><b>Default Type</b></em>' attribute.
+   * Returns the value of the '<em><b>Default Type</b></em>' reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Default Type</em>' attribute isn't clear,
+   * If the meaning of the '<em>Default Type</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Default Type</em>' attribute.
-   * @see #setDefaultType(String)
+   * @return the value of the '<em>Default Type</em>' reference.
+   * @see #setDefaultType(NodeTypeDefinition)
    * @see com.github.evra.jcr.cnd.CndPackage#getNodeDefinition_DefaultType()
    * @model
    * @generated
    */
-  String getDefaultType();
+  NodeTypeDefinition getDefaultType();
 
   /**
-   * Sets the value of the '{@link com.github.evra.jcr.cnd.NodeDefinition#getDefaultType <em>Default Type</em>}' attribute.
+   * Sets the value of the '{@link com.github.evra.jcr.cnd.NodeDefinition#getDefaultType <em>Default Type</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Default Type</em>' attribute.
+   * @param value the new value of the '<em>Default Type</em>' reference.
    * @see #getDefaultType()
    * @generated
    */
-  void setDefaultType(String value);
+  void setDefaultType(NodeTypeDefinition value);
 
   /**
    * Returns the value of the '<em><b>Autocreated</b></em>' attribute.

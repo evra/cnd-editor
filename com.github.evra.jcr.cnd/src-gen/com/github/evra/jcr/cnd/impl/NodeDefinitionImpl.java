@@ -4,6 +4,7 @@ package com.github.evra.jcr.cnd.impl;
 
 import com.github.evra.jcr.cnd.CndPackage;
 import com.github.evra.jcr.cnd.NodeDefinition;
+import com.github.evra.jcr.cnd.NodeTypeDefinition;
 import com.github.evra.jcr.cnd.Opv;
 
 import java.util.Collection;
@@ -13,11 +14,12 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -62,34 +64,24 @@ public class NodeDefinitionImpl extends MinimalEObjectImpl.Container implements 
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getRequiredTypes() <em>Required Types</em>}' attribute list.
+   * The cached value of the '{@link #getRequiredTypes() <em>Required Types</em>}' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getRequiredTypes()
    * @generated
    * @ordered
    */
-  protected EList<String> requiredTypes;
+  protected EList<NodeTypeDefinition> requiredTypes;
 
   /**
-   * The default value of the '{@link #getDefaultType() <em>Default Type</em>}' attribute.
+   * The cached value of the '{@link #getDefaultType() <em>Default Type</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getDefaultType()
    * @generated
    * @ordered
    */
-  protected static final String DEFAULT_TYPE_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getDefaultType() <em>Default Type</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDefaultType()
-   * @generated
-   * @ordered
-   */
-  protected String defaultType = DEFAULT_TYPE_EDEFAULT;
+  protected NodeTypeDefinition defaultType;
 
   /**
    * The default value of the '{@link #isAutocreated() <em>Autocreated</em>}' attribute.
@@ -240,11 +232,11 @@ public class NodeDefinitionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<String> getRequiredTypes()
+  public EList<NodeTypeDefinition> getRequiredTypes()
   {
     if (requiredTypes == null)
     {
-      requiredTypes = new EDataTypeEList<String>(String.class, this, CndPackage.NODE_DEFINITION__REQUIRED_TYPES);
+      requiredTypes = new EObjectResolvingEList<NodeTypeDefinition>(NodeTypeDefinition.class, this, CndPackage.NODE_DEFINITION__REQUIRED_TYPES);
     }
     return requiredTypes;
   }
@@ -254,7 +246,27 @@ public class NodeDefinitionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getDefaultType()
+  public NodeTypeDefinition getDefaultType()
+  {
+    if (defaultType != null && defaultType.eIsProxy())
+    {
+      InternalEObject oldDefaultType = (InternalEObject)defaultType;
+      defaultType = (NodeTypeDefinition)eResolveProxy(oldDefaultType);
+      if (defaultType != oldDefaultType)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, CndPackage.NODE_DEFINITION__DEFAULT_TYPE, oldDefaultType, defaultType));
+      }
+    }
+    return defaultType;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NodeTypeDefinition basicGetDefaultType()
   {
     return defaultType;
   }
@@ -264,9 +276,9 @@ public class NodeDefinitionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setDefaultType(String newDefaultType)
+  public void setDefaultType(NodeTypeDefinition newDefaultType)
   {
-    String oldDefaultType = defaultType;
+    NodeTypeDefinition oldDefaultType = defaultType;
     defaultType = newDefaultType;
     if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, CndPackage.NODE_DEFINITION__DEFAULT_TYPE, oldDefaultType, defaultType));
@@ -402,7 +414,8 @@ public class NodeDefinitionImpl extends MinimalEObjectImpl.Container implements 
       case CndPackage.NODE_DEFINITION__REQUIRED_TYPES:
         return getRequiredTypes();
       case CndPackage.NODE_DEFINITION__DEFAULT_TYPE:
-        return getDefaultType();
+        if (resolve) return getDefaultType();
+        return basicGetDefaultType();
       case CndPackage.NODE_DEFINITION__AUTOCREATED:
         return isAutocreated();
       case CndPackage.NODE_DEFINITION__MANADATORY:
@@ -433,10 +446,10 @@ public class NodeDefinitionImpl extends MinimalEObjectImpl.Container implements 
         return;
       case CndPackage.NODE_DEFINITION__REQUIRED_TYPES:
         getRequiredTypes().clear();
-        getRequiredTypes().addAll((Collection<? extends String>)newValue);
+        getRequiredTypes().addAll((Collection<? extends NodeTypeDefinition>)newValue);
         return;
       case CndPackage.NODE_DEFINITION__DEFAULT_TYPE:
-        setDefaultType((String)newValue);
+        setDefaultType((NodeTypeDefinition)newValue);
         return;
       case CndPackage.NODE_DEFINITION__AUTOCREATED:
         setAutocreated((Boolean)newValue);
@@ -474,7 +487,7 @@ public class NodeDefinitionImpl extends MinimalEObjectImpl.Container implements 
         getRequiredTypes().clear();
         return;
       case CndPackage.NODE_DEFINITION__DEFAULT_TYPE:
-        setDefaultType(DEFAULT_TYPE_EDEFAULT);
+        setDefaultType((NodeTypeDefinition)null);
         return;
       case CndPackage.NODE_DEFINITION__AUTOCREATED:
         setAutocreated(AUTOCREATED_EDEFAULT);
@@ -510,7 +523,7 @@ public class NodeDefinitionImpl extends MinimalEObjectImpl.Container implements 
       case CndPackage.NODE_DEFINITION__REQUIRED_TYPES:
         return requiredTypes != null && !requiredTypes.isEmpty();
       case CndPackage.NODE_DEFINITION__DEFAULT_TYPE:
-        return DEFAULT_TYPE_EDEFAULT == null ? defaultType != null : !DEFAULT_TYPE_EDEFAULT.equals(defaultType);
+        return defaultType != null;
       case CndPackage.NODE_DEFINITION__AUTOCREATED:
         return autocreated != AUTOCREATED_EDEFAULT;
       case CndPackage.NODE_DEFINITION__MANADATORY:
@@ -538,10 +551,6 @@ public class NodeDefinitionImpl extends MinimalEObjectImpl.Container implements 
     StringBuffer result = new StringBuffer(super.toString());
     result.append(" (name: ");
     result.append(name);
-    result.append(", requiredTypes: ");
-    result.append(requiredTypes);
-    result.append(", defaultType: ");
-    result.append(defaultType);
     result.append(", autocreated: ");
     result.append(autocreated);
     result.append(", manadatory: ");

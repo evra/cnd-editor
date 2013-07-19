@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalCndParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_EXID", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'sns'", "'*'", "'multiple'", "'noqueryorder'", "'nqord'", "'nofulltext'", "'nof'", "'queryops'", "'qop'", "'mul'", "'protected'", "'pro'", "'p'", "'mandatory'", "'man'", "'m'", "'autocreated'", "'aut'", "'a'", "'primary'", "'!'", "'primaryitem'", "'query'", "'q'", "'noquery'", "'nq'", "'abstract'", "'abs'", "'mixin'", "'mix'", "'orderable'", "'ord'", "'o'", "'COPY'", "'VERSION'", "'INITIALIZE'", "'COMPUTE'", "'IGNORE'", "'ABORT'", "'UNDEFINED'", "'STRING'", "'BINARY'", "'LONG'", "'DOUBLE'", "'DATE'", "'BOOLEAN'", "'NAME'", "'PATH'", "'REFERENCE'", "'WEAKREFERENCE'", "'URI'", "'DECIMAL'", "'['", "']'", "'>'", "','", "'+'", "'('", "')'", "'='", "'-'", "'<'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_EXID", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'sns'", "'*'", "'multiple'", "'noqueryorder'", "'nqord'", "'nofulltext'", "'nof'", "'queryops'", "'qop'", "'mul'", "'protected'", "'pro'", "'p'", "'mandatory'", "'man'", "'m'", "'autocreated'", "'aut'", "'a'", "'primary'", "'!'", "'primaryitem'", "'query'", "'q'", "'noquery'", "'nq'", "'abstract'", "'abs'", "'mixin'", "'mix'", "'orderable'", "'ord'", "'o'", "'COPY'", "'VERSION'", "'INITIALIZE'", "'COMPUTE'", "'IGNORE'", "'ABORT'", "'UNDEFINED'", "'STRING'", "'BINARY'", "'LONG'", "'DOUBLE'", "'DATE'", "'BOOLEAN'", "'NAME'", "'PATH'", "'REFERENCE'", "'WEAKREFERENCE'", "'URI'", "'DECIMAL'", "'['", "']'", "'>'", "','", "'+'", "'('", "')'", "'='", "'-'", "'<'"
     };
     public static final int T__68=68;
     public static final int T__69=69;
@@ -64,7 +64,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
     public static final int T__14=14;
     public static final int T__13=13;
     public static final int T__59=59;
-    public static final int RULE_EXID=5;
+    public static final int RULE_EXID=4;
     public static final int RULE_INT=7;
     public static final int T__50=50;
     public static final int T__42=42;
@@ -81,7 +81,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
     public static final int RULE_ML_COMMENT=8;
     public static final int T__30=30;
     public static final int T__31=31;
-    public static final int RULE_STRING=4;
+    public static final int RULE_STRING=5;
     public static final int T__32=32;
     public static final int T__71=71;
     public static final int T__33=33;
@@ -1941,31 +1941,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleXiD"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:713:1: ruleXiD : ( ( rule__XiD__Alternatives ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:713:1: ruleXiD : ( RULE_EXID ) ;
     public final void ruleXiD() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:717:2: ( ( ( rule__XiD__Alternatives ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:718:1: ( ( rule__XiD__Alternatives ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:717:2: ( ( RULE_EXID ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:718:1: ( RULE_EXID )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:718:1: ( ( rule__XiD__Alternatives ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:719:1: ( rule__XiD__Alternatives )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:718:1: ( RULE_EXID )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:719:1: RULE_EXID
             {
-             before(grammarAccess.getXiDAccess().getAlternatives()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:720:1: ( rule__XiD__Alternatives )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:720:2: rule__XiD__Alternatives
-            {
-            pushFollow(FOLLOW_rule__XiD__Alternatives_in_ruleXiD1473);
-            rule__XiD__Alternatives();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getXiDAccess().getAlternatives()); 
+             before(grammarAccess.getXiDAccess().getEXIDTerminalRuleCall()); 
+            match(input,RULE_EXID,FOLLOW_RULE_EXID_in_ruleXiD1473); 
+             after(grammarAccess.getXiDAccess().getEXIDTerminalRuleCall()); 
 
             }
 
@@ -2004,7 +1994,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:740:1: ( rule__Opv__Alternatives )
             // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:740:2: rule__Opv__Alternatives
             {
-            pushFollow(FOLLOW_rule__Opv__Alternatives_in_ruleOpv1510);
+            pushFollow(FOLLOW_rule__Opv__Alternatives_in_ruleOpv1509);
             rule__Opv__Alternatives();
 
             state._fsp--;
@@ -2051,7 +2041,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:759:1: ( rule__PropertyType__Alternatives )
             // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:759:2: rule__PropertyType__Alternatives
             {
-            pushFollow(FOLLOW_rule__PropertyType__Alternatives_in_rulePropertyType1546);
+            pushFollow(FOLLOW_rule__PropertyType__Alternatives_in_rulePropertyType1545);
             rule__PropertyType__Alternatives();
 
             state._fsp--;
@@ -2115,7 +2105,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:777:1: ( rule__Model__NamespacesAssignment_0 )
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:777:2: rule__Model__NamespacesAssignment_0
                     {
-                    pushFollow(FOLLOW_rule__Model__NamespacesAssignment_0_in_rule__Model__Alternatives1581);
+                    pushFollow(FOLLOW_rule__Model__NamespacesAssignment_0_in_rule__Model__Alternatives1580);
                     rule__Model__NamespacesAssignment_0();
 
                     state._fsp--;
@@ -2140,7 +2130,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:783:1: ( rule__Model__NodeTypesAssignment_1 )
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:783:2: rule__Model__NodeTypesAssignment_1
                     {
-                    pushFollow(FOLLOW_rule__Model__NodeTypesAssignment_1_in_rule__Model__Alternatives1599);
+                    pushFollow(FOLLOW_rule__Model__NodeTypesAssignment_1_in_rule__Model__Alternatives1598);
                     rule__Model__NodeTypesAssignment_1();
 
                     state._fsp--;
@@ -2206,7 +2196,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:799:1: ( rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0 )
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:799:2: rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0_in_rule__NodeTypeDefinition__Alternatives_51632);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0_in_rule__NodeTypeDefinition__Alternatives_51631);
                     rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0();
 
                     state._fsp--;
@@ -2231,7 +2221,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:805:1: ( rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1 )
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:805:2: rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1_in_rule__NodeTypeDefinition__Alternatives_51650);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1_in_rule__NodeTypeDefinition__Alternatives_51649);
                     rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1();
 
                     state._fsp--;
@@ -2274,7 +2264,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             int alt4=2;
             int LA4_0 = input.LA(1);
 
-            if ( ((LA4_0>=RULE_STRING && LA4_0<=RULE_EXID)||LA4_0==41) ) {
+            if ( ((LA4_0>=RULE_EXID && LA4_0<=RULE_STRING)) ) {
                 alt4=1;
             }
             else if ( (LA4_0==13) ) {
@@ -2297,7 +2287,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:821:1: ( rule__NodeDefinition__NameAssignment_1_0 )
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:821:2: rule__NodeDefinition__NameAssignment_1_0
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__NameAssignment_1_0_in_rule__NodeDefinition__Alternatives_11683);
+                    pushFollow(FOLLOW_rule__NodeDefinition__NameAssignment_1_0_in_rule__NodeDefinition__Alternatives_11682);
                     rule__NodeDefinition__NameAssignment_1_0();
 
                     state._fsp--;
@@ -2322,7 +2312,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:827:1: ( rule__NodeDefinition__NameAssignment_1_1 )
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:827:2: rule__NodeDefinition__NameAssignment_1_1
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__NameAssignment_1_1_in_rule__NodeDefinition__Alternatives_11701);
+                    pushFollow(FOLLOW_rule__NodeDefinition__NameAssignment_1_1_in_rule__NodeDefinition__Alternatives_11700);
                     rule__NodeDefinition__NameAssignment_1_1();
 
                     state._fsp--;
@@ -2394,7 +2384,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:842:1: 'sns'
                     {
                      before(grammarAccess.getSnsAccess().getSnsKeyword_0()); 
-                    match(input,12,FOLLOW_12_in_rule__Sns__Alternatives1735); 
+                    match(input,12,FOLLOW_12_in_rule__Sns__Alternatives1734); 
                      after(grammarAccess.getSnsAccess().getSnsKeyword_0()); 
 
                     }
@@ -2409,7 +2399,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:850:1: '*'
                     {
                      before(grammarAccess.getSnsAccess().getAsteriskKeyword_1()); 
-                    match(input,13,FOLLOW_13_in_rule__Sns__Alternatives1755); 
+                    match(input,13,FOLLOW_13_in_rule__Sns__Alternatives1754); 
                      after(grammarAccess.getSnsAccess().getAsteriskKeyword_1()); 
 
                     }
@@ -2424,7 +2414,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:858:1: 'multiple'
                     {
                      before(grammarAccess.getSnsAccess().getMultipleKeyword_2()); 
-                    match(input,14,FOLLOW_14_in_rule__Sns__Alternatives1775); 
+                    match(input,14,FOLLOW_14_in_rule__Sns__Alternatives1774); 
                      after(grammarAccess.getSnsAccess().getMultipleKeyword_2()); 
 
                     }
@@ -2460,7 +2450,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             int alt6=2;
             int LA6_0 = input.LA(1);
 
-            if ( ((LA6_0>=RULE_STRING && LA6_0<=RULE_EXID)||LA6_0==41) ) {
+            if ( ((LA6_0>=RULE_EXID && LA6_0<=RULE_STRING)) ) {
                 alt6=1;
             }
             else if ( (LA6_0==13) ) {
@@ -2483,7 +2473,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:877:1: ( rule__PropertyDefinition__NameAssignment_2_0 )
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:877:2: rule__PropertyDefinition__NameAssignment_2_0
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__NameAssignment_2_0_in_rule__PropertyDefinition__Alternatives_21809);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__NameAssignment_2_0_in_rule__PropertyDefinition__Alternatives_21808);
                     rule__PropertyDefinition__NameAssignment_2_0();
 
                     state._fsp--;
@@ -2505,7 +2495,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:882:1: '*'
                     {
                      before(grammarAccess.getPropertyDefinitionAccess().getAsteriskKeyword_2_1()); 
-                    match(input,13,FOLLOW_13_in_rule__PropertyDefinition__Alternatives_21828); 
+                    match(input,13,FOLLOW_13_in_rule__PropertyDefinition__Alternatives_21827); 
                      after(grammarAccess.getPropertyDefinitionAccess().getAsteriskKeyword_2_1()); 
 
                     }
@@ -2561,7 +2551,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:900:1: 'noqueryorder'
                     {
                      before(grammarAccess.getNoQueryOrderAccess().getNoqueryorderKeyword_0()); 
-                    match(input,15,FOLLOW_15_in_rule__NoQueryOrder__Alternatives1863); 
+                    match(input,15,FOLLOW_15_in_rule__NoQueryOrder__Alternatives1862); 
                      after(grammarAccess.getNoQueryOrderAccess().getNoqueryorderKeyword_0()); 
 
                     }
@@ -2576,7 +2566,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:908:1: 'nqord'
                     {
                      before(grammarAccess.getNoQueryOrderAccess().getNqordKeyword_1()); 
-                    match(input,16,FOLLOW_16_in_rule__NoQueryOrder__Alternatives1883); 
+                    match(input,16,FOLLOW_16_in_rule__NoQueryOrder__Alternatives1882); 
                      after(grammarAccess.getNoQueryOrderAccess().getNqordKeyword_1()); 
 
                     }
@@ -2632,7 +2622,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:926:1: 'nofulltext'
                     {
                      before(grammarAccess.getNoFullTextAccess().getNofulltextKeyword_0()); 
-                    match(input,17,FOLLOW_17_in_rule__NoFullText__Alternatives1918); 
+                    match(input,17,FOLLOW_17_in_rule__NoFullText__Alternatives1917); 
                      after(grammarAccess.getNoFullTextAccess().getNofulltextKeyword_0()); 
 
                     }
@@ -2647,7 +2637,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:934:1: 'nof'
                     {
                      before(grammarAccess.getNoFullTextAccess().getNofKeyword_1()); 
-                    match(input,18,FOLLOW_18_in_rule__NoFullText__Alternatives1938); 
+                    match(input,18,FOLLOW_18_in_rule__NoFullText__Alternatives1937); 
                      after(grammarAccess.getNoFullTextAccess().getNofKeyword_1()); 
 
                     }
@@ -2703,7 +2693,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:952:1: 'queryops'
                     {
                      before(grammarAccess.getQueryOpsAccess().getQueryopsKeyword_0_0()); 
-                    match(input,19,FOLLOW_19_in_rule__QueryOps__Alternatives_01973); 
+                    match(input,19,FOLLOW_19_in_rule__QueryOps__Alternatives_01972); 
                      after(grammarAccess.getQueryOpsAccess().getQueryopsKeyword_0_0()); 
 
                     }
@@ -2718,7 +2708,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:960:1: 'qop'
                     {
                      before(grammarAccess.getQueryOpsAccess().getQopKeyword_0_1()); 
-                    match(input,20,FOLLOW_20_in_rule__QueryOps__Alternatives_01993); 
+                    match(input,20,FOLLOW_20_in_rule__QueryOps__Alternatives_01992); 
                      after(grammarAccess.getQueryOpsAccess().getQopKeyword_0_1()); 
 
                     }
@@ -2783,7 +2773,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:978:1: 'multiple'
                     {
                      before(grammarAccess.getMultipleAccess().getMultipleKeyword_0()); 
-                    match(input,14,FOLLOW_14_in_rule__Multiple__Alternatives2028); 
+                    match(input,14,FOLLOW_14_in_rule__Multiple__Alternatives2027); 
                      after(grammarAccess.getMultipleAccess().getMultipleKeyword_0()); 
 
                     }
@@ -2798,7 +2788,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:986:1: 'mul'
                     {
                      before(grammarAccess.getMultipleAccess().getMulKeyword_1()); 
-                    match(input,21,FOLLOW_21_in_rule__Multiple__Alternatives2048); 
+                    match(input,21,FOLLOW_21_in_rule__Multiple__Alternatives2047); 
                      after(grammarAccess.getMultipleAccess().getMulKeyword_1()); 
 
                     }
@@ -2813,7 +2803,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:994:1: '*'
                     {
                      before(grammarAccess.getMultipleAccess().getAsteriskKeyword_2()); 
-                    match(input,13,FOLLOW_13_in_rule__Multiple__Alternatives2068); 
+                    match(input,13,FOLLOW_13_in_rule__Multiple__Alternatives2067); 
                      after(grammarAccess.getMultipleAccess().getAsteriskKeyword_2()); 
 
                     }
@@ -2878,7 +2868,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1012:1: 'protected'
                     {
                      before(grammarAccess.getProtectedAccess().getProtectedKeyword_0()); 
-                    match(input,22,FOLLOW_22_in_rule__Protected__Alternatives2103); 
+                    match(input,22,FOLLOW_22_in_rule__Protected__Alternatives2102); 
                      after(grammarAccess.getProtectedAccess().getProtectedKeyword_0()); 
 
                     }
@@ -2893,7 +2883,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1020:1: 'pro'
                     {
                      before(grammarAccess.getProtectedAccess().getProKeyword_1()); 
-                    match(input,23,FOLLOW_23_in_rule__Protected__Alternatives2123); 
+                    match(input,23,FOLLOW_23_in_rule__Protected__Alternatives2122); 
                      after(grammarAccess.getProtectedAccess().getProKeyword_1()); 
 
                     }
@@ -2908,7 +2898,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1028:1: 'p'
                     {
                      before(grammarAccess.getProtectedAccess().getPKeyword_2()); 
-                    match(input,24,FOLLOW_24_in_rule__Protected__Alternatives2143); 
+                    match(input,24,FOLLOW_24_in_rule__Protected__Alternatives2142); 
                      after(grammarAccess.getProtectedAccess().getPKeyword_2()); 
 
                     }
@@ -2973,7 +2963,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1046:1: 'mandatory'
                     {
                      before(grammarAccess.getMandatoryAccess().getMandatoryKeyword_0()); 
-                    match(input,25,FOLLOW_25_in_rule__Mandatory__Alternatives2178); 
+                    match(input,25,FOLLOW_25_in_rule__Mandatory__Alternatives2177); 
                      after(grammarAccess.getMandatoryAccess().getMandatoryKeyword_0()); 
 
                     }
@@ -2988,7 +2978,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1054:1: 'man'
                     {
                      before(grammarAccess.getMandatoryAccess().getManKeyword_1()); 
-                    match(input,26,FOLLOW_26_in_rule__Mandatory__Alternatives2198); 
+                    match(input,26,FOLLOW_26_in_rule__Mandatory__Alternatives2197); 
                      after(grammarAccess.getMandatoryAccess().getManKeyword_1()); 
 
                     }
@@ -3003,7 +2993,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1062:1: 'm'
                     {
                      before(grammarAccess.getMandatoryAccess().getMKeyword_2()); 
-                    match(input,27,FOLLOW_27_in_rule__Mandatory__Alternatives2218); 
+                    match(input,27,FOLLOW_27_in_rule__Mandatory__Alternatives2217); 
                      after(grammarAccess.getMandatoryAccess().getMKeyword_2()); 
 
                     }
@@ -3068,7 +3058,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1080:1: 'autocreated'
                     {
                      before(grammarAccess.getAutocreatedAccess().getAutocreatedKeyword_0()); 
-                    match(input,28,FOLLOW_28_in_rule__Autocreated__Alternatives2253); 
+                    match(input,28,FOLLOW_28_in_rule__Autocreated__Alternatives2252); 
                      after(grammarAccess.getAutocreatedAccess().getAutocreatedKeyword_0()); 
 
                     }
@@ -3083,7 +3073,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1088:1: 'aut'
                     {
                      before(grammarAccess.getAutocreatedAccess().getAutKeyword_1()); 
-                    match(input,29,FOLLOW_29_in_rule__Autocreated__Alternatives2273); 
+                    match(input,29,FOLLOW_29_in_rule__Autocreated__Alternatives2272); 
                      after(grammarAccess.getAutocreatedAccess().getAutKeyword_1()); 
 
                     }
@@ -3098,7 +3088,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1096:1: 'a'
                     {
                      before(grammarAccess.getAutocreatedAccess().getAKeyword_2()); 
-                    match(input,30,FOLLOW_30_in_rule__Autocreated__Alternatives2293); 
+                    match(input,30,FOLLOW_30_in_rule__Autocreated__Alternatives2292); 
                      after(grammarAccess.getAutocreatedAccess().getAKeyword_2()); 
 
                     }
@@ -3154,7 +3144,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1114:1: 'primary'
                     {
                      before(grammarAccess.getPrimaryAccess().getPrimaryKeyword_0()); 
-                    match(input,31,FOLLOW_31_in_rule__Primary__Alternatives2328); 
+                    match(input,31,FOLLOW_31_in_rule__Primary__Alternatives2327); 
                      after(grammarAccess.getPrimaryAccess().getPrimaryKeyword_0()); 
 
                     }
@@ -3169,7 +3159,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1122:1: '!'
                     {
                      before(grammarAccess.getPrimaryAccess().getExclamationMarkKeyword_1()); 
-                    match(input,32,FOLLOW_32_in_rule__Primary__Alternatives2348); 
+                    match(input,32,FOLLOW_32_in_rule__Primary__Alternatives2347); 
                      after(grammarAccess.getPrimaryAccess().getExclamationMarkKeyword_1()); 
 
                     }
@@ -3225,7 +3215,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1140:1: 'primaryitem'
                     {
                      before(grammarAccess.getPrimaryItemAccess().getPrimaryitemKeyword_0_0()); 
-                    match(input,33,FOLLOW_33_in_rule__PrimaryItem__Alternatives_02383); 
+                    match(input,33,FOLLOW_33_in_rule__PrimaryItem__Alternatives_02382); 
                      after(grammarAccess.getPrimaryItemAccess().getPrimaryitemKeyword_0_0()); 
 
                     }
@@ -3240,7 +3230,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1148:1: '!'
                     {
                      before(grammarAccess.getPrimaryItemAccess().getExclamationMarkKeyword_0_1()); 
-                    match(input,32,FOLLOW_32_in_rule__PrimaryItem__Alternatives_02403); 
+                    match(input,32,FOLLOW_32_in_rule__PrimaryItem__Alternatives_02402); 
                      after(grammarAccess.getPrimaryItemAccess().getExclamationMarkKeyword_0_1()); 
 
                     }
@@ -3296,7 +3286,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1166:1: 'query'
                     {
                      before(grammarAccess.getQueryableAccess().getQueryKeyword_0()); 
-                    match(input,34,FOLLOW_34_in_rule__Queryable__Alternatives2438); 
+                    match(input,34,FOLLOW_34_in_rule__Queryable__Alternatives2437); 
                      after(grammarAccess.getQueryableAccess().getQueryKeyword_0()); 
 
                     }
@@ -3311,7 +3301,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1174:1: 'q'
                     {
                      before(grammarAccess.getQueryableAccess().getQKeyword_1()); 
-                    match(input,35,FOLLOW_35_in_rule__Queryable__Alternatives2458); 
+                    match(input,35,FOLLOW_35_in_rule__Queryable__Alternatives2457); 
                      after(grammarAccess.getQueryableAccess().getQKeyword_1()); 
 
                     }
@@ -3367,7 +3357,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1192:1: 'noquery'
                     {
                      before(grammarAccess.getNotqueryableAccess().getNoqueryKeyword_0()); 
-                    match(input,36,FOLLOW_36_in_rule__Notqueryable__Alternatives2493); 
+                    match(input,36,FOLLOW_36_in_rule__Notqueryable__Alternatives2492); 
                      after(grammarAccess.getNotqueryableAccess().getNoqueryKeyword_0()); 
 
                     }
@@ -3382,7 +3372,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1200:1: 'nq'
                     {
                      before(grammarAccess.getNotqueryableAccess().getNqKeyword_1()); 
-                    match(input,37,FOLLOW_37_in_rule__Notqueryable__Alternatives2513); 
+                    match(input,37,FOLLOW_37_in_rule__Notqueryable__Alternatives2512); 
                      after(grammarAccess.getNotqueryableAccess().getNqKeyword_1()); 
 
                     }
@@ -3447,7 +3437,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1218:1: 'abstract'
                     {
                      before(grammarAccess.getAbstractAccess().getAbstractKeyword_0()); 
-                    match(input,38,FOLLOW_38_in_rule__Abstract__Alternatives2548); 
+                    match(input,38,FOLLOW_38_in_rule__Abstract__Alternatives2547); 
                      after(grammarAccess.getAbstractAccess().getAbstractKeyword_0()); 
 
                     }
@@ -3462,7 +3452,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1226:1: 'abs'
                     {
                      before(grammarAccess.getAbstractAccess().getAbsKeyword_1()); 
-                    match(input,39,FOLLOW_39_in_rule__Abstract__Alternatives2568); 
+                    match(input,39,FOLLOW_39_in_rule__Abstract__Alternatives2567); 
                      after(grammarAccess.getAbstractAccess().getAbsKeyword_1()); 
 
                     }
@@ -3477,7 +3467,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1234:1: 'a'
                     {
                      before(grammarAccess.getAbstractAccess().getAKeyword_2()); 
-                    match(input,30,FOLLOW_30_in_rule__Abstract__Alternatives2588); 
+                    match(input,30,FOLLOW_30_in_rule__Abstract__Alternatives2587); 
                      after(grammarAccess.getAbstractAccess().getAKeyword_2()); 
 
                     }
@@ -3542,7 +3532,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1252:1: 'mixin'
                     {
                      before(grammarAccess.getMixinAccess().getMixinKeyword_0()); 
-                    match(input,40,FOLLOW_40_in_rule__Mixin__Alternatives2623); 
+                    match(input,40,FOLLOW_40_in_rule__Mixin__Alternatives2622); 
                      after(grammarAccess.getMixinAccess().getMixinKeyword_0()); 
 
                     }
@@ -3557,7 +3547,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1260:1: 'mix'
                     {
                      before(grammarAccess.getMixinAccess().getMixKeyword_1()); 
-                    match(input,41,FOLLOW_41_in_rule__Mixin__Alternatives2643); 
+                    match(input,41,FOLLOW_41_in_rule__Mixin__Alternatives2642); 
                      after(grammarAccess.getMixinAccess().getMixKeyword_1()); 
 
                     }
@@ -3572,7 +3562,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1268:1: 'm'
                     {
                      before(grammarAccess.getMixinAccess().getMKeyword_2()); 
-                    match(input,27,FOLLOW_27_in_rule__Mixin__Alternatives2663); 
+                    match(input,27,FOLLOW_27_in_rule__Mixin__Alternatives2662); 
                      after(grammarAccess.getMixinAccess().getMKeyword_2()); 
 
                     }
@@ -3637,7 +3627,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1286:1: 'orderable'
                     {
                      before(grammarAccess.getOrderableAccess().getOrderableKeyword_0()); 
-                    match(input,42,FOLLOW_42_in_rule__Orderable__Alternatives2698); 
+                    match(input,42,FOLLOW_42_in_rule__Orderable__Alternatives2697); 
                      after(grammarAccess.getOrderableAccess().getOrderableKeyword_0()); 
 
                     }
@@ -3652,7 +3642,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1294:1: 'ord'
                     {
                      before(grammarAccess.getOrderableAccess().getOrdKeyword_1()); 
-                    match(input,43,FOLLOW_43_in_rule__Orderable__Alternatives2718); 
+                    match(input,43,FOLLOW_43_in_rule__Orderable__Alternatives2717); 
                      after(grammarAccess.getOrderableAccess().getOrdKeyword_1()); 
 
                     }
@@ -3667,7 +3657,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1302:1: 'o'
                     {
                      before(grammarAccess.getOrderableAccess().getOKeyword_2()); 
-                    match(input,44,FOLLOW_44_in_rule__Orderable__Alternatives2738); 
+                    match(input,44,FOLLOW_44_in_rule__Orderable__Alternatives2737); 
                      after(grammarAccess.getOrderableAccess().getOKeyword_2()); 
 
                     }
@@ -3706,7 +3696,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             if ( (LA21_0==RULE_STRING) ) {
                 alt21=1;
             }
-            else if ( (LA21_0==RULE_EXID||LA21_0==41) ) {
+            else if ( (LA21_0==RULE_EXID) ) {
                 alt21=2;
             }
             else {
@@ -3723,7 +3713,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1320:1: RULE_STRING
                     {
                      before(grammarAccess.getJcrStringAccess().getSTRINGTerminalRuleCall_0()); 
-                    match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JcrString__Alternatives2772); 
+                    match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JcrString__Alternatives2771); 
                      after(grammarAccess.getJcrStringAccess().getSTRINGTerminalRuleCall_0()); 
 
                     }
@@ -3738,7 +3728,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1326:1: ruleXiD
                     {
                      before(grammarAccess.getJcrStringAccess().getXiDParserRuleCall_1()); 
-                    pushFollow(FOLLOW_ruleXiD_in_rule__JcrString__Alternatives2789);
+                    pushFollow(FOLLOW_ruleXiD_in_rule__JcrString__Alternatives2788);
                     ruleXiD();
 
                     state._fsp--;
@@ -3767,136 +3757,65 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__JcrString__Alternatives"
 
 
-    // $ANTLR start "rule__XiD__Alternatives"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1336:1: rule__XiD__Alternatives : ( ( RULE_EXID ) | ( 'mix' ) );
-    public final void rule__XiD__Alternatives() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1340:1: ( ( RULE_EXID ) | ( 'mix' ) )
-            int alt22=2;
-            int LA22_0 = input.LA(1);
-
-            if ( (LA22_0==RULE_EXID) ) {
-                alt22=1;
-            }
-            else if ( (LA22_0==41) ) {
-                alt22=2;
-            }
-            else {
-                NoViableAltException nvae =
-                    new NoViableAltException("", 22, 0, input);
-
-                throw nvae;
-            }
-            switch (alt22) {
-                case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1341:1: ( RULE_EXID )
-                    {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1341:1: ( RULE_EXID )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1342:1: RULE_EXID
-                    {
-                     before(grammarAccess.getXiDAccess().getEXIDTerminalRuleCall_0()); 
-                    match(input,RULE_EXID,FOLLOW_RULE_EXID_in_rule__XiD__Alternatives2821); 
-                     after(grammarAccess.getXiDAccess().getEXIDTerminalRuleCall_0()); 
-
-                    }
-
-
-                    }
-                    break;
-                case 2 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1347:6: ( 'mix' )
-                    {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1347:6: ( 'mix' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1348:1: 'mix'
-                    {
-                     before(grammarAccess.getXiDAccess().getMixKeyword_1()); 
-                    match(input,41,FOLLOW_41_in_rule__XiD__Alternatives2839); 
-                     after(grammarAccess.getXiDAccess().getMixKeyword_1()); 
-
-                    }
-
-
-                    }
-                    break;
-
-            }
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XiD__Alternatives"
-
-
     // $ANTLR start "rule__Opv__Alternatives"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1360:1: rule__Opv__Alternatives : ( ( ( 'COPY' ) ) | ( ( 'VERSION' ) ) | ( ( 'INITIALIZE' ) ) | ( ( 'COMPUTE' ) ) | ( ( 'IGNORE' ) ) | ( ( 'ABORT' ) ) );
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1336:1: rule__Opv__Alternatives : ( ( ( 'COPY' ) ) | ( ( 'VERSION' ) ) | ( ( 'INITIALIZE' ) ) | ( ( 'COMPUTE' ) ) | ( ( 'IGNORE' ) ) | ( ( 'ABORT' ) ) );
     public final void rule__Opv__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1364:1: ( ( ( 'COPY' ) ) | ( ( 'VERSION' ) ) | ( ( 'INITIALIZE' ) ) | ( ( 'COMPUTE' ) ) | ( ( 'IGNORE' ) ) | ( ( 'ABORT' ) ) )
-            int alt23=6;
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1340:1: ( ( ( 'COPY' ) ) | ( ( 'VERSION' ) ) | ( ( 'INITIALIZE' ) ) | ( ( 'COMPUTE' ) ) | ( ( 'IGNORE' ) ) | ( ( 'ABORT' ) ) )
+            int alt22=6;
             switch ( input.LA(1) ) {
             case 45:
                 {
-                alt23=1;
+                alt22=1;
                 }
                 break;
             case 46:
                 {
-                alt23=2;
+                alt22=2;
                 }
                 break;
             case 47:
                 {
-                alt23=3;
+                alt22=3;
                 }
                 break;
             case 48:
                 {
-                alt23=4;
+                alt22=4;
                 }
                 break;
             case 49:
                 {
-                alt23=5;
+                alt22=5;
                 }
                 break;
             case 50:
                 {
-                alt23=6;
+                alt22=6;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 23, 0, input);
+                    new NoViableAltException("", 22, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt23) {
+            switch (alt22) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1365:1: ( ( 'COPY' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1341:1: ( ( 'COPY' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1365:1: ( ( 'COPY' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1366:1: ( 'COPY' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1341:1: ( ( 'COPY' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1342:1: ( 'COPY' )
                     {
                      before(grammarAccess.getOpvAccess().getCOPYEnumLiteralDeclaration_0()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1367:1: ( 'COPY' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1367:3: 'COPY'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1343:1: ( 'COPY' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1343:3: 'COPY'
                     {
-                    match(input,45,FOLLOW_45_in_rule__Opv__Alternatives2874); 
+                    match(input,45,FOLLOW_45_in_rule__Opv__Alternatives2821); 
 
                     }
 
@@ -3908,16 +3827,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1372:6: ( ( 'VERSION' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1348:6: ( ( 'VERSION' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1372:6: ( ( 'VERSION' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1373:1: ( 'VERSION' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1348:6: ( ( 'VERSION' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1349:1: ( 'VERSION' )
                     {
                      before(grammarAccess.getOpvAccess().getVERSIONEnumLiteralDeclaration_1()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1374:1: ( 'VERSION' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1374:3: 'VERSION'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1350:1: ( 'VERSION' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1350:3: 'VERSION'
                     {
-                    match(input,46,FOLLOW_46_in_rule__Opv__Alternatives2895); 
+                    match(input,46,FOLLOW_46_in_rule__Opv__Alternatives2842); 
 
                     }
 
@@ -3929,16 +3848,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1379:6: ( ( 'INITIALIZE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1355:6: ( ( 'INITIALIZE' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1379:6: ( ( 'INITIALIZE' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1380:1: ( 'INITIALIZE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1355:6: ( ( 'INITIALIZE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1356:1: ( 'INITIALIZE' )
                     {
                      before(grammarAccess.getOpvAccess().getINITIALIZEEnumLiteralDeclaration_2()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1381:1: ( 'INITIALIZE' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1381:3: 'INITIALIZE'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1357:1: ( 'INITIALIZE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1357:3: 'INITIALIZE'
                     {
-                    match(input,47,FOLLOW_47_in_rule__Opv__Alternatives2916); 
+                    match(input,47,FOLLOW_47_in_rule__Opv__Alternatives2863); 
 
                     }
 
@@ -3950,16 +3869,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1386:6: ( ( 'COMPUTE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1362:6: ( ( 'COMPUTE' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1386:6: ( ( 'COMPUTE' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1387:1: ( 'COMPUTE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1362:6: ( ( 'COMPUTE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1363:1: ( 'COMPUTE' )
                     {
                      before(grammarAccess.getOpvAccess().getCOMPUTEEnumLiteralDeclaration_3()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1388:1: ( 'COMPUTE' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1388:3: 'COMPUTE'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1364:1: ( 'COMPUTE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1364:3: 'COMPUTE'
                     {
-                    match(input,48,FOLLOW_48_in_rule__Opv__Alternatives2937); 
+                    match(input,48,FOLLOW_48_in_rule__Opv__Alternatives2884); 
 
                     }
 
@@ -3971,16 +3890,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1393:6: ( ( 'IGNORE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1369:6: ( ( 'IGNORE' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1393:6: ( ( 'IGNORE' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1394:1: ( 'IGNORE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1369:6: ( ( 'IGNORE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1370:1: ( 'IGNORE' )
                     {
                      before(grammarAccess.getOpvAccess().getIGNOREEnumLiteralDeclaration_4()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1395:1: ( 'IGNORE' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1395:3: 'IGNORE'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1371:1: ( 'IGNORE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1371:3: 'IGNORE'
                     {
-                    match(input,49,FOLLOW_49_in_rule__Opv__Alternatives2958); 
+                    match(input,49,FOLLOW_49_in_rule__Opv__Alternatives2905); 
 
                     }
 
@@ -3992,16 +3911,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 6 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1400:6: ( ( 'ABORT' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1376:6: ( ( 'ABORT' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1400:6: ( ( 'ABORT' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1401:1: ( 'ABORT' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1376:6: ( ( 'ABORT' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1377:1: ( 'ABORT' )
                     {
                      before(grammarAccess.getOpvAccess().getABORTEnumLiteralDeclaration_5()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1402:1: ( 'ABORT' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1402:3: 'ABORT'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1378:1: ( 'ABORT' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1378:3: 'ABORT'
                     {
-                    match(input,50,FOLLOW_50_in_rule__Opv__Alternatives2979); 
+                    match(input,50,FOLLOW_50_in_rule__Opv__Alternatives2926); 
 
                     }
 
@@ -4030,99 +3949,99 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyType__Alternatives"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1412:1: rule__PropertyType__Alternatives : ( ( ( 'UNDEFINED' ) ) | ( ( 'STRING' ) ) | ( ( 'BINARY' ) ) | ( ( 'LONG' ) ) | ( ( 'DOUBLE' ) ) | ( ( 'DATE' ) ) | ( ( 'BOOLEAN' ) ) | ( ( 'NAME' ) ) | ( ( 'PATH' ) ) | ( ( 'REFERENCE' ) ) | ( ( 'WEAKREFERENCE' ) ) | ( ( 'URI' ) ) | ( ( 'DECIMAL' ) ) );
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1388:1: rule__PropertyType__Alternatives : ( ( ( 'UNDEFINED' ) ) | ( ( 'STRING' ) ) | ( ( 'BINARY' ) ) | ( ( 'LONG' ) ) | ( ( 'DOUBLE' ) ) | ( ( 'DATE' ) ) | ( ( 'BOOLEAN' ) ) | ( ( 'NAME' ) ) | ( ( 'PATH' ) ) | ( ( 'REFERENCE' ) ) | ( ( 'WEAKREFERENCE' ) ) | ( ( 'URI' ) ) | ( ( 'DECIMAL' ) ) );
     public final void rule__PropertyType__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1416:1: ( ( ( 'UNDEFINED' ) ) | ( ( 'STRING' ) ) | ( ( 'BINARY' ) ) | ( ( 'LONG' ) ) | ( ( 'DOUBLE' ) ) | ( ( 'DATE' ) ) | ( ( 'BOOLEAN' ) ) | ( ( 'NAME' ) ) | ( ( 'PATH' ) ) | ( ( 'REFERENCE' ) ) | ( ( 'WEAKREFERENCE' ) ) | ( ( 'URI' ) ) | ( ( 'DECIMAL' ) ) )
-            int alt24=13;
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1392:1: ( ( ( 'UNDEFINED' ) ) | ( ( 'STRING' ) ) | ( ( 'BINARY' ) ) | ( ( 'LONG' ) ) | ( ( 'DOUBLE' ) ) | ( ( 'DATE' ) ) | ( ( 'BOOLEAN' ) ) | ( ( 'NAME' ) ) | ( ( 'PATH' ) ) | ( ( 'REFERENCE' ) ) | ( ( 'WEAKREFERENCE' ) ) | ( ( 'URI' ) ) | ( ( 'DECIMAL' ) ) )
+            int alt23=13;
             switch ( input.LA(1) ) {
             case 51:
                 {
-                alt24=1;
+                alt23=1;
                 }
                 break;
             case 52:
                 {
-                alt24=2;
+                alt23=2;
                 }
                 break;
             case 53:
                 {
-                alt24=3;
+                alt23=3;
                 }
                 break;
             case 54:
                 {
-                alt24=4;
+                alt23=4;
                 }
                 break;
             case 55:
                 {
-                alt24=5;
+                alt23=5;
                 }
                 break;
             case 56:
                 {
-                alt24=6;
+                alt23=6;
                 }
                 break;
             case 57:
                 {
-                alt24=7;
+                alt23=7;
                 }
                 break;
             case 58:
                 {
-                alt24=8;
+                alt23=8;
                 }
                 break;
             case 59:
                 {
-                alt24=9;
+                alt23=9;
                 }
                 break;
             case 60:
                 {
-                alt24=10;
+                alt23=10;
                 }
                 break;
             case 61:
                 {
-                alt24=11;
+                alt23=11;
                 }
                 break;
             case 62:
                 {
-                alt24=12;
+                alt23=12;
                 }
                 break;
             case 63:
                 {
-                alt24=13;
+                alt23=13;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 24, 0, input);
+                    new NoViableAltException("", 23, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt24) {
+            switch (alt23) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1417:1: ( ( 'UNDEFINED' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1393:1: ( ( 'UNDEFINED' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1417:1: ( ( 'UNDEFINED' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1418:1: ( 'UNDEFINED' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1393:1: ( ( 'UNDEFINED' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1394:1: ( 'UNDEFINED' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getUNDEFINEDEnumLiteralDeclaration_0()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1419:1: ( 'UNDEFINED' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1419:3: 'UNDEFINED'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1395:1: ( 'UNDEFINED' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1395:3: 'UNDEFINED'
                     {
-                    match(input,51,FOLLOW_51_in_rule__PropertyType__Alternatives3015); 
+                    match(input,51,FOLLOW_51_in_rule__PropertyType__Alternatives2962); 
 
                     }
 
@@ -4134,16 +4053,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1424:6: ( ( 'STRING' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1400:6: ( ( 'STRING' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1424:6: ( ( 'STRING' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1425:1: ( 'STRING' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1400:6: ( ( 'STRING' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1401:1: ( 'STRING' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getTSTRINGEnumLiteralDeclaration_1()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1426:1: ( 'STRING' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1426:3: 'STRING'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1402:1: ( 'STRING' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1402:3: 'STRING'
                     {
-                    match(input,52,FOLLOW_52_in_rule__PropertyType__Alternatives3036); 
+                    match(input,52,FOLLOW_52_in_rule__PropertyType__Alternatives2983); 
 
                     }
 
@@ -4155,16 +4074,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1431:6: ( ( 'BINARY' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1407:6: ( ( 'BINARY' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1431:6: ( ( 'BINARY' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1432:1: ( 'BINARY' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1407:6: ( ( 'BINARY' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1408:1: ( 'BINARY' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getTBINARYEnumLiteralDeclaration_2()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1433:1: ( 'BINARY' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1433:3: 'BINARY'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1409:1: ( 'BINARY' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1409:3: 'BINARY'
                     {
-                    match(input,53,FOLLOW_53_in_rule__PropertyType__Alternatives3057); 
+                    match(input,53,FOLLOW_53_in_rule__PropertyType__Alternatives3004); 
 
                     }
 
@@ -4176,16 +4095,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1438:6: ( ( 'LONG' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1414:6: ( ( 'LONG' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1438:6: ( ( 'LONG' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1439:1: ( 'LONG' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1414:6: ( ( 'LONG' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1415:1: ( 'LONG' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getTLONGEnumLiteralDeclaration_3()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1440:1: ( 'LONG' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1440:3: 'LONG'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1416:1: ( 'LONG' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1416:3: 'LONG'
                     {
-                    match(input,54,FOLLOW_54_in_rule__PropertyType__Alternatives3078); 
+                    match(input,54,FOLLOW_54_in_rule__PropertyType__Alternatives3025); 
 
                     }
 
@@ -4197,16 +4116,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1445:6: ( ( 'DOUBLE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1421:6: ( ( 'DOUBLE' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1445:6: ( ( 'DOUBLE' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1446:1: ( 'DOUBLE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1421:6: ( ( 'DOUBLE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1422:1: ( 'DOUBLE' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getTDOUBLEEnumLiteralDeclaration_4()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1447:1: ( 'DOUBLE' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1447:3: 'DOUBLE'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1423:1: ( 'DOUBLE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1423:3: 'DOUBLE'
                     {
-                    match(input,55,FOLLOW_55_in_rule__PropertyType__Alternatives3099); 
+                    match(input,55,FOLLOW_55_in_rule__PropertyType__Alternatives3046); 
 
                     }
 
@@ -4218,16 +4137,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 6 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1452:6: ( ( 'DATE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1428:6: ( ( 'DATE' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1452:6: ( ( 'DATE' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1453:1: ( 'DATE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1428:6: ( ( 'DATE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1429:1: ( 'DATE' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getDDATEEnumLiteralDeclaration_5()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1454:1: ( 'DATE' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1454:3: 'DATE'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1430:1: ( 'DATE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1430:3: 'DATE'
                     {
-                    match(input,56,FOLLOW_56_in_rule__PropertyType__Alternatives3120); 
+                    match(input,56,FOLLOW_56_in_rule__PropertyType__Alternatives3067); 
 
                     }
 
@@ -4239,16 +4158,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 7 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1459:6: ( ( 'BOOLEAN' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1435:6: ( ( 'BOOLEAN' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1459:6: ( ( 'BOOLEAN' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1460:1: ( 'BOOLEAN' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1435:6: ( ( 'BOOLEAN' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1436:1: ( 'BOOLEAN' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getTBOOLEANEnumLiteralDeclaration_6()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1461:1: ( 'BOOLEAN' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1461:3: 'BOOLEAN'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1437:1: ( 'BOOLEAN' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1437:3: 'BOOLEAN'
                     {
-                    match(input,57,FOLLOW_57_in_rule__PropertyType__Alternatives3141); 
+                    match(input,57,FOLLOW_57_in_rule__PropertyType__Alternatives3088); 
 
                     }
 
@@ -4260,16 +4179,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 8 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1466:6: ( ( 'NAME' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1442:6: ( ( 'NAME' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1466:6: ( ( 'NAME' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1467:1: ( 'NAME' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1442:6: ( ( 'NAME' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1443:1: ( 'NAME' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getTNAMEEnumLiteralDeclaration_7()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1468:1: ( 'NAME' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1468:3: 'NAME'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1444:1: ( 'NAME' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1444:3: 'NAME'
                     {
-                    match(input,58,FOLLOW_58_in_rule__PropertyType__Alternatives3162); 
+                    match(input,58,FOLLOW_58_in_rule__PropertyType__Alternatives3109); 
 
                     }
 
@@ -4281,16 +4200,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 9 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1473:6: ( ( 'PATH' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1449:6: ( ( 'PATH' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1473:6: ( ( 'PATH' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1474:1: ( 'PATH' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1449:6: ( ( 'PATH' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1450:1: ( 'PATH' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getTPATHEnumLiteralDeclaration_8()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1475:1: ( 'PATH' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1475:3: 'PATH'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1451:1: ( 'PATH' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1451:3: 'PATH'
                     {
-                    match(input,59,FOLLOW_59_in_rule__PropertyType__Alternatives3183); 
+                    match(input,59,FOLLOW_59_in_rule__PropertyType__Alternatives3130); 
 
                     }
 
@@ -4302,16 +4221,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 10 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1480:6: ( ( 'REFERENCE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1456:6: ( ( 'REFERENCE' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1480:6: ( ( 'REFERENCE' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1481:1: ( 'REFERENCE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1456:6: ( ( 'REFERENCE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1457:1: ( 'REFERENCE' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getTREFERENCEEnumLiteralDeclaration_9()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1482:1: ( 'REFERENCE' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1482:3: 'REFERENCE'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1458:1: ( 'REFERENCE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1458:3: 'REFERENCE'
                     {
-                    match(input,60,FOLLOW_60_in_rule__PropertyType__Alternatives3204); 
+                    match(input,60,FOLLOW_60_in_rule__PropertyType__Alternatives3151); 
 
                     }
 
@@ -4323,16 +4242,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 11 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1487:6: ( ( 'WEAKREFERENCE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1463:6: ( ( 'WEAKREFERENCE' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1487:6: ( ( 'WEAKREFERENCE' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1488:1: ( 'WEAKREFERENCE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1463:6: ( ( 'WEAKREFERENCE' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1464:1: ( 'WEAKREFERENCE' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getTWEAKREFERENCEEnumLiteralDeclaration_10()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1489:1: ( 'WEAKREFERENCE' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1489:3: 'WEAKREFERENCE'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1465:1: ( 'WEAKREFERENCE' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1465:3: 'WEAKREFERENCE'
                     {
-                    match(input,61,FOLLOW_61_in_rule__PropertyType__Alternatives3225); 
+                    match(input,61,FOLLOW_61_in_rule__PropertyType__Alternatives3172); 
 
                     }
 
@@ -4344,16 +4263,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 12 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1494:6: ( ( 'URI' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1470:6: ( ( 'URI' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1494:6: ( ( 'URI' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1495:1: ( 'URI' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1470:6: ( ( 'URI' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1471:1: ( 'URI' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getTURIEnumLiteralDeclaration_11()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1496:1: ( 'URI' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1496:3: 'URI'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1472:1: ( 'URI' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1472:3: 'URI'
                     {
-                    match(input,62,FOLLOW_62_in_rule__PropertyType__Alternatives3246); 
+                    match(input,62,FOLLOW_62_in_rule__PropertyType__Alternatives3193); 
 
                     }
 
@@ -4365,16 +4284,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 13 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1501:6: ( ( 'DECIMAL' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1477:6: ( ( 'DECIMAL' ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1501:6: ( ( 'DECIMAL' ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1502:1: ( 'DECIMAL' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1477:6: ( ( 'DECIMAL' ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1478:1: ( 'DECIMAL' )
                     {
                      before(grammarAccess.getPropertyTypeAccess().getTDECIMALEnumLiteralDeclaration_12()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1503:1: ( 'DECIMAL' )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1503:3: 'DECIMAL'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1479:1: ( 'DECIMAL' )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1479:3: 'DECIMAL'
                     {
-                    match(input,63,FOLLOW_63_in_rule__PropertyType__Alternatives3267); 
+                    match(input,63,FOLLOW_63_in_rule__PropertyType__Alternatives3214); 
 
                     }
 
@@ -4403,21 +4322,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1515:1: rule__NodeTypeDefinition__Group__0 : rule__NodeTypeDefinition__Group__0__Impl rule__NodeTypeDefinition__Group__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1491:1: rule__NodeTypeDefinition__Group__0 : rule__NodeTypeDefinition__Group__0__Impl rule__NodeTypeDefinition__Group__1 ;
     public final void rule__NodeTypeDefinition__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1519:1: ( rule__NodeTypeDefinition__Group__0__Impl rule__NodeTypeDefinition__Group__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1520:2: rule__NodeTypeDefinition__Group__0__Impl rule__NodeTypeDefinition__Group__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1495:1: ( rule__NodeTypeDefinition__Group__0__Impl rule__NodeTypeDefinition__Group__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1496:2: rule__NodeTypeDefinition__Group__0__Impl rule__NodeTypeDefinition__Group__1
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__0__Impl_in_rule__NodeTypeDefinition__Group__03300);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__0__Impl_in_rule__NodeTypeDefinition__Group__03247);
             rule__NodeTypeDefinition__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__1_in_rule__NodeTypeDefinition__Group__03303);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__1_in_rule__NodeTypeDefinition__Group__03250);
             rule__NodeTypeDefinition__Group__1();
 
             state._fsp--;
@@ -4441,20 +4360,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1527:1: rule__NodeTypeDefinition__Group__0__Impl : ( '[' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1503:1: rule__NodeTypeDefinition__Group__0__Impl : ( '[' ) ;
     public final void rule__NodeTypeDefinition__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1531:1: ( ( '[' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1532:1: ( '[' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1507:1: ( ( '[' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1508:1: ( '[' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1532:1: ( '[' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1533:1: '['
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1508:1: ( '[' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1509:1: '['
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getLeftSquareBracketKeyword_0()); 
-            match(input,64,FOLLOW_64_in_rule__NodeTypeDefinition__Group__0__Impl3331); 
+            match(input,64,FOLLOW_64_in_rule__NodeTypeDefinition__Group__0__Impl3278); 
              after(grammarAccess.getNodeTypeDefinitionAccess().getLeftSquareBracketKeyword_0()); 
 
             }
@@ -4478,21 +4397,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1546:1: rule__NodeTypeDefinition__Group__1 : rule__NodeTypeDefinition__Group__1__Impl rule__NodeTypeDefinition__Group__2 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1522:1: rule__NodeTypeDefinition__Group__1 : rule__NodeTypeDefinition__Group__1__Impl rule__NodeTypeDefinition__Group__2 ;
     public final void rule__NodeTypeDefinition__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1550:1: ( rule__NodeTypeDefinition__Group__1__Impl rule__NodeTypeDefinition__Group__2 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1551:2: rule__NodeTypeDefinition__Group__1__Impl rule__NodeTypeDefinition__Group__2
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1526:1: ( rule__NodeTypeDefinition__Group__1__Impl rule__NodeTypeDefinition__Group__2 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1527:2: rule__NodeTypeDefinition__Group__1__Impl rule__NodeTypeDefinition__Group__2
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__1__Impl_in_rule__NodeTypeDefinition__Group__13362);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__1__Impl_in_rule__NodeTypeDefinition__Group__13309);
             rule__NodeTypeDefinition__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__2_in_rule__NodeTypeDefinition__Group__13365);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__2_in_rule__NodeTypeDefinition__Group__13312);
             rule__NodeTypeDefinition__Group__2();
 
             state._fsp--;
@@ -4516,23 +4435,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1558:1: rule__NodeTypeDefinition__Group__1__Impl : ( ( rule__NodeTypeDefinition__NameAssignment_1 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1534:1: rule__NodeTypeDefinition__Group__1__Impl : ( ( rule__NodeTypeDefinition__NameAssignment_1 ) ) ;
     public final void rule__NodeTypeDefinition__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1562:1: ( ( ( rule__NodeTypeDefinition__NameAssignment_1 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1563:1: ( ( rule__NodeTypeDefinition__NameAssignment_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1538:1: ( ( ( rule__NodeTypeDefinition__NameAssignment_1 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1539:1: ( ( rule__NodeTypeDefinition__NameAssignment_1 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1563:1: ( ( rule__NodeTypeDefinition__NameAssignment_1 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1564:1: ( rule__NodeTypeDefinition__NameAssignment_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1539:1: ( ( rule__NodeTypeDefinition__NameAssignment_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1540:1: ( rule__NodeTypeDefinition__NameAssignment_1 )
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getNameAssignment_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1565:1: ( rule__NodeTypeDefinition__NameAssignment_1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1565:2: rule__NodeTypeDefinition__NameAssignment_1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1541:1: ( rule__NodeTypeDefinition__NameAssignment_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1541:2: rule__NodeTypeDefinition__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__NameAssignment_1_in_rule__NodeTypeDefinition__Group__1__Impl3392);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__NameAssignment_1_in_rule__NodeTypeDefinition__Group__1__Impl3339);
             rule__NodeTypeDefinition__NameAssignment_1();
 
             state._fsp--;
@@ -4563,21 +4482,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1575:1: rule__NodeTypeDefinition__Group__2 : rule__NodeTypeDefinition__Group__2__Impl rule__NodeTypeDefinition__Group__3 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1551:1: rule__NodeTypeDefinition__Group__2 : rule__NodeTypeDefinition__Group__2__Impl rule__NodeTypeDefinition__Group__3 ;
     public final void rule__NodeTypeDefinition__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1579:1: ( rule__NodeTypeDefinition__Group__2__Impl rule__NodeTypeDefinition__Group__3 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1580:2: rule__NodeTypeDefinition__Group__2__Impl rule__NodeTypeDefinition__Group__3
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1555:1: ( rule__NodeTypeDefinition__Group__2__Impl rule__NodeTypeDefinition__Group__3 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1556:2: rule__NodeTypeDefinition__Group__2__Impl rule__NodeTypeDefinition__Group__3
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__2__Impl_in_rule__NodeTypeDefinition__Group__23422);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__2__Impl_in_rule__NodeTypeDefinition__Group__23369);
             rule__NodeTypeDefinition__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__3_in_rule__NodeTypeDefinition__Group__23425);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__3_in_rule__NodeTypeDefinition__Group__23372);
             rule__NodeTypeDefinition__Group__3();
 
             state._fsp--;
@@ -4601,20 +4520,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__2__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1587:1: rule__NodeTypeDefinition__Group__2__Impl : ( ']' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1563:1: rule__NodeTypeDefinition__Group__2__Impl : ( ']' ) ;
     public final void rule__NodeTypeDefinition__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1591:1: ( ( ']' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1592:1: ( ']' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1567:1: ( ( ']' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1568:1: ( ']' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1592:1: ( ']' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1593:1: ']'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1568:1: ( ']' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1569:1: ']'
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getRightSquareBracketKeyword_2()); 
-            match(input,65,FOLLOW_65_in_rule__NodeTypeDefinition__Group__2__Impl3453); 
+            match(input,65,FOLLOW_65_in_rule__NodeTypeDefinition__Group__2__Impl3400); 
              after(grammarAccess.getNodeTypeDefinitionAccess().getRightSquareBracketKeyword_2()); 
 
             }
@@ -4638,21 +4557,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__3"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1606:1: rule__NodeTypeDefinition__Group__3 : rule__NodeTypeDefinition__Group__3__Impl rule__NodeTypeDefinition__Group__4 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1582:1: rule__NodeTypeDefinition__Group__3 : rule__NodeTypeDefinition__Group__3__Impl rule__NodeTypeDefinition__Group__4 ;
     public final void rule__NodeTypeDefinition__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1610:1: ( rule__NodeTypeDefinition__Group__3__Impl rule__NodeTypeDefinition__Group__4 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1611:2: rule__NodeTypeDefinition__Group__3__Impl rule__NodeTypeDefinition__Group__4
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1586:1: ( rule__NodeTypeDefinition__Group__3__Impl rule__NodeTypeDefinition__Group__4 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1587:2: rule__NodeTypeDefinition__Group__3__Impl rule__NodeTypeDefinition__Group__4
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__3__Impl_in_rule__NodeTypeDefinition__Group__33484);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__3__Impl_in_rule__NodeTypeDefinition__Group__33431);
             rule__NodeTypeDefinition__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__4_in_rule__NodeTypeDefinition__Group__33487);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__4_in_rule__NodeTypeDefinition__Group__33434);
             rule__NodeTypeDefinition__Group__4();
 
             state._fsp--;
@@ -4676,31 +4595,31 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__3__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1618:1: rule__NodeTypeDefinition__Group__3__Impl : ( ( rule__NodeTypeDefinition__Group_3__0 )? ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1594:1: rule__NodeTypeDefinition__Group__3__Impl : ( ( rule__NodeTypeDefinition__Group_3__0 )? ) ;
     public final void rule__NodeTypeDefinition__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1622:1: ( ( ( rule__NodeTypeDefinition__Group_3__0 )? ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1623:1: ( ( rule__NodeTypeDefinition__Group_3__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1598:1: ( ( ( rule__NodeTypeDefinition__Group_3__0 )? ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1599:1: ( ( rule__NodeTypeDefinition__Group_3__0 )? )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1623:1: ( ( rule__NodeTypeDefinition__Group_3__0 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1624:1: ( rule__NodeTypeDefinition__Group_3__0 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1599:1: ( ( rule__NodeTypeDefinition__Group_3__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1600:1: ( rule__NodeTypeDefinition__Group_3__0 )?
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getGroup_3()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1625:1: ( rule__NodeTypeDefinition__Group_3__0 )?
-            int alt25=2;
-            int LA25_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1601:1: ( rule__NodeTypeDefinition__Group_3__0 )?
+            int alt24=2;
+            int LA24_0 = input.LA(1);
 
-            if ( (LA25_0==66) ) {
-                alt25=1;
+            if ( (LA24_0==66) ) {
+                alt24=1;
             }
-            switch (alt25) {
+            switch (alt24) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1625:2: rule__NodeTypeDefinition__Group_3__0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1601:2: rule__NodeTypeDefinition__Group_3__0
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__0_in_rule__NodeTypeDefinition__Group__3__Impl3514);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__0_in_rule__NodeTypeDefinition__Group__3__Impl3461);
                     rule__NodeTypeDefinition__Group_3__0();
 
                     state._fsp--;
@@ -4734,21 +4653,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1635:1: rule__NodeTypeDefinition__Group__4 : rule__NodeTypeDefinition__Group__4__Impl rule__NodeTypeDefinition__Group__5 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1611:1: rule__NodeTypeDefinition__Group__4 : rule__NodeTypeDefinition__Group__4__Impl rule__NodeTypeDefinition__Group__5 ;
     public final void rule__NodeTypeDefinition__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1639:1: ( rule__NodeTypeDefinition__Group__4__Impl rule__NodeTypeDefinition__Group__5 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1640:2: rule__NodeTypeDefinition__Group__4__Impl rule__NodeTypeDefinition__Group__5
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1615:1: ( rule__NodeTypeDefinition__Group__4__Impl rule__NodeTypeDefinition__Group__5 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1616:2: rule__NodeTypeDefinition__Group__4__Impl rule__NodeTypeDefinition__Group__5
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__4__Impl_in_rule__NodeTypeDefinition__Group__43545);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__4__Impl_in_rule__NodeTypeDefinition__Group__43492);
             rule__NodeTypeDefinition__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__5_in_rule__NodeTypeDefinition__Group__43548);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__5_in_rule__NodeTypeDefinition__Group__43495);
             rule__NodeTypeDefinition__Group__5();
 
             state._fsp--;
@@ -4772,23 +4691,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__4__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1647:1: rule__NodeTypeDefinition__Group__4__Impl : ( ( rule__NodeTypeDefinition__UnorderedGroup_4 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1623:1: rule__NodeTypeDefinition__Group__4__Impl : ( ( rule__NodeTypeDefinition__UnorderedGroup_4 ) ) ;
     public final void rule__NodeTypeDefinition__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1651:1: ( ( ( rule__NodeTypeDefinition__UnorderedGroup_4 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1652:1: ( ( rule__NodeTypeDefinition__UnorderedGroup_4 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1627:1: ( ( ( rule__NodeTypeDefinition__UnorderedGroup_4 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1628:1: ( ( rule__NodeTypeDefinition__UnorderedGroup_4 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1652:1: ( ( rule__NodeTypeDefinition__UnorderedGroup_4 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1653:1: ( rule__NodeTypeDefinition__UnorderedGroup_4 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1628:1: ( ( rule__NodeTypeDefinition__UnorderedGroup_4 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1629:1: ( rule__NodeTypeDefinition__UnorderedGroup_4 )
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1654:1: ( rule__NodeTypeDefinition__UnorderedGroup_4 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1654:2: rule__NodeTypeDefinition__UnorderedGroup_4
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1630:1: ( rule__NodeTypeDefinition__UnorderedGroup_4 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1630:2: rule__NodeTypeDefinition__UnorderedGroup_4
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4_in_rule__NodeTypeDefinition__Group__4__Impl3575);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4_in_rule__NodeTypeDefinition__Group__4__Impl3522);
             rule__NodeTypeDefinition__UnorderedGroup_4();
 
             state._fsp--;
@@ -4819,16 +4738,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__5"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1664:1: rule__NodeTypeDefinition__Group__5 : rule__NodeTypeDefinition__Group__5__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1640:1: rule__NodeTypeDefinition__Group__5 : rule__NodeTypeDefinition__Group__5__Impl ;
     public final void rule__NodeTypeDefinition__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1668:1: ( rule__NodeTypeDefinition__Group__5__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1669:2: rule__NodeTypeDefinition__Group__5__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1644:1: ( rule__NodeTypeDefinition__Group__5__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1645:2: rule__NodeTypeDefinition__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__5__Impl_in_rule__NodeTypeDefinition__Group__53605);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group__5__Impl_in_rule__NodeTypeDefinition__Group__53552);
             rule__NodeTypeDefinition__Group__5__Impl();
 
             state._fsp--;
@@ -4852,35 +4771,35 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group__5__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1675:1: rule__NodeTypeDefinition__Group__5__Impl : ( ( rule__NodeTypeDefinition__Alternatives_5 )* ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1651:1: rule__NodeTypeDefinition__Group__5__Impl : ( ( rule__NodeTypeDefinition__Alternatives_5 )* ) ;
     public final void rule__NodeTypeDefinition__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1679:1: ( ( ( rule__NodeTypeDefinition__Alternatives_5 )* ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1680:1: ( ( rule__NodeTypeDefinition__Alternatives_5 )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1655:1: ( ( ( rule__NodeTypeDefinition__Alternatives_5 )* ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1656:1: ( ( rule__NodeTypeDefinition__Alternatives_5 )* )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1680:1: ( ( rule__NodeTypeDefinition__Alternatives_5 )* )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1681:1: ( rule__NodeTypeDefinition__Alternatives_5 )*
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1656:1: ( ( rule__NodeTypeDefinition__Alternatives_5 )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1657:1: ( rule__NodeTypeDefinition__Alternatives_5 )*
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getAlternatives_5()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1682:1: ( rule__NodeTypeDefinition__Alternatives_5 )*
-            loop26:
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1658:1: ( rule__NodeTypeDefinition__Alternatives_5 )*
+            loop25:
             do {
-                int alt26=2;
-                int LA26_0 = input.LA(1);
+                int alt25=2;
+                int LA25_0 = input.LA(1);
 
-                if ( (LA26_0==68||LA26_0==72) ) {
-                    alt26=1;
+                if ( (LA25_0==68||LA25_0==72) ) {
+                    alt25=1;
                 }
 
 
-                switch (alt26) {
+                switch (alt25) {
             	case 1 :
-            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1682:2: rule__NodeTypeDefinition__Alternatives_5
+            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1658:2: rule__NodeTypeDefinition__Alternatives_5
             	    {
-            	    pushFollow(FOLLOW_rule__NodeTypeDefinition__Alternatives_5_in_rule__NodeTypeDefinition__Group__5__Impl3632);
+            	    pushFollow(FOLLOW_rule__NodeTypeDefinition__Alternatives_5_in_rule__NodeTypeDefinition__Group__5__Impl3579);
             	    rule__NodeTypeDefinition__Alternatives_5();
 
             	    state._fsp--;
@@ -4890,7 +4809,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop26;
+            	    break loop25;
                 }
             } while (true);
 
@@ -4917,21 +4836,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group_3__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1704:1: rule__NodeTypeDefinition__Group_3__0 : rule__NodeTypeDefinition__Group_3__0__Impl rule__NodeTypeDefinition__Group_3__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1680:1: rule__NodeTypeDefinition__Group_3__0 : rule__NodeTypeDefinition__Group_3__0__Impl rule__NodeTypeDefinition__Group_3__1 ;
     public final void rule__NodeTypeDefinition__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1708:1: ( rule__NodeTypeDefinition__Group_3__0__Impl rule__NodeTypeDefinition__Group_3__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1709:2: rule__NodeTypeDefinition__Group_3__0__Impl rule__NodeTypeDefinition__Group_3__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1684:1: ( rule__NodeTypeDefinition__Group_3__0__Impl rule__NodeTypeDefinition__Group_3__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1685:2: rule__NodeTypeDefinition__Group_3__0__Impl rule__NodeTypeDefinition__Group_3__1
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__0__Impl_in_rule__NodeTypeDefinition__Group_3__03675);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__0__Impl_in_rule__NodeTypeDefinition__Group_3__03622);
             rule__NodeTypeDefinition__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__1_in_rule__NodeTypeDefinition__Group_3__03678);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__1_in_rule__NodeTypeDefinition__Group_3__03625);
             rule__NodeTypeDefinition__Group_3__1();
 
             state._fsp--;
@@ -4955,20 +4874,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group_3__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1716:1: rule__NodeTypeDefinition__Group_3__0__Impl : ( '>' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1692:1: rule__NodeTypeDefinition__Group_3__0__Impl : ( '>' ) ;
     public final void rule__NodeTypeDefinition__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1720:1: ( ( '>' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1721:1: ( '>' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1696:1: ( ( '>' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1697:1: ( '>' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1721:1: ( '>' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1722:1: '>'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1697:1: ( '>' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1698:1: '>'
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getGreaterThanSignKeyword_3_0()); 
-            match(input,66,FOLLOW_66_in_rule__NodeTypeDefinition__Group_3__0__Impl3706); 
+            match(input,66,FOLLOW_66_in_rule__NodeTypeDefinition__Group_3__0__Impl3653); 
              after(grammarAccess.getNodeTypeDefinitionAccess().getGreaterThanSignKeyword_3_0()); 
 
             }
@@ -4992,21 +4911,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group_3__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1735:1: rule__NodeTypeDefinition__Group_3__1 : rule__NodeTypeDefinition__Group_3__1__Impl rule__NodeTypeDefinition__Group_3__2 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1711:1: rule__NodeTypeDefinition__Group_3__1 : rule__NodeTypeDefinition__Group_3__1__Impl rule__NodeTypeDefinition__Group_3__2 ;
     public final void rule__NodeTypeDefinition__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1739:1: ( rule__NodeTypeDefinition__Group_3__1__Impl rule__NodeTypeDefinition__Group_3__2 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1740:2: rule__NodeTypeDefinition__Group_3__1__Impl rule__NodeTypeDefinition__Group_3__2
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1715:1: ( rule__NodeTypeDefinition__Group_3__1__Impl rule__NodeTypeDefinition__Group_3__2 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1716:2: rule__NodeTypeDefinition__Group_3__1__Impl rule__NodeTypeDefinition__Group_3__2
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__1__Impl_in_rule__NodeTypeDefinition__Group_3__13737);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__1__Impl_in_rule__NodeTypeDefinition__Group_3__13684);
             rule__NodeTypeDefinition__Group_3__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__2_in_rule__NodeTypeDefinition__Group_3__13740);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__2_in_rule__NodeTypeDefinition__Group_3__13687);
             rule__NodeTypeDefinition__Group_3__2();
 
             state._fsp--;
@@ -5030,23 +4949,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group_3__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1747:1: rule__NodeTypeDefinition__Group_3__1__Impl : ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1723:1: rule__NodeTypeDefinition__Group_3__1__Impl : ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 ) ) ;
     public final void rule__NodeTypeDefinition__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1751:1: ( ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1752:1: ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1727:1: ( ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1728:1: ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1752:1: ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1753:1: ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1728:1: ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1729:1: ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 )
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesAssignment_3_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1754:1: ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1754:2: rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1730:1: ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1730:2: rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1_in_rule__NodeTypeDefinition__Group_3__1__Impl3767);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1_in_rule__NodeTypeDefinition__Group_3__1__Impl3714);
             rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1();
 
             state._fsp--;
@@ -5077,16 +4996,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group_3__2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1764:1: rule__NodeTypeDefinition__Group_3__2 : rule__NodeTypeDefinition__Group_3__2__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1740:1: rule__NodeTypeDefinition__Group_3__2 : rule__NodeTypeDefinition__Group_3__2__Impl ;
     public final void rule__NodeTypeDefinition__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1768:1: ( rule__NodeTypeDefinition__Group_3__2__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1769:2: rule__NodeTypeDefinition__Group_3__2__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1744:1: ( rule__NodeTypeDefinition__Group_3__2__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1745:2: rule__NodeTypeDefinition__Group_3__2__Impl
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__2__Impl_in_rule__NodeTypeDefinition__Group_3__23797);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3__2__Impl_in_rule__NodeTypeDefinition__Group_3__23744);
             rule__NodeTypeDefinition__Group_3__2__Impl();
 
             state._fsp--;
@@ -5110,35 +5029,35 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group_3__2__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1775:1: rule__NodeTypeDefinition__Group_3__2__Impl : ( ( rule__NodeTypeDefinition__Group_3_2__0 )* ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1751:1: rule__NodeTypeDefinition__Group_3__2__Impl : ( ( rule__NodeTypeDefinition__Group_3_2__0 )* ) ;
     public final void rule__NodeTypeDefinition__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1779:1: ( ( ( rule__NodeTypeDefinition__Group_3_2__0 )* ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1780:1: ( ( rule__NodeTypeDefinition__Group_3_2__0 )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1755:1: ( ( ( rule__NodeTypeDefinition__Group_3_2__0 )* ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1756:1: ( ( rule__NodeTypeDefinition__Group_3_2__0 )* )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1780:1: ( ( rule__NodeTypeDefinition__Group_3_2__0 )* )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1781:1: ( rule__NodeTypeDefinition__Group_3_2__0 )*
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1756:1: ( ( rule__NodeTypeDefinition__Group_3_2__0 )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1757:1: ( rule__NodeTypeDefinition__Group_3_2__0 )*
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getGroup_3_2()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1782:1: ( rule__NodeTypeDefinition__Group_3_2__0 )*
-            loop27:
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1758:1: ( rule__NodeTypeDefinition__Group_3_2__0 )*
+            loop26:
             do {
-                int alt27=2;
-                int LA27_0 = input.LA(1);
+                int alt26=2;
+                int LA26_0 = input.LA(1);
 
-                if ( (LA27_0==67) ) {
-                    alt27=1;
+                if ( (LA26_0==67) ) {
+                    alt26=1;
                 }
 
 
-                switch (alt27) {
+                switch (alt26) {
             	case 1 :
-            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1782:2: rule__NodeTypeDefinition__Group_3_2__0
+            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1758:2: rule__NodeTypeDefinition__Group_3_2__0
             	    {
-            	    pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3_2__0_in_rule__NodeTypeDefinition__Group_3__2__Impl3824);
+            	    pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3_2__0_in_rule__NodeTypeDefinition__Group_3__2__Impl3771);
             	    rule__NodeTypeDefinition__Group_3_2__0();
 
             	    state._fsp--;
@@ -5148,7 +5067,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop27;
+            	    break loop26;
                 }
             } while (true);
 
@@ -5175,21 +5094,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group_3_2__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1798:1: rule__NodeTypeDefinition__Group_3_2__0 : rule__NodeTypeDefinition__Group_3_2__0__Impl rule__NodeTypeDefinition__Group_3_2__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1774:1: rule__NodeTypeDefinition__Group_3_2__0 : rule__NodeTypeDefinition__Group_3_2__0__Impl rule__NodeTypeDefinition__Group_3_2__1 ;
     public final void rule__NodeTypeDefinition__Group_3_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1802:1: ( rule__NodeTypeDefinition__Group_3_2__0__Impl rule__NodeTypeDefinition__Group_3_2__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1803:2: rule__NodeTypeDefinition__Group_3_2__0__Impl rule__NodeTypeDefinition__Group_3_2__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1778:1: ( rule__NodeTypeDefinition__Group_3_2__0__Impl rule__NodeTypeDefinition__Group_3_2__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1779:2: rule__NodeTypeDefinition__Group_3_2__0__Impl rule__NodeTypeDefinition__Group_3_2__1
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3_2__0__Impl_in_rule__NodeTypeDefinition__Group_3_2__03861);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3_2__0__Impl_in_rule__NodeTypeDefinition__Group_3_2__03808);
             rule__NodeTypeDefinition__Group_3_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3_2__1_in_rule__NodeTypeDefinition__Group_3_2__03864);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3_2__1_in_rule__NodeTypeDefinition__Group_3_2__03811);
             rule__NodeTypeDefinition__Group_3_2__1();
 
             state._fsp--;
@@ -5213,20 +5132,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group_3_2__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1810:1: rule__NodeTypeDefinition__Group_3_2__0__Impl : ( ',' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1786:1: rule__NodeTypeDefinition__Group_3_2__0__Impl : ( ',' ) ;
     public final void rule__NodeTypeDefinition__Group_3_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1814:1: ( ( ',' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1815:1: ( ',' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1790:1: ( ( ',' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1791:1: ( ',' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1815:1: ( ',' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1816:1: ','
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1791:1: ( ',' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1792:1: ','
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getCommaKeyword_3_2_0()); 
-            match(input,67,FOLLOW_67_in_rule__NodeTypeDefinition__Group_3_2__0__Impl3892); 
+            match(input,67,FOLLOW_67_in_rule__NodeTypeDefinition__Group_3_2__0__Impl3839); 
              after(grammarAccess.getNodeTypeDefinitionAccess().getCommaKeyword_3_2_0()); 
 
             }
@@ -5250,16 +5169,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group_3_2__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1829:1: rule__NodeTypeDefinition__Group_3_2__1 : rule__NodeTypeDefinition__Group_3_2__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1805:1: rule__NodeTypeDefinition__Group_3_2__1 : rule__NodeTypeDefinition__Group_3_2__1__Impl ;
     public final void rule__NodeTypeDefinition__Group_3_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1833:1: ( rule__NodeTypeDefinition__Group_3_2__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1834:2: rule__NodeTypeDefinition__Group_3_2__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1809:1: ( rule__NodeTypeDefinition__Group_3_2__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1810:2: rule__NodeTypeDefinition__Group_3_2__1__Impl
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3_2__1__Impl_in_rule__NodeTypeDefinition__Group_3_2__13923);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__Group_3_2__1__Impl_in_rule__NodeTypeDefinition__Group_3_2__13870);
             rule__NodeTypeDefinition__Group_3_2__1__Impl();
 
             state._fsp--;
@@ -5283,23 +5202,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__Group_3_2__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1840:1: rule__NodeTypeDefinition__Group_3_2__1__Impl : ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1816:1: rule__NodeTypeDefinition__Group_3_2__1__Impl : ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 ) ) ;
     public final void rule__NodeTypeDefinition__Group_3_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1844:1: ( ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1845:1: ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1820:1: ( ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1821:1: ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1845:1: ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1846:1: ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1821:1: ( ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1822:1: ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 )
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesAssignment_3_2_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1847:1: ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1847:2: rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1823:1: ( rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1823:2: rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1_in_rule__NodeTypeDefinition__Group_3_2__1__Impl3950);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1_in_rule__NodeTypeDefinition__Group_3_2__1__Impl3897);
             rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1();
 
             state._fsp--;
@@ -5330,21 +5249,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1861:1: rule__NodeDefinition__Group__0 : rule__NodeDefinition__Group__0__Impl rule__NodeDefinition__Group__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1837:1: rule__NodeDefinition__Group__0 : rule__NodeDefinition__Group__0__Impl rule__NodeDefinition__Group__1 ;
     public final void rule__NodeDefinition__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1865:1: ( rule__NodeDefinition__Group__0__Impl rule__NodeDefinition__Group__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1866:2: rule__NodeDefinition__Group__0__Impl rule__NodeDefinition__Group__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1841:1: ( rule__NodeDefinition__Group__0__Impl rule__NodeDefinition__Group__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1842:2: rule__NodeDefinition__Group__0__Impl rule__NodeDefinition__Group__1
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group__0__Impl_in_rule__NodeDefinition__Group__03984);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group__0__Impl_in_rule__NodeDefinition__Group__03931);
             rule__NodeDefinition__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeDefinition__Group__1_in_rule__NodeDefinition__Group__03987);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group__1_in_rule__NodeDefinition__Group__03934);
             rule__NodeDefinition__Group__1();
 
             state._fsp--;
@@ -5368,20 +5287,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1873:1: rule__NodeDefinition__Group__0__Impl : ( '+' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1849:1: rule__NodeDefinition__Group__0__Impl : ( '+' ) ;
     public final void rule__NodeDefinition__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1877:1: ( ( '+' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1878:1: ( '+' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1853:1: ( ( '+' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1854:1: ( '+' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1878:1: ( '+' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1879:1: '+'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1854:1: ( '+' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1855:1: '+'
             {
              before(grammarAccess.getNodeDefinitionAccess().getPlusSignKeyword_0()); 
-            match(input,68,FOLLOW_68_in_rule__NodeDefinition__Group__0__Impl4015); 
+            match(input,68,FOLLOW_68_in_rule__NodeDefinition__Group__0__Impl3962); 
              after(grammarAccess.getNodeDefinitionAccess().getPlusSignKeyword_0()); 
 
             }
@@ -5405,21 +5324,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1892:1: rule__NodeDefinition__Group__1 : rule__NodeDefinition__Group__1__Impl rule__NodeDefinition__Group__2 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1868:1: rule__NodeDefinition__Group__1 : rule__NodeDefinition__Group__1__Impl rule__NodeDefinition__Group__2 ;
     public final void rule__NodeDefinition__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1896:1: ( rule__NodeDefinition__Group__1__Impl rule__NodeDefinition__Group__2 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1897:2: rule__NodeDefinition__Group__1__Impl rule__NodeDefinition__Group__2
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1872:1: ( rule__NodeDefinition__Group__1__Impl rule__NodeDefinition__Group__2 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1873:2: rule__NodeDefinition__Group__1__Impl rule__NodeDefinition__Group__2
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group__1__Impl_in_rule__NodeDefinition__Group__14046);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group__1__Impl_in_rule__NodeDefinition__Group__13993);
             rule__NodeDefinition__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeDefinition__Group__2_in_rule__NodeDefinition__Group__14049);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group__2_in_rule__NodeDefinition__Group__13996);
             rule__NodeDefinition__Group__2();
 
             state._fsp--;
@@ -5443,23 +5362,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1904:1: rule__NodeDefinition__Group__1__Impl : ( ( rule__NodeDefinition__Alternatives_1 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1880:1: rule__NodeDefinition__Group__1__Impl : ( ( rule__NodeDefinition__Alternatives_1 ) ) ;
     public final void rule__NodeDefinition__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1908:1: ( ( ( rule__NodeDefinition__Alternatives_1 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1909:1: ( ( rule__NodeDefinition__Alternatives_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1884:1: ( ( ( rule__NodeDefinition__Alternatives_1 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1885:1: ( ( rule__NodeDefinition__Alternatives_1 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1909:1: ( ( rule__NodeDefinition__Alternatives_1 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1910:1: ( rule__NodeDefinition__Alternatives_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1885:1: ( ( rule__NodeDefinition__Alternatives_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1886:1: ( rule__NodeDefinition__Alternatives_1 )
             {
              before(grammarAccess.getNodeDefinitionAccess().getAlternatives_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1911:1: ( rule__NodeDefinition__Alternatives_1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1911:2: rule__NodeDefinition__Alternatives_1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1887:1: ( rule__NodeDefinition__Alternatives_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1887:2: rule__NodeDefinition__Alternatives_1
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Alternatives_1_in_rule__NodeDefinition__Group__1__Impl4076);
+            pushFollow(FOLLOW_rule__NodeDefinition__Alternatives_1_in_rule__NodeDefinition__Group__1__Impl4023);
             rule__NodeDefinition__Alternatives_1();
 
             state._fsp--;
@@ -5490,21 +5409,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group__2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1921:1: rule__NodeDefinition__Group__2 : rule__NodeDefinition__Group__2__Impl rule__NodeDefinition__Group__3 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1897:1: rule__NodeDefinition__Group__2 : rule__NodeDefinition__Group__2__Impl rule__NodeDefinition__Group__3 ;
     public final void rule__NodeDefinition__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1925:1: ( rule__NodeDefinition__Group__2__Impl rule__NodeDefinition__Group__3 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1926:2: rule__NodeDefinition__Group__2__Impl rule__NodeDefinition__Group__3
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1901:1: ( rule__NodeDefinition__Group__2__Impl rule__NodeDefinition__Group__3 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1902:2: rule__NodeDefinition__Group__2__Impl rule__NodeDefinition__Group__3
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group__2__Impl_in_rule__NodeDefinition__Group__24106);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group__2__Impl_in_rule__NodeDefinition__Group__24053);
             rule__NodeDefinition__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeDefinition__Group__3_in_rule__NodeDefinition__Group__24109);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group__3_in_rule__NodeDefinition__Group__24056);
             rule__NodeDefinition__Group__3();
 
             state._fsp--;
@@ -5528,31 +5447,31 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group__2__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1933:1: rule__NodeDefinition__Group__2__Impl : ( ( rule__NodeDefinition__Group_2__0 )? ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1909:1: rule__NodeDefinition__Group__2__Impl : ( ( rule__NodeDefinition__Group_2__0 )? ) ;
     public final void rule__NodeDefinition__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1937:1: ( ( ( rule__NodeDefinition__Group_2__0 )? ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1938:1: ( ( rule__NodeDefinition__Group_2__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1913:1: ( ( ( rule__NodeDefinition__Group_2__0 )? ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1914:1: ( ( rule__NodeDefinition__Group_2__0 )? )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1938:1: ( ( rule__NodeDefinition__Group_2__0 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1939:1: ( rule__NodeDefinition__Group_2__0 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1914:1: ( ( rule__NodeDefinition__Group_2__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1915:1: ( rule__NodeDefinition__Group_2__0 )?
             {
              before(grammarAccess.getNodeDefinitionAccess().getGroup_2()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1940:1: ( rule__NodeDefinition__Group_2__0 )?
-            int alt28=2;
-            int LA28_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1916:1: ( rule__NodeDefinition__Group_2__0 )?
+            int alt27=2;
+            int LA27_0 = input.LA(1);
 
-            if ( (LA28_0==69) ) {
-                alt28=1;
+            if ( (LA27_0==69) ) {
+                alt27=1;
             }
-            switch (alt28) {
+            switch (alt27) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1940:2: rule__NodeDefinition__Group_2__0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1916:2: rule__NodeDefinition__Group_2__0
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__Group_2__0_in_rule__NodeDefinition__Group__2__Impl4136);
+                    pushFollow(FOLLOW_rule__NodeDefinition__Group_2__0_in_rule__NodeDefinition__Group__2__Impl4083);
                     rule__NodeDefinition__Group_2__0();
 
                     state._fsp--;
@@ -5586,21 +5505,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group__3"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1950:1: rule__NodeDefinition__Group__3 : rule__NodeDefinition__Group__3__Impl rule__NodeDefinition__Group__4 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1926:1: rule__NodeDefinition__Group__3 : rule__NodeDefinition__Group__3__Impl rule__NodeDefinition__Group__4 ;
     public final void rule__NodeDefinition__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1954:1: ( rule__NodeDefinition__Group__3__Impl rule__NodeDefinition__Group__4 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1955:2: rule__NodeDefinition__Group__3__Impl rule__NodeDefinition__Group__4
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1930:1: ( rule__NodeDefinition__Group__3__Impl rule__NodeDefinition__Group__4 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1931:2: rule__NodeDefinition__Group__3__Impl rule__NodeDefinition__Group__4
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group__3__Impl_in_rule__NodeDefinition__Group__34167);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group__3__Impl_in_rule__NodeDefinition__Group__34114);
             rule__NodeDefinition__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeDefinition__Group__4_in_rule__NodeDefinition__Group__34170);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group__4_in_rule__NodeDefinition__Group__34117);
             rule__NodeDefinition__Group__4();
 
             state._fsp--;
@@ -5624,31 +5543,31 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group__3__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1962:1: rule__NodeDefinition__Group__3__Impl : ( ( rule__NodeDefinition__Group_3__0 )? ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1938:1: rule__NodeDefinition__Group__3__Impl : ( ( rule__NodeDefinition__Group_3__0 )? ) ;
     public final void rule__NodeDefinition__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1966:1: ( ( ( rule__NodeDefinition__Group_3__0 )? ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1967:1: ( ( rule__NodeDefinition__Group_3__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1942:1: ( ( ( rule__NodeDefinition__Group_3__0 )? ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1943:1: ( ( rule__NodeDefinition__Group_3__0 )? )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1967:1: ( ( rule__NodeDefinition__Group_3__0 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1968:1: ( rule__NodeDefinition__Group_3__0 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1943:1: ( ( rule__NodeDefinition__Group_3__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1944:1: ( rule__NodeDefinition__Group_3__0 )?
             {
              before(grammarAccess.getNodeDefinitionAccess().getGroup_3()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1969:1: ( rule__NodeDefinition__Group_3__0 )?
-            int alt29=2;
-            int LA29_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1945:1: ( rule__NodeDefinition__Group_3__0 )?
+            int alt28=2;
+            int LA28_0 = input.LA(1);
 
-            if ( (LA29_0==71) ) {
-                alt29=1;
+            if ( (LA28_0==71) ) {
+                alt28=1;
             }
-            switch (alt29) {
+            switch (alt28) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1969:2: rule__NodeDefinition__Group_3__0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1945:2: rule__NodeDefinition__Group_3__0
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__Group_3__0_in_rule__NodeDefinition__Group__3__Impl4197);
+                    pushFollow(FOLLOW_rule__NodeDefinition__Group_3__0_in_rule__NodeDefinition__Group__3__Impl4144);
                     rule__NodeDefinition__Group_3__0();
 
                     state._fsp--;
@@ -5682,16 +5601,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group__4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1979:1: rule__NodeDefinition__Group__4 : rule__NodeDefinition__Group__4__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1955:1: rule__NodeDefinition__Group__4 : rule__NodeDefinition__Group__4__Impl ;
     public final void rule__NodeDefinition__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1983:1: ( rule__NodeDefinition__Group__4__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1984:2: rule__NodeDefinition__Group__4__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1959:1: ( rule__NodeDefinition__Group__4__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1960:2: rule__NodeDefinition__Group__4__Impl
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group__4__Impl_in_rule__NodeDefinition__Group__44228);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group__4__Impl_in_rule__NodeDefinition__Group__44175);
             rule__NodeDefinition__Group__4__Impl();
 
             state._fsp--;
@@ -5715,23 +5634,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group__4__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1990:1: rule__NodeDefinition__Group__4__Impl : ( ( rule__NodeDefinition__UnorderedGroup_4 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1966:1: rule__NodeDefinition__Group__4__Impl : ( ( rule__NodeDefinition__UnorderedGroup_4 ) ) ;
     public final void rule__NodeDefinition__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1994:1: ( ( ( rule__NodeDefinition__UnorderedGroup_4 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1995:1: ( ( rule__NodeDefinition__UnorderedGroup_4 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1970:1: ( ( ( rule__NodeDefinition__UnorderedGroup_4 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1971:1: ( ( rule__NodeDefinition__UnorderedGroup_4 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1995:1: ( ( rule__NodeDefinition__UnorderedGroup_4 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1996:1: ( rule__NodeDefinition__UnorderedGroup_4 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1971:1: ( ( rule__NodeDefinition__UnorderedGroup_4 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1972:1: ( rule__NodeDefinition__UnorderedGroup_4 )
             {
              before(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1997:1: ( rule__NodeDefinition__UnorderedGroup_4 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1997:2: rule__NodeDefinition__UnorderedGroup_4
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1973:1: ( rule__NodeDefinition__UnorderedGroup_4 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1973:2: rule__NodeDefinition__UnorderedGroup_4
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4_in_rule__NodeDefinition__Group__4__Impl4255);
+            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4_in_rule__NodeDefinition__Group__4__Impl4202);
             rule__NodeDefinition__UnorderedGroup_4();
 
             state._fsp--;
@@ -5762,21 +5681,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2017:1: rule__NodeDefinition__Group_2__0 : rule__NodeDefinition__Group_2__0__Impl rule__NodeDefinition__Group_2__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1993:1: rule__NodeDefinition__Group_2__0 : rule__NodeDefinition__Group_2__0__Impl rule__NodeDefinition__Group_2__1 ;
     public final void rule__NodeDefinition__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2021:1: ( rule__NodeDefinition__Group_2__0__Impl rule__NodeDefinition__Group_2__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2022:2: rule__NodeDefinition__Group_2__0__Impl rule__NodeDefinition__Group_2__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1997:1: ( rule__NodeDefinition__Group_2__0__Impl rule__NodeDefinition__Group_2__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:1998:2: rule__NodeDefinition__Group_2__0__Impl rule__NodeDefinition__Group_2__1
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2__0__Impl_in_rule__NodeDefinition__Group_2__04295);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2__0__Impl_in_rule__NodeDefinition__Group_2__04242);
             rule__NodeDefinition__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2__1_in_rule__NodeDefinition__Group_2__04298);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2__1_in_rule__NodeDefinition__Group_2__04245);
             rule__NodeDefinition__Group_2__1();
 
             state._fsp--;
@@ -5800,20 +5719,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2029:1: rule__NodeDefinition__Group_2__0__Impl : ( '(' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2005:1: rule__NodeDefinition__Group_2__0__Impl : ( '(' ) ;
     public final void rule__NodeDefinition__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2033:1: ( ( '(' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2034:1: ( '(' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2009:1: ( ( '(' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2010:1: ( '(' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2034:1: ( '(' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2035:1: '('
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2010:1: ( '(' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2011:1: '('
             {
              before(grammarAccess.getNodeDefinitionAccess().getLeftParenthesisKeyword_2_0()); 
-            match(input,69,FOLLOW_69_in_rule__NodeDefinition__Group_2__0__Impl4326); 
+            match(input,69,FOLLOW_69_in_rule__NodeDefinition__Group_2__0__Impl4273); 
              after(grammarAccess.getNodeDefinitionAccess().getLeftParenthesisKeyword_2_0()); 
 
             }
@@ -5837,21 +5756,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2048:1: rule__NodeDefinition__Group_2__1 : rule__NodeDefinition__Group_2__1__Impl rule__NodeDefinition__Group_2__2 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2024:1: rule__NodeDefinition__Group_2__1 : rule__NodeDefinition__Group_2__1__Impl rule__NodeDefinition__Group_2__2 ;
     public final void rule__NodeDefinition__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2052:1: ( rule__NodeDefinition__Group_2__1__Impl rule__NodeDefinition__Group_2__2 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2053:2: rule__NodeDefinition__Group_2__1__Impl rule__NodeDefinition__Group_2__2
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2028:1: ( rule__NodeDefinition__Group_2__1__Impl rule__NodeDefinition__Group_2__2 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2029:2: rule__NodeDefinition__Group_2__1__Impl rule__NodeDefinition__Group_2__2
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2__1__Impl_in_rule__NodeDefinition__Group_2__14357);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2__1__Impl_in_rule__NodeDefinition__Group_2__14304);
             rule__NodeDefinition__Group_2__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2__2_in_rule__NodeDefinition__Group_2__14360);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2__2_in_rule__NodeDefinition__Group_2__14307);
             rule__NodeDefinition__Group_2__2();
 
             state._fsp--;
@@ -5875,23 +5794,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2060:1: rule__NodeDefinition__Group_2__1__Impl : ( ( rule__NodeDefinition__Group_2_1__0 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2036:1: rule__NodeDefinition__Group_2__1__Impl : ( ( rule__NodeDefinition__Group_2_1__0 ) ) ;
     public final void rule__NodeDefinition__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2064:1: ( ( ( rule__NodeDefinition__Group_2_1__0 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2065:1: ( ( rule__NodeDefinition__Group_2_1__0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2040:1: ( ( ( rule__NodeDefinition__Group_2_1__0 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2041:1: ( ( rule__NodeDefinition__Group_2_1__0 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2065:1: ( ( rule__NodeDefinition__Group_2_1__0 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2066:1: ( rule__NodeDefinition__Group_2_1__0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2041:1: ( ( rule__NodeDefinition__Group_2_1__0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2042:1: ( rule__NodeDefinition__Group_2_1__0 )
             {
              before(grammarAccess.getNodeDefinitionAccess().getGroup_2_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2067:1: ( rule__NodeDefinition__Group_2_1__0 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2067:2: rule__NodeDefinition__Group_2_1__0
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2043:1: ( rule__NodeDefinition__Group_2_1__0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2043:2: rule__NodeDefinition__Group_2_1__0
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1__0_in_rule__NodeDefinition__Group_2__1__Impl4387);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1__0_in_rule__NodeDefinition__Group_2__1__Impl4334);
             rule__NodeDefinition__Group_2_1__0();
 
             state._fsp--;
@@ -5922,16 +5841,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2__2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2077:1: rule__NodeDefinition__Group_2__2 : rule__NodeDefinition__Group_2__2__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2053:1: rule__NodeDefinition__Group_2__2 : rule__NodeDefinition__Group_2__2__Impl ;
     public final void rule__NodeDefinition__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2081:1: ( rule__NodeDefinition__Group_2__2__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2082:2: rule__NodeDefinition__Group_2__2__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2057:1: ( rule__NodeDefinition__Group_2__2__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2058:2: rule__NodeDefinition__Group_2__2__Impl
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2__2__Impl_in_rule__NodeDefinition__Group_2__24417);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2__2__Impl_in_rule__NodeDefinition__Group_2__24364);
             rule__NodeDefinition__Group_2__2__Impl();
 
             state._fsp--;
@@ -5955,20 +5874,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2__2__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2088:1: rule__NodeDefinition__Group_2__2__Impl : ( ')' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2064:1: rule__NodeDefinition__Group_2__2__Impl : ( ')' ) ;
     public final void rule__NodeDefinition__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2092:1: ( ( ')' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2093:1: ( ')' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2068:1: ( ( ')' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2069:1: ( ')' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2093:1: ( ')' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2094:1: ')'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2069:1: ( ')' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2070:1: ')'
             {
              before(grammarAccess.getNodeDefinitionAccess().getRightParenthesisKeyword_2_2()); 
-            match(input,70,FOLLOW_70_in_rule__NodeDefinition__Group_2__2__Impl4445); 
+            match(input,70,FOLLOW_70_in_rule__NodeDefinition__Group_2__2__Impl4392); 
              after(grammarAccess.getNodeDefinitionAccess().getRightParenthesisKeyword_2_2()); 
 
             }
@@ -5992,21 +5911,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2_1__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2113:1: rule__NodeDefinition__Group_2_1__0 : rule__NodeDefinition__Group_2_1__0__Impl rule__NodeDefinition__Group_2_1__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2089:1: rule__NodeDefinition__Group_2_1__0 : rule__NodeDefinition__Group_2_1__0__Impl rule__NodeDefinition__Group_2_1__1 ;
     public final void rule__NodeDefinition__Group_2_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2117:1: ( rule__NodeDefinition__Group_2_1__0__Impl rule__NodeDefinition__Group_2_1__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2118:2: rule__NodeDefinition__Group_2_1__0__Impl rule__NodeDefinition__Group_2_1__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2093:1: ( rule__NodeDefinition__Group_2_1__0__Impl rule__NodeDefinition__Group_2_1__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2094:2: rule__NodeDefinition__Group_2_1__0__Impl rule__NodeDefinition__Group_2_1__1
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1__0__Impl_in_rule__NodeDefinition__Group_2_1__04482);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1__0__Impl_in_rule__NodeDefinition__Group_2_1__04429);
             rule__NodeDefinition__Group_2_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1__1_in_rule__NodeDefinition__Group_2_1__04485);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1__1_in_rule__NodeDefinition__Group_2_1__04432);
             rule__NodeDefinition__Group_2_1__1();
 
             state._fsp--;
@@ -6030,23 +5949,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2_1__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2125:1: rule__NodeDefinition__Group_2_1__0__Impl : ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2101:1: rule__NodeDefinition__Group_2_1__0__Impl : ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 ) ) ;
     public final void rule__NodeDefinition__Group_2_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2129:1: ( ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2130:1: ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2105:1: ( ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2106:1: ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2130:1: ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2131:1: ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2106:1: ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2107:1: ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 )
             {
              before(grammarAccess.getNodeDefinitionAccess().getRequiredTypesAssignment_2_1_0()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2132:1: ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2132:2: rule__NodeDefinition__RequiredTypesAssignment_2_1_0
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2108:1: ( rule__NodeDefinition__RequiredTypesAssignment_2_1_0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2108:2: rule__NodeDefinition__RequiredTypesAssignment_2_1_0
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__RequiredTypesAssignment_2_1_0_in_rule__NodeDefinition__Group_2_1__0__Impl4512);
+            pushFollow(FOLLOW_rule__NodeDefinition__RequiredTypesAssignment_2_1_0_in_rule__NodeDefinition__Group_2_1__0__Impl4459);
             rule__NodeDefinition__RequiredTypesAssignment_2_1_0();
 
             state._fsp--;
@@ -6077,16 +5996,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2_1__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2142:1: rule__NodeDefinition__Group_2_1__1 : rule__NodeDefinition__Group_2_1__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2118:1: rule__NodeDefinition__Group_2_1__1 : rule__NodeDefinition__Group_2_1__1__Impl ;
     public final void rule__NodeDefinition__Group_2_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2146:1: ( rule__NodeDefinition__Group_2_1__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2147:2: rule__NodeDefinition__Group_2_1__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2122:1: ( rule__NodeDefinition__Group_2_1__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2123:2: rule__NodeDefinition__Group_2_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1__1__Impl_in_rule__NodeDefinition__Group_2_1__14542);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1__1__Impl_in_rule__NodeDefinition__Group_2_1__14489);
             rule__NodeDefinition__Group_2_1__1__Impl();
 
             state._fsp--;
@@ -6110,35 +6029,35 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2_1__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2153:1: rule__NodeDefinition__Group_2_1__1__Impl : ( ( rule__NodeDefinition__Group_2_1_1__0 )* ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2129:1: rule__NodeDefinition__Group_2_1__1__Impl : ( ( rule__NodeDefinition__Group_2_1_1__0 )* ) ;
     public final void rule__NodeDefinition__Group_2_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2157:1: ( ( ( rule__NodeDefinition__Group_2_1_1__0 )* ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2158:1: ( ( rule__NodeDefinition__Group_2_1_1__0 )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2133:1: ( ( ( rule__NodeDefinition__Group_2_1_1__0 )* ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2134:1: ( ( rule__NodeDefinition__Group_2_1_1__0 )* )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2158:1: ( ( rule__NodeDefinition__Group_2_1_1__0 )* )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2159:1: ( rule__NodeDefinition__Group_2_1_1__0 )*
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2134:1: ( ( rule__NodeDefinition__Group_2_1_1__0 )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2135:1: ( rule__NodeDefinition__Group_2_1_1__0 )*
             {
              before(grammarAccess.getNodeDefinitionAccess().getGroup_2_1_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2160:1: ( rule__NodeDefinition__Group_2_1_1__0 )*
-            loop30:
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2136:1: ( rule__NodeDefinition__Group_2_1_1__0 )*
+            loop29:
             do {
-                int alt30=2;
-                int LA30_0 = input.LA(1);
+                int alt29=2;
+                int LA29_0 = input.LA(1);
 
-                if ( (LA30_0==67) ) {
-                    alt30=1;
+                if ( (LA29_0==67) ) {
+                    alt29=1;
                 }
 
 
-                switch (alt30) {
+                switch (alt29) {
             	case 1 :
-            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2160:2: rule__NodeDefinition__Group_2_1_1__0
+            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2136:2: rule__NodeDefinition__Group_2_1_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1_1__0_in_rule__NodeDefinition__Group_2_1__1__Impl4569);
+            	    pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1_1__0_in_rule__NodeDefinition__Group_2_1__1__Impl4516);
             	    rule__NodeDefinition__Group_2_1_1__0();
 
             	    state._fsp--;
@@ -6148,7 +6067,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop30;
+            	    break loop29;
                 }
             } while (true);
 
@@ -6175,21 +6094,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2_1_1__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2174:1: rule__NodeDefinition__Group_2_1_1__0 : rule__NodeDefinition__Group_2_1_1__0__Impl rule__NodeDefinition__Group_2_1_1__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2150:1: rule__NodeDefinition__Group_2_1_1__0 : rule__NodeDefinition__Group_2_1_1__0__Impl rule__NodeDefinition__Group_2_1_1__1 ;
     public final void rule__NodeDefinition__Group_2_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2178:1: ( rule__NodeDefinition__Group_2_1_1__0__Impl rule__NodeDefinition__Group_2_1_1__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2179:2: rule__NodeDefinition__Group_2_1_1__0__Impl rule__NodeDefinition__Group_2_1_1__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2154:1: ( rule__NodeDefinition__Group_2_1_1__0__Impl rule__NodeDefinition__Group_2_1_1__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2155:2: rule__NodeDefinition__Group_2_1_1__0__Impl rule__NodeDefinition__Group_2_1_1__1
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1_1__0__Impl_in_rule__NodeDefinition__Group_2_1_1__04604);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1_1__0__Impl_in_rule__NodeDefinition__Group_2_1_1__04551);
             rule__NodeDefinition__Group_2_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1_1__1_in_rule__NodeDefinition__Group_2_1_1__04607);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1_1__1_in_rule__NodeDefinition__Group_2_1_1__04554);
             rule__NodeDefinition__Group_2_1_1__1();
 
             state._fsp--;
@@ -6213,20 +6132,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2_1_1__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2186:1: rule__NodeDefinition__Group_2_1_1__0__Impl : ( ',' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2162:1: rule__NodeDefinition__Group_2_1_1__0__Impl : ( ',' ) ;
     public final void rule__NodeDefinition__Group_2_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2190:1: ( ( ',' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2191:1: ( ',' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2166:1: ( ( ',' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2167:1: ( ',' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2191:1: ( ',' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2192:1: ','
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2167:1: ( ',' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2168:1: ','
             {
              before(grammarAccess.getNodeDefinitionAccess().getCommaKeyword_2_1_1_0()); 
-            match(input,67,FOLLOW_67_in_rule__NodeDefinition__Group_2_1_1__0__Impl4635); 
+            match(input,67,FOLLOW_67_in_rule__NodeDefinition__Group_2_1_1__0__Impl4582); 
              after(grammarAccess.getNodeDefinitionAccess().getCommaKeyword_2_1_1_0()); 
 
             }
@@ -6250,16 +6169,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2_1_1__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2205:1: rule__NodeDefinition__Group_2_1_1__1 : rule__NodeDefinition__Group_2_1_1__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2181:1: rule__NodeDefinition__Group_2_1_1__1 : rule__NodeDefinition__Group_2_1_1__1__Impl ;
     public final void rule__NodeDefinition__Group_2_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2209:1: ( rule__NodeDefinition__Group_2_1_1__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2210:2: rule__NodeDefinition__Group_2_1_1__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2185:1: ( rule__NodeDefinition__Group_2_1_1__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2186:2: rule__NodeDefinition__Group_2_1_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1_1__1__Impl_in_rule__NodeDefinition__Group_2_1_1__14666);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_2_1_1__1__Impl_in_rule__NodeDefinition__Group_2_1_1__14613);
             rule__NodeDefinition__Group_2_1_1__1__Impl();
 
             state._fsp--;
@@ -6283,23 +6202,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_2_1_1__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2216:1: rule__NodeDefinition__Group_2_1_1__1__Impl : ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2192:1: rule__NodeDefinition__Group_2_1_1__1__Impl : ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 ) ) ;
     public final void rule__NodeDefinition__Group_2_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2220:1: ( ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2221:1: ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2196:1: ( ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2197:1: ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2221:1: ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2222:1: ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2197:1: ( ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2198:1: ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 )
             {
              before(grammarAccess.getNodeDefinitionAccess().getRequiredTypesAssignment_2_1_1_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2223:1: ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2223:2: rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2199:1: ( rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2199:2: rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1_in_rule__NodeDefinition__Group_2_1_1__1__Impl4693);
+            pushFollow(FOLLOW_rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1_in_rule__NodeDefinition__Group_2_1_1__1__Impl4640);
             rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1();
 
             state._fsp--;
@@ -6330,21 +6249,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_3__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2237:1: rule__NodeDefinition__Group_3__0 : rule__NodeDefinition__Group_3__0__Impl rule__NodeDefinition__Group_3__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2213:1: rule__NodeDefinition__Group_3__0 : rule__NodeDefinition__Group_3__0__Impl rule__NodeDefinition__Group_3__1 ;
     public final void rule__NodeDefinition__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2241:1: ( rule__NodeDefinition__Group_3__0__Impl rule__NodeDefinition__Group_3__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2242:2: rule__NodeDefinition__Group_3__0__Impl rule__NodeDefinition__Group_3__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2217:1: ( rule__NodeDefinition__Group_3__0__Impl rule__NodeDefinition__Group_3__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2218:2: rule__NodeDefinition__Group_3__0__Impl rule__NodeDefinition__Group_3__1
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_3__0__Impl_in_rule__NodeDefinition__Group_3__04727);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_3__0__Impl_in_rule__NodeDefinition__Group_3__04674);
             rule__NodeDefinition__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_3__1_in_rule__NodeDefinition__Group_3__04730);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_3__1_in_rule__NodeDefinition__Group_3__04677);
             rule__NodeDefinition__Group_3__1();
 
             state._fsp--;
@@ -6368,20 +6287,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_3__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2249:1: rule__NodeDefinition__Group_3__0__Impl : ( '=' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2225:1: rule__NodeDefinition__Group_3__0__Impl : ( '=' ) ;
     public final void rule__NodeDefinition__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2253:1: ( ( '=' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2254:1: ( '=' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2229:1: ( ( '=' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2230:1: ( '=' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2254:1: ( '=' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2255:1: '='
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2230:1: ( '=' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2231:1: '='
             {
              before(grammarAccess.getNodeDefinitionAccess().getEqualsSignKeyword_3_0()); 
-            match(input,71,FOLLOW_71_in_rule__NodeDefinition__Group_3__0__Impl4758); 
+            match(input,71,FOLLOW_71_in_rule__NodeDefinition__Group_3__0__Impl4705); 
              after(grammarAccess.getNodeDefinitionAccess().getEqualsSignKeyword_3_0()); 
 
             }
@@ -6405,16 +6324,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_3__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2268:1: rule__NodeDefinition__Group_3__1 : rule__NodeDefinition__Group_3__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2244:1: rule__NodeDefinition__Group_3__1 : rule__NodeDefinition__Group_3__1__Impl ;
     public final void rule__NodeDefinition__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2272:1: ( rule__NodeDefinition__Group_3__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2273:2: rule__NodeDefinition__Group_3__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2248:1: ( rule__NodeDefinition__Group_3__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2249:2: rule__NodeDefinition__Group_3__1__Impl
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__Group_3__1__Impl_in_rule__NodeDefinition__Group_3__14789);
+            pushFollow(FOLLOW_rule__NodeDefinition__Group_3__1__Impl_in_rule__NodeDefinition__Group_3__14736);
             rule__NodeDefinition__Group_3__1__Impl();
 
             state._fsp--;
@@ -6438,23 +6357,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__Group_3__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2279:1: rule__NodeDefinition__Group_3__1__Impl : ( ( rule__NodeDefinition__DefaultTypeAssignment_3_1 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2255:1: rule__NodeDefinition__Group_3__1__Impl : ( ( rule__NodeDefinition__DefaultTypeAssignment_3_1 ) ) ;
     public final void rule__NodeDefinition__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2283:1: ( ( ( rule__NodeDefinition__DefaultTypeAssignment_3_1 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2284:1: ( ( rule__NodeDefinition__DefaultTypeAssignment_3_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2259:1: ( ( ( rule__NodeDefinition__DefaultTypeAssignment_3_1 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2260:1: ( ( rule__NodeDefinition__DefaultTypeAssignment_3_1 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2284:1: ( ( rule__NodeDefinition__DefaultTypeAssignment_3_1 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2285:1: ( rule__NodeDefinition__DefaultTypeAssignment_3_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2260:1: ( ( rule__NodeDefinition__DefaultTypeAssignment_3_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2261:1: ( rule__NodeDefinition__DefaultTypeAssignment_3_1 )
             {
              before(grammarAccess.getNodeDefinitionAccess().getDefaultTypeAssignment_3_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2286:1: ( rule__NodeDefinition__DefaultTypeAssignment_3_1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2286:2: rule__NodeDefinition__DefaultTypeAssignment_3_1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2262:1: ( rule__NodeDefinition__DefaultTypeAssignment_3_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2262:2: rule__NodeDefinition__DefaultTypeAssignment_3_1
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__DefaultTypeAssignment_3_1_in_rule__NodeDefinition__Group_3__1__Impl4816);
+            pushFollow(FOLLOW_rule__NodeDefinition__DefaultTypeAssignment_3_1_in_rule__NodeDefinition__Group_3__1__Impl4763);
             rule__NodeDefinition__DefaultTypeAssignment_3_1();
 
             state._fsp--;
@@ -6485,21 +6404,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2300:1: rule__PropertyDefinition__Group__0 : rule__PropertyDefinition__Group__0__Impl rule__PropertyDefinition__Group__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2276:1: rule__PropertyDefinition__Group__0 : rule__PropertyDefinition__Group__0__Impl rule__PropertyDefinition__Group__1 ;
     public final void rule__PropertyDefinition__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2304:1: ( rule__PropertyDefinition__Group__0__Impl rule__PropertyDefinition__Group__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2305:2: rule__PropertyDefinition__Group__0__Impl rule__PropertyDefinition__Group__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2280:1: ( rule__PropertyDefinition__Group__0__Impl rule__PropertyDefinition__Group__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2281:2: rule__PropertyDefinition__Group__0__Impl rule__PropertyDefinition__Group__1
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__0__Impl_in_rule__PropertyDefinition__Group__04850);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__0__Impl_in_rule__PropertyDefinition__Group__04797);
             rule__PropertyDefinition__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__1_in_rule__PropertyDefinition__Group__04853);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__1_in_rule__PropertyDefinition__Group__04800);
             rule__PropertyDefinition__Group__1();
 
             state._fsp--;
@@ -6523,21 +6442,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2312:1: rule__PropertyDefinition__Group__0__Impl : ( () ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2288:1: rule__PropertyDefinition__Group__0__Impl : ( () ) ;
     public final void rule__PropertyDefinition__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2316:1: ( ( () ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2317:1: ( () )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2292:1: ( ( () ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2293:1: ( () )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2317:1: ( () )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2318:1: ()
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2293:1: ( () )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2294:1: ()
             {
              before(grammarAccess.getPropertyDefinitionAccess().getPropertyDefinitionAction_0()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2319:1: ()
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2321:1: 
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2295:1: ()
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2297:1: 
             {
             }
 
@@ -6560,21 +6479,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2331:1: rule__PropertyDefinition__Group__1 : rule__PropertyDefinition__Group__1__Impl rule__PropertyDefinition__Group__2 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2307:1: rule__PropertyDefinition__Group__1 : rule__PropertyDefinition__Group__1__Impl rule__PropertyDefinition__Group__2 ;
     public final void rule__PropertyDefinition__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2335:1: ( rule__PropertyDefinition__Group__1__Impl rule__PropertyDefinition__Group__2 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2336:2: rule__PropertyDefinition__Group__1__Impl rule__PropertyDefinition__Group__2
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2311:1: ( rule__PropertyDefinition__Group__1__Impl rule__PropertyDefinition__Group__2 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2312:2: rule__PropertyDefinition__Group__1__Impl rule__PropertyDefinition__Group__2
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__1__Impl_in_rule__PropertyDefinition__Group__14911);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__1__Impl_in_rule__PropertyDefinition__Group__14858);
             rule__PropertyDefinition__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__2_in_rule__PropertyDefinition__Group__14914);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__2_in_rule__PropertyDefinition__Group__14861);
             rule__PropertyDefinition__Group__2();
 
             state._fsp--;
@@ -6598,20 +6517,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2343:1: rule__PropertyDefinition__Group__1__Impl : ( '-' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2319:1: rule__PropertyDefinition__Group__1__Impl : ( '-' ) ;
     public final void rule__PropertyDefinition__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2347:1: ( ( '-' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2348:1: ( '-' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2323:1: ( ( '-' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2324:1: ( '-' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2348:1: ( '-' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2349:1: '-'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2324:1: ( '-' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2325:1: '-'
             {
              before(grammarAccess.getPropertyDefinitionAccess().getHyphenMinusKeyword_1()); 
-            match(input,72,FOLLOW_72_in_rule__PropertyDefinition__Group__1__Impl4942); 
+            match(input,72,FOLLOW_72_in_rule__PropertyDefinition__Group__1__Impl4889); 
              after(grammarAccess.getPropertyDefinitionAccess().getHyphenMinusKeyword_1()); 
 
             }
@@ -6635,21 +6554,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2362:1: rule__PropertyDefinition__Group__2 : rule__PropertyDefinition__Group__2__Impl rule__PropertyDefinition__Group__3 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2338:1: rule__PropertyDefinition__Group__2 : rule__PropertyDefinition__Group__2__Impl rule__PropertyDefinition__Group__3 ;
     public final void rule__PropertyDefinition__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2366:1: ( rule__PropertyDefinition__Group__2__Impl rule__PropertyDefinition__Group__3 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2367:2: rule__PropertyDefinition__Group__2__Impl rule__PropertyDefinition__Group__3
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2342:1: ( rule__PropertyDefinition__Group__2__Impl rule__PropertyDefinition__Group__3 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2343:2: rule__PropertyDefinition__Group__2__Impl rule__PropertyDefinition__Group__3
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__2__Impl_in_rule__PropertyDefinition__Group__24973);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__2__Impl_in_rule__PropertyDefinition__Group__24920);
             rule__PropertyDefinition__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__3_in_rule__PropertyDefinition__Group__24976);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__3_in_rule__PropertyDefinition__Group__24923);
             rule__PropertyDefinition__Group__3();
 
             state._fsp--;
@@ -6673,23 +6592,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__2__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2374:1: rule__PropertyDefinition__Group__2__Impl : ( ( rule__PropertyDefinition__Alternatives_2 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2350:1: rule__PropertyDefinition__Group__2__Impl : ( ( rule__PropertyDefinition__Alternatives_2 ) ) ;
     public final void rule__PropertyDefinition__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2378:1: ( ( ( rule__PropertyDefinition__Alternatives_2 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2379:1: ( ( rule__PropertyDefinition__Alternatives_2 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2354:1: ( ( ( rule__PropertyDefinition__Alternatives_2 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2355:1: ( ( rule__PropertyDefinition__Alternatives_2 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2379:1: ( ( rule__PropertyDefinition__Alternatives_2 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2380:1: ( rule__PropertyDefinition__Alternatives_2 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2355:1: ( ( rule__PropertyDefinition__Alternatives_2 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2356:1: ( rule__PropertyDefinition__Alternatives_2 )
             {
              before(grammarAccess.getPropertyDefinitionAccess().getAlternatives_2()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2381:1: ( rule__PropertyDefinition__Alternatives_2 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2381:2: rule__PropertyDefinition__Alternatives_2
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2357:1: ( rule__PropertyDefinition__Alternatives_2 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2357:2: rule__PropertyDefinition__Alternatives_2
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Alternatives_2_in_rule__PropertyDefinition__Group__2__Impl5003);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Alternatives_2_in_rule__PropertyDefinition__Group__2__Impl4950);
             rule__PropertyDefinition__Alternatives_2();
 
             state._fsp--;
@@ -6720,21 +6639,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__3"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2391:1: rule__PropertyDefinition__Group__3 : rule__PropertyDefinition__Group__3__Impl rule__PropertyDefinition__Group__4 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2367:1: rule__PropertyDefinition__Group__3 : rule__PropertyDefinition__Group__3__Impl rule__PropertyDefinition__Group__4 ;
     public final void rule__PropertyDefinition__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2395:1: ( rule__PropertyDefinition__Group__3__Impl rule__PropertyDefinition__Group__4 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2396:2: rule__PropertyDefinition__Group__3__Impl rule__PropertyDefinition__Group__4
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2371:1: ( rule__PropertyDefinition__Group__3__Impl rule__PropertyDefinition__Group__4 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2372:2: rule__PropertyDefinition__Group__3__Impl rule__PropertyDefinition__Group__4
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__3__Impl_in_rule__PropertyDefinition__Group__35033);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__3__Impl_in_rule__PropertyDefinition__Group__34980);
             rule__PropertyDefinition__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__4_in_rule__PropertyDefinition__Group__35036);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__4_in_rule__PropertyDefinition__Group__34983);
             rule__PropertyDefinition__Group__4();
 
             state._fsp--;
@@ -6758,31 +6677,31 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__3__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2403:1: rule__PropertyDefinition__Group__3__Impl : ( ( rule__PropertyDefinition__Group_3__0 )? ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2379:1: rule__PropertyDefinition__Group__3__Impl : ( ( rule__PropertyDefinition__Group_3__0 )? ) ;
     public final void rule__PropertyDefinition__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2407:1: ( ( ( rule__PropertyDefinition__Group_3__0 )? ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2408:1: ( ( rule__PropertyDefinition__Group_3__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2383:1: ( ( ( rule__PropertyDefinition__Group_3__0 )? ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2384:1: ( ( rule__PropertyDefinition__Group_3__0 )? )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2408:1: ( ( rule__PropertyDefinition__Group_3__0 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2409:1: ( rule__PropertyDefinition__Group_3__0 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2384:1: ( ( rule__PropertyDefinition__Group_3__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2385:1: ( rule__PropertyDefinition__Group_3__0 )?
             {
              before(grammarAccess.getPropertyDefinitionAccess().getGroup_3()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2410:1: ( rule__PropertyDefinition__Group_3__0 )?
-            int alt31=2;
-            int LA31_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2386:1: ( rule__PropertyDefinition__Group_3__0 )?
+            int alt30=2;
+            int LA30_0 = input.LA(1);
 
-            if ( (LA31_0==69) ) {
-                alt31=1;
+            if ( (LA30_0==69) ) {
+                alt30=1;
             }
-            switch (alt31) {
+            switch (alt30) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2410:2: rule__PropertyDefinition__Group_3__0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2386:2: rule__PropertyDefinition__Group_3__0
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__0_in_rule__PropertyDefinition__Group__3__Impl5063);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__0_in_rule__PropertyDefinition__Group__3__Impl5010);
                     rule__PropertyDefinition__Group_3__0();
 
                     state._fsp--;
@@ -6816,21 +6735,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2420:1: rule__PropertyDefinition__Group__4 : rule__PropertyDefinition__Group__4__Impl rule__PropertyDefinition__Group__5 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2396:1: rule__PropertyDefinition__Group__4 : rule__PropertyDefinition__Group__4__Impl rule__PropertyDefinition__Group__5 ;
     public final void rule__PropertyDefinition__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2424:1: ( rule__PropertyDefinition__Group__4__Impl rule__PropertyDefinition__Group__5 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2425:2: rule__PropertyDefinition__Group__4__Impl rule__PropertyDefinition__Group__5
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2400:1: ( rule__PropertyDefinition__Group__4__Impl rule__PropertyDefinition__Group__5 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2401:2: rule__PropertyDefinition__Group__4__Impl rule__PropertyDefinition__Group__5
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__4__Impl_in_rule__PropertyDefinition__Group__45094);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__4__Impl_in_rule__PropertyDefinition__Group__45041);
             rule__PropertyDefinition__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__5_in_rule__PropertyDefinition__Group__45097);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__5_in_rule__PropertyDefinition__Group__45044);
             rule__PropertyDefinition__Group__5();
 
             state._fsp--;
@@ -6854,31 +6773,31 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__4__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2432:1: rule__PropertyDefinition__Group__4__Impl : ( ( rule__PropertyDefinition__Group_4__0 )? ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2408:1: rule__PropertyDefinition__Group__4__Impl : ( ( rule__PropertyDefinition__Group_4__0 )? ) ;
     public final void rule__PropertyDefinition__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2436:1: ( ( ( rule__PropertyDefinition__Group_4__0 )? ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2437:1: ( ( rule__PropertyDefinition__Group_4__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2412:1: ( ( ( rule__PropertyDefinition__Group_4__0 )? ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2413:1: ( ( rule__PropertyDefinition__Group_4__0 )? )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2437:1: ( ( rule__PropertyDefinition__Group_4__0 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2438:1: ( rule__PropertyDefinition__Group_4__0 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2413:1: ( ( rule__PropertyDefinition__Group_4__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2414:1: ( rule__PropertyDefinition__Group_4__0 )?
             {
              before(grammarAccess.getPropertyDefinitionAccess().getGroup_4()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2439:1: ( rule__PropertyDefinition__Group_4__0 )?
-            int alt32=2;
-            int LA32_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2415:1: ( rule__PropertyDefinition__Group_4__0 )?
+            int alt31=2;
+            int LA31_0 = input.LA(1);
 
-            if ( (LA32_0==71) ) {
-                alt32=1;
+            if ( (LA31_0==71) ) {
+                alt31=1;
             }
-            switch (alt32) {
+            switch (alt31) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2439:2: rule__PropertyDefinition__Group_4__0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2415:2: rule__PropertyDefinition__Group_4__0
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__Group_4__0_in_rule__PropertyDefinition__Group__4__Impl5124);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__Group_4__0_in_rule__PropertyDefinition__Group__4__Impl5071);
                     rule__PropertyDefinition__Group_4__0();
 
                     state._fsp--;
@@ -6912,21 +6831,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__5"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2449:1: rule__PropertyDefinition__Group__5 : rule__PropertyDefinition__Group__5__Impl rule__PropertyDefinition__Group__6 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2425:1: rule__PropertyDefinition__Group__5 : rule__PropertyDefinition__Group__5__Impl rule__PropertyDefinition__Group__6 ;
     public final void rule__PropertyDefinition__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2453:1: ( rule__PropertyDefinition__Group__5__Impl rule__PropertyDefinition__Group__6 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2454:2: rule__PropertyDefinition__Group__5__Impl rule__PropertyDefinition__Group__6
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2429:1: ( rule__PropertyDefinition__Group__5__Impl rule__PropertyDefinition__Group__6 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2430:2: rule__PropertyDefinition__Group__5__Impl rule__PropertyDefinition__Group__6
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__5__Impl_in_rule__PropertyDefinition__Group__55155);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__5__Impl_in_rule__PropertyDefinition__Group__55102);
             rule__PropertyDefinition__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__6_in_rule__PropertyDefinition__Group__55158);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__6_in_rule__PropertyDefinition__Group__55105);
             rule__PropertyDefinition__Group__6();
 
             state._fsp--;
@@ -6950,23 +6869,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__5__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2461:1: rule__PropertyDefinition__Group__5__Impl : ( ( rule__PropertyDefinition__UnorderedGroup_5 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2437:1: rule__PropertyDefinition__Group__5__Impl : ( ( rule__PropertyDefinition__UnorderedGroup_5 ) ) ;
     public final void rule__PropertyDefinition__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2465:1: ( ( ( rule__PropertyDefinition__UnorderedGroup_5 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2466:1: ( ( rule__PropertyDefinition__UnorderedGroup_5 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2441:1: ( ( ( rule__PropertyDefinition__UnorderedGroup_5 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2442:1: ( ( rule__PropertyDefinition__UnorderedGroup_5 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2466:1: ( ( rule__PropertyDefinition__UnorderedGroup_5 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2467:1: ( rule__PropertyDefinition__UnorderedGroup_5 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2442:1: ( ( rule__PropertyDefinition__UnorderedGroup_5 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2443:1: ( rule__PropertyDefinition__UnorderedGroup_5 )
             {
              before(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2468:1: ( rule__PropertyDefinition__UnorderedGroup_5 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2468:2: rule__PropertyDefinition__UnorderedGroup_5
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2444:1: ( rule__PropertyDefinition__UnorderedGroup_5 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2444:2: rule__PropertyDefinition__UnorderedGroup_5
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5_in_rule__PropertyDefinition__Group__5__Impl5185);
+            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5_in_rule__PropertyDefinition__Group__5__Impl5132);
             rule__PropertyDefinition__UnorderedGroup_5();
 
             state._fsp--;
@@ -6997,16 +6916,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__6"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2478:1: rule__PropertyDefinition__Group__6 : rule__PropertyDefinition__Group__6__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2454:1: rule__PropertyDefinition__Group__6 : rule__PropertyDefinition__Group__6__Impl ;
     public final void rule__PropertyDefinition__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2482:1: ( rule__PropertyDefinition__Group__6__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2483:2: rule__PropertyDefinition__Group__6__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2458:1: ( rule__PropertyDefinition__Group__6__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2459:2: rule__PropertyDefinition__Group__6__Impl
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group__6__Impl_in_rule__PropertyDefinition__Group__65215);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group__6__Impl_in_rule__PropertyDefinition__Group__65162);
             rule__PropertyDefinition__Group__6__Impl();
 
             state._fsp--;
@@ -7030,56 +6949,42 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group__6__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2489:1: rule__PropertyDefinition__Group__6__Impl : ( ( rule__PropertyDefinition__Group_6__0 )? ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2465:1: rule__PropertyDefinition__Group__6__Impl : ( ( rule__PropertyDefinition__Group_6__0 )? ) ;
     public final void rule__PropertyDefinition__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2493:1: ( ( ( rule__PropertyDefinition__Group_6__0 )? ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2494:1: ( ( rule__PropertyDefinition__Group_6__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2469:1: ( ( ( rule__PropertyDefinition__Group_6__0 )? ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2470:1: ( ( rule__PropertyDefinition__Group_6__0 )? )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2494:1: ( ( rule__PropertyDefinition__Group_6__0 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2495:1: ( rule__PropertyDefinition__Group_6__0 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2470:1: ( ( rule__PropertyDefinition__Group_6__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2471:1: ( rule__PropertyDefinition__Group_6__0 )?
             {
              before(grammarAccess.getPropertyDefinitionAccess().getGroup_6()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2496:1: ( rule__PropertyDefinition__Group_6__0 )?
-            int alt33=2;
-            int LA33_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2472:1: ( rule__PropertyDefinition__Group_6__0 )?
+            int alt32=2;
+            int LA32_0 = input.LA(1);
 
-            if ( (LA33_0==73) ) {
-                switch ( input.LA(2) ) {
-                    case RULE_STRING:
-                        {
-                        alt33=1;
-                        }
-                        break;
-                    case RULE_EXID:
-                        {
-                        int LA33_4 = input.LA(3);
+            if ( (LA32_0==73) ) {
+                int LA32_1 = input.LA(2);
 
-                        if ( (LA33_4==EOF||LA33_4==64||(LA33_4>=67 && LA33_4<=68)||(LA33_4>=72 && LA33_4<=73)) ) {
-                            alt33=1;
-                        }
-                        }
-                        break;
-                    case 41:
-                        {
-                        int LA33_5 = input.LA(3);
+                if ( (LA32_1==RULE_EXID) ) {
+                    int LA32_3 = input.LA(3);
 
-                        if ( (LA33_5==EOF||LA33_5==64||(LA33_5>=67 && LA33_5<=68)||(LA33_5>=72 && LA33_5<=73)) ) {
-                            alt33=1;
-                        }
-                        }
-                        break;
+                    if ( (LA32_3==EOF||LA32_3==64||(LA32_3>=67 && LA32_3<=68)||(LA32_3>=72 && LA32_3<=73)) ) {
+                        alt32=1;
+                    }
                 }
-
+                else if ( (LA32_1==RULE_STRING) ) {
+                    alt32=1;
+                }
             }
-            switch (alt33) {
+            switch (alt32) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2496:2: rule__PropertyDefinition__Group_6__0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2472:2: rule__PropertyDefinition__Group_6__0
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__Group_6__0_in_rule__PropertyDefinition__Group__6__Impl5242);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__Group_6__0_in_rule__PropertyDefinition__Group__6__Impl5189);
                     rule__PropertyDefinition__Group_6__0();
 
                     state._fsp--;
@@ -7113,21 +7018,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_3__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2520:1: rule__PropertyDefinition__Group_3__0 : rule__PropertyDefinition__Group_3__0__Impl rule__PropertyDefinition__Group_3__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2496:1: rule__PropertyDefinition__Group_3__0 : rule__PropertyDefinition__Group_3__0__Impl rule__PropertyDefinition__Group_3__1 ;
     public final void rule__PropertyDefinition__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2524:1: ( rule__PropertyDefinition__Group_3__0__Impl rule__PropertyDefinition__Group_3__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2525:2: rule__PropertyDefinition__Group_3__0__Impl rule__PropertyDefinition__Group_3__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2500:1: ( rule__PropertyDefinition__Group_3__0__Impl rule__PropertyDefinition__Group_3__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2501:2: rule__PropertyDefinition__Group_3__0__Impl rule__PropertyDefinition__Group_3__1
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__0__Impl_in_rule__PropertyDefinition__Group_3__05287);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__0__Impl_in_rule__PropertyDefinition__Group_3__05234);
             rule__PropertyDefinition__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__1_in_rule__PropertyDefinition__Group_3__05290);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__1_in_rule__PropertyDefinition__Group_3__05237);
             rule__PropertyDefinition__Group_3__1();
 
             state._fsp--;
@@ -7151,20 +7056,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_3__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2532:1: rule__PropertyDefinition__Group_3__0__Impl : ( '(' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2508:1: rule__PropertyDefinition__Group_3__0__Impl : ( '(' ) ;
     public final void rule__PropertyDefinition__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2536:1: ( ( '(' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2537:1: ( '(' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2512:1: ( ( '(' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2513:1: ( '(' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2537:1: ( '(' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2538:1: '('
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2513:1: ( '(' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2514:1: '('
             {
              before(grammarAccess.getPropertyDefinitionAccess().getLeftParenthesisKeyword_3_0()); 
-            match(input,69,FOLLOW_69_in_rule__PropertyDefinition__Group_3__0__Impl5318); 
+            match(input,69,FOLLOW_69_in_rule__PropertyDefinition__Group_3__0__Impl5265); 
              after(grammarAccess.getPropertyDefinitionAccess().getLeftParenthesisKeyword_3_0()); 
 
             }
@@ -7188,21 +7093,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_3__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2551:1: rule__PropertyDefinition__Group_3__1 : rule__PropertyDefinition__Group_3__1__Impl rule__PropertyDefinition__Group_3__2 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2527:1: rule__PropertyDefinition__Group_3__1 : rule__PropertyDefinition__Group_3__1__Impl rule__PropertyDefinition__Group_3__2 ;
     public final void rule__PropertyDefinition__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2555:1: ( rule__PropertyDefinition__Group_3__1__Impl rule__PropertyDefinition__Group_3__2 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2556:2: rule__PropertyDefinition__Group_3__1__Impl rule__PropertyDefinition__Group_3__2
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2531:1: ( rule__PropertyDefinition__Group_3__1__Impl rule__PropertyDefinition__Group_3__2 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2532:2: rule__PropertyDefinition__Group_3__1__Impl rule__PropertyDefinition__Group_3__2
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__1__Impl_in_rule__PropertyDefinition__Group_3__15349);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__1__Impl_in_rule__PropertyDefinition__Group_3__15296);
             rule__PropertyDefinition__Group_3__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__2_in_rule__PropertyDefinition__Group_3__15352);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__2_in_rule__PropertyDefinition__Group_3__15299);
             rule__PropertyDefinition__Group_3__2();
 
             state._fsp--;
@@ -7226,23 +7131,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_3__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2563:1: rule__PropertyDefinition__Group_3__1__Impl : ( ( rule__PropertyDefinition__TypeAssignment_3_1 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2539:1: rule__PropertyDefinition__Group_3__1__Impl : ( ( rule__PropertyDefinition__TypeAssignment_3_1 ) ) ;
     public final void rule__PropertyDefinition__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2567:1: ( ( ( rule__PropertyDefinition__TypeAssignment_3_1 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2568:1: ( ( rule__PropertyDefinition__TypeAssignment_3_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2543:1: ( ( ( rule__PropertyDefinition__TypeAssignment_3_1 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2544:1: ( ( rule__PropertyDefinition__TypeAssignment_3_1 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2568:1: ( ( rule__PropertyDefinition__TypeAssignment_3_1 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2569:1: ( rule__PropertyDefinition__TypeAssignment_3_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2544:1: ( ( rule__PropertyDefinition__TypeAssignment_3_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2545:1: ( rule__PropertyDefinition__TypeAssignment_3_1 )
             {
              before(grammarAccess.getPropertyDefinitionAccess().getTypeAssignment_3_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2570:1: ( rule__PropertyDefinition__TypeAssignment_3_1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2570:2: rule__PropertyDefinition__TypeAssignment_3_1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2546:1: ( rule__PropertyDefinition__TypeAssignment_3_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2546:2: rule__PropertyDefinition__TypeAssignment_3_1
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__TypeAssignment_3_1_in_rule__PropertyDefinition__Group_3__1__Impl5379);
+            pushFollow(FOLLOW_rule__PropertyDefinition__TypeAssignment_3_1_in_rule__PropertyDefinition__Group_3__1__Impl5326);
             rule__PropertyDefinition__TypeAssignment_3_1();
 
             state._fsp--;
@@ -7273,16 +7178,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_3__2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2580:1: rule__PropertyDefinition__Group_3__2 : rule__PropertyDefinition__Group_3__2__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2556:1: rule__PropertyDefinition__Group_3__2 : rule__PropertyDefinition__Group_3__2__Impl ;
     public final void rule__PropertyDefinition__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2584:1: ( rule__PropertyDefinition__Group_3__2__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2585:2: rule__PropertyDefinition__Group_3__2__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2560:1: ( rule__PropertyDefinition__Group_3__2__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2561:2: rule__PropertyDefinition__Group_3__2__Impl
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__2__Impl_in_rule__PropertyDefinition__Group_3__25409);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_3__2__Impl_in_rule__PropertyDefinition__Group_3__25356);
             rule__PropertyDefinition__Group_3__2__Impl();
 
             state._fsp--;
@@ -7306,20 +7211,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_3__2__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2591:1: rule__PropertyDefinition__Group_3__2__Impl : ( ')' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2567:1: rule__PropertyDefinition__Group_3__2__Impl : ( ')' ) ;
     public final void rule__PropertyDefinition__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2595:1: ( ( ')' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2596:1: ( ')' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2571:1: ( ( ')' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2572:1: ( ')' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2596:1: ( ')' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2597:1: ')'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2572:1: ( ')' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2573:1: ')'
             {
              before(grammarAccess.getPropertyDefinitionAccess().getRightParenthesisKeyword_3_2()); 
-            match(input,70,FOLLOW_70_in_rule__PropertyDefinition__Group_3__2__Impl5437); 
+            match(input,70,FOLLOW_70_in_rule__PropertyDefinition__Group_3__2__Impl5384); 
              after(grammarAccess.getPropertyDefinitionAccess().getRightParenthesisKeyword_3_2()); 
 
             }
@@ -7343,21 +7248,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2616:1: rule__PropertyDefinition__Group_4__0 : rule__PropertyDefinition__Group_4__0__Impl rule__PropertyDefinition__Group_4__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2592:1: rule__PropertyDefinition__Group_4__0 : rule__PropertyDefinition__Group_4__0__Impl rule__PropertyDefinition__Group_4__1 ;
     public final void rule__PropertyDefinition__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2620:1: ( rule__PropertyDefinition__Group_4__0__Impl rule__PropertyDefinition__Group_4__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2621:2: rule__PropertyDefinition__Group_4__0__Impl rule__PropertyDefinition__Group_4__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2596:1: ( rule__PropertyDefinition__Group_4__0__Impl rule__PropertyDefinition__Group_4__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2597:2: rule__PropertyDefinition__Group_4__0__Impl rule__PropertyDefinition__Group_4__1
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4__0__Impl_in_rule__PropertyDefinition__Group_4__05474);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4__0__Impl_in_rule__PropertyDefinition__Group_4__05421);
             rule__PropertyDefinition__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4__1_in_rule__PropertyDefinition__Group_4__05477);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4__1_in_rule__PropertyDefinition__Group_4__05424);
             rule__PropertyDefinition__Group_4__1();
 
             state._fsp--;
@@ -7381,20 +7286,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2628:1: rule__PropertyDefinition__Group_4__0__Impl : ( '=' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2604:1: rule__PropertyDefinition__Group_4__0__Impl : ( '=' ) ;
     public final void rule__PropertyDefinition__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2632:1: ( ( '=' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2633:1: ( '=' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2608:1: ( ( '=' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2609:1: ( '=' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2633:1: ( '=' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2634:1: '='
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2609:1: ( '=' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2610:1: '='
             {
              before(grammarAccess.getPropertyDefinitionAccess().getEqualsSignKeyword_4_0()); 
-            match(input,71,FOLLOW_71_in_rule__PropertyDefinition__Group_4__0__Impl5505); 
+            match(input,71,FOLLOW_71_in_rule__PropertyDefinition__Group_4__0__Impl5452); 
              after(grammarAccess.getPropertyDefinitionAccess().getEqualsSignKeyword_4_0()); 
 
             }
@@ -7418,16 +7323,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2647:1: rule__PropertyDefinition__Group_4__1 : rule__PropertyDefinition__Group_4__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2623:1: rule__PropertyDefinition__Group_4__1 : rule__PropertyDefinition__Group_4__1__Impl ;
     public final void rule__PropertyDefinition__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2651:1: ( rule__PropertyDefinition__Group_4__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2652:2: rule__PropertyDefinition__Group_4__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2627:1: ( rule__PropertyDefinition__Group_4__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2628:2: rule__PropertyDefinition__Group_4__1__Impl
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4__1__Impl_in_rule__PropertyDefinition__Group_4__15536);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4__1__Impl_in_rule__PropertyDefinition__Group_4__15483);
             rule__PropertyDefinition__Group_4__1__Impl();
 
             state._fsp--;
@@ -7451,23 +7356,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2658:1: rule__PropertyDefinition__Group_4__1__Impl : ( ( rule__PropertyDefinition__Group_4_1__0 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2634:1: rule__PropertyDefinition__Group_4__1__Impl : ( ( rule__PropertyDefinition__Group_4_1__0 ) ) ;
     public final void rule__PropertyDefinition__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2662:1: ( ( ( rule__PropertyDefinition__Group_4_1__0 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2663:1: ( ( rule__PropertyDefinition__Group_4_1__0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2638:1: ( ( ( rule__PropertyDefinition__Group_4_1__0 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2639:1: ( ( rule__PropertyDefinition__Group_4_1__0 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2663:1: ( ( rule__PropertyDefinition__Group_4_1__0 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2664:1: ( rule__PropertyDefinition__Group_4_1__0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2639:1: ( ( rule__PropertyDefinition__Group_4_1__0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2640:1: ( rule__PropertyDefinition__Group_4_1__0 )
             {
              before(grammarAccess.getPropertyDefinitionAccess().getGroup_4_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2665:1: ( rule__PropertyDefinition__Group_4_1__0 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2665:2: rule__PropertyDefinition__Group_4_1__0
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2641:1: ( rule__PropertyDefinition__Group_4_1__0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2641:2: rule__PropertyDefinition__Group_4_1__0
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1__0_in_rule__PropertyDefinition__Group_4__1__Impl5563);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1__0_in_rule__PropertyDefinition__Group_4__1__Impl5510);
             rule__PropertyDefinition__Group_4_1__0();
 
             state._fsp--;
@@ -7498,21 +7403,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4_1__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2679:1: rule__PropertyDefinition__Group_4_1__0 : rule__PropertyDefinition__Group_4_1__0__Impl rule__PropertyDefinition__Group_4_1__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2655:1: rule__PropertyDefinition__Group_4_1__0 : rule__PropertyDefinition__Group_4_1__0__Impl rule__PropertyDefinition__Group_4_1__1 ;
     public final void rule__PropertyDefinition__Group_4_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2683:1: ( rule__PropertyDefinition__Group_4_1__0__Impl rule__PropertyDefinition__Group_4_1__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2684:2: rule__PropertyDefinition__Group_4_1__0__Impl rule__PropertyDefinition__Group_4_1__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2659:1: ( rule__PropertyDefinition__Group_4_1__0__Impl rule__PropertyDefinition__Group_4_1__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2660:2: rule__PropertyDefinition__Group_4_1__0__Impl rule__PropertyDefinition__Group_4_1__1
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1__0__Impl_in_rule__PropertyDefinition__Group_4_1__05597);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1__0__Impl_in_rule__PropertyDefinition__Group_4_1__05544);
             rule__PropertyDefinition__Group_4_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1__1_in_rule__PropertyDefinition__Group_4_1__05600);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1__1_in_rule__PropertyDefinition__Group_4_1__05547);
             rule__PropertyDefinition__Group_4_1__1();
 
             state._fsp--;
@@ -7536,23 +7441,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4_1__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2691:1: rule__PropertyDefinition__Group_4_1__0__Impl : ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2667:1: rule__PropertyDefinition__Group_4_1__0__Impl : ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 ) ) ;
     public final void rule__PropertyDefinition__Group_4_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2695:1: ( ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2696:1: ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2671:1: ( ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2672:1: ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2696:1: ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2697:1: ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2672:1: ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2673:1: ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 )
             {
              before(grammarAccess.getPropertyDefinitionAccess().getDefaultValuesAssignment_4_1_0()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2698:1: ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2698:2: rule__PropertyDefinition__DefaultValuesAssignment_4_1_0
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2674:1: ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2674:2: rule__PropertyDefinition__DefaultValuesAssignment_4_1_0
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__DefaultValuesAssignment_4_1_0_in_rule__PropertyDefinition__Group_4_1__0__Impl5627);
+            pushFollow(FOLLOW_rule__PropertyDefinition__DefaultValuesAssignment_4_1_0_in_rule__PropertyDefinition__Group_4_1__0__Impl5574);
             rule__PropertyDefinition__DefaultValuesAssignment_4_1_0();
 
             state._fsp--;
@@ -7583,16 +7488,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4_1__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2708:1: rule__PropertyDefinition__Group_4_1__1 : rule__PropertyDefinition__Group_4_1__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2684:1: rule__PropertyDefinition__Group_4_1__1 : rule__PropertyDefinition__Group_4_1__1__Impl ;
     public final void rule__PropertyDefinition__Group_4_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2712:1: ( rule__PropertyDefinition__Group_4_1__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2713:2: rule__PropertyDefinition__Group_4_1__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2688:1: ( rule__PropertyDefinition__Group_4_1__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2689:2: rule__PropertyDefinition__Group_4_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1__1__Impl_in_rule__PropertyDefinition__Group_4_1__15657);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1__1__Impl_in_rule__PropertyDefinition__Group_4_1__15604);
             rule__PropertyDefinition__Group_4_1__1__Impl();
 
             state._fsp--;
@@ -7616,35 +7521,35 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4_1__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2719:1: rule__PropertyDefinition__Group_4_1__1__Impl : ( ( rule__PropertyDefinition__Group_4_1_1__0 )* ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2695:1: rule__PropertyDefinition__Group_4_1__1__Impl : ( ( rule__PropertyDefinition__Group_4_1_1__0 )* ) ;
     public final void rule__PropertyDefinition__Group_4_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2723:1: ( ( ( rule__PropertyDefinition__Group_4_1_1__0 )* ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2724:1: ( ( rule__PropertyDefinition__Group_4_1_1__0 )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2699:1: ( ( ( rule__PropertyDefinition__Group_4_1_1__0 )* ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2700:1: ( ( rule__PropertyDefinition__Group_4_1_1__0 )* )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2724:1: ( ( rule__PropertyDefinition__Group_4_1_1__0 )* )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2725:1: ( rule__PropertyDefinition__Group_4_1_1__0 )*
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2700:1: ( ( rule__PropertyDefinition__Group_4_1_1__0 )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2701:1: ( rule__PropertyDefinition__Group_4_1_1__0 )*
             {
              before(grammarAccess.getPropertyDefinitionAccess().getGroup_4_1_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2726:1: ( rule__PropertyDefinition__Group_4_1_1__0 )*
-            loop34:
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2702:1: ( rule__PropertyDefinition__Group_4_1_1__0 )*
+            loop33:
             do {
-                int alt34=2;
-                int LA34_0 = input.LA(1);
+                int alt33=2;
+                int LA33_0 = input.LA(1);
 
-                if ( (LA34_0==67) ) {
-                    alt34=1;
+                if ( (LA33_0==67) ) {
+                    alt33=1;
                 }
 
 
-                switch (alt34) {
+                switch (alt33) {
             	case 1 :
-            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2726:2: rule__PropertyDefinition__Group_4_1_1__0
+            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2702:2: rule__PropertyDefinition__Group_4_1_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1_1__0_in_rule__PropertyDefinition__Group_4_1__1__Impl5684);
+            	    pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1_1__0_in_rule__PropertyDefinition__Group_4_1__1__Impl5631);
             	    rule__PropertyDefinition__Group_4_1_1__0();
 
             	    state._fsp--;
@@ -7654,7 +7559,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop34;
+            	    break loop33;
                 }
             } while (true);
 
@@ -7681,21 +7586,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4_1_1__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2740:1: rule__PropertyDefinition__Group_4_1_1__0 : rule__PropertyDefinition__Group_4_1_1__0__Impl rule__PropertyDefinition__Group_4_1_1__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2716:1: rule__PropertyDefinition__Group_4_1_1__0 : rule__PropertyDefinition__Group_4_1_1__0__Impl rule__PropertyDefinition__Group_4_1_1__1 ;
     public final void rule__PropertyDefinition__Group_4_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2744:1: ( rule__PropertyDefinition__Group_4_1_1__0__Impl rule__PropertyDefinition__Group_4_1_1__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2745:2: rule__PropertyDefinition__Group_4_1_1__0__Impl rule__PropertyDefinition__Group_4_1_1__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2720:1: ( rule__PropertyDefinition__Group_4_1_1__0__Impl rule__PropertyDefinition__Group_4_1_1__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2721:2: rule__PropertyDefinition__Group_4_1_1__0__Impl rule__PropertyDefinition__Group_4_1_1__1
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1_1__0__Impl_in_rule__PropertyDefinition__Group_4_1_1__05719);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1_1__0__Impl_in_rule__PropertyDefinition__Group_4_1_1__05666);
             rule__PropertyDefinition__Group_4_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1_1__1_in_rule__PropertyDefinition__Group_4_1_1__05722);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1_1__1_in_rule__PropertyDefinition__Group_4_1_1__05669);
             rule__PropertyDefinition__Group_4_1_1__1();
 
             state._fsp--;
@@ -7719,20 +7624,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4_1_1__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2752:1: rule__PropertyDefinition__Group_4_1_1__0__Impl : ( ',' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2728:1: rule__PropertyDefinition__Group_4_1_1__0__Impl : ( ',' ) ;
     public final void rule__PropertyDefinition__Group_4_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2756:1: ( ( ',' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2757:1: ( ',' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2732:1: ( ( ',' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2733:1: ( ',' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2757:1: ( ',' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2758:1: ','
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2733:1: ( ',' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2734:1: ','
             {
              before(grammarAccess.getPropertyDefinitionAccess().getCommaKeyword_4_1_1_0()); 
-            match(input,67,FOLLOW_67_in_rule__PropertyDefinition__Group_4_1_1__0__Impl5750); 
+            match(input,67,FOLLOW_67_in_rule__PropertyDefinition__Group_4_1_1__0__Impl5697); 
              after(grammarAccess.getPropertyDefinitionAccess().getCommaKeyword_4_1_1_0()); 
 
             }
@@ -7756,16 +7661,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4_1_1__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2771:1: rule__PropertyDefinition__Group_4_1_1__1 : rule__PropertyDefinition__Group_4_1_1__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2747:1: rule__PropertyDefinition__Group_4_1_1__1 : rule__PropertyDefinition__Group_4_1_1__1__Impl ;
     public final void rule__PropertyDefinition__Group_4_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2775:1: ( rule__PropertyDefinition__Group_4_1_1__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2776:2: rule__PropertyDefinition__Group_4_1_1__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2751:1: ( rule__PropertyDefinition__Group_4_1_1__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2752:2: rule__PropertyDefinition__Group_4_1_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1_1__1__Impl_in_rule__PropertyDefinition__Group_4_1_1__15781);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_4_1_1__1__Impl_in_rule__PropertyDefinition__Group_4_1_1__15728);
             rule__PropertyDefinition__Group_4_1_1__1__Impl();
 
             state._fsp--;
@@ -7789,23 +7694,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_4_1_1__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2782:1: rule__PropertyDefinition__Group_4_1_1__1__Impl : ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2758:1: rule__PropertyDefinition__Group_4_1_1__1__Impl : ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 ) ) ;
     public final void rule__PropertyDefinition__Group_4_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2786:1: ( ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2787:1: ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2762:1: ( ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2763:1: ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2787:1: ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2788:1: ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2763:1: ( ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2764:1: ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 )
             {
              before(grammarAccess.getPropertyDefinitionAccess().getDefaultValuesAssignment_4_1_1_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2789:1: ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2789:2: rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2765:1: ( rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2765:2: rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1_in_rule__PropertyDefinition__Group_4_1_1__1__Impl5808);
+            pushFollow(FOLLOW_rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1_in_rule__PropertyDefinition__Group_4_1_1__1__Impl5755);
             rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1();
 
             state._fsp--;
@@ -7836,21 +7741,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2803:1: rule__PropertyDefinition__Group_6__0 : rule__PropertyDefinition__Group_6__0__Impl rule__PropertyDefinition__Group_6__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2779:1: rule__PropertyDefinition__Group_6__0 : rule__PropertyDefinition__Group_6__0__Impl rule__PropertyDefinition__Group_6__1 ;
     public final void rule__PropertyDefinition__Group_6__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2807:1: ( rule__PropertyDefinition__Group_6__0__Impl rule__PropertyDefinition__Group_6__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2808:2: rule__PropertyDefinition__Group_6__0__Impl rule__PropertyDefinition__Group_6__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2783:1: ( rule__PropertyDefinition__Group_6__0__Impl rule__PropertyDefinition__Group_6__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2784:2: rule__PropertyDefinition__Group_6__0__Impl rule__PropertyDefinition__Group_6__1
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6__0__Impl_in_rule__PropertyDefinition__Group_6__05842);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6__0__Impl_in_rule__PropertyDefinition__Group_6__05789);
             rule__PropertyDefinition__Group_6__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6__1_in_rule__PropertyDefinition__Group_6__05845);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6__1_in_rule__PropertyDefinition__Group_6__05792);
             rule__PropertyDefinition__Group_6__1();
 
             state._fsp--;
@@ -7874,20 +7779,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2815:1: rule__PropertyDefinition__Group_6__0__Impl : ( '<' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2791:1: rule__PropertyDefinition__Group_6__0__Impl : ( '<' ) ;
     public final void rule__PropertyDefinition__Group_6__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2819:1: ( ( '<' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2820:1: ( '<' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2795:1: ( ( '<' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2796:1: ( '<' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2820:1: ( '<' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2821:1: '<'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2796:1: ( '<' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2797:1: '<'
             {
              before(grammarAccess.getPropertyDefinitionAccess().getLessThanSignKeyword_6_0()); 
-            match(input,73,FOLLOW_73_in_rule__PropertyDefinition__Group_6__0__Impl5873); 
+            match(input,73,FOLLOW_73_in_rule__PropertyDefinition__Group_6__0__Impl5820); 
              after(grammarAccess.getPropertyDefinitionAccess().getLessThanSignKeyword_6_0()); 
 
             }
@@ -7911,16 +7816,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2834:1: rule__PropertyDefinition__Group_6__1 : rule__PropertyDefinition__Group_6__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2810:1: rule__PropertyDefinition__Group_6__1 : rule__PropertyDefinition__Group_6__1__Impl ;
     public final void rule__PropertyDefinition__Group_6__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2838:1: ( rule__PropertyDefinition__Group_6__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2839:2: rule__PropertyDefinition__Group_6__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2814:1: ( rule__PropertyDefinition__Group_6__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2815:2: rule__PropertyDefinition__Group_6__1__Impl
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6__1__Impl_in_rule__PropertyDefinition__Group_6__15904);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6__1__Impl_in_rule__PropertyDefinition__Group_6__15851);
             rule__PropertyDefinition__Group_6__1__Impl();
 
             state._fsp--;
@@ -7944,23 +7849,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2845:1: rule__PropertyDefinition__Group_6__1__Impl : ( ( rule__PropertyDefinition__Group_6_1__0 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2821:1: rule__PropertyDefinition__Group_6__1__Impl : ( ( rule__PropertyDefinition__Group_6_1__0 ) ) ;
     public final void rule__PropertyDefinition__Group_6__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2849:1: ( ( ( rule__PropertyDefinition__Group_6_1__0 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2850:1: ( ( rule__PropertyDefinition__Group_6_1__0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2825:1: ( ( ( rule__PropertyDefinition__Group_6_1__0 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2826:1: ( ( rule__PropertyDefinition__Group_6_1__0 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2850:1: ( ( rule__PropertyDefinition__Group_6_1__0 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2851:1: ( rule__PropertyDefinition__Group_6_1__0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2826:1: ( ( rule__PropertyDefinition__Group_6_1__0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2827:1: ( rule__PropertyDefinition__Group_6_1__0 )
             {
              before(grammarAccess.getPropertyDefinitionAccess().getGroup_6_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2852:1: ( rule__PropertyDefinition__Group_6_1__0 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2852:2: rule__PropertyDefinition__Group_6_1__0
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2828:1: ( rule__PropertyDefinition__Group_6_1__0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2828:2: rule__PropertyDefinition__Group_6_1__0
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1__0_in_rule__PropertyDefinition__Group_6__1__Impl5931);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1__0_in_rule__PropertyDefinition__Group_6__1__Impl5878);
             rule__PropertyDefinition__Group_6_1__0();
 
             state._fsp--;
@@ -7991,21 +7896,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6_1__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2866:1: rule__PropertyDefinition__Group_6_1__0 : rule__PropertyDefinition__Group_6_1__0__Impl rule__PropertyDefinition__Group_6_1__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2842:1: rule__PropertyDefinition__Group_6_1__0 : rule__PropertyDefinition__Group_6_1__0__Impl rule__PropertyDefinition__Group_6_1__1 ;
     public final void rule__PropertyDefinition__Group_6_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2870:1: ( rule__PropertyDefinition__Group_6_1__0__Impl rule__PropertyDefinition__Group_6_1__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2871:2: rule__PropertyDefinition__Group_6_1__0__Impl rule__PropertyDefinition__Group_6_1__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2846:1: ( rule__PropertyDefinition__Group_6_1__0__Impl rule__PropertyDefinition__Group_6_1__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2847:2: rule__PropertyDefinition__Group_6_1__0__Impl rule__PropertyDefinition__Group_6_1__1
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1__0__Impl_in_rule__PropertyDefinition__Group_6_1__05965);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1__0__Impl_in_rule__PropertyDefinition__Group_6_1__05912);
             rule__PropertyDefinition__Group_6_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1__1_in_rule__PropertyDefinition__Group_6_1__05968);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1__1_in_rule__PropertyDefinition__Group_6_1__05915);
             rule__PropertyDefinition__Group_6_1__1();
 
             state._fsp--;
@@ -8029,23 +7934,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6_1__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2878:1: rule__PropertyDefinition__Group_6_1__0__Impl : ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2854:1: rule__PropertyDefinition__Group_6_1__0__Impl : ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 ) ) ;
     public final void rule__PropertyDefinition__Group_6_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2882:1: ( ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2883:1: ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2858:1: ( ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2859:1: ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2883:1: ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2884:1: ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2859:1: ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2860:1: ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 )
             {
              before(grammarAccess.getPropertyDefinitionAccess().getValueConstraintsAssignment_6_1_0()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2885:1: ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2885:2: rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2861:1: ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2861:2: rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0_in_rule__PropertyDefinition__Group_6_1__0__Impl5995);
+            pushFollow(FOLLOW_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0_in_rule__PropertyDefinition__Group_6_1__0__Impl5942);
             rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0();
 
             state._fsp--;
@@ -8076,16 +7981,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6_1__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2895:1: rule__PropertyDefinition__Group_6_1__1 : rule__PropertyDefinition__Group_6_1__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2871:1: rule__PropertyDefinition__Group_6_1__1 : rule__PropertyDefinition__Group_6_1__1__Impl ;
     public final void rule__PropertyDefinition__Group_6_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2899:1: ( rule__PropertyDefinition__Group_6_1__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2900:2: rule__PropertyDefinition__Group_6_1__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2875:1: ( rule__PropertyDefinition__Group_6_1__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2876:2: rule__PropertyDefinition__Group_6_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1__1__Impl_in_rule__PropertyDefinition__Group_6_1__16025);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1__1__Impl_in_rule__PropertyDefinition__Group_6_1__15972);
             rule__PropertyDefinition__Group_6_1__1__Impl();
 
             state._fsp--;
@@ -8109,35 +8014,35 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6_1__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2906:1: rule__PropertyDefinition__Group_6_1__1__Impl : ( ( rule__PropertyDefinition__Group_6_1_1__0 )* ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2882:1: rule__PropertyDefinition__Group_6_1__1__Impl : ( ( rule__PropertyDefinition__Group_6_1_1__0 )* ) ;
     public final void rule__PropertyDefinition__Group_6_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2910:1: ( ( ( rule__PropertyDefinition__Group_6_1_1__0 )* ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2911:1: ( ( rule__PropertyDefinition__Group_6_1_1__0 )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2886:1: ( ( ( rule__PropertyDefinition__Group_6_1_1__0 )* ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2887:1: ( ( rule__PropertyDefinition__Group_6_1_1__0 )* )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2911:1: ( ( rule__PropertyDefinition__Group_6_1_1__0 )* )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2912:1: ( rule__PropertyDefinition__Group_6_1_1__0 )*
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2887:1: ( ( rule__PropertyDefinition__Group_6_1_1__0 )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2888:1: ( rule__PropertyDefinition__Group_6_1_1__0 )*
             {
              before(grammarAccess.getPropertyDefinitionAccess().getGroup_6_1_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2913:1: ( rule__PropertyDefinition__Group_6_1_1__0 )*
-            loop35:
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2889:1: ( rule__PropertyDefinition__Group_6_1_1__0 )*
+            loop34:
             do {
-                int alt35=2;
-                int LA35_0 = input.LA(1);
+                int alt34=2;
+                int LA34_0 = input.LA(1);
 
-                if ( (LA35_0==67) ) {
-                    alt35=1;
+                if ( (LA34_0==67) ) {
+                    alt34=1;
                 }
 
 
-                switch (alt35) {
+                switch (alt34) {
             	case 1 :
-            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2913:2: rule__PropertyDefinition__Group_6_1_1__0
+            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2889:2: rule__PropertyDefinition__Group_6_1_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1_1__0_in_rule__PropertyDefinition__Group_6_1__1__Impl6052);
+            	    pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1_1__0_in_rule__PropertyDefinition__Group_6_1__1__Impl5999);
             	    rule__PropertyDefinition__Group_6_1_1__0();
 
             	    state._fsp--;
@@ -8147,7 +8052,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop35;
+            	    break loop34;
                 }
             } while (true);
 
@@ -8174,21 +8079,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6_1_1__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2927:1: rule__PropertyDefinition__Group_6_1_1__0 : rule__PropertyDefinition__Group_6_1_1__0__Impl rule__PropertyDefinition__Group_6_1_1__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2903:1: rule__PropertyDefinition__Group_6_1_1__0 : rule__PropertyDefinition__Group_6_1_1__0__Impl rule__PropertyDefinition__Group_6_1_1__1 ;
     public final void rule__PropertyDefinition__Group_6_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2931:1: ( rule__PropertyDefinition__Group_6_1_1__0__Impl rule__PropertyDefinition__Group_6_1_1__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2932:2: rule__PropertyDefinition__Group_6_1_1__0__Impl rule__PropertyDefinition__Group_6_1_1__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2907:1: ( rule__PropertyDefinition__Group_6_1_1__0__Impl rule__PropertyDefinition__Group_6_1_1__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2908:2: rule__PropertyDefinition__Group_6_1_1__0__Impl rule__PropertyDefinition__Group_6_1_1__1
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1_1__0__Impl_in_rule__PropertyDefinition__Group_6_1_1__06087);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1_1__0__Impl_in_rule__PropertyDefinition__Group_6_1_1__06034);
             rule__PropertyDefinition__Group_6_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1_1__1_in_rule__PropertyDefinition__Group_6_1_1__06090);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1_1__1_in_rule__PropertyDefinition__Group_6_1_1__06037);
             rule__PropertyDefinition__Group_6_1_1__1();
 
             state._fsp--;
@@ -8212,20 +8117,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6_1_1__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2939:1: rule__PropertyDefinition__Group_6_1_1__0__Impl : ( ',' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2915:1: rule__PropertyDefinition__Group_6_1_1__0__Impl : ( ',' ) ;
     public final void rule__PropertyDefinition__Group_6_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2943:1: ( ( ',' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2944:1: ( ',' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2919:1: ( ( ',' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2920:1: ( ',' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2944:1: ( ',' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2945:1: ','
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2920:1: ( ',' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2921:1: ','
             {
              before(grammarAccess.getPropertyDefinitionAccess().getCommaKeyword_6_1_1_0()); 
-            match(input,67,FOLLOW_67_in_rule__PropertyDefinition__Group_6_1_1__0__Impl6118); 
+            match(input,67,FOLLOW_67_in_rule__PropertyDefinition__Group_6_1_1__0__Impl6065); 
              after(grammarAccess.getPropertyDefinitionAccess().getCommaKeyword_6_1_1_0()); 
 
             }
@@ -8249,16 +8154,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6_1_1__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2958:1: rule__PropertyDefinition__Group_6_1_1__1 : rule__PropertyDefinition__Group_6_1_1__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2934:1: rule__PropertyDefinition__Group_6_1_1__1 : rule__PropertyDefinition__Group_6_1_1__1__Impl ;
     public final void rule__PropertyDefinition__Group_6_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2962:1: ( rule__PropertyDefinition__Group_6_1_1__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2963:2: rule__PropertyDefinition__Group_6_1_1__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2938:1: ( rule__PropertyDefinition__Group_6_1_1__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2939:2: rule__PropertyDefinition__Group_6_1_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1_1__1__Impl_in_rule__PropertyDefinition__Group_6_1_1__16149);
+            pushFollow(FOLLOW_rule__PropertyDefinition__Group_6_1_1__1__Impl_in_rule__PropertyDefinition__Group_6_1_1__16096);
             rule__PropertyDefinition__Group_6_1_1__1__Impl();
 
             state._fsp--;
@@ -8282,23 +8187,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__Group_6_1_1__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2969:1: rule__PropertyDefinition__Group_6_1_1__1__Impl : ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2945:1: rule__PropertyDefinition__Group_6_1_1__1__Impl : ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 ) ) ;
     public final void rule__PropertyDefinition__Group_6_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2973:1: ( ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2974:1: ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2949:1: ( ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2950:1: ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2974:1: ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2975:1: ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2950:1: ( ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2951:1: ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 )
             {
              before(grammarAccess.getPropertyDefinitionAccess().getValueConstraintsAssignment_6_1_1_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2976:1: ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2976:2: rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2952:1: ( rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2952:2: rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1_in_rule__PropertyDefinition__Group_6_1_1__1__Impl6176);
+            pushFollow(FOLLOW_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1_in_rule__PropertyDefinition__Group_6_1_1__1__Impl6123);
             rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1();
 
             state._fsp--;
@@ -8329,21 +8234,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__QueryOps__Group__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2990:1: rule__QueryOps__Group__0 : rule__QueryOps__Group__0__Impl rule__QueryOps__Group__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2966:1: rule__QueryOps__Group__0 : rule__QueryOps__Group__0__Impl rule__QueryOps__Group__1 ;
     public final void rule__QueryOps__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2994:1: ( rule__QueryOps__Group__0__Impl rule__QueryOps__Group__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2995:2: rule__QueryOps__Group__0__Impl rule__QueryOps__Group__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2970:1: ( rule__QueryOps__Group__0__Impl rule__QueryOps__Group__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2971:2: rule__QueryOps__Group__0__Impl rule__QueryOps__Group__1
             {
-            pushFollow(FOLLOW_rule__QueryOps__Group__0__Impl_in_rule__QueryOps__Group__06210);
+            pushFollow(FOLLOW_rule__QueryOps__Group__0__Impl_in_rule__QueryOps__Group__06157);
             rule__QueryOps__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__QueryOps__Group__1_in_rule__QueryOps__Group__06213);
+            pushFollow(FOLLOW_rule__QueryOps__Group__1_in_rule__QueryOps__Group__06160);
             rule__QueryOps__Group__1();
 
             state._fsp--;
@@ -8367,23 +8272,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__QueryOps__Group__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3002:1: rule__QueryOps__Group__0__Impl : ( ( rule__QueryOps__Alternatives_0 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2978:1: rule__QueryOps__Group__0__Impl : ( ( rule__QueryOps__Alternatives_0 ) ) ;
     public final void rule__QueryOps__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3006:1: ( ( ( rule__QueryOps__Alternatives_0 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3007:1: ( ( rule__QueryOps__Alternatives_0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2982:1: ( ( ( rule__QueryOps__Alternatives_0 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2983:1: ( ( rule__QueryOps__Alternatives_0 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3007:1: ( ( rule__QueryOps__Alternatives_0 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3008:1: ( rule__QueryOps__Alternatives_0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2983:1: ( ( rule__QueryOps__Alternatives_0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2984:1: ( rule__QueryOps__Alternatives_0 )
             {
              before(grammarAccess.getQueryOpsAccess().getAlternatives_0()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3009:1: ( rule__QueryOps__Alternatives_0 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3009:2: rule__QueryOps__Alternatives_0
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2985:1: ( rule__QueryOps__Alternatives_0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2985:2: rule__QueryOps__Alternatives_0
             {
-            pushFollow(FOLLOW_rule__QueryOps__Alternatives_0_in_rule__QueryOps__Group__0__Impl6240);
+            pushFollow(FOLLOW_rule__QueryOps__Alternatives_0_in_rule__QueryOps__Group__0__Impl6187);
             rule__QueryOps__Alternatives_0();
 
             state._fsp--;
@@ -8414,16 +8319,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__QueryOps__Group__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3019:1: rule__QueryOps__Group__1 : rule__QueryOps__Group__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2995:1: rule__QueryOps__Group__1 : rule__QueryOps__Group__1__Impl ;
     public final void rule__QueryOps__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3023:1: ( rule__QueryOps__Group__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3024:2: rule__QueryOps__Group__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:2999:1: ( rule__QueryOps__Group__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3000:2: rule__QueryOps__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__QueryOps__Group__1__Impl_in_rule__QueryOps__Group__16270);
+            pushFollow(FOLLOW_rule__QueryOps__Group__1__Impl_in_rule__QueryOps__Group__16217);
             rule__QueryOps__Group__1__Impl();
 
             state._fsp--;
@@ -8447,20 +8352,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__QueryOps__Group__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3030:1: rule__QueryOps__Group__1__Impl : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3006:1: rule__QueryOps__Group__1__Impl : ( ruleJcrString ) ;
     public final void rule__QueryOps__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3034:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3035:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3010:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3011:1: ( ruleJcrString )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3035:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3036:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3011:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3012:1: ruleJcrString
             {
              before(grammarAccess.getQueryOpsAccess().getJcrStringParserRuleCall_1()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__QueryOps__Group__1__Impl6297);
+            pushFollow(FOLLOW_ruleJcrString_in_rule__QueryOps__Group__1__Impl6244);
             ruleJcrString();
 
             state._fsp--;
@@ -8488,21 +8393,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PrimaryItem__Group__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3051:1: rule__PrimaryItem__Group__0 : rule__PrimaryItem__Group__0__Impl rule__PrimaryItem__Group__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3027:1: rule__PrimaryItem__Group__0 : rule__PrimaryItem__Group__0__Impl rule__PrimaryItem__Group__1 ;
     public final void rule__PrimaryItem__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3055:1: ( rule__PrimaryItem__Group__0__Impl rule__PrimaryItem__Group__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3056:2: rule__PrimaryItem__Group__0__Impl rule__PrimaryItem__Group__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3031:1: ( rule__PrimaryItem__Group__0__Impl rule__PrimaryItem__Group__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3032:2: rule__PrimaryItem__Group__0__Impl rule__PrimaryItem__Group__1
             {
-            pushFollow(FOLLOW_rule__PrimaryItem__Group__0__Impl_in_rule__PrimaryItem__Group__06330);
+            pushFollow(FOLLOW_rule__PrimaryItem__Group__0__Impl_in_rule__PrimaryItem__Group__06277);
             rule__PrimaryItem__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PrimaryItem__Group__1_in_rule__PrimaryItem__Group__06333);
+            pushFollow(FOLLOW_rule__PrimaryItem__Group__1_in_rule__PrimaryItem__Group__06280);
             rule__PrimaryItem__Group__1();
 
             state._fsp--;
@@ -8526,23 +8431,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PrimaryItem__Group__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3063:1: rule__PrimaryItem__Group__0__Impl : ( ( rule__PrimaryItem__Alternatives_0 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3039:1: rule__PrimaryItem__Group__0__Impl : ( ( rule__PrimaryItem__Alternatives_0 ) ) ;
     public final void rule__PrimaryItem__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3067:1: ( ( ( rule__PrimaryItem__Alternatives_0 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3068:1: ( ( rule__PrimaryItem__Alternatives_0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3043:1: ( ( ( rule__PrimaryItem__Alternatives_0 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3044:1: ( ( rule__PrimaryItem__Alternatives_0 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3068:1: ( ( rule__PrimaryItem__Alternatives_0 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3069:1: ( rule__PrimaryItem__Alternatives_0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3044:1: ( ( rule__PrimaryItem__Alternatives_0 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3045:1: ( rule__PrimaryItem__Alternatives_0 )
             {
              before(grammarAccess.getPrimaryItemAccess().getAlternatives_0()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3070:1: ( rule__PrimaryItem__Alternatives_0 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3070:2: rule__PrimaryItem__Alternatives_0
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3046:1: ( rule__PrimaryItem__Alternatives_0 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3046:2: rule__PrimaryItem__Alternatives_0
             {
-            pushFollow(FOLLOW_rule__PrimaryItem__Alternatives_0_in_rule__PrimaryItem__Group__0__Impl6360);
+            pushFollow(FOLLOW_rule__PrimaryItem__Alternatives_0_in_rule__PrimaryItem__Group__0__Impl6307);
             rule__PrimaryItem__Alternatives_0();
 
             state._fsp--;
@@ -8573,16 +8478,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PrimaryItem__Group__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3080:1: rule__PrimaryItem__Group__1 : rule__PrimaryItem__Group__1__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3056:1: rule__PrimaryItem__Group__1 : rule__PrimaryItem__Group__1__Impl ;
     public final void rule__PrimaryItem__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3084:1: ( rule__PrimaryItem__Group__1__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3085:2: rule__PrimaryItem__Group__1__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3060:1: ( rule__PrimaryItem__Group__1__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3061:2: rule__PrimaryItem__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__PrimaryItem__Group__1__Impl_in_rule__PrimaryItem__Group__16390);
+            pushFollow(FOLLOW_rule__PrimaryItem__Group__1__Impl_in_rule__PrimaryItem__Group__16337);
             rule__PrimaryItem__Group__1__Impl();
 
             state._fsp--;
@@ -8606,20 +8511,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PrimaryItem__Group__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3091:1: rule__PrimaryItem__Group__1__Impl : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3067:1: rule__PrimaryItem__Group__1__Impl : ( ruleJcrString ) ;
     public final void rule__PrimaryItem__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3095:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3096:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3071:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3072:1: ( ruleJcrString )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3096:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3097:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3072:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3073:1: ruleJcrString
             {
              before(grammarAccess.getPrimaryItemAccess().getJcrStringParserRuleCall_1()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__PrimaryItem__Group__1__Impl6417);
+            pushFollow(FOLLOW_ruleJcrString_in_rule__PrimaryItem__Group__1__Impl6364);
             ruleJcrString();
 
             state._fsp--;
@@ -8647,21 +8552,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__Group__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3112:1: rule__NsMapping__Group__0 : rule__NsMapping__Group__0__Impl rule__NsMapping__Group__1 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3088:1: rule__NsMapping__Group__0 : rule__NsMapping__Group__0__Impl rule__NsMapping__Group__1 ;
     public final void rule__NsMapping__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3116:1: ( rule__NsMapping__Group__0__Impl rule__NsMapping__Group__1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3117:2: rule__NsMapping__Group__0__Impl rule__NsMapping__Group__1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3092:1: ( rule__NsMapping__Group__0__Impl rule__NsMapping__Group__1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3093:2: rule__NsMapping__Group__0__Impl rule__NsMapping__Group__1
             {
-            pushFollow(FOLLOW_rule__NsMapping__Group__0__Impl_in_rule__NsMapping__Group__06450);
+            pushFollow(FOLLOW_rule__NsMapping__Group__0__Impl_in_rule__NsMapping__Group__06397);
             rule__NsMapping__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NsMapping__Group__1_in_rule__NsMapping__Group__06453);
+            pushFollow(FOLLOW_rule__NsMapping__Group__1_in_rule__NsMapping__Group__06400);
             rule__NsMapping__Group__1();
 
             state._fsp--;
@@ -8685,20 +8590,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__Group__0__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3124:1: rule__NsMapping__Group__0__Impl : ( '<' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3100:1: rule__NsMapping__Group__0__Impl : ( '<' ) ;
     public final void rule__NsMapping__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3128:1: ( ( '<' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3129:1: ( '<' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3104:1: ( ( '<' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3105:1: ( '<' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3129:1: ( '<' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3130:1: '<'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3105:1: ( '<' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3106:1: '<'
             {
              before(grammarAccess.getNsMappingAccess().getLessThanSignKeyword_0()); 
-            match(input,73,FOLLOW_73_in_rule__NsMapping__Group__0__Impl6481); 
+            match(input,73,FOLLOW_73_in_rule__NsMapping__Group__0__Impl6428); 
              after(grammarAccess.getNsMappingAccess().getLessThanSignKeyword_0()); 
 
             }
@@ -8722,21 +8627,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__Group__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3143:1: rule__NsMapping__Group__1 : rule__NsMapping__Group__1__Impl rule__NsMapping__Group__2 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3119:1: rule__NsMapping__Group__1 : rule__NsMapping__Group__1__Impl rule__NsMapping__Group__2 ;
     public final void rule__NsMapping__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3147:1: ( rule__NsMapping__Group__1__Impl rule__NsMapping__Group__2 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3148:2: rule__NsMapping__Group__1__Impl rule__NsMapping__Group__2
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3123:1: ( rule__NsMapping__Group__1__Impl rule__NsMapping__Group__2 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3124:2: rule__NsMapping__Group__1__Impl rule__NsMapping__Group__2
             {
-            pushFollow(FOLLOW_rule__NsMapping__Group__1__Impl_in_rule__NsMapping__Group__16512);
+            pushFollow(FOLLOW_rule__NsMapping__Group__1__Impl_in_rule__NsMapping__Group__16459);
             rule__NsMapping__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NsMapping__Group__2_in_rule__NsMapping__Group__16515);
+            pushFollow(FOLLOW_rule__NsMapping__Group__2_in_rule__NsMapping__Group__16462);
             rule__NsMapping__Group__2();
 
             state._fsp--;
@@ -8760,23 +8665,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__Group__1__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3155:1: rule__NsMapping__Group__1__Impl : ( ( rule__NsMapping__NameAssignment_1 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3131:1: rule__NsMapping__Group__1__Impl : ( ( rule__NsMapping__NameAssignment_1 ) ) ;
     public final void rule__NsMapping__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3159:1: ( ( ( rule__NsMapping__NameAssignment_1 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3160:1: ( ( rule__NsMapping__NameAssignment_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3135:1: ( ( ( rule__NsMapping__NameAssignment_1 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3136:1: ( ( rule__NsMapping__NameAssignment_1 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3160:1: ( ( rule__NsMapping__NameAssignment_1 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3161:1: ( rule__NsMapping__NameAssignment_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3136:1: ( ( rule__NsMapping__NameAssignment_1 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3137:1: ( rule__NsMapping__NameAssignment_1 )
             {
              before(grammarAccess.getNsMappingAccess().getNameAssignment_1()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3162:1: ( rule__NsMapping__NameAssignment_1 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3162:2: rule__NsMapping__NameAssignment_1
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3138:1: ( rule__NsMapping__NameAssignment_1 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3138:2: rule__NsMapping__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__NsMapping__NameAssignment_1_in_rule__NsMapping__Group__1__Impl6542);
+            pushFollow(FOLLOW_rule__NsMapping__NameAssignment_1_in_rule__NsMapping__Group__1__Impl6489);
             rule__NsMapping__NameAssignment_1();
 
             state._fsp--;
@@ -8807,21 +8712,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__Group__2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3172:1: rule__NsMapping__Group__2 : rule__NsMapping__Group__2__Impl rule__NsMapping__Group__3 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3148:1: rule__NsMapping__Group__2 : rule__NsMapping__Group__2__Impl rule__NsMapping__Group__3 ;
     public final void rule__NsMapping__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3176:1: ( rule__NsMapping__Group__2__Impl rule__NsMapping__Group__3 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3177:2: rule__NsMapping__Group__2__Impl rule__NsMapping__Group__3
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3152:1: ( rule__NsMapping__Group__2__Impl rule__NsMapping__Group__3 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3153:2: rule__NsMapping__Group__2__Impl rule__NsMapping__Group__3
             {
-            pushFollow(FOLLOW_rule__NsMapping__Group__2__Impl_in_rule__NsMapping__Group__26572);
+            pushFollow(FOLLOW_rule__NsMapping__Group__2__Impl_in_rule__NsMapping__Group__26519);
             rule__NsMapping__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NsMapping__Group__3_in_rule__NsMapping__Group__26575);
+            pushFollow(FOLLOW_rule__NsMapping__Group__3_in_rule__NsMapping__Group__26522);
             rule__NsMapping__Group__3();
 
             state._fsp--;
@@ -8845,20 +8750,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__Group__2__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3184:1: rule__NsMapping__Group__2__Impl : ( '=' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3160:1: rule__NsMapping__Group__2__Impl : ( '=' ) ;
     public final void rule__NsMapping__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3188:1: ( ( '=' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3189:1: ( '=' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3164:1: ( ( '=' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3165:1: ( '=' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3189:1: ( '=' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3190:1: '='
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3165:1: ( '=' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3166:1: '='
             {
              before(grammarAccess.getNsMappingAccess().getEqualsSignKeyword_2()); 
-            match(input,71,FOLLOW_71_in_rule__NsMapping__Group__2__Impl6603); 
+            match(input,71,FOLLOW_71_in_rule__NsMapping__Group__2__Impl6550); 
              after(grammarAccess.getNsMappingAccess().getEqualsSignKeyword_2()); 
 
             }
@@ -8882,21 +8787,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__Group__3"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3203:1: rule__NsMapping__Group__3 : rule__NsMapping__Group__3__Impl rule__NsMapping__Group__4 ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3179:1: rule__NsMapping__Group__3 : rule__NsMapping__Group__3__Impl rule__NsMapping__Group__4 ;
     public final void rule__NsMapping__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3207:1: ( rule__NsMapping__Group__3__Impl rule__NsMapping__Group__4 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3208:2: rule__NsMapping__Group__3__Impl rule__NsMapping__Group__4
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3183:1: ( rule__NsMapping__Group__3__Impl rule__NsMapping__Group__4 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3184:2: rule__NsMapping__Group__3__Impl rule__NsMapping__Group__4
             {
-            pushFollow(FOLLOW_rule__NsMapping__Group__3__Impl_in_rule__NsMapping__Group__36634);
+            pushFollow(FOLLOW_rule__NsMapping__Group__3__Impl_in_rule__NsMapping__Group__36581);
             rule__NsMapping__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NsMapping__Group__4_in_rule__NsMapping__Group__36637);
+            pushFollow(FOLLOW_rule__NsMapping__Group__4_in_rule__NsMapping__Group__36584);
             rule__NsMapping__Group__4();
 
             state._fsp--;
@@ -8920,23 +8825,23 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__Group__3__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3215:1: rule__NsMapping__Group__3__Impl : ( ( rule__NsMapping__UriAssignment_3 ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3191:1: rule__NsMapping__Group__3__Impl : ( ( rule__NsMapping__UriAssignment_3 ) ) ;
     public final void rule__NsMapping__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3219:1: ( ( ( rule__NsMapping__UriAssignment_3 ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3220:1: ( ( rule__NsMapping__UriAssignment_3 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3195:1: ( ( ( rule__NsMapping__UriAssignment_3 ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3196:1: ( ( rule__NsMapping__UriAssignment_3 ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3220:1: ( ( rule__NsMapping__UriAssignment_3 ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3221:1: ( rule__NsMapping__UriAssignment_3 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3196:1: ( ( rule__NsMapping__UriAssignment_3 ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3197:1: ( rule__NsMapping__UriAssignment_3 )
             {
              before(grammarAccess.getNsMappingAccess().getUriAssignment_3()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3222:1: ( rule__NsMapping__UriAssignment_3 )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3222:2: rule__NsMapping__UriAssignment_3
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3198:1: ( rule__NsMapping__UriAssignment_3 )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3198:2: rule__NsMapping__UriAssignment_3
             {
-            pushFollow(FOLLOW_rule__NsMapping__UriAssignment_3_in_rule__NsMapping__Group__3__Impl6664);
+            pushFollow(FOLLOW_rule__NsMapping__UriAssignment_3_in_rule__NsMapping__Group__3__Impl6611);
             rule__NsMapping__UriAssignment_3();
 
             state._fsp--;
@@ -8967,16 +8872,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__Group__4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3232:1: rule__NsMapping__Group__4 : rule__NsMapping__Group__4__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3208:1: rule__NsMapping__Group__4 : rule__NsMapping__Group__4__Impl ;
     public final void rule__NsMapping__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3236:1: ( rule__NsMapping__Group__4__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3237:2: rule__NsMapping__Group__4__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3212:1: ( rule__NsMapping__Group__4__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3213:2: rule__NsMapping__Group__4__Impl
             {
-            pushFollow(FOLLOW_rule__NsMapping__Group__4__Impl_in_rule__NsMapping__Group__46694);
+            pushFollow(FOLLOW_rule__NsMapping__Group__4__Impl_in_rule__NsMapping__Group__46641);
             rule__NsMapping__Group__4__Impl();
 
             state._fsp--;
@@ -9000,20 +8905,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__Group__4__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3243:1: rule__NsMapping__Group__4__Impl : ( '>' ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3219:1: rule__NsMapping__Group__4__Impl : ( '>' ) ;
     public final void rule__NsMapping__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3247:1: ( ( '>' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3248:1: ( '>' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3223:1: ( ( '>' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3224:1: ( '>' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3248:1: ( '>' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3249:1: '>'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3224:1: ( '>' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3225:1: '>'
             {
              before(grammarAccess.getNsMappingAccess().getGreaterThanSignKeyword_4()); 
-            match(input,66,FOLLOW_66_in_rule__NsMapping__Group__4__Impl6722); 
+            match(input,66,FOLLOW_66_in_rule__NsMapping__Group__4__Impl6669); 
              after(grammarAccess.getNsMappingAccess().getGreaterThanSignKeyword_4()); 
 
             }
@@ -9037,43 +8942,43 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__UnorderedGroup_4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3273:1: rule__NodeTypeDefinition__UnorderedGroup_4 : ( rule__NodeTypeDefinition__UnorderedGroup_4__0 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3249:1: rule__NodeTypeDefinition__UnorderedGroup_4 : ( rule__NodeTypeDefinition__UnorderedGroup_4__0 )? ;
     public final void rule__NodeTypeDefinition__UnorderedGroup_4() throws RecognitionException {
 
             	int stackSize = keepStackSize();
         		getUnorderedGroupHelper().enter(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4());
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3278:1: ( ( rule__NodeTypeDefinition__UnorderedGroup_4__0 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3279:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__0 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3254:1: ( ( rule__NodeTypeDefinition__UnorderedGroup_4__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3255:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__0 )?
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3279:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__0 )?
-            int alt36=2;
-            int LA36_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3255:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__0 )?
+            int alt35=2;
+            int LA35_0 = input.LA(1);
 
-            if ( LA36_0 >=42 && LA36_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt36=1;
+            if ( LA35_0 >=42 && LA35_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt35=1;
             }
-            else if ( (LA36_0==27|| LA36_0 >=40 && LA36_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt36=1;
+            else if ( (LA35_0==27|| LA35_0 >=40 && LA35_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt35=1;
             }
-            else if ( (LA36_0==30|| LA36_0 >=38 && LA36_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt36=1;
+            else if ( (LA35_0==30|| LA35_0 >=38 && LA35_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt35=1;
             }
-            else if ( LA36_0 >=34 && LA36_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt36=1;
+            else if ( LA35_0 >=34 && LA35_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt35=1;
             }
-            else if ( LA36_0 >=36 && LA36_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt36=1;
+            else if ( LA35_0 >=36 && LA35_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt35=1;
             }
-            else if ( LA36_0 >=32 && LA36_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
-                alt36=1;
+            else if ( LA35_0 >=32 && LA35_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
+                alt35=1;
             }
-            switch (alt36) {
+            switch (alt35) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3279:2: rule__NodeTypeDefinition__UnorderedGroup_4__0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3255:2: rule__NodeTypeDefinition__UnorderedGroup_4__0
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__0_in_rule__NodeTypeDefinition__UnorderedGroup_46764);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__0_in_rule__NodeTypeDefinition__UnorderedGroup_46711);
                     rule__NodeTypeDefinition__UnorderedGroup_4__0();
 
                     state._fsp--;
@@ -9104,56 +9009,56 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__UnorderedGroup_4__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3289:1: rule__NodeTypeDefinition__UnorderedGroup_4__Impl : ( ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3265:1: rule__NodeTypeDefinition__UnorderedGroup_4__Impl : ( ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) ) ) ;
     public final void rule__NodeTypeDefinition__UnorderedGroup_4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         		boolean selected = false;
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3294:1: ( ( ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3295:3: ( ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3270:1: ( ( ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3271:3: ( ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3295:3: ( ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) ) )
-            int alt37=6;
-            int LA37_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3271:3: ( ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) ) | ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) ) )
+            int alt36=6;
+            int LA36_0 = input.LA(1);
 
-            if ( LA37_0 >=42 && LA37_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt37=1;
+            if ( LA36_0 >=42 && LA36_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt36=1;
             }
-            else if ( (LA37_0==27|| LA37_0 >=40 && LA37_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt37=2;
+            else if ( (LA36_0==27|| LA36_0 >=40 && LA36_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt36=2;
             }
-            else if ( (LA37_0==30|| LA37_0 >=38 && LA37_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt37=3;
+            else if ( (LA36_0==30|| LA36_0 >=38 && LA36_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt36=3;
             }
-            else if ( LA37_0 >=34 && LA37_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt37=4;
+            else if ( LA36_0 >=34 && LA36_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt36=4;
             }
-            else if ( LA37_0 >=36 && LA37_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt37=5;
+            else if ( LA36_0 >=36 && LA36_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt36=5;
             }
-            else if ( LA37_0 >=32 && LA37_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
-                alt37=6;
+            else if ( LA36_0 >=32 && LA36_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
+                alt36=6;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 37, 0, input);
+                    new NoViableAltException("", 36, 0, input);
 
                 throw nvae;
             }
-            switch (alt37) {
+            switch (alt36) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3297:4: ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3273:4: ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3297:4: ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3298:5: {...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3273:4: ({...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3274:5: {...}? => ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
                         throw new FailedPredicateException(input, "rule__NodeTypeDefinition__UnorderedGroup_4__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3298:115: ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3299:6: ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3274:115: ( ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3275:6: ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0);
@@ -9161,14 +9066,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3305:6: ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3307:7: ( rule__NodeTypeDefinition__OrderableAssignment_4_0 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3281:6: ( ( rule__NodeTypeDefinition__OrderableAssignment_4_0 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3283:7: ( rule__NodeTypeDefinition__OrderableAssignment_4_0 )
                     {
                      before(grammarAccess.getNodeTypeDefinitionAccess().getOrderableAssignment_4_0()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3308:7: ( rule__NodeTypeDefinition__OrderableAssignment_4_0 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3308:8: rule__NodeTypeDefinition__OrderableAssignment_4_0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3284:7: ( rule__NodeTypeDefinition__OrderableAssignment_4_0 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3284:8: rule__NodeTypeDefinition__OrderableAssignment_4_0
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__OrderableAssignment_4_0_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl6851);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__OrderableAssignment_4_0_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl6798);
                     rule__NodeTypeDefinition__OrderableAssignment_4_0();
 
                     state._fsp--;
@@ -9190,16 +9095,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3314:4: ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3290:4: ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3314:4: ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3315:5: {...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3290:4: ({...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3291:5: {...}? => ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
                         throw new FailedPredicateException(input, "rule__NodeTypeDefinition__UnorderedGroup_4__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3315:115: ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3316:6: ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3291:115: ( ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3292:6: ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1);
@@ -9207,14 +9112,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3322:6: ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3324:7: ( rule__NodeTypeDefinition__MixinAssignment_4_1 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3298:6: ( ( rule__NodeTypeDefinition__MixinAssignment_4_1 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3300:7: ( rule__NodeTypeDefinition__MixinAssignment_4_1 )
                     {
                      before(grammarAccess.getNodeTypeDefinitionAccess().getMixinAssignment_4_1()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3325:7: ( rule__NodeTypeDefinition__MixinAssignment_4_1 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3325:8: rule__NodeTypeDefinition__MixinAssignment_4_1
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3301:7: ( rule__NodeTypeDefinition__MixinAssignment_4_1 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3301:8: rule__NodeTypeDefinition__MixinAssignment_4_1
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__MixinAssignment_4_1_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl6942);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__MixinAssignment_4_1_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl6889);
                     rule__NodeTypeDefinition__MixinAssignment_4_1();
 
                     state._fsp--;
@@ -9236,16 +9141,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3331:4: ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3307:4: ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3331:4: ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3332:5: {...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3307:4: ({...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3308:5: {...}? => ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
                         throw new FailedPredicateException(input, "rule__NodeTypeDefinition__UnorderedGroup_4__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3332:115: ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3333:6: ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3308:115: ( ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3309:6: ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2);
@@ -9253,14 +9158,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3339:6: ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3341:7: ( rule__NodeTypeDefinition__AbstractAssignment_4_2 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3315:6: ( ( rule__NodeTypeDefinition__AbstractAssignment_4_2 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3317:7: ( rule__NodeTypeDefinition__AbstractAssignment_4_2 )
                     {
                      before(grammarAccess.getNodeTypeDefinitionAccess().getAbstractAssignment_4_2()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3342:7: ( rule__NodeTypeDefinition__AbstractAssignment_4_2 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3342:8: rule__NodeTypeDefinition__AbstractAssignment_4_2
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3318:7: ( rule__NodeTypeDefinition__AbstractAssignment_4_2 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3318:8: rule__NodeTypeDefinition__AbstractAssignment_4_2
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__AbstractAssignment_4_2_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7033);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__AbstractAssignment_4_2_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl6980);
                     rule__NodeTypeDefinition__AbstractAssignment_4_2();
 
                     state._fsp--;
@@ -9282,16 +9187,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3348:4: ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3324:4: ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3348:4: ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3349:5: {...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3324:4: ({...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3325:5: {...}? => ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
                         throw new FailedPredicateException(input, "rule__NodeTypeDefinition__UnorderedGroup_4__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3349:115: ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3350:6: ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3325:115: ( ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3326:6: ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3);
@@ -9299,14 +9204,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3356:6: ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3358:7: ( rule__NodeTypeDefinition__QueryableAssignment_4_3 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3332:6: ( ( rule__NodeTypeDefinition__QueryableAssignment_4_3 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3334:7: ( rule__NodeTypeDefinition__QueryableAssignment_4_3 )
                     {
                      before(grammarAccess.getNodeTypeDefinitionAccess().getQueryableAssignment_4_3()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3359:7: ( rule__NodeTypeDefinition__QueryableAssignment_4_3 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3359:8: rule__NodeTypeDefinition__QueryableAssignment_4_3
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3335:7: ( rule__NodeTypeDefinition__QueryableAssignment_4_3 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3335:8: rule__NodeTypeDefinition__QueryableAssignment_4_3
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__QueryableAssignment_4_3_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7124);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__QueryableAssignment_4_3_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7071);
                     rule__NodeTypeDefinition__QueryableAssignment_4_3();
 
                     state._fsp--;
@@ -9328,16 +9233,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3365:4: ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3341:4: ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3365:4: ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3366:5: {...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3341:4: ({...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3342:5: {...}? => ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
                         throw new FailedPredicateException(input, "rule__NodeTypeDefinition__UnorderedGroup_4__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3366:115: ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3367:6: ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3342:115: ( ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3343:6: ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4);
@@ -9345,14 +9250,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3373:6: ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3375:7: ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3349:6: ( ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3351:7: ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 )
                     {
                      before(grammarAccess.getNodeTypeDefinitionAccess().getNotqueryableAssignment_4_4()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3376:7: ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3376:8: rule__NodeTypeDefinition__NotqueryableAssignment_4_4
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3352:7: ( rule__NodeTypeDefinition__NotqueryableAssignment_4_4 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3352:8: rule__NodeTypeDefinition__NotqueryableAssignment_4_4
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__NotqueryableAssignment_4_4_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7215);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__NotqueryableAssignment_4_4_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7162);
                     rule__NodeTypeDefinition__NotqueryableAssignment_4_4();
 
                     state._fsp--;
@@ -9374,16 +9279,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 6 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3382:4: ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3358:4: ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3382:4: ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3383:5: {...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3358:4: ({...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3359:5: {...}? => ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
                         throw new FailedPredicateException(input, "rule__NodeTypeDefinition__UnorderedGroup_4__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3383:115: ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3384:6: ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3359:115: ( ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3360:6: ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5);
@@ -9391,14 +9296,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3390:6: ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3392:7: ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3366:6: ( ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3368:7: ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 )
                     {
                      before(grammarAccess.getNodeTypeDefinitionAccess().getPrimaryItemAssignment_4_5()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3393:7: ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3393:8: rule__NodeTypeDefinition__PrimaryItemAssignment_4_5
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3369:7: ( rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3369:8: rule__NodeTypeDefinition__PrimaryItemAssignment_4_5
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__PrimaryItemAssignment_4_5_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7306);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__PrimaryItemAssignment_4_5_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7253);
                     rule__NodeTypeDefinition__PrimaryItemAssignment_4_5();
 
                     state._fsp--;
@@ -9443,47 +9348,47 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__UnorderedGroup_4__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3408:1: rule__NodeTypeDefinition__UnorderedGroup_4__0 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__1 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3384:1: rule__NodeTypeDefinition__UnorderedGroup_4__0 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__1 )? ;
     public final void rule__NodeTypeDefinition__UnorderedGroup_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3412:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__1 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3413:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__1 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3388:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__1 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3389:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__1 )?
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__07365);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__07312);
             rule__NodeTypeDefinition__UnorderedGroup_4__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3414:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__1 )?
-            int alt38=2;
-            int LA38_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3390:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__1 )?
+            int alt37=2;
+            int LA37_0 = input.LA(1);
 
-            if ( LA38_0 >=42 && LA38_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt38=1;
+            if ( LA37_0 >=42 && LA37_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt37=1;
             }
-            else if ( (LA38_0==27|| LA38_0 >=40 && LA38_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt38=1;
+            else if ( (LA37_0==27|| LA37_0 >=40 && LA37_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt37=1;
             }
-            else if ( (LA38_0==30|| LA38_0 >=38 && LA38_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt38=1;
+            else if ( (LA37_0==30|| LA37_0 >=38 && LA37_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt37=1;
             }
-            else if ( LA38_0 >=34 && LA38_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt38=1;
+            else if ( LA37_0 >=34 && LA37_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt37=1;
             }
-            else if ( LA38_0 >=36 && LA38_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt38=1;
+            else if ( LA37_0 >=36 && LA37_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt37=1;
             }
-            else if ( LA38_0 >=32 && LA38_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
-                alt38=1;
+            else if ( LA37_0 >=32 && LA37_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
+                alt37=1;
             }
-            switch (alt38) {
+            switch (alt37) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3414:2: rule__NodeTypeDefinition__UnorderedGroup_4__1
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3390:2: rule__NodeTypeDefinition__UnorderedGroup_4__1
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__1_in_rule__NodeTypeDefinition__UnorderedGroup_4__07368);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__1_in_rule__NodeTypeDefinition__UnorderedGroup_4__07315);
                     rule__NodeTypeDefinition__UnorderedGroup_4__1();
 
                     state._fsp--;
@@ -9513,47 +9418,47 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__UnorderedGroup_4__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3421:1: rule__NodeTypeDefinition__UnorderedGroup_4__1 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__2 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3397:1: rule__NodeTypeDefinition__UnorderedGroup_4__1 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__2 )? ;
     public final void rule__NodeTypeDefinition__UnorderedGroup_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3425:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__2 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3426:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__2 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3401:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__2 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3402:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__2 )?
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__17393);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__17340);
             rule__NodeTypeDefinition__UnorderedGroup_4__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3427:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__2 )?
-            int alt39=2;
-            int LA39_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3403:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__2 )?
+            int alt38=2;
+            int LA38_0 = input.LA(1);
 
-            if ( LA39_0 >=42 && LA39_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt39=1;
+            if ( LA38_0 >=42 && LA38_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt38=1;
             }
-            else if ( (LA39_0==27|| LA39_0 >=40 && LA39_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt39=1;
+            else if ( (LA38_0==27|| LA38_0 >=40 && LA38_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt38=1;
             }
-            else if ( (LA39_0==30|| LA39_0 >=38 && LA39_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt39=1;
+            else if ( (LA38_0==30|| LA38_0 >=38 && LA38_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt38=1;
             }
-            else if ( LA39_0 >=34 && LA39_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt39=1;
+            else if ( LA38_0 >=34 && LA38_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt38=1;
             }
-            else if ( LA39_0 >=36 && LA39_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt39=1;
+            else if ( LA38_0 >=36 && LA38_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt38=1;
             }
-            else if ( LA39_0 >=32 && LA39_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
-                alt39=1;
+            else if ( LA38_0 >=32 && LA38_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
+                alt38=1;
             }
-            switch (alt39) {
+            switch (alt38) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3427:2: rule__NodeTypeDefinition__UnorderedGroup_4__2
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3403:2: rule__NodeTypeDefinition__UnorderedGroup_4__2
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__2_in_rule__NodeTypeDefinition__UnorderedGroup_4__17396);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__2_in_rule__NodeTypeDefinition__UnorderedGroup_4__17343);
                     rule__NodeTypeDefinition__UnorderedGroup_4__2();
 
                     state._fsp--;
@@ -9583,47 +9488,47 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__UnorderedGroup_4__2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3434:1: rule__NodeTypeDefinition__UnorderedGroup_4__2 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__3 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3410:1: rule__NodeTypeDefinition__UnorderedGroup_4__2 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__3 )? ;
     public final void rule__NodeTypeDefinition__UnorderedGroup_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3438:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__3 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3439:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__3 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3414:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__3 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3415:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__3 )?
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__27421);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__27368);
             rule__NodeTypeDefinition__UnorderedGroup_4__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3440:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__3 )?
-            int alt40=2;
-            int LA40_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3416:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__3 )?
+            int alt39=2;
+            int LA39_0 = input.LA(1);
 
-            if ( LA40_0 >=42 && LA40_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt40=1;
+            if ( LA39_0 >=42 && LA39_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt39=1;
             }
-            else if ( (LA40_0==27|| LA40_0 >=40 && LA40_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt40=1;
+            else if ( (LA39_0==27|| LA39_0 >=40 && LA39_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt39=1;
             }
-            else if ( (LA40_0==30|| LA40_0 >=38 && LA40_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt40=1;
+            else if ( (LA39_0==30|| LA39_0 >=38 && LA39_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt39=1;
             }
-            else if ( LA40_0 >=34 && LA40_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt40=1;
+            else if ( LA39_0 >=34 && LA39_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt39=1;
             }
-            else if ( LA40_0 >=36 && LA40_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt40=1;
+            else if ( LA39_0 >=36 && LA39_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt39=1;
             }
-            else if ( LA40_0 >=32 && LA40_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
-                alt40=1;
+            else if ( LA39_0 >=32 && LA39_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
+                alt39=1;
             }
-            switch (alt40) {
+            switch (alt39) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3440:2: rule__NodeTypeDefinition__UnorderedGroup_4__3
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3416:2: rule__NodeTypeDefinition__UnorderedGroup_4__3
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__3_in_rule__NodeTypeDefinition__UnorderedGroup_4__27424);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__3_in_rule__NodeTypeDefinition__UnorderedGroup_4__27371);
                     rule__NodeTypeDefinition__UnorderedGroup_4__3();
 
                     state._fsp--;
@@ -9653,47 +9558,47 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__UnorderedGroup_4__3"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3447:1: rule__NodeTypeDefinition__UnorderedGroup_4__3 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__4 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3423:1: rule__NodeTypeDefinition__UnorderedGroup_4__3 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__4 )? ;
     public final void rule__NodeTypeDefinition__UnorderedGroup_4__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3451:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__4 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3452:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__4 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3427:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__4 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3428:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__4 )?
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__37449);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__37396);
             rule__NodeTypeDefinition__UnorderedGroup_4__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3453:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__4 )?
-            int alt41=2;
-            int LA41_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3429:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__4 )?
+            int alt40=2;
+            int LA40_0 = input.LA(1);
 
-            if ( LA41_0 >=42 && LA41_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt41=1;
+            if ( LA40_0 >=42 && LA40_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt40=1;
             }
-            else if ( (LA41_0==27|| LA41_0 >=40 && LA41_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt41=1;
+            else if ( (LA40_0==27|| LA40_0 >=40 && LA40_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt40=1;
             }
-            else if ( (LA41_0==30|| LA41_0 >=38 && LA41_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt41=1;
+            else if ( (LA40_0==30|| LA40_0 >=38 && LA40_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt40=1;
             }
-            else if ( LA41_0 >=34 && LA41_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt41=1;
+            else if ( LA40_0 >=34 && LA40_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt40=1;
             }
-            else if ( LA41_0 >=36 && LA41_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt41=1;
+            else if ( LA40_0 >=36 && LA40_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt40=1;
             }
-            else if ( LA41_0 >=32 && LA41_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
-                alt41=1;
+            else if ( LA40_0 >=32 && LA40_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
+                alt40=1;
             }
-            switch (alt41) {
+            switch (alt40) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3453:2: rule__NodeTypeDefinition__UnorderedGroup_4__4
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3429:2: rule__NodeTypeDefinition__UnorderedGroup_4__4
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__4_in_rule__NodeTypeDefinition__UnorderedGroup_4__37452);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__4_in_rule__NodeTypeDefinition__UnorderedGroup_4__37399);
                     rule__NodeTypeDefinition__UnorderedGroup_4__4();
 
                     state._fsp--;
@@ -9723,47 +9628,47 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__UnorderedGroup_4__4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3460:1: rule__NodeTypeDefinition__UnorderedGroup_4__4 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__5 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3436:1: rule__NodeTypeDefinition__UnorderedGroup_4__4 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__5 )? ;
     public final void rule__NodeTypeDefinition__UnorderedGroup_4__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3464:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__5 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3465:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__5 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3440:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__5 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3441:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl ( rule__NodeTypeDefinition__UnorderedGroup_4__5 )?
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__47477);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__47424);
             rule__NodeTypeDefinition__UnorderedGroup_4__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3466:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__5 )?
-            int alt42=2;
-            int LA42_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3442:2: ( rule__NodeTypeDefinition__UnorderedGroup_4__5 )?
+            int alt41=2;
+            int LA41_0 = input.LA(1);
 
-            if ( LA42_0 >=42 && LA42_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt42=1;
+            if ( LA41_0 >=42 && LA41_0<=44 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt41=1;
             }
-            else if ( (LA42_0==27|| LA42_0 >=40 && LA42_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt42=1;
+            else if ( (LA41_0==27|| LA41_0 >=40 && LA41_0<=41) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt41=1;
             }
-            else if ( (LA42_0==30|| LA42_0 >=38 && LA42_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt42=1;
+            else if ( (LA41_0==30|| LA41_0 >=38 && LA41_0<=39) && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt41=1;
             }
-            else if ( LA42_0 >=34 && LA42_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt42=1;
+            else if ( LA41_0 >=34 && LA41_0<=35 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt41=1;
             }
-            else if ( LA42_0 >=36 && LA42_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt42=1;
+            else if ( LA41_0 >=36 && LA41_0<=37 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt41=1;
             }
-            else if ( LA42_0 >=32 && LA42_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
-                alt42=1;
+            else if ( LA41_0 >=32 && LA41_0<=33 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5) ) {
+                alt41=1;
             }
-            switch (alt42) {
+            switch (alt41) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3466:2: rule__NodeTypeDefinition__UnorderedGroup_4__5
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3442:2: rule__NodeTypeDefinition__UnorderedGroup_4__5
                     {
-                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__5_in_rule__NodeTypeDefinition__UnorderedGroup_4__47480);
+                    pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__5_in_rule__NodeTypeDefinition__UnorderedGroup_4__47427);
                     rule__NodeTypeDefinition__UnorderedGroup_4__5();
 
                     state._fsp--;
@@ -9793,16 +9698,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__UnorderedGroup_4__5"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3473:1: rule__NodeTypeDefinition__UnorderedGroup_4__5 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3449:1: rule__NodeTypeDefinition__UnorderedGroup_4__5 : rule__NodeTypeDefinition__UnorderedGroup_4__Impl ;
     public final void rule__NodeTypeDefinition__UnorderedGroup_4__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3477:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3478:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3453:1: ( rule__NodeTypeDefinition__UnorderedGroup_4__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3454:2: rule__NodeTypeDefinition__UnorderedGroup_4__Impl
             {
-            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__57505);
+            pushFollow(FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__57452);
             rule__NodeTypeDefinition__UnorderedGroup_4__Impl();
 
             state._fsp--;
@@ -9826,40 +9731,40 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__UnorderedGroup_4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3497:1: rule__NodeDefinition__UnorderedGroup_4 : ( rule__NodeDefinition__UnorderedGroup_4__0 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3473:1: rule__NodeDefinition__UnorderedGroup_4 : ( rule__NodeDefinition__UnorderedGroup_4__0 )? ;
     public final void rule__NodeDefinition__UnorderedGroup_4() throws RecognitionException {
 
             	int stackSize = keepStackSize();
         		getUnorderedGroupHelper().enter(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4());
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3502:1: ( ( rule__NodeDefinition__UnorderedGroup_4__0 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3503:2: ( rule__NodeDefinition__UnorderedGroup_4__0 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3478:1: ( ( rule__NodeDefinition__UnorderedGroup_4__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3479:2: ( rule__NodeDefinition__UnorderedGroup_4__0 )?
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3503:2: ( rule__NodeDefinition__UnorderedGroup_4__0 )?
-            int alt43=2;
-            int LA43_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3479:2: ( rule__NodeDefinition__UnorderedGroup_4__0 )?
+            int alt42=2;
+            int LA42_0 = input.LA(1);
 
-            if ( LA43_0 >=28 && LA43_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt43=1;
+            if ( LA42_0 >=28 && LA42_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt42=1;
             }
-            else if ( LA43_0 >=25 && LA43_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt43=1;
+            else if ( LA42_0 >=25 && LA42_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt42=1;
             }
-            else if ( LA43_0 >=22 && LA43_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt43=1;
+            else if ( LA42_0 >=22 && LA42_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt42=1;
             }
-            else if ( LA43_0 >=45 && LA43_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt43=1;
+            else if ( LA42_0 >=45 && LA42_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt42=1;
             }
-            else if ( LA43_0 >=12 && LA43_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt43=1;
+            else if ( LA42_0 >=12 && LA42_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt42=1;
             }
-            switch (alt43) {
+            switch (alt42) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3503:2: rule__NodeDefinition__UnorderedGroup_4__0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3479:2: rule__NodeDefinition__UnorderedGroup_4__0
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__0_in_rule__NodeDefinition__UnorderedGroup_47541);
+                    pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__0_in_rule__NodeDefinition__UnorderedGroup_47488);
                     rule__NodeDefinition__UnorderedGroup_4__0();
 
                     state._fsp--;
@@ -9890,53 +9795,53 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__UnorderedGroup_4__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3513:1: rule__NodeDefinition__UnorderedGroup_4__Impl : ( ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3489:1: rule__NodeDefinition__UnorderedGroup_4__Impl : ( ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) ) ) ;
     public final void rule__NodeDefinition__UnorderedGroup_4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         		boolean selected = false;
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3518:1: ( ( ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3519:3: ( ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3494:1: ( ( ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3495:3: ( ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3519:3: ( ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) ) )
-            int alt44=5;
-            int LA44_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3495:3: ( ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) ) | ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) ) )
+            int alt43=5;
+            int LA43_0 = input.LA(1);
 
-            if ( LA44_0 >=28 && LA44_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt44=1;
+            if ( LA43_0 >=28 && LA43_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt43=1;
             }
-            else if ( LA44_0 >=25 && LA44_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt44=2;
+            else if ( LA43_0 >=25 && LA43_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt43=2;
             }
-            else if ( LA44_0 >=22 && LA44_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt44=3;
+            else if ( LA43_0 >=22 && LA43_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt43=3;
             }
-            else if ( LA44_0 >=45 && LA44_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt44=4;
+            else if ( LA43_0 >=45 && LA43_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt43=4;
             }
-            else if ( LA44_0 >=12 && LA44_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt44=5;
+            else if ( LA43_0 >=12 && LA43_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt43=5;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 44, 0, input);
+                    new NoViableAltException("", 43, 0, input);
 
                 throw nvae;
             }
-            switch (alt44) {
+            switch (alt43) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3521:4: ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3497:4: ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3521:4: ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3522:5: {...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3497:4: ({...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3498:5: {...}? => ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
                         throw new FailedPredicateException(input, "rule__NodeDefinition__UnorderedGroup_4__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3522:111: ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3523:6: ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3498:111: ( ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3499:6: ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0);
@@ -9944,14 +9849,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3529:6: ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3531:7: ( rule__NodeDefinition__AutocreatedAssignment_4_0 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3505:6: ( ( rule__NodeDefinition__AutocreatedAssignment_4_0 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3507:7: ( rule__NodeDefinition__AutocreatedAssignment_4_0 )
                     {
                      before(grammarAccess.getNodeDefinitionAccess().getAutocreatedAssignment_4_0()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3532:7: ( rule__NodeDefinition__AutocreatedAssignment_4_0 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3532:8: rule__NodeDefinition__AutocreatedAssignment_4_0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3508:7: ( rule__NodeDefinition__AutocreatedAssignment_4_0 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3508:8: rule__NodeDefinition__AutocreatedAssignment_4_0
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__AutocreatedAssignment_4_0_in_rule__NodeDefinition__UnorderedGroup_4__Impl7628);
+                    pushFollow(FOLLOW_rule__NodeDefinition__AutocreatedAssignment_4_0_in_rule__NodeDefinition__UnorderedGroup_4__Impl7575);
                     rule__NodeDefinition__AutocreatedAssignment_4_0();
 
                     state._fsp--;
@@ -9973,16 +9878,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3538:4: ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3514:4: ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3538:4: ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3539:5: {...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3514:4: ({...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3515:5: {...}? => ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
                         throw new FailedPredicateException(input, "rule__NodeDefinition__UnorderedGroup_4__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3539:111: ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3540:6: ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3515:111: ( ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3516:6: ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1);
@@ -9990,14 +9895,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3546:6: ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3548:7: ( rule__NodeDefinition__ManadatoryAssignment_4_1 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3522:6: ( ( rule__NodeDefinition__ManadatoryAssignment_4_1 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3524:7: ( rule__NodeDefinition__ManadatoryAssignment_4_1 )
                     {
                      before(grammarAccess.getNodeDefinitionAccess().getManadatoryAssignment_4_1()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3549:7: ( rule__NodeDefinition__ManadatoryAssignment_4_1 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3549:8: rule__NodeDefinition__ManadatoryAssignment_4_1
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3525:7: ( rule__NodeDefinition__ManadatoryAssignment_4_1 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3525:8: rule__NodeDefinition__ManadatoryAssignment_4_1
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__ManadatoryAssignment_4_1_in_rule__NodeDefinition__UnorderedGroup_4__Impl7719);
+                    pushFollow(FOLLOW_rule__NodeDefinition__ManadatoryAssignment_4_1_in_rule__NodeDefinition__UnorderedGroup_4__Impl7666);
                     rule__NodeDefinition__ManadatoryAssignment_4_1();
 
                     state._fsp--;
@@ -10019,16 +9924,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3555:4: ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3531:4: ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3555:4: ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3556:5: {...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3531:4: ({...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3532:5: {...}? => ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
                         throw new FailedPredicateException(input, "rule__NodeDefinition__UnorderedGroup_4__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3556:111: ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3557:6: ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3532:111: ( ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3533:6: ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2);
@@ -10036,14 +9941,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3563:6: ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3565:7: ( rule__NodeDefinition__ProtectedAssignment_4_2 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3539:6: ( ( rule__NodeDefinition__ProtectedAssignment_4_2 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3541:7: ( rule__NodeDefinition__ProtectedAssignment_4_2 )
                     {
                      before(grammarAccess.getNodeDefinitionAccess().getProtectedAssignment_4_2()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3566:7: ( rule__NodeDefinition__ProtectedAssignment_4_2 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3566:8: rule__NodeDefinition__ProtectedAssignment_4_2
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3542:7: ( rule__NodeDefinition__ProtectedAssignment_4_2 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3542:8: rule__NodeDefinition__ProtectedAssignment_4_2
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__ProtectedAssignment_4_2_in_rule__NodeDefinition__UnorderedGroup_4__Impl7810);
+                    pushFollow(FOLLOW_rule__NodeDefinition__ProtectedAssignment_4_2_in_rule__NodeDefinition__UnorderedGroup_4__Impl7757);
                     rule__NodeDefinition__ProtectedAssignment_4_2();
 
                     state._fsp--;
@@ -10065,16 +9970,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3572:4: ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3548:4: ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3572:4: ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3573:5: {...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3548:4: ({...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3549:5: {...}? => ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
                         throw new FailedPredicateException(input, "rule__NodeDefinition__UnorderedGroup_4__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3573:111: ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3574:6: ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3549:111: ( ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3550:6: ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3);
@@ -10082,14 +9987,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3580:6: ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3582:7: ( rule__NodeDefinition__OnParentVersionAssignment_4_3 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3556:6: ( ( rule__NodeDefinition__OnParentVersionAssignment_4_3 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3558:7: ( rule__NodeDefinition__OnParentVersionAssignment_4_3 )
                     {
                      before(grammarAccess.getNodeDefinitionAccess().getOnParentVersionAssignment_4_3()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3583:7: ( rule__NodeDefinition__OnParentVersionAssignment_4_3 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3583:8: rule__NodeDefinition__OnParentVersionAssignment_4_3
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3559:7: ( rule__NodeDefinition__OnParentVersionAssignment_4_3 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3559:8: rule__NodeDefinition__OnParentVersionAssignment_4_3
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__OnParentVersionAssignment_4_3_in_rule__NodeDefinition__UnorderedGroup_4__Impl7901);
+                    pushFollow(FOLLOW_rule__NodeDefinition__OnParentVersionAssignment_4_3_in_rule__NodeDefinition__UnorderedGroup_4__Impl7848);
                     rule__NodeDefinition__OnParentVersionAssignment_4_3();
 
                     state._fsp--;
@@ -10111,16 +10016,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3589:4: ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3565:4: ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3589:4: ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3590:5: {...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3565:4: ({...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3566:5: {...}? => ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
                         throw new FailedPredicateException(input, "rule__NodeDefinition__UnorderedGroup_4__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3590:111: ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3591:6: ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3566:111: ( ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3567:6: ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4);
@@ -10128,14 +10033,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3597:6: ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3599:7: ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3573:6: ( ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3575:7: ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 )
                     {
                      before(grammarAccess.getNodeDefinitionAccess().getSameNameSiblingsAssignment_4_4()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3600:7: ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3600:8: rule__NodeDefinition__SameNameSiblingsAssignment_4_4
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3576:7: ( rule__NodeDefinition__SameNameSiblingsAssignment_4_4 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3576:8: rule__NodeDefinition__SameNameSiblingsAssignment_4_4
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__SameNameSiblingsAssignment_4_4_in_rule__NodeDefinition__UnorderedGroup_4__Impl7992);
+                    pushFollow(FOLLOW_rule__NodeDefinition__SameNameSiblingsAssignment_4_4_in_rule__NodeDefinition__UnorderedGroup_4__Impl7939);
                     rule__NodeDefinition__SameNameSiblingsAssignment_4_4();
 
                     state._fsp--;
@@ -10180,44 +10085,44 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__UnorderedGroup_4__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3615:1: rule__NodeDefinition__UnorderedGroup_4__0 : rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__1 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3591:1: rule__NodeDefinition__UnorderedGroup_4__0 : rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__1 )? ;
     public final void rule__NodeDefinition__UnorderedGroup_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3619:1: ( rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__1 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3620:2: rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__1 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3595:1: ( rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__1 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3596:2: rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__1 )?
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__08051);
+            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__07998);
             rule__NodeDefinition__UnorderedGroup_4__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3621:2: ( rule__NodeDefinition__UnorderedGroup_4__1 )?
-            int alt45=2;
-            int LA45_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3597:2: ( rule__NodeDefinition__UnorderedGroup_4__1 )?
+            int alt44=2;
+            int LA44_0 = input.LA(1);
 
-            if ( LA45_0 >=28 && LA45_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt45=1;
+            if ( LA44_0 >=28 && LA44_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt44=1;
             }
-            else if ( LA45_0 >=25 && LA45_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt45=1;
+            else if ( LA44_0 >=25 && LA44_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt44=1;
             }
-            else if ( LA45_0 >=22 && LA45_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt45=1;
+            else if ( LA44_0 >=22 && LA44_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt44=1;
             }
-            else if ( LA45_0 >=45 && LA45_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt45=1;
+            else if ( LA44_0 >=45 && LA44_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt44=1;
             }
-            else if ( LA45_0 >=12 && LA45_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt45=1;
+            else if ( LA44_0 >=12 && LA44_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt44=1;
             }
-            switch (alt45) {
+            switch (alt44) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3621:2: rule__NodeDefinition__UnorderedGroup_4__1
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3597:2: rule__NodeDefinition__UnorderedGroup_4__1
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__1_in_rule__NodeDefinition__UnorderedGroup_4__08054);
+                    pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__1_in_rule__NodeDefinition__UnorderedGroup_4__08001);
                     rule__NodeDefinition__UnorderedGroup_4__1();
 
                     state._fsp--;
@@ -10247,44 +10152,44 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__UnorderedGroup_4__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3628:1: rule__NodeDefinition__UnorderedGroup_4__1 : rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__2 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3604:1: rule__NodeDefinition__UnorderedGroup_4__1 : rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__2 )? ;
     public final void rule__NodeDefinition__UnorderedGroup_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3632:1: ( rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__2 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3633:2: rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__2 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3608:1: ( rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__2 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3609:2: rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__2 )?
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__18079);
+            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__18026);
             rule__NodeDefinition__UnorderedGroup_4__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3634:2: ( rule__NodeDefinition__UnorderedGroup_4__2 )?
-            int alt46=2;
-            int LA46_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3610:2: ( rule__NodeDefinition__UnorderedGroup_4__2 )?
+            int alt45=2;
+            int LA45_0 = input.LA(1);
 
-            if ( LA46_0 >=28 && LA46_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt46=1;
+            if ( LA45_0 >=28 && LA45_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt45=1;
             }
-            else if ( LA46_0 >=25 && LA46_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt46=1;
+            else if ( LA45_0 >=25 && LA45_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt45=1;
             }
-            else if ( LA46_0 >=22 && LA46_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt46=1;
+            else if ( LA45_0 >=22 && LA45_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt45=1;
             }
-            else if ( LA46_0 >=45 && LA46_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt46=1;
+            else if ( LA45_0 >=45 && LA45_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt45=1;
             }
-            else if ( LA46_0 >=12 && LA46_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt46=1;
+            else if ( LA45_0 >=12 && LA45_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt45=1;
             }
-            switch (alt46) {
+            switch (alt45) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3634:2: rule__NodeDefinition__UnorderedGroup_4__2
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3610:2: rule__NodeDefinition__UnorderedGroup_4__2
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__2_in_rule__NodeDefinition__UnorderedGroup_4__18082);
+                    pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__2_in_rule__NodeDefinition__UnorderedGroup_4__18029);
                     rule__NodeDefinition__UnorderedGroup_4__2();
 
                     state._fsp--;
@@ -10314,44 +10219,44 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__UnorderedGroup_4__2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3641:1: rule__NodeDefinition__UnorderedGroup_4__2 : rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__3 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3617:1: rule__NodeDefinition__UnorderedGroup_4__2 : rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__3 )? ;
     public final void rule__NodeDefinition__UnorderedGroup_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3645:1: ( rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__3 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3646:2: rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__3 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3621:1: ( rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__3 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3622:2: rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__3 )?
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__28107);
+            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__28054);
             rule__NodeDefinition__UnorderedGroup_4__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3647:2: ( rule__NodeDefinition__UnorderedGroup_4__3 )?
-            int alt47=2;
-            int LA47_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3623:2: ( rule__NodeDefinition__UnorderedGroup_4__3 )?
+            int alt46=2;
+            int LA46_0 = input.LA(1);
 
-            if ( LA47_0 >=28 && LA47_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt47=1;
+            if ( LA46_0 >=28 && LA46_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt46=1;
             }
-            else if ( LA47_0 >=25 && LA47_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt47=1;
+            else if ( LA46_0 >=25 && LA46_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt46=1;
             }
-            else if ( LA47_0 >=22 && LA47_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt47=1;
+            else if ( LA46_0 >=22 && LA46_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt46=1;
             }
-            else if ( LA47_0 >=45 && LA47_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt47=1;
+            else if ( LA46_0 >=45 && LA46_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt46=1;
             }
-            else if ( LA47_0 >=12 && LA47_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt47=1;
+            else if ( LA46_0 >=12 && LA46_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt46=1;
             }
-            switch (alt47) {
+            switch (alt46) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3647:2: rule__NodeDefinition__UnorderedGroup_4__3
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3623:2: rule__NodeDefinition__UnorderedGroup_4__3
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__3_in_rule__NodeDefinition__UnorderedGroup_4__28110);
+                    pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__3_in_rule__NodeDefinition__UnorderedGroup_4__28057);
                     rule__NodeDefinition__UnorderedGroup_4__3();
 
                     state._fsp--;
@@ -10381,44 +10286,44 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__UnorderedGroup_4__3"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3654:1: rule__NodeDefinition__UnorderedGroup_4__3 : rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__4 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3630:1: rule__NodeDefinition__UnorderedGroup_4__3 : rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__4 )? ;
     public final void rule__NodeDefinition__UnorderedGroup_4__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3658:1: ( rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__4 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3659:2: rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__4 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3634:1: ( rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__4 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3635:2: rule__NodeDefinition__UnorderedGroup_4__Impl ( rule__NodeDefinition__UnorderedGroup_4__4 )?
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__38135);
+            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__38082);
             rule__NodeDefinition__UnorderedGroup_4__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3660:2: ( rule__NodeDefinition__UnorderedGroup_4__4 )?
-            int alt48=2;
-            int LA48_0 = input.LA(1);
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3636:2: ( rule__NodeDefinition__UnorderedGroup_4__4 )?
+            int alt47=2;
+            int LA47_0 = input.LA(1);
 
-            if ( LA48_0 >=28 && LA48_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
-                alt48=1;
+            if ( LA47_0 >=28 && LA47_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 0) ) {
+                alt47=1;
             }
-            else if ( LA48_0 >=25 && LA48_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
-                alt48=1;
+            else if ( LA47_0 >=25 && LA47_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 1) ) {
+                alt47=1;
             }
-            else if ( LA48_0 >=22 && LA48_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
-                alt48=1;
+            else if ( LA47_0 >=22 && LA47_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 2) ) {
+                alt47=1;
             }
-            else if ( LA48_0 >=45 && LA48_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
-                alt48=1;
+            else if ( LA47_0 >=45 && LA47_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 3) ) {
+                alt47=1;
             }
-            else if ( LA48_0 >=12 && LA48_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
-                alt48=1;
+            else if ( LA47_0 >=12 && LA47_0<=14 && getUnorderedGroupHelper().canSelect(grammarAccess.getNodeDefinitionAccess().getUnorderedGroup_4(), 4) ) {
+                alt47=1;
             }
-            switch (alt48) {
+            switch (alt47) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3660:2: rule__NodeDefinition__UnorderedGroup_4__4
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3636:2: rule__NodeDefinition__UnorderedGroup_4__4
                     {
-                    pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__4_in_rule__NodeDefinition__UnorderedGroup_4__38138);
+                    pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__4_in_rule__NodeDefinition__UnorderedGroup_4__38085);
                     rule__NodeDefinition__UnorderedGroup_4__4();
 
                     state._fsp--;
@@ -10448,16 +10353,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__UnorderedGroup_4__4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3667:1: rule__NodeDefinition__UnorderedGroup_4__4 : rule__NodeDefinition__UnorderedGroup_4__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3643:1: rule__NodeDefinition__UnorderedGroup_4__4 : rule__NodeDefinition__UnorderedGroup_4__Impl ;
     public final void rule__NodeDefinition__UnorderedGroup_4__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3671:1: ( rule__NodeDefinition__UnorderedGroup_4__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3672:2: rule__NodeDefinition__UnorderedGroup_4__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3647:1: ( rule__NodeDefinition__UnorderedGroup_4__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3648:2: rule__NodeDefinition__UnorderedGroup_4__Impl
             {
-            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__48163);
+            pushFollow(FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__48110);
             rule__NodeDefinition__UnorderedGroup_4__Impl();
 
             state._fsp--;
@@ -10481,24 +10386,24 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__UnorderedGroup_5"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3689:1: rule__PropertyDefinition__UnorderedGroup_5 : ( rule__PropertyDefinition__UnorderedGroup_5__0 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3665:1: rule__PropertyDefinition__UnorderedGroup_5 : ( rule__PropertyDefinition__UnorderedGroup_5__0 )? ;
     public final void rule__PropertyDefinition__UnorderedGroup_5() throws RecognitionException {
 
             	int stackSize = keepStackSize();
         		getUnorderedGroupHelper().enter(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5());
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3694:1: ( ( rule__PropertyDefinition__UnorderedGroup_5__0 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3695:2: ( rule__PropertyDefinition__UnorderedGroup_5__0 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3670:1: ( ( rule__PropertyDefinition__UnorderedGroup_5__0 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3671:2: ( rule__PropertyDefinition__UnorderedGroup_5__0 )?
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3695:2: ( rule__PropertyDefinition__UnorderedGroup_5__0 )?
-            int alt49=2;
-            alt49 = dfa49.predict(input);
-            switch (alt49) {
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3671:2: ( rule__PropertyDefinition__UnorderedGroup_5__0 )?
+            int alt48=2;
+            alt48 = dfa48.predict(input);
+            switch (alt48) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3695:2: rule__PropertyDefinition__UnorderedGroup_5__0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3671:2: rule__PropertyDefinition__UnorderedGroup_5__0
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__0_in_rule__PropertyDefinition__UnorderedGroup_58197);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__0_in_rule__PropertyDefinition__UnorderedGroup_58144);
                     rule__PropertyDefinition__UnorderedGroup_5__0();
 
                     state._fsp--;
@@ -10529,31 +10434,31 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__UnorderedGroup_5__Impl"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3705:1: rule__PropertyDefinition__UnorderedGroup_5__Impl : ( ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3681:1: rule__PropertyDefinition__UnorderedGroup_5__Impl : ( ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) ) ) ;
     public final void rule__PropertyDefinition__UnorderedGroup_5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         		boolean selected = false;
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3710:1: ( ( ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3711:3: ( ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3686:1: ( ( ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3687:3: ( ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3711:3: ( ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) ) )
-            int alt50=9;
-            alt50 = dfa50.predict(input);
-            switch (alt50) {
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3687:3: ( ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) ) )
+            int alt49=9;
+            alt49 = dfa49.predict(input);
+            switch (alt49) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3713:4: ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3689:4: ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3713:4: ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3714:5: {...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3689:4: ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3690:5: {...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 0) ) {
                         throw new FailedPredicateException(input, "rule__PropertyDefinition__UnorderedGroup_5__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 0)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3714:115: ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3715:6: ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3690:115: ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3691:6: ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 0);
@@ -10561,14 +10466,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3721:6: ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3723:7: ( rule__PropertyDefinition__AutocreatedAssignment_5_0 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3697:6: ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3699:7: ( rule__PropertyDefinition__AutocreatedAssignment_5_0 )
                     {
                      before(grammarAccess.getPropertyDefinitionAccess().getAutocreatedAssignment_5_0()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3724:7: ( rule__PropertyDefinition__AutocreatedAssignment_5_0 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3724:8: rule__PropertyDefinition__AutocreatedAssignment_5_0
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3700:7: ( rule__PropertyDefinition__AutocreatedAssignment_5_0 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3700:8: rule__PropertyDefinition__AutocreatedAssignment_5_0
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__AutocreatedAssignment_5_0_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8284);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__AutocreatedAssignment_5_0_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8231);
                     rule__PropertyDefinition__AutocreatedAssignment_5_0();
 
                     state._fsp--;
@@ -10590,16 +10495,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3730:4: ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3706:4: ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3730:4: ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3731:5: {...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3706:4: ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3707:5: {...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 1) ) {
                         throw new FailedPredicateException(input, "rule__PropertyDefinition__UnorderedGroup_5__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 1)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3731:115: ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3732:6: ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3707:115: ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3708:6: ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 1);
@@ -10607,14 +10512,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3738:6: ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3740:7: ( rule__PropertyDefinition__MandatoryAssignment_5_1 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3714:6: ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3716:7: ( rule__PropertyDefinition__MandatoryAssignment_5_1 )
                     {
                      before(grammarAccess.getPropertyDefinitionAccess().getMandatoryAssignment_5_1()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3741:7: ( rule__PropertyDefinition__MandatoryAssignment_5_1 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3741:8: rule__PropertyDefinition__MandatoryAssignment_5_1
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3717:7: ( rule__PropertyDefinition__MandatoryAssignment_5_1 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3717:8: rule__PropertyDefinition__MandatoryAssignment_5_1
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__MandatoryAssignment_5_1_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8375);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__MandatoryAssignment_5_1_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8322);
                     rule__PropertyDefinition__MandatoryAssignment_5_1();
 
                     state._fsp--;
@@ -10636,16 +10541,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3747:4: ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3723:4: ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3747:4: ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3748:5: {...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3723:4: ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3724:5: {...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 2) ) {
                         throw new FailedPredicateException(input, "rule__PropertyDefinition__UnorderedGroup_5__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 2)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3748:115: ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3749:6: ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3724:115: ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3725:6: ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 2);
@@ -10653,14 +10558,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3755:6: ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3757:7: ( rule__PropertyDefinition__ProtectedAssignment_5_2 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3731:6: ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3733:7: ( rule__PropertyDefinition__ProtectedAssignment_5_2 )
                     {
                      before(grammarAccess.getPropertyDefinitionAccess().getProtectedAssignment_5_2()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3758:7: ( rule__PropertyDefinition__ProtectedAssignment_5_2 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3758:8: rule__PropertyDefinition__ProtectedAssignment_5_2
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3734:7: ( rule__PropertyDefinition__ProtectedAssignment_5_2 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3734:8: rule__PropertyDefinition__ProtectedAssignment_5_2
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__ProtectedAssignment_5_2_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8466);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__ProtectedAssignment_5_2_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8413);
                     rule__PropertyDefinition__ProtectedAssignment_5_2();
 
                     state._fsp--;
@@ -10682,16 +10587,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3764:4: ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3740:4: ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3764:4: ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3765:5: {...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3740:4: ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3741:5: {...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 3) ) {
                         throw new FailedPredicateException(input, "rule__PropertyDefinition__UnorderedGroup_5__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 3)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3765:115: ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3766:6: ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3741:115: ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3742:6: ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 3);
@@ -10699,14 +10604,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3772:6: ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3774:7: ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3748:6: ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3750:7: ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 )
                     {
                      before(grammarAccess.getPropertyDefinitionAccess().getOnParentVersionAssignment_5_3()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3775:7: ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3775:8: rule__PropertyDefinition__OnParentVersionAssignment_5_3
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3751:7: ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3751:8: rule__PropertyDefinition__OnParentVersionAssignment_5_3
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__OnParentVersionAssignment_5_3_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8557);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__OnParentVersionAssignment_5_3_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8504);
                     rule__PropertyDefinition__OnParentVersionAssignment_5_3();
 
                     state._fsp--;
@@ -10728,16 +10633,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3781:4: ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3757:4: ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3781:4: ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3782:5: {...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3757:4: ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3758:5: {...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 4) ) {
                         throw new FailedPredicateException(input, "rule__PropertyDefinition__UnorderedGroup_5__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 4)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3782:115: ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3783:6: ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3758:115: ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3759:6: ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 4);
@@ -10745,14 +10650,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3789:6: ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3791:7: ( rule__PropertyDefinition__MultipleAssignment_5_4 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3765:6: ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3767:7: ( rule__PropertyDefinition__MultipleAssignment_5_4 )
                     {
                      before(grammarAccess.getPropertyDefinitionAccess().getMultipleAssignment_5_4()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3792:7: ( rule__PropertyDefinition__MultipleAssignment_5_4 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3792:8: rule__PropertyDefinition__MultipleAssignment_5_4
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3768:7: ( rule__PropertyDefinition__MultipleAssignment_5_4 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3768:8: rule__PropertyDefinition__MultipleAssignment_5_4
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__MultipleAssignment_5_4_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8648);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__MultipleAssignment_5_4_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8595);
                     rule__PropertyDefinition__MultipleAssignment_5_4();
 
                     state._fsp--;
@@ -10774,16 +10679,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 6 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3798:4: ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3774:4: ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3798:4: ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3799:5: {...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3774:4: ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3775:5: {...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 5) ) {
                         throw new FailedPredicateException(input, "rule__PropertyDefinition__UnorderedGroup_5__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 5)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3799:115: ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3800:6: ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3775:115: ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3776:6: ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 5);
@@ -10791,14 +10696,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3806:6: ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3808:7: ( rule__PropertyDefinition__QueryOpsAssignment_5_5 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3782:6: ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3784:7: ( rule__PropertyDefinition__QueryOpsAssignment_5_5 )
                     {
                      before(grammarAccess.getPropertyDefinitionAccess().getQueryOpsAssignment_5_5()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3809:7: ( rule__PropertyDefinition__QueryOpsAssignment_5_5 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3809:8: rule__PropertyDefinition__QueryOpsAssignment_5_5
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3785:7: ( rule__PropertyDefinition__QueryOpsAssignment_5_5 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3785:8: rule__PropertyDefinition__QueryOpsAssignment_5_5
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__QueryOpsAssignment_5_5_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8739);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__QueryOpsAssignment_5_5_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8686);
                     rule__PropertyDefinition__QueryOpsAssignment_5_5();
 
                     state._fsp--;
@@ -10820,16 +10725,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 7 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3815:4: ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3791:4: ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3815:4: ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3816:5: {...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3791:4: ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3792:5: {...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 6) ) {
                         throw new FailedPredicateException(input, "rule__PropertyDefinition__UnorderedGroup_5__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 6)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3816:115: ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3817:6: ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3792:115: ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3793:6: ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 6);
@@ -10837,14 +10742,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3823:6: ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3825:7: ( rule__PropertyDefinition__NoFullTextAssignment_5_6 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3799:6: ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3801:7: ( rule__PropertyDefinition__NoFullTextAssignment_5_6 )
                     {
                      before(grammarAccess.getPropertyDefinitionAccess().getNoFullTextAssignment_5_6()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3826:7: ( rule__PropertyDefinition__NoFullTextAssignment_5_6 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3826:8: rule__PropertyDefinition__NoFullTextAssignment_5_6
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3802:7: ( rule__PropertyDefinition__NoFullTextAssignment_5_6 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3802:8: rule__PropertyDefinition__NoFullTextAssignment_5_6
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__NoFullTextAssignment_5_6_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8830);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__NoFullTextAssignment_5_6_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8777);
                     rule__PropertyDefinition__NoFullTextAssignment_5_6();
 
                     state._fsp--;
@@ -10866,16 +10771,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 8 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3832:4: ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3808:4: ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3832:4: ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3833:5: {...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3808:4: ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3809:5: {...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 7) ) {
                         throw new FailedPredicateException(input, "rule__PropertyDefinition__UnorderedGroup_5__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 7)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3833:115: ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3834:6: ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3809:115: ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3810:6: ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 7);
@@ -10883,14 +10788,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3840:6: ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3842:7: ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3816:6: ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3818:7: ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 )
                     {
                      before(grammarAccess.getPropertyDefinitionAccess().getNoQueryOrderAssignment_5_7()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3843:7: ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3843:8: rule__PropertyDefinition__NoQueryOrderAssignment_5_7
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3819:7: ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3819:8: rule__PropertyDefinition__NoQueryOrderAssignment_5_7
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__NoQueryOrderAssignment_5_7_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8921);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__NoQueryOrderAssignment_5_7_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8868);
                     rule__PropertyDefinition__NoQueryOrderAssignment_5_7();
 
                     state._fsp--;
@@ -10912,16 +10817,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 9 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3849:4: ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3825:4: ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) )
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3849:4: ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3850:5: {...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3825:4: ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3826:5: {...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 8) ) {
                         throw new FailedPredicateException(input, "rule__PropertyDefinition__UnorderedGroup_5__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 8)");
                     }
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3850:115: ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3851:6: ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3826:115: ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3827:6: ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) )
                     {
                      
                     	 				  getUnorderedGroupHelper().select(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 8);
@@ -10929,14 +10834,14 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                     	 				  selected = true;
                     	 				
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3857:6: ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3859:7: ( rule__PropertyDefinition__PrimaryAssignment_5_8 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3833:6: ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3835:7: ( rule__PropertyDefinition__PrimaryAssignment_5_8 )
                     {
                      before(grammarAccess.getPropertyDefinitionAccess().getPrimaryAssignment_5_8()); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3860:7: ( rule__PropertyDefinition__PrimaryAssignment_5_8 )
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3860:8: rule__PropertyDefinition__PrimaryAssignment_5_8
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3836:7: ( rule__PropertyDefinition__PrimaryAssignment_5_8 )
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3836:8: rule__PropertyDefinition__PrimaryAssignment_5_8
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__PrimaryAssignment_5_8_in_rule__PropertyDefinition__UnorderedGroup_5__Impl9012);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__PrimaryAssignment_5_8_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8959);
                     rule__PropertyDefinition__PrimaryAssignment_5_8();
 
                     state._fsp--;
@@ -10981,28 +10886,28 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__UnorderedGroup_5__0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3875:1: rule__PropertyDefinition__UnorderedGroup_5__0 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__1 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3851:1: rule__PropertyDefinition__UnorderedGroup_5__0 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__1 )? ;
     public final void rule__PropertyDefinition__UnorderedGroup_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3879:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__1 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3880:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__1 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3855:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__1 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3856:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__1 )?
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__09071);
+            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__09018);
             rule__PropertyDefinition__UnorderedGroup_5__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3881:2: ( rule__PropertyDefinition__UnorderedGroup_5__1 )?
-            int alt51=2;
-            alt51 = dfa51.predict(input);
-            switch (alt51) {
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3857:2: ( rule__PropertyDefinition__UnorderedGroup_5__1 )?
+            int alt50=2;
+            alt50 = dfa50.predict(input);
+            switch (alt50) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3881:2: rule__PropertyDefinition__UnorderedGroup_5__1
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3857:2: rule__PropertyDefinition__UnorderedGroup_5__1
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__1_in_rule__PropertyDefinition__UnorderedGroup_5__09074);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__1_in_rule__PropertyDefinition__UnorderedGroup_5__09021);
                     rule__PropertyDefinition__UnorderedGroup_5__1();
 
                     state._fsp--;
@@ -11032,28 +10937,28 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__UnorderedGroup_5__1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3888:1: rule__PropertyDefinition__UnorderedGroup_5__1 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__2 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3864:1: rule__PropertyDefinition__UnorderedGroup_5__1 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__2 )? ;
     public final void rule__PropertyDefinition__UnorderedGroup_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3892:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__2 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3893:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__2 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3868:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__2 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3869:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__2 )?
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__19099);
+            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__19046);
             rule__PropertyDefinition__UnorderedGroup_5__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3894:2: ( rule__PropertyDefinition__UnorderedGroup_5__2 )?
-            int alt52=2;
-            alt52 = dfa52.predict(input);
-            switch (alt52) {
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3870:2: ( rule__PropertyDefinition__UnorderedGroup_5__2 )?
+            int alt51=2;
+            alt51 = dfa51.predict(input);
+            switch (alt51) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3894:2: rule__PropertyDefinition__UnorderedGroup_5__2
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3870:2: rule__PropertyDefinition__UnorderedGroup_5__2
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__2_in_rule__PropertyDefinition__UnorderedGroup_5__19102);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__2_in_rule__PropertyDefinition__UnorderedGroup_5__19049);
                     rule__PropertyDefinition__UnorderedGroup_5__2();
 
                     state._fsp--;
@@ -11083,28 +10988,28 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__UnorderedGroup_5__2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3901:1: rule__PropertyDefinition__UnorderedGroup_5__2 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__3 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3877:1: rule__PropertyDefinition__UnorderedGroup_5__2 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__3 )? ;
     public final void rule__PropertyDefinition__UnorderedGroup_5__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3905:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__3 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3906:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__3 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3881:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__3 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3882:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__3 )?
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__29127);
+            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__29074);
             rule__PropertyDefinition__UnorderedGroup_5__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3907:2: ( rule__PropertyDefinition__UnorderedGroup_5__3 )?
-            int alt53=2;
-            alt53 = dfa53.predict(input);
-            switch (alt53) {
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3883:2: ( rule__PropertyDefinition__UnorderedGroup_5__3 )?
+            int alt52=2;
+            alt52 = dfa52.predict(input);
+            switch (alt52) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3907:2: rule__PropertyDefinition__UnorderedGroup_5__3
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3883:2: rule__PropertyDefinition__UnorderedGroup_5__3
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__3_in_rule__PropertyDefinition__UnorderedGroup_5__29130);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__3_in_rule__PropertyDefinition__UnorderedGroup_5__29077);
                     rule__PropertyDefinition__UnorderedGroup_5__3();
 
                     state._fsp--;
@@ -11134,28 +11039,28 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__UnorderedGroup_5__3"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3914:1: rule__PropertyDefinition__UnorderedGroup_5__3 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__4 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3890:1: rule__PropertyDefinition__UnorderedGroup_5__3 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__4 )? ;
     public final void rule__PropertyDefinition__UnorderedGroup_5__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3918:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__4 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3919:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__4 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3894:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__4 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3895:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__4 )?
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__39155);
+            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__39102);
             rule__PropertyDefinition__UnorderedGroup_5__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3920:2: ( rule__PropertyDefinition__UnorderedGroup_5__4 )?
-            int alt54=2;
-            alt54 = dfa54.predict(input);
-            switch (alt54) {
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3896:2: ( rule__PropertyDefinition__UnorderedGroup_5__4 )?
+            int alt53=2;
+            alt53 = dfa53.predict(input);
+            switch (alt53) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3920:2: rule__PropertyDefinition__UnorderedGroup_5__4
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3896:2: rule__PropertyDefinition__UnorderedGroup_5__4
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__4_in_rule__PropertyDefinition__UnorderedGroup_5__39158);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__4_in_rule__PropertyDefinition__UnorderedGroup_5__39105);
                     rule__PropertyDefinition__UnorderedGroup_5__4();
 
                     state._fsp--;
@@ -11185,28 +11090,28 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__UnorderedGroup_5__4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3927:1: rule__PropertyDefinition__UnorderedGroup_5__4 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__5 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3903:1: rule__PropertyDefinition__UnorderedGroup_5__4 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__5 )? ;
     public final void rule__PropertyDefinition__UnorderedGroup_5__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3931:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__5 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3932:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__5 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3907:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__5 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3908:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__5 )?
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__49183);
+            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__49130);
             rule__PropertyDefinition__UnorderedGroup_5__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3933:2: ( rule__PropertyDefinition__UnorderedGroup_5__5 )?
-            int alt55=2;
-            alt55 = dfa55.predict(input);
-            switch (alt55) {
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3909:2: ( rule__PropertyDefinition__UnorderedGroup_5__5 )?
+            int alt54=2;
+            alt54 = dfa54.predict(input);
+            switch (alt54) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3933:2: rule__PropertyDefinition__UnorderedGroup_5__5
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3909:2: rule__PropertyDefinition__UnorderedGroup_5__5
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__5_in_rule__PropertyDefinition__UnorderedGroup_5__49186);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__5_in_rule__PropertyDefinition__UnorderedGroup_5__49133);
                     rule__PropertyDefinition__UnorderedGroup_5__5();
 
                     state._fsp--;
@@ -11236,28 +11141,28 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__UnorderedGroup_5__5"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3940:1: rule__PropertyDefinition__UnorderedGroup_5__5 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__6 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3916:1: rule__PropertyDefinition__UnorderedGroup_5__5 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__6 )? ;
     public final void rule__PropertyDefinition__UnorderedGroup_5__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3944:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__6 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3945:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__6 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3920:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__6 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3921:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__6 )?
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__59211);
+            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__59158);
             rule__PropertyDefinition__UnorderedGroup_5__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3946:2: ( rule__PropertyDefinition__UnorderedGroup_5__6 )?
-            int alt56=2;
-            alt56 = dfa56.predict(input);
-            switch (alt56) {
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3922:2: ( rule__PropertyDefinition__UnorderedGroup_5__6 )?
+            int alt55=2;
+            alt55 = dfa55.predict(input);
+            switch (alt55) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3946:2: rule__PropertyDefinition__UnorderedGroup_5__6
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3922:2: rule__PropertyDefinition__UnorderedGroup_5__6
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__6_in_rule__PropertyDefinition__UnorderedGroup_5__59214);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__6_in_rule__PropertyDefinition__UnorderedGroup_5__59161);
                     rule__PropertyDefinition__UnorderedGroup_5__6();
 
                     state._fsp--;
@@ -11287,28 +11192,28 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__UnorderedGroup_5__6"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3953:1: rule__PropertyDefinition__UnorderedGroup_5__6 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__7 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3929:1: rule__PropertyDefinition__UnorderedGroup_5__6 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__7 )? ;
     public final void rule__PropertyDefinition__UnorderedGroup_5__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3957:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__7 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3958:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__7 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3933:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__7 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3934:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__7 )?
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__69239);
+            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__69186);
             rule__PropertyDefinition__UnorderedGroup_5__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3959:2: ( rule__PropertyDefinition__UnorderedGroup_5__7 )?
-            int alt57=2;
-            alt57 = dfa57.predict(input);
-            switch (alt57) {
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3935:2: ( rule__PropertyDefinition__UnorderedGroup_5__7 )?
+            int alt56=2;
+            alt56 = dfa56.predict(input);
+            switch (alt56) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3959:2: rule__PropertyDefinition__UnorderedGroup_5__7
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3935:2: rule__PropertyDefinition__UnorderedGroup_5__7
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__7_in_rule__PropertyDefinition__UnorderedGroup_5__69242);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__7_in_rule__PropertyDefinition__UnorderedGroup_5__69189);
                     rule__PropertyDefinition__UnorderedGroup_5__7();
 
                     state._fsp--;
@@ -11338,28 +11243,28 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__UnorderedGroup_5__7"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3966:1: rule__PropertyDefinition__UnorderedGroup_5__7 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__8 )? ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3942:1: rule__PropertyDefinition__UnorderedGroup_5__7 : rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__8 )? ;
     public final void rule__PropertyDefinition__UnorderedGroup_5__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3970:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__8 )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3971:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__8 )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3946:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__8 )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3947:2: rule__PropertyDefinition__UnorderedGroup_5__Impl ( rule__PropertyDefinition__UnorderedGroup_5__8 )?
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__79267);
+            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__79214);
             rule__PropertyDefinition__UnorderedGroup_5__Impl();
 
             state._fsp--;
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3972:2: ( rule__PropertyDefinition__UnorderedGroup_5__8 )?
-            int alt58=2;
-            alt58 = dfa58.predict(input);
-            switch (alt58) {
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3948:2: ( rule__PropertyDefinition__UnorderedGroup_5__8 )?
+            int alt57=2;
+            alt57 = dfa57.predict(input);
+            switch (alt57) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3972:2: rule__PropertyDefinition__UnorderedGroup_5__8
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3948:2: rule__PropertyDefinition__UnorderedGroup_5__8
                     {
-                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__8_in_rule__PropertyDefinition__UnorderedGroup_5__79270);
+                    pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__8_in_rule__PropertyDefinition__UnorderedGroup_5__79217);
                     rule__PropertyDefinition__UnorderedGroup_5__8();
 
                     state._fsp--;
@@ -11389,16 +11294,16 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__UnorderedGroup_5__8"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3979:1: rule__PropertyDefinition__UnorderedGroup_5__8 : rule__PropertyDefinition__UnorderedGroup_5__Impl ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3955:1: rule__PropertyDefinition__UnorderedGroup_5__8 : rule__PropertyDefinition__UnorderedGroup_5__Impl ;
     public final void rule__PropertyDefinition__UnorderedGroup_5__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3983:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3984:2: rule__PropertyDefinition__UnorderedGroup_5__Impl
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3959:1: ( rule__PropertyDefinition__UnorderedGroup_5__Impl )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3960:2: rule__PropertyDefinition__UnorderedGroup_5__Impl
             {
-            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__89295);
+            pushFollow(FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__89242);
             rule__PropertyDefinition__UnorderedGroup_5__Impl();
 
             state._fsp--;
@@ -11422,20 +11327,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__NamespacesAssignment_0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4009:1: rule__Model__NamespacesAssignment_0 : ( ruleNsMapping ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3985:1: rule__Model__NamespacesAssignment_0 : ( ruleNsMapping ) ;
     public final void rule__Model__NamespacesAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4013:1: ( ( ruleNsMapping ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4014:1: ( ruleNsMapping )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3989:1: ( ( ruleNsMapping ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3990:1: ( ruleNsMapping )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4014:1: ( ruleNsMapping )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4015:1: ruleNsMapping
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3990:1: ( ruleNsMapping )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:3991:1: ruleNsMapping
             {
              before(grammarAccess.getModelAccess().getNamespacesNsMappingParserRuleCall_0_0()); 
-            pushFollow(FOLLOW_ruleNsMapping_in_rule__Model__NamespacesAssignment_09341);
+            pushFollow(FOLLOW_ruleNsMapping_in_rule__Model__NamespacesAssignment_09288);
             ruleNsMapping();
 
             state._fsp--;
@@ -11463,20 +11368,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Model__NodeTypesAssignment_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4024:1: rule__Model__NodeTypesAssignment_1 : ( ruleNodeTypeDefinition ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4000:1: rule__Model__NodeTypesAssignment_1 : ( ruleNodeTypeDefinition ) ;
     public final void rule__Model__NodeTypesAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4028:1: ( ( ruleNodeTypeDefinition ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4029:1: ( ruleNodeTypeDefinition )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4004:1: ( ( ruleNodeTypeDefinition ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4005:1: ( ruleNodeTypeDefinition )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4029:1: ( ruleNodeTypeDefinition )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4030:1: ruleNodeTypeDefinition
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4005:1: ( ruleNodeTypeDefinition )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4006:1: ruleNodeTypeDefinition
             {
              before(grammarAccess.getModelAccess().getNodeTypesNodeTypeDefinitionParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleNodeTypeDefinition_in_rule__Model__NodeTypesAssignment_19372);
+            pushFollow(FOLLOW_ruleNodeTypeDefinition_in_rule__Model__NodeTypesAssignment_19319);
             ruleNodeTypeDefinition();
 
             state._fsp--;
@@ -11504,20 +11409,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__NameAssignment_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4039:1: rule__NodeTypeDefinition__NameAssignment_1 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4015:1: rule__NodeTypeDefinition__NameAssignment_1 : ( ruleJcrString ) ;
     public final void rule__NodeTypeDefinition__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4043:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4044:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4019:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4020:1: ( ruleJcrString )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4044:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4045:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4020:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4021:1: ruleJcrString
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getNameJcrStringParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__NameAssignment_19403);
+            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__NameAssignment_19350);
             ruleJcrString();
 
             state._fsp--;
@@ -11545,25 +11450,33 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4054:1: rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4030:1: rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1 : ( ( ruleJcrString ) ) ;
     public final void rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4058:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4059:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4034:1: ( ( ( ruleJcrString ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4035:1: ( ( ruleJcrString ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4059:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4060:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4035:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4036:1: ( ruleJcrString )
             {
-             before(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesJcrStringParserRuleCall_3_1_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_19434);
+             before(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_1_0()); 
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4037:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4038:1: ruleJcrString
+            {
+             before(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesNodeTypeDefinitionJcrStringParserRuleCall_3_1_0_1()); 
+            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_19385);
             ruleJcrString();
 
             state._fsp--;
 
-             after(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesJcrStringParserRuleCall_3_1_0()); 
+             after(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesNodeTypeDefinitionJcrStringParserRuleCall_3_1_0_1()); 
+
+            }
+
+             after(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_1_0()); 
 
             }
 
@@ -11586,25 +11499,33 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4069:1: rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4049:1: rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1 : ( ( ruleJcrString ) ) ;
     public final void rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4073:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4074:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4053:1: ( ( ( ruleJcrString ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4054:1: ( ( ruleJcrString ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4074:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4075:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4054:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4055:1: ( ruleJcrString )
             {
-             before(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesJcrStringParserRuleCall_3_2_1_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_19465);
+             before(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_2_1_0()); 
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4056:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4057:1: ruleJcrString
+            {
+             before(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesNodeTypeDefinitionJcrStringParserRuleCall_3_2_1_0_1()); 
+            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_19424);
             ruleJcrString();
 
             state._fsp--;
 
-             after(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesJcrStringParserRuleCall_3_2_1_0()); 
+             after(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesNodeTypeDefinitionJcrStringParserRuleCall_3_2_1_0_1()); 
+
+            }
+
+             after(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredSupertypeNamesNodeTypeDefinitionCrossReference_3_2_1_0()); 
 
             }
 
@@ -11627,20 +11548,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__OrderableAssignment_4_0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4084:1: rule__NodeTypeDefinition__OrderableAssignment_4_0 : ( ruleOrderable ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4068:1: rule__NodeTypeDefinition__OrderableAssignment_4_0 : ( ruleOrderable ) ;
     public final void rule__NodeTypeDefinition__OrderableAssignment_4_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4088:1: ( ( ruleOrderable ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4089:1: ( ruleOrderable )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4072:1: ( ( ruleOrderable ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4073:1: ( ruleOrderable )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4089:1: ( ruleOrderable )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4090:1: ruleOrderable
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4073:1: ( ruleOrderable )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4074:1: ruleOrderable
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getOrderableOrderableParserRuleCall_4_0_0()); 
-            pushFollow(FOLLOW_ruleOrderable_in_rule__NodeTypeDefinition__OrderableAssignment_4_09496);
+            pushFollow(FOLLOW_ruleOrderable_in_rule__NodeTypeDefinition__OrderableAssignment_4_09459);
             ruleOrderable();
 
             state._fsp--;
@@ -11668,20 +11589,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__MixinAssignment_4_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4099:1: rule__NodeTypeDefinition__MixinAssignment_4_1 : ( ruleMixin ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4083:1: rule__NodeTypeDefinition__MixinAssignment_4_1 : ( ruleMixin ) ;
     public final void rule__NodeTypeDefinition__MixinAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4103:1: ( ( ruleMixin ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4104:1: ( ruleMixin )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4087:1: ( ( ruleMixin ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4088:1: ( ruleMixin )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4104:1: ( ruleMixin )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4105:1: ruleMixin
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4088:1: ( ruleMixin )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4089:1: ruleMixin
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getMixinMixinParserRuleCall_4_1_0()); 
-            pushFollow(FOLLOW_ruleMixin_in_rule__NodeTypeDefinition__MixinAssignment_4_19527);
+            pushFollow(FOLLOW_ruleMixin_in_rule__NodeTypeDefinition__MixinAssignment_4_19490);
             ruleMixin();
 
             state._fsp--;
@@ -11709,20 +11630,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__AbstractAssignment_4_2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4114:1: rule__NodeTypeDefinition__AbstractAssignment_4_2 : ( ruleAbstract ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4098:1: rule__NodeTypeDefinition__AbstractAssignment_4_2 : ( ruleAbstract ) ;
     public final void rule__NodeTypeDefinition__AbstractAssignment_4_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4118:1: ( ( ruleAbstract ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4119:1: ( ruleAbstract )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4102:1: ( ( ruleAbstract ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4103:1: ( ruleAbstract )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4119:1: ( ruleAbstract )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4120:1: ruleAbstract
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4103:1: ( ruleAbstract )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4104:1: ruleAbstract
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getAbstractAbstractParserRuleCall_4_2_0()); 
-            pushFollow(FOLLOW_ruleAbstract_in_rule__NodeTypeDefinition__AbstractAssignment_4_29558);
+            pushFollow(FOLLOW_ruleAbstract_in_rule__NodeTypeDefinition__AbstractAssignment_4_29521);
             ruleAbstract();
 
             state._fsp--;
@@ -11750,20 +11671,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__QueryableAssignment_4_3"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4129:1: rule__NodeTypeDefinition__QueryableAssignment_4_3 : ( ruleQueryable ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4113:1: rule__NodeTypeDefinition__QueryableAssignment_4_3 : ( ruleQueryable ) ;
     public final void rule__NodeTypeDefinition__QueryableAssignment_4_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4133:1: ( ( ruleQueryable ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4134:1: ( ruleQueryable )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4117:1: ( ( ruleQueryable ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4118:1: ( ruleQueryable )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4134:1: ( ruleQueryable )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4135:1: ruleQueryable
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4118:1: ( ruleQueryable )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4119:1: ruleQueryable
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getQueryableQueryableParserRuleCall_4_3_0()); 
-            pushFollow(FOLLOW_ruleQueryable_in_rule__NodeTypeDefinition__QueryableAssignment_4_39589);
+            pushFollow(FOLLOW_ruleQueryable_in_rule__NodeTypeDefinition__QueryableAssignment_4_39552);
             ruleQueryable();
 
             state._fsp--;
@@ -11791,20 +11712,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__NotqueryableAssignment_4_4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4144:1: rule__NodeTypeDefinition__NotqueryableAssignment_4_4 : ( ruleNotqueryable ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4128:1: rule__NodeTypeDefinition__NotqueryableAssignment_4_4 : ( ruleNotqueryable ) ;
     public final void rule__NodeTypeDefinition__NotqueryableAssignment_4_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4148:1: ( ( ruleNotqueryable ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4149:1: ( ruleNotqueryable )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4132:1: ( ( ruleNotqueryable ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4133:1: ( ruleNotqueryable )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4149:1: ( ruleNotqueryable )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4150:1: ruleNotqueryable
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4133:1: ( ruleNotqueryable )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4134:1: ruleNotqueryable
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getNotqueryableNotqueryableParserRuleCall_4_4_0()); 
-            pushFollow(FOLLOW_ruleNotqueryable_in_rule__NodeTypeDefinition__NotqueryableAssignment_4_49620);
+            pushFollow(FOLLOW_ruleNotqueryable_in_rule__NodeTypeDefinition__NotqueryableAssignment_4_49583);
             ruleNotqueryable();
 
             state._fsp--;
@@ -11832,20 +11753,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__PrimaryItemAssignment_4_5"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4159:1: rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 : ( rulePrimaryItem ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4143:1: rule__NodeTypeDefinition__PrimaryItemAssignment_4_5 : ( rulePrimaryItem ) ;
     public final void rule__NodeTypeDefinition__PrimaryItemAssignment_4_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4163:1: ( ( rulePrimaryItem ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4164:1: ( rulePrimaryItem )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4147:1: ( ( rulePrimaryItem ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4148:1: ( rulePrimaryItem )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4164:1: ( rulePrimaryItem )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4165:1: rulePrimaryItem
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4148:1: ( rulePrimaryItem )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4149:1: rulePrimaryItem
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getPrimaryItemPrimaryItemParserRuleCall_4_5_0()); 
-            pushFollow(FOLLOW_rulePrimaryItem_in_rule__NodeTypeDefinition__PrimaryItemAssignment_4_59651);
+            pushFollow(FOLLOW_rulePrimaryItem_in_rule__NodeTypeDefinition__PrimaryItemAssignment_4_59614);
             rulePrimaryItem();
 
             state._fsp--;
@@ -11873,20 +11794,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4174:1: rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0 : ( rulePropertyDefinition ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4158:1: rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0 : ( rulePropertyDefinition ) ;
     public final void rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4178:1: ( ( rulePropertyDefinition ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4179:1: ( rulePropertyDefinition )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4162:1: ( ( rulePropertyDefinition ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4163:1: ( rulePropertyDefinition )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4179:1: ( rulePropertyDefinition )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4180:1: rulePropertyDefinition
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4163:1: ( rulePropertyDefinition )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4164:1: rulePropertyDefinition
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredPropertyDefinitionsPropertyDefinitionParserRuleCall_5_0_0()); 
-            pushFollow(FOLLOW_rulePropertyDefinition_in_rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_09682);
+            pushFollow(FOLLOW_rulePropertyDefinition_in_rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_09645);
             rulePropertyDefinition();
 
             state._fsp--;
@@ -11914,20 +11835,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4189:1: rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1 : ( ruleNodeDefinition ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4173:1: rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1 : ( ruleNodeDefinition ) ;
     public final void rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4193:1: ( ( ruleNodeDefinition ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4194:1: ( ruleNodeDefinition )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4177:1: ( ( ruleNodeDefinition ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4178:1: ( ruleNodeDefinition )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4194:1: ( ruleNodeDefinition )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4195:1: ruleNodeDefinition
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4178:1: ( ruleNodeDefinition )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4179:1: ruleNodeDefinition
             {
              before(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredChildNodeDefinitionsNodeDefinitionParserRuleCall_5_1_0()); 
-            pushFollow(FOLLOW_ruleNodeDefinition_in_rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_19713);
+            pushFollow(FOLLOW_ruleNodeDefinition_in_rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_19676);
             ruleNodeDefinition();
 
             state._fsp--;
@@ -11955,20 +11876,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__NameAssignment_1_0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4204:1: rule__NodeDefinition__NameAssignment_1_0 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4188:1: rule__NodeDefinition__NameAssignment_1_0 : ( ruleJcrString ) ;
     public final void rule__NodeDefinition__NameAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4208:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4209:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4192:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4193:1: ( ruleJcrString )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4209:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4210:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4193:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4194:1: ruleJcrString
             {
              before(grammarAccess.getNodeDefinitionAccess().getNameJcrStringParserRuleCall_1_0_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeDefinition__NameAssignment_1_09744);
+            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeDefinition__NameAssignment_1_09707);
             ruleJcrString();
 
             state._fsp--;
@@ -11996,24 +11917,24 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__NameAssignment_1_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4219:1: rule__NodeDefinition__NameAssignment_1_1 : ( ( '*' ) ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4203:1: rule__NodeDefinition__NameAssignment_1_1 : ( ( '*' ) ) ;
     public final void rule__NodeDefinition__NameAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4223:1: ( ( ( '*' ) ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4224:1: ( ( '*' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4207:1: ( ( ( '*' ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4208:1: ( ( '*' ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4224:1: ( ( '*' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4225:1: ( '*' )
-            {
-             before(grammarAccess.getNodeDefinitionAccess().getNameAsteriskKeyword_1_1_0()); 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4226:1: ( '*' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4227:1: '*'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4208:1: ( ( '*' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4209:1: ( '*' )
             {
              before(grammarAccess.getNodeDefinitionAccess().getNameAsteriskKeyword_1_1_0()); 
-            match(input,13,FOLLOW_13_in_rule__NodeDefinition__NameAssignment_1_19780); 
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4210:1: ( '*' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4211:1: '*'
+            {
+             before(grammarAccess.getNodeDefinitionAccess().getNameAsteriskKeyword_1_1_0()); 
+            match(input,13,FOLLOW_13_in_rule__NodeDefinition__NameAssignment_1_19743); 
              after(grammarAccess.getNodeDefinitionAccess().getNameAsteriskKeyword_1_1_0()); 
 
             }
@@ -12041,25 +11962,33 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__RequiredTypesAssignment_2_1_0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4242:1: rule__NodeDefinition__RequiredTypesAssignment_2_1_0 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4226:1: rule__NodeDefinition__RequiredTypesAssignment_2_1_0 : ( ( ruleJcrString ) ) ;
     public final void rule__NodeDefinition__RequiredTypesAssignment_2_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4246:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4247:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4230:1: ( ( ( ruleJcrString ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4231:1: ( ( ruleJcrString ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4247:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4248:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4231:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4232:1: ( ruleJcrString )
             {
-             before(grammarAccess.getNodeDefinitionAccess().getRequiredTypesJcrStringParserRuleCall_2_1_0_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeDefinition__RequiredTypesAssignment_2_1_09819);
+             before(grammarAccess.getNodeDefinitionAccess().getRequiredTypesNodeTypeDefinitionCrossReference_2_1_0_0()); 
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4233:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4234:1: ruleJcrString
+            {
+             before(grammarAccess.getNodeDefinitionAccess().getRequiredTypesNodeTypeDefinitionJcrStringParserRuleCall_2_1_0_0_1()); 
+            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeDefinition__RequiredTypesAssignment_2_1_09786);
             ruleJcrString();
 
             state._fsp--;
 
-             after(grammarAccess.getNodeDefinitionAccess().getRequiredTypesJcrStringParserRuleCall_2_1_0_0()); 
+             after(grammarAccess.getNodeDefinitionAccess().getRequiredTypesNodeTypeDefinitionJcrStringParserRuleCall_2_1_0_0_1()); 
+
+            }
+
+             after(grammarAccess.getNodeDefinitionAccess().getRequiredTypesNodeTypeDefinitionCrossReference_2_1_0_0()); 
 
             }
 
@@ -12082,25 +12011,33 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4257:1: rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4245:1: rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1 : ( ( ruleJcrString ) ) ;
     public final void rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4261:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4262:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4249:1: ( ( ( ruleJcrString ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4250:1: ( ( ruleJcrString ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4262:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4263:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4250:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4251:1: ( ruleJcrString )
             {
-             before(grammarAccess.getNodeDefinitionAccess().getRequiredTypesJcrStringParserRuleCall_2_1_1_1_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeDefinition__RequiredTypesAssignment_2_1_1_19850);
+             before(grammarAccess.getNodeDefinitionAccess().getRequiredTypesNodeTypeDefinitionCrossReference_2_1_1_1_0()); 
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4252:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4253:1: ruleJcrString
+            {
+             before(grammarAccess.getNodeDefinitionAccess().getRequiredTypesNodeTypeDefinitionJcrStringParserRuleCall_2_1_1_1_0_1()); 
+            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeDefinition__RequiredTypesAssignment_2_1_1_19825);
             ruleJcrString();
 
             state._fsp--;
 
-             after(grammarAccess.getNodeDefinitionAccess().getRequiredTypesJcrStringParserRuleCall_2_1_1_1_0()); 
+             after(grammarAccess.getNodeDefinitionAccess().getRequiredTypesNodeTypeDefinitionJcrStringParserRuleCall_2_1_1_1_0_1()); 
+
+            }
+
+             after(grammarAccess.getNodeDefinitionAccess().getRequiredTypesNodeTypeDefinitionCrossReference_2_1_1_1_0()); 
 
             }
 
@@ -12123,25 +12060,33 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__DefaultTypeAssignment_3_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4272:1: rule__NodeDefinition__DefaultTypeAssignment_3_1 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4264:1: rule__NodeDefinition__DefaultTypeAssignment_3_1 : ( ( ruleJcrString ) ) ;
     public final void rule__NodeDefinition__DefaultTypeAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4276:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4277:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4268:1: ( ( ( ruleJcrString ) ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4269:1: ( ( ruleJcrString ) )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4277:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4278:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4269:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4270:1: ( ruleJcrString )
             {
-             before(grammarAccess.getNodeDefinitionAccess().getDefaultTypeJcrStringParserRuleCall_3_1_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeDefinition__DefaultTypeAssignment_3_19881);
+             before(grammarAccess.getNodeDefinitionAccess().getDefaultTypeNodeTypeDefinitionCrossReference_3_1_0()); 
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4271:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4272:1: ruleJcrString
+            {
+             before(grammarAccess.getNodeDefinitionAccess().getDefaultTypeNodeTypeDefinitionJcrStringParserRuleCall_3_1_0_1()); 
+            pushFollow(FOLLOW_ruleJcrString_in_rule__NodeDefinition__DefaultTypeAssignment_3_19864);
             ruleJcrString();
 
             state._fsp--;
 
-             after(grammarAccess.getNodeDefinitionAccess().getDefaultTypeJcrStringParserRuleCall_3_1_0()); 
+             after(grammarAccess.getNodeDefinitionAccess().getDefaultTypeNodeTypeDefinitionJcrStringParserRuleCall_3_1_0_1()); 
+
+            }
+
+             after(grammarAccess.getNodeDefinitionAccess().getDefaultTypeNodeTypeDefinitionCrossReference_3_1_0()); 
 
             }
 
@@ -12164,20 +12109,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__AutocreatedAssignment_4_0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4287:1: rule__NodeDefinition__AutocreatedAssignment_4_0 : ( ruleAutocreated ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4283:1: rule__NodeDefinition__AutocreatedAssignment_4_0 : ( ruleAutocreated ) ;
     public final void rule__NodeDefinition__AutocreatedAssignment_4_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4291:1: ( ( ruleAutocreated ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4292:1: ( ruleAutocreated )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4287:1: ( ( ruleAutocreated ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4288:1: ( ruleAutocreated )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4292:1: ( ruleAutocreated )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4293:1: ruleAutocreated
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4288:1: ( ruleAutocreated )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4289:1: ruleAutocreated
             {
              before(grammarAccess.getNodeDefinitionAccess().getAutocreatedAutocreatedParserRuleCall_4_0_0()); 
-            pushFollow(FOLLOW_ruleAutocreated_in_rule__NodeDefinition__AutocreatedAssignment_4_09912);
+            pushFollow(FOLLOW_ruleAutocreated_in_rule__NodeDefinition__AutocreatedAssignment_4_09899);
             ruleAutocreated();
 
             state._fsp--;
@@ -12205,20 +12150,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__ManadatoryAssignment_4_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4302:1: rule__NodeDefinition__ManadatoryAssignment_4_1 : ( ruleMandatory ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4298:1: rule__NodeDefinition__ManadatoryAssignment_4_1 : ( ruleMandatory ) ;
     public final void rule__NodeDefinition__ManadatoryAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4306:1: ( ( ruleMandatory ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4307:1: ( ruleMandatory )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4302:1: ( ( ruleMandatory ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4303:1: ( ruleMandatory )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4307:1: ( ruleMandatory )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4308:1: ruleMandatory
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4303:1: ( ruleMandatory )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4304:1: ruleMandatory
             {
              before(grammarAccess.getNodeDefinitionAccess().getManadatoryMandatoryParserRuleCall_4_1_0()); 
-            pushFollow(FOLLOW_ruleMandatory_in_rule__NodeDefinition__ManadatoryAssignment_4_19943);
+            pushFollow(FOLLOW_ruleMandatory_in_rule__NodeDefinition__ManadatoryAssignment_4_19930);
             ruleMandatory();
 
             state._fsp--;
@@ -12246,20 +12191,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__ProtectedAssignment_4_2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4317:1: rule__NodeDefinition__ProtectedAssignment_4_2 : ( ruleProtected ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4313:1: rule__NodeDefinition__ProtectedAssignment_4_2 : ( ruleProtected ) ;
     public final void rule__NodeDefinition__ProtectedAssignment_4_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4321:1: ( ( ruleProtected ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4322:1: ( ruleProtected )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4317:1: ( ( ruleProtected ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4318:1: ( ruleProtected )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4322:1: ( ruleProtected )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4323:1: ruleProtected
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4318:1: ( ruleProtected )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4319:1: ruleProtected
             {
              before(grammarAccess.getNodeDefinitionAccess().getProtectedProtectedParserRuleCall_4_2_0()); 
-            pushFollow(FOLLOW_ruleProtected_in_rule__NodeDefinition__ProtectedAssignment_4_29974);
+            pushFollow(FOLLOW_ruleProtected_in_rule__NodeDefinition__ProtectedAssignment_4_29961);
             ruleProtected();
 
             state._fsp--;
@@ -12287,20 +12232,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__OnParentVersionAssignment_4_3"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4332:1: rule__NodeDefinition__OnParentVersionAssignment_4_3 : ( ruleOpv ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4328:1: rule__NodeDefinition__OnParentVersionAssignment_4_3 : ( ruleOpv ) ;
     public final void rule__NodeDefinition__OnParentVersionAssignment_4_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4336:1: ( ( ruleOpv ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4337:1: ( ruleOpv )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4332:1: ( ( ruleOpv ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4333:1: ( ruleOpv )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4337:1: ( ruleOpv )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4338:1: ruleOpv
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4333:1: ( ruleOpv )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4334:1: ruleOpv
             {
              before(grammarAccess.getNodeDefinitionAccess().getOnParentVersionOpvEnumRuleCall_4_3_0()); 
-            pushFollow(FOLLOW_ruleOpv_in_rule__NodeDefinition__OnParentVersionAssignment_4_310005);
+            pushFollow(FOLLOW_ruleOpv_in_rule__NodeDefinition__OnParentVersionAssignment_4_39992);
             ruleOpv();
 
             state._fsp--;
@@ -12328,20 +12273,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NodeDefinition__SameNameSiblingsAssignment_4_4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4347:1: rule__NodeDefinition__SameNameSiblingsAssignment_4_4 : ( ruleSns ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4343:1: rule__NodeDefinition__SameNameSiblingsAssignment_4_4 : ( ruleSns ) ;
     public final void rule__NodeDefinition__SameNameSiblingsAssignment_4_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4351:1: ( ( ruleSns ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4352:1: ( ruleSns )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4347:1: ( ( ruleSns ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4348:1: ( ruleSns )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4352:1: ( ruleSns )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4353:1: ruleSns
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4348:1: ( ruleSns )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4349:1: ruleSns
             {
              before(grammarAccess.getNodeDefinitionAccess().getSameNameSiblingsSnsParserRuleCall_4_4_0()); 
-            pushFollow(FOLLOW_ruleSns_in_rule__NodeDefinition__SameNameSiblingsAssignment_4_410036);
+            pushFollow(FOLLOW_ruleSns_in_rule__NodeDefinition__SameNameSiblingsAssignment_4_410023);
             ruleSns();
 
             state._fsp--;
@@ -12369,20 +12314,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__NameAssignment_2_0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4362:1: rule__PropertyDefinition__NameAssignment_2_0 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4358:1: rule__PropertyDefinition__NameAssignment_2_0 : ( ruleJcrString ) ;
     public final void rule__PropertyDefinition__NameAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4366:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4367:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4362:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4363:1: ( ruleJcrString )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4367:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4368:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4363:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4364:1: ruleJcrString
             {
              before(grammarAccess.getPropertyDefinitionAccess().getNameJcrStringParserRuleCall_2_0_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__PropertyDefinition__NameAssignment_2_010067);
+            pushFollow(FOLLOW_ruleJcrString_in_rule__PropertyDefinition__NameAssignment_2_010054);
             ruleJcrString();
 
             state._fsp--;
@@ -12410,20 +12355,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__TypeAssignment_3_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4377:1: rule__PropertyDefinition__TypeAssignment_3_1 : ( rulePropertyType ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4373:1: rule__PropertyDefinition__TypeAssignment_3_1 : ( rulePropertyType ) ;
     public final void rule__PropertyDefinition__TypeAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4381:1: ( ( rulePropertyType ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4382:1: ( rulePropertyType )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4377:1: ( ( rulePropertyType ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4378:1: ( rulePropertyType )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4382:1: ( rulePropertyType )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4383:1: rulePropertyType
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4378:1: ( rulePropertyType )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4379:1: rulePropertyType
             {
              before(grammarAccess.getPropertyDefinitionAccess().getTypePropertyTypeEnumRuleCall_3_1_0()); 
-            pushFollow(FOLLOW_rulePropertyType_in_rule__PropertyDefinition__TypeAssignment_3_110098);
+            pushFollow(FOLLOW_rulePropertyType_in_rule__PropertyDefinition__TypeAssignment_3_110085);
             rulePropertyType();
 
             state._fsp--;
@@ -12451,20 +12396,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__DefaultValuesAssignment_4_1_0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4392:1: rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4388:1: rule__PropertyDefinition__DefaultValuesAssignment_4_1_0 : ( ruleJcrString ) ;
     public final void rule__PropertyDefinition__DefaultValuesAssignment_4_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4396:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4397:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4392:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4393:1: ( ruleJcrString )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4397:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4398:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4393:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4394:1: ruleJcrString
             {
              before(grammarAccess.getPropertyDefinitionAccess().getDefaultValuesJcrStringParserRuleCall_4_1_0_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__PropertyDefinition__DefaultValuesAssignment_4_1_010129);
+            pushFollow(FOLLOW_ruleJcrString_in_rule__PropertyDefinition__DefaultValuesAssignment_4_1_010116);
             ruleJcrString();
 
             state._fsp--;
@@ -12492,20 +12437,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4407:1: rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4403:1: rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1 : ( ruleJcrString ) ;
     public final void rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4411:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4412:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4407:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4408:1: ( ruleJcrString )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4412:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4413:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4408:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4409:1: ruleJcrString
             {
              before(grammarAccess.getPropertyDefinitionAccess().getDefaultValuesJcrStringParserRuleCall_4_1_1_1_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_110160);
+            pushFollow(FOLLOW_ruleJcrString_in_rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_110147);
             ruleJcrString();
 
             state._fsp--;
@@ -12533,20 +12478,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__AutocreatedAssignment_5_0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4422:1: rule__PropertyDefinition__AutocreatedAssignment_5_0 : ( ruleAutocreated ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4418:1: rule__PropertyDefinition__AutocreatedAssignment_5_0 : ( ruleAutocreated ) ;
     public final void rule__PropertyDefinition__AutocreatedAssignment_5_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4426:1: ( ( ruleAutocreated ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4427:1: ( ruleAutocreated )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4422:1: ( ( ruleAutocreated ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4423:1: ( ruleAutocreated )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4427:1: ( ruleAutocreated )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4428:1: ruleAutocreated
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4423:1: ( ruleAutocreated )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4424:1: ruleAutocreated
             {
              before(grammarAccess.getPropertyDefinitionAccess().getAutocreatedAutocreatedParserRuleCall_5_0_0()); 
-            pushFollow(FOLLOW_ruleAutocreated_in_rule__PropertyDefinition__AutocreatedAssignment_5_010191);
+            pushFollow(FOLLOW_ruleAutocreated_in_rule__PropertyDefinition__AutocreatedAssignment_5_010178);
             ruleAutocreated();
 
             state._fsp--;
@@ -12574,20 +12519,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__MandatoryAssignment_5_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4437:1: rule__PropertyDefinition__MandatoryAssignment_5_1 : ( ruleMandatory ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4433:1: rule__PropertyDefinition__MandatoryAssignment_5_1 : ( ruleMandatory ) ;
     public final void rule__PropertyDefinition__MandatoryAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4441:1: ( ( ruleMandatory ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4442:1: ( ruleMandatory )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4437:1: ( ( ruleMandatory ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4438:1: ( ruleMandatory )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4442:1: ( ruleMandatory )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4443:1: ruleMandatory
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4438:1: ( ruleMandatory )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4439:1: ruleMandatory
             {
              before(grammarAccess.getPropertyDefinitionAccess().getMandatoryMandatoryParserRuleCall_5_1_0()); 
-            pushFollow(FOLLOW_ruleMandatory_in_rule__PropertyDefinition__MandatoryAssignment_5_110222);
+            pushFollow(FOLLOW_ruleMandatory_in_rule__PropertyDefinition__MandatoryAssignment_5_110209);
             ruleMandatory();
 
             state._fsp--;
@@ -12615,20 +12560,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__ProtectedAssignment_5_2"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4452:1: rule__PropertyDefinition__ProtectedAssignment_5_2 : ( ruleProtected ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4448:1: rule__PropertyDefinition__ProtectedAssignment_5_2 : ( ruleProtected ) ;
     public final void rule__PropertyDefinition__ProtectedAssignment_5_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4456:1: ( ( ruleProtected ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4457:1: ( ruleProtected )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4452:1: ( ( ruleProtected ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4453:1: ( ruleProtected )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4457:1: ( ruleProtected )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4458:1: ruleProtected
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4453:1: ( ruleProtected )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4454:1: ruleProtected
             {
              before(grammarAccess.getPropertyDefinitionAccess().getProtectedProtectedParserRuleCall_5_2_0()); 
-            pushFollow(FOLLOW_ruleProtected_in_rule__PropertyDefinition__ProtectedAssignment_5_210253);
+            pushFollow(FOLLOW_ruleProtected_in_rule__PropertyDefinition__ProtectedAssignment_5_210240);
             ruleProtected();
 
             state._fsp--;
@@ -12656,20 +12601,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__OnParentVersionAssignment_5_3"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4467:1: rule__PropertyDefinition__OnParentVersionAssignment_5_3 : ( ruleOpv ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4463:1: rule__PropertyDefinition__OnParentVersionAssignment_5_3 : ( ruleOpv ) ;
     public final void rule__PropertyDefinition__OnParentVersionAssignment_5_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4471:1: ( ( ruleOpv ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4472:1: ( ruleOpv )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4467:1: ( ( ruleOpv ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4468:1: ( ruleOpv )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4472:1: ( ruleOpv )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4473:1: ruleOpv
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4468:1: ( ruleOpv )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4469:1: ruleOpv
             {
              before(grammarAccess.getPropertyDefinitionAccess().getOnParentVersionOpvEnumRuleCall_5_3_0()); 
-            pushFollow(FOLLOW_ruleOpv_in_rule__PropertyDefinition__OnParentVersionAssignment_5_310284);
+            pushFollow(FOLLOW_ruleOpv_in_rule__PropertyDefinition__OnParentVersionAssignment_5_310271);
             ruleOpv();
 
             state._fsp--;
@@ -12697,20 +12642,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__MultipleAssignment_5_4"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4482:1: rule__PropertyDefinition__MultipleAssignment_5_4 : ( ruleMultiple ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4478:1: rule__PropertyDefinition__MultipleAssignment_5_4 : ( ruleMultiple ) ;
     public final void rule__PropertyDefinition__MultipleAssignment_5_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4486:1: ( ( ruleMultiple ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4487:1: ( ruleMultiple )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4482:1: ( ( ruleMultiple ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4483:1: ( ruleMultiple )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4487:1: ( ruleMultiple )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4488:1: ruleMultiple
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4483:1: ( ruleMultiple )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4484:1: ruleMultiple
             {
              before(grammarAccess.getPropertyDefinitionAccess().getMultipleMultipleParserRuleCall_5_4_0()); 
-            pushFollow(FOLLOW_ruleMultiple_in_rule__PropertyDefinition__MultipleAssignment_5_410315);
+            pushFollow(FOLLOW_ruleMultiple_in_rule__PropertyDefinition__MultipleAssignment_5_410302);
             ruleMultiple();
 
             state._fsp--;
@@ -12738,20 +12683,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__QueryOpsAssignment_5_5"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4497:1: rule__PropertyDefinition__QueryOpsAssignment_5_5 : ( ruleQueryOps ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4493:1: rule__PropertyDefinition__QueryOpsAssignment_5_5 : ( ruleQueryOps ) ;
     public final void rule__PropertyDefinition__QueryOpsAssignment_5_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4501:1: ( ( ruleQueryOps ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4502:1: ( ruleQueryOps )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4497:1: ( ( ruleQueryOps ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4498:1: ( ruleQueryOps )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4502:1: ( ruleQueryOps )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4503:1: ruleQueryOps
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4498:1: ( ruleQueryOps )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4499:1: ruleQueryOps
             {
              before(grammarAccess.getPropertyDefinitionAccess().getQueryOpsQueryOpsParserRuleCall_5_5_0()); 
-            pushFollow(FOLLOW_ruleQueryOps_in_rule__PropertyDefinition__QueryOpsAssignment_5_510346);
+            pushFollow(FOLLOW_ruleQueryOps_in_rule__PropertyDefinition__QueryOpsAssignment_5_510333);
             ruleQueryOps();
 
             state._fsp--;
@@ -12779,20 +12724,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__NoFullTextAssignment_5_6"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4512:1: rule__PropertyDefinition__NoFullTextAssignment_5_6 : ( ruleNoFullText ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4508:1: rule__PropertyDefinition__NoFullTextAssignment_5_6 : ( ruleNoFullText ) ;
     public final void rule__PropertyDefinition__NoFullTextAssignment_5_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4516:1: ( ( ruleNoFullText ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4517:1: ( ruleNoFullText )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4512:1: ( ( ruleNoFullText ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4513:1: ( ruleNoFullText )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4517:1: ( ruleNoFullText )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4518:1: ruleNoFullText
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4513:1: ( ruleNoFullText )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4514:1: ruleNoFullText
             {
              before(grammarAccess.getPropertyDefinitionAccess().getNoFullTextNoFullTextParserRuleCall_5_6_0()); 
-            pushFollow(FOLLOW_ruleNoFullText_in_rule__PropertyDefinition__NoFullTextAssignment_5_610377);
+            pushFollow(FOLLOW_ruleNoFullText_in_rule__PropertyDefinition__NoFullTextAssignment_5_610364);
             ruleNoFullText();
 
             state._fsp--;
@@ -12820,20 +12765,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__NoQueryOrderAssignment_5_7"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4527:1: rule__PropertyDefinition__NoQueryOrderAssignment_5_7 : ( ruleNoQueryOrder ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4523:1: rule__PropertyDefinition__NoQueryOrderAssignment_5_7 : ( ruleNoQueryOrder ) ;
     public final void rule__PropertyDefinition__NoQueryOrderAssignment_5_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4531:1: ( ( ruleNoQueryOrder ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4532:1: ( ruleNoQueryOrder )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4527:1: ( ( ruleNoQueryOrder ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4528:1: ( ruleNoQueryOrder )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4532:1: ( ruleNoQueryOrder )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4533:1: ruleNoQueryOrder
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4528:1: ( ruleNoQueryOrder )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4529:1: ruleNoQueryOrder
             {
              before(grammarAccess.getPropertyDefinitionAccess().getNoQueryOrderNoQueryOrderParserRuleCall_5_7_0()); 
-            pushFollow(FOLLOW_ruleNoQueryOrder_in_rule__PropertyDefinition__NoQueryOrderAssignment_5_710408);
+            pushFollow(FOLLOW_ruleNoQueryOrder_in_rule__PropertyDefinition__NoQueryOrderAssignment_5_710395);
             ruleNoQueryOrder();
 
             state._fsp--;
@@ -12861,20 +12806,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__PrimaryAssignment_5_8"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4542:1: rule__PropertyDefinition__PrimaryAssignment_5_8 : ( rulePrimary ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4538:1: rule__PropertyDefinition__PrimaryAssignment_5_8 : ( rulePrimary ) ;
     public final void rule__PropertyDefinition__PrimaryAssignment_5_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4546:1: ( ( rulePrimary ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4547:1: ( rulePrimary )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4542:1: ( ( rulePrimary ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4543:1: ( rulePrimary )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4547:1: ( rulePrimary )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4548:1: rulePrimary
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4543:1: ( rulePrimary )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4544:1: rulePrimary
             {
              before(grammarAccess.getPropertyDefinitionAccess().getPrimaryPrimaryParserRuleCall_5_8_0()); 
-            pushFollow(FOLLOW_rulePrimary_in_rule__PropertyDefinition__PrimaryAssignment_5_810439);
+            pushFollow(FOLLOW_rulePrimary_in_rule__PropertyDefinition__PrimaryAssignment_5_810426);
             rulePrimary();
 
             state._fsp--;
@@ -12902,20 +12847,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4557:1: rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4553:1: rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0 : ( ruleJcrString ) ;
     public final void rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4561:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4562:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4557:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4558:1: ( ruleJcrString )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4562:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4563:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4558:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4559:1: ruleJcrString
             {
              before(grammarAccess.getPropertyDefinitionAccess().getValueConstraintsJcrStringParserRuleCall_6_1_0_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_010470);
+            pushFollow(FOLLOW_ruleJcrString_in_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_010457);
             ruleJcrString();
 
             state._fsp--;
@@ -12943,20 +12888,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4572:1: rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 : ( ruleJcrString ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4568:1: rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1 : ( ruleJcrString ) ;
     public final void rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4576:1: ( ( ruleJcrString ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4577:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4572:1: ( ( ruleJcrString ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4573:1: ( ruleJcrString )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4577:1: ( ruleJcrString )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4578:1: ruleJcrString
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4573:1: ( ruleJcrString )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4574:1: ruleJcrString
             {
              before(grammarAccess.getPropertyDefinitionAccess().getValueConstraintsJcrStringParserRuleCall_6_1_1_1_0()); 
-            pushFollow(FOLLOW_ruleJcrString_in_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_110501);
+            pushFollow(FOLLOW_ruleJcrString_in_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_110488);
             ruleJcrString();
 
             state._fsp--;
@@ -12984,20 +12929,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__NameAssignment_1"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4587:1: rule__NsMapping__NameAssignment_1 : ( rulePrefix ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4583:1: rule__NsMapping__NameAssignment_1 : ( rulePrefix ) ;
     public final void rule__NsMapping__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4591:1: ( ( rulePrefix ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4592:1: ( rulePrefix )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4587:1: ( ( rulePrefix ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4588:1: ( rulePrefix )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4592:1: ( rulePrefix )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4593:1: rulePrefix
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4588:1: ( rulePrefix )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4589:1: rulePrefix
             {
              before(grammarAccess.getNsMappingAccess().getNamePrefixParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_rulePrefix_in_rule__NsMapping__NameAssignment_110532);
+            pushFollow(FOLLOW_rulePrefix_in_rule__NsMapping__NameAssignment_110519);
             rulePrefix();
 
             state._fsp--;
@@ -13025,20 +12970,20 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NsMapping__UriAssignment_3"
-    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4602:1: rule__NsMapping__UriAssignment_3 : ( ruleUri ) ;
+    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4598:1: rule__NsMapping__UriAssignment_3 : ( ruleUri ) ;
     public final void rule__NsMapping__UriAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4606:1: ( ( ruleUri ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4607:1: ( ruleUri )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4602:1: ( ( ruleUri ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4603:1: ( ruleUri )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4607:1: ( ruleUri )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4608:1: ruleUri
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4603:1: ( ruleUri )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4604:1: ruleUri
             {
              before(grammarAccess.getNsMappingAccess().getUriUriParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleUri_in_rule__NsMapping__UriAssignment_310563);
+            pushFollow(FOLLOW_ruleUri_in_rule__NsMapping__UriAssignment_310550);
             ruleUri();
 
             state._fsp--;
@@ -13067,6 +13012,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
     // Delegated rules
 
 
+    protected DFA48 dfa48 = new DFA48(this);
     protected DFA49 dfa49 = new DFA49(this);
     protected DFA50 dfa50 = new DFA50(this);
     protected DFA51 dfa51 = new DFA51(this);
@@ -13076,23 +13022,121 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
     protected DFA55 dfa55 = new DFA55(this);
     protected DFA56 dfa56 = new DFA56(this);
     protected DFA57 dfa57 = new DFA57(this);
-    protected DFA58 dfa58 = new DFA58(this);
-    static final String DFA49_eotS =
+    static final String DFA48_eotS =
         "\13\uffff";
-    static final String DFA49_eofS =
+    static final String DFA48_eofS =
         "\1\12\12\uffff";
-    static final String DFA49_minS =
+    static final String DFA48_minS =
         "\1\15\12\uffff";
-    static final String DFA49_maxS =
+    static final String DFA48_maxS =
         "\1\111\12\uffff";
-    static final String DFA49_acceptS =
+    static final String DFA48_acceptS =
         "\1\uffff\11\1\1\2";
-    static final String DFA49_specialS =
+    static final String DFA48_specialS =
         "\1\0\12\uffff}>";
-    static final String[] DFA49_transitionS = {
+    static final String[] DFA48_transitionS = {
             "\2\5\2\10\2\7\2\6\1\5\3\3\3\2\3\1\2\11\14\uffff\6\4\15\uffff"+
             "\1\12\3\uffff\1\12\3\uffff\2\12",
             "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+    };
+
+    static final short[] DFA48_eot = DFA.unpackEncodedString(DFA48_eotS);
+    static final short[] DFA48_eof = DFA.unpackEncodedString(DFA48_eofS);
+    static final char[] DFA48_min = DFA.unpackEncodedStringToUnsignedChars(DFA48_minS);
+    static final char[] DFA48_max = DFA.unpackEncodedStringToUnsignedChars(DFA48_maxS);
+    static final short[] DFA48_accept = DFA.unpackEncodedString(DFA48_acceptS);
+    static final short[] DFA48_special = DFA.unpackEncodedString(DFA48_specialS);
+    static final short[][] DFA48_transition;
+
+    static {
+        int numStates = DFA48_transitionS.length;
+        DFA48_transition = new short[numStates][];
+        for (int i=0; i<numStates; i++) {
+            DFA48_transition[i] = DFA.unpackEncodedString(DFA48_transitionS[i]);
+        }
+    }
+
+    class DFA48 extends DFA {
+
+        public DFA48(BaseRecognizer recognizer) {
+            this.recognizer = recognizer;
+            this.decisionNumber = 48;
+            this.eot = DFA48_eot;
+            this.eof = DFA48_eof;
+            this.min = DFA48_min;
+            this.max = DFA48_max;
+            this.accept = DFA48_accept;
+            this.special = DFA48_special;
+            this.transition = DFA48_transition;
+        }
+        public String getDescription() {
+            return "3671:2: ( rule__PropertyDefinition__UnorderedGroup_5__0 )?";
+        }
+        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
+            TokenStream input = (TokenStream)_input;
+        	int _s = s;
+            switch ( s ) {
+                    case 0 : 
+                        int LA48_0 = input.LA(1);
+
+                         
+                        int index48_0 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( LA48_0 >=28 && LA48_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 0) ) {s = 1;}
+
+                        else if ( LA48_0 >=25 && LA48_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 1) ) {s = 2;}
+
+                        else if ( LA48_0 >=22 && LA48_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 2) ) {s = 3;}
+
+                        else if ( LA48_0 >=45 && LA48_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 3) ) {s = 4;}
+
+                        else if ( ( LA48_0 >=13 && LA48_0<=14 ||LA48_0==21 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 4) ) {s = 5;}
+
+                        else if ( LA48_0 >=19 && LA48_0<=20 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 5) ) {s = 6;}
+
+                        else if ( LA48_0 >=17 && LA48_0<=18 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 6) ) {s = 7;}
+
+                        else if ( LA48_0 >=15 && LA48_0<=16 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 7) ) {s = 8;}
+
+                        else if ( LA48_0 >=31 && LA48_0<=32 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 8) ) {s = 9;}
+
+                        else if ( (LA48_0==EOF||LA48_0==64||LA48_0==68||(LA48_0>=72 && LA48_0<=73)) ) {s = 10;}
+
+                         
+                        input.seek(index48_0);
+                        if ( s>=0 ) return s;
+                        break;
+            }
+            NoViableAltException nvae =
+                new NoViableAltException(getDescription(), 48, _s, input);
+            error(nvae);
+            throw nvae;
+        }
+    }
+    static final String DFA49_eotS =
+        "\12\uffff";
+    static final String DFA49_eofS =
+        "\12\uffff";
+    static final String DFA49_minS =
+        "\1\15\11\uffff";
+    static final String DFA49_maxS =
+        "\1\62\11\uffff";
+    static final String DFA49_acceptS =
+        "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11";
+    static final String DFA49_specialS =
+        "\1\0\11\uffff}>";
+    static final String[] DFA49_transitionS = {
+            "\2\5\2\10\2\7\2\6\1\5\3\3\3\2\3\1\2\11\14\uffff\6\4",
             "",
             "",
             "",
@@ -13134,7 +13178,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             this.transition = DFA49_transition;
         }
         public String getDescription() {
-            return "3695:2: ( rule__PropertyDefinition__UnorderedGroup_5__0 )?";
+            return "3687:3: ( ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) ) )";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -13165,8 +13209,6 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
 
                         else if ( LA49_0 >=31 && LA49_0<=32 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 8) ) {s = 9;}
 
-                        else if ( (LA49_0==EOF||LA49_0==64||LA49_0==68||(LA49_0>=72 && LA49_0<=73)) ) {s = 10;}
-
                          
                         input.seek(index49_0);
                         if ( s>=0 ) return s;
@@ -13179,19 +13221,21 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
         }
     }
     static final String DFA50_eotS =
-        "\12\uffff";
+        "\13\uffff";
     static final String DFA50_eofS =
-        "\12\uffff";
+        "\1\12\12\uffff";
     static final String DFA50_minS =
-        "\1\15\11\uffff";
+        "\1\15\12\uffff";
     static final String DFA50_maxS =
-        "\1\62\11\uffff";
+        "\1\111\12\uffff";
     static final String DFA50_acceptS =
-        "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11";
+        "\1\uffff\11\1\1\2";
     static final String DFA50_specialS =
-        "\1\0\11\uffff}>";
+        "\1\0\12\uffff}>";
     static final String[] DFA50_transitionS = {
-            "\2\5\2\10\2\7\2\6\1\5\3\3\3\2\3\1\2\11\14\uffff\6\4",
+            "\2\5\2\10\2\7\2\6\1\5\3\3\3\2\3\1\2\11\14\uffff\6\4\15\uffff"+
+            "\1\12\3\uffff\1\12\3\uffff\2\12",
+            "",
             "",
             "",
             "",
@@ -13233,7 +13277,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             this.transition = DFA50_transition;
         }
         public String getDescription() {
-            return "3711:3: ( ({...}? => ( ( ( rule__PropertyDefinition__AutocreatedAssignment_5_0 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MandatoryAssignment_5_1 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__ProtectedAssignment_5_2 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__OnParentVersionAssignment_5_3 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__MultipleAssignment_5_4 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__QueryOpsAssignment_5_5 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoFullTextAssignment_5_6 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__NoQueryOrderAssignment_5_7 ) ) ) ) | ({...}? => ( ( ( rule__PropertyDefinition__PrimaryAssignment_5_8 ) ) ) ) )";
+            return "3857:2: ( rule__PropertyDefinition__UnorderedGroup_5__1 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -13263,6 +13307,8 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
                         else if ( LA50_0 >=15 && LA50_0<=16 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 7) ) {s = 8;}
 
                         else if ( LA50_0 >=31 && LA50_0<=32 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 8) ) {s = 9;}
+
+                        else if ( (LA50_0==EOF||LA50_0==64||LA50_0==68||(LA50_0>=72 && LA50_0<=73)) ) {s = 10;}
 
                          
                         input.seek(index50_0);
@@ -13332,7 +13378,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             this.transition = DFA51_transition;
         }
         public String getDescription() {
-            return "3881:2: ( rule__PropertyDefinition__UnorderedGroup_5__1 )?";
+            return "3870:2: ( rule__PropertyDefinition__UnorderedGroup_5__2 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -13433,7 +13479,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             this.transition = DFA52_transition;
         }
         public String getDescription() {
-            return "3894:2: ( rule__PropertyDefinition__UnorderedGroup_5__2 )?";
+            return "3883:2: ( rule__PropertyDefinition__UnorderedGroup_5__3 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -13534,7 +13580,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             this.transition = DFA53_transition;
         }
         public String getDescription() {
-            return "3907:2: ( rule__PropertyDefinition__UnorderedGroup_5__3 )?";
+            return "3896:2: ( rule__PropertyDefinition__UnorderedGroup_5__4 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -13635,7 +13681,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             this.transition = DFA54_transition;
         }
         public String getDescription() {
-            return "3920:2: ( rule__PropertyDefinition__UnorderedGroup_5__4 )?";
+            return "3909:2: ( rule__PropertyDefinition__UnorderedGroup_5__5 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -13736,7 +13782,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             this.transition = DFA55_transition;
         }
         public String getDescription() {
-            return "3933:2: ( rule__PropertyDefinition__UnorderedGroup_5__5 )?";
+            return "3922:2: ( rule__PropertyDefinition__UnorderedGroup_5__6 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -13837,7 +13883,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             this.transition = DFA56_transition;
         }
         public String getDescription() {
-            return "3946:2: ( rule__PropertyDefinition__UnorderedGroup_5__6 )?";
+            return "3935:2: ( rule__PropertyDefinition__UnorderedGroup_5__7 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -13938,7 +13984,7 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             this.transition = DFA57_transition;
         }
         public String getDescription() {
-            return "3959:2: ( rule__PropertyDefinition__UnorderedGroup_5__7 )?";
+            return "3948:2: ( rule__PropertyDefinition__UnorderedGroup_5__8 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -13978,107 +14024,6 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
             }
             NoViableAltException nvae =
                 new NoViableAltException(getDescription(), 57, _s, input);
-            error(nvae);
-            throw nvae;
-        }
-    }
-    static final String DFA58_eotS =
-        "\13\uffff";
-    static final String DFA58_eofS =
-        "\1\12\12\uffff";
-    static final String DFA58_minS =
-        "\1\15\12\uffff";
-    static final String DFA58_maxS =
-        "\1\111\12\uffff";
-    static final String DFA58_acceptS =
-        "\1\uffff\11\1\1\2";
-    static final String DFA58_specialS =
-        "\1\0\12\uffff}>";
-    static final String[] DFA58_transitionS = {
-            "\2\5\2\10\2\7\2\6\1\5\3\3\3\2\3\1\2\11\14\uffff\6\4\15\uffff"+
-            "\1\12\3\uffff\1\12\3\uffff\2\12",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-    };
-
-    static final short[] DFA58_eot = DFA.unpackEncodedString(DFA58_eotS);
-    static final short[] DFA58_eof = DFA.unpackEncodedString(DFA58_eofS);
-    static final char[] DFA58_min = DFA.unpackEncodedStringToUnsignedChars(DFA58_minS);
-    static final char[] DFA58_max = DFA.unpackEncodedStringToUnsignedChars(DFA58_maxS);
-    static final short[] DFA58_accept = DFA.unpackEncodedString(DFA58_acceptS);
-    static final short[] DFA58_special = DFA.unpackEncodedString(DFA58_specialS);
-    static final short[][] DFA58_transition;
-
-    static {
-        int numStates = DFA58_transitionS.length;
-        DFA58_transition = new short[numStates][];
-        for (int i=0; i<numStates; i++) {
-            DFA58_transition[i] = DFA.unpackEncodedString(DFA58_transitionS[i]);
-        }
-    }
-
-    class DFA58 extends DFA {
-
-        public DFA58(BaseRecognizer recognizer) {
-            this.recognizer = recognizer;
-            this.decisionNumber = 58;
-            this.eot = DFA58_eot;
-            this.eof = DFA58_eof;
-            this.min = DFA58_min;
-            this.max = DFA58_max;
-            this.accept = DFA58_accept;
-            this.special = DFA58_special;
-            this.transition = DFA58_transition;
-        }
-        public String getDescription() {
-            return "3972:2: ( rule__PropertyDefinition__UnorderedGroup_5__8 )?";
-        }
-        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
-            TokenStream input = (TokenStream)_input;
-        	int _s = s;
-            switch ( s ) {
-                    case 0 : 
-                        int LA58_0 = input.LA(1);
-
-                         
-                        int index58_0 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( LA58_0 >=28 && LA58_0<=30 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 0) ) {s = 1;}
-
-                        else if ( LA58_0 >=25 && LA58_0<=27 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 1) ) {s = 2;}
-
-                        else if ( LA58_0 >=22 && LA58_0<=24 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 2) ) {s = 3;}
-
-                        else if ( LA58_0 >=45 && LA58_0<=50 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 3) ) {s = 4;}
-
-                        else if ( ( LA58_0 >=13 && LA58_0<=14 ||LA58_0==21 ) && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 4) ) {s = 5;}
-
-                        else if ( LA58_0 >=19 && LA58_0<=20 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 5) ) {s = 6;}
-
-                        else if ( LA58_0 >=17 && LA58_0<=18 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 6) ) {s = 7;}
-
-                        else if ( LA58_0 >=15 && LA58_0<=16 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 7) ) {s = 8;}
-
-                        else if ( LA58_0 >=31 && LA58_0<=32 && getUnorderedGroupHelper().canSelect(grammarAccess.getPropertyDefinitionAccess().getUnorderedGroup_5(), 8) ) {s = 9;}
-
-                        else if ( (LA58_0==EOF||LA58_0==64||LA58_0==68||(LA58_0>=72 && LA58_0<=73)) ) {s = 10;}
-
-                         
-                        input.seek(index58_0);
-                        if ( s>=0 ) return s;
-                        break;
-            }
-            NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 58, _s, input);
             error(nvae);
             throw nvae;
         }
@@ -14156,325 +14101,323 @@ public class InternalCndParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__JcrString__Alternatives_in_ruleJcrString1413 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleXiD_in_entryRuleXiD1440 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleXiD1447 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__XiD__Alternatives_in_ruleXiD1473 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Opv__Alternatives_in_ruleOpv1510 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyType__Alternatives_in_rulePropertyType1546 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__NamespacesAssignment_0_in_rule__Model__Alternatives1581 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__NodeTypesAssignment_1_in_rule__Model__Alternatives1599 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0_in_rule__NodeTypeDefinition__Alternatives_51632 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1_in_rule__NodeTypeDefinition__Alternatives_51650 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__NameAssignment_1_0_in_rule__NodeDefinition__Alternatives_11683 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__NameAssignment_1_1_in_rule__NodeDefinition__Alternatives_11701 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_12_in_rule__Sns__Alternatives1735 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__Sns__Alternatives1755 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__Sns__Alternatives1775 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__NameAssignment_2_0_in_rule__PropertyDefinition__Alternatives_21809 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__PropertyDefinition__Alternatives_21828 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__NoQueryOrder__Alternatives1863 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__NoQueryOrder__Alternatives1883 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__NoFullText__Alternatives1918 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__NoFullText__Alternatives1938 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__QueryOps__Alternatives_01973 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__QueryOps__Alternatives_01993 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__Multiple__Alternatives2028 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__Multiple__Alternatives2048 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__Multiple__Alternatives2068 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__Protected__Alternatives2103 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_rule__Protected__Alternatives2123 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_rule__Protected__Alternatives2143 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__Mandatory__Alternatives2178 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__Mandatory__Alternatives2198 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__Mandatory__Alternatives2218 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__Autocreated__Alternatives2253 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_rule__Autocreated__Alternatives2273 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__Autocreated__Alternatives2293 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_rule__Primary__Alternatives2328 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_rule__Primary__Alternatives2348 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__PrimaryItem__Alternatives_02383 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_rule__PrimaryItem__Alternatives_02403 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_rule__Queryable__Alternatives2438 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_35_in_rule__Queryable__Alternatives2458 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_rule__Notqueryable__Alternatives2493 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_37_in_rule__Notqueryable__Alternatives2513 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_rule__Abstract__Alternatives2548 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_39_in_rule__Abstract__Alternatives2568 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__Abstract__Alternatives2588 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_rule__Mixin__Alternatives2623 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_41_in_rule__Mixin__Alternatives2643 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__Mixin__Alternatives2663 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_42_in_rule__Orderable__Alternatives2698 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_43_in_rule__Orderable__Alternatives2718 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_44_in_rule__Orderable__Alternatives2738 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__JcrString__Alternatives2772 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXiD_in_rule__JcrString__Alternatives2789 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_EXID_in_rule__XiD__Alternatives2821 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_41_in_rule__XiD__Alternatives2839 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_45_in_rule__Opv__Alternatives2874 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_46_in_rule__Opv__Alternatives2895 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_47_in_rule__Opv__Alternatives2916 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_48_in_rule__Opv__Alternatives2937 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_49_in_rule__Opv__Alternatives2958 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_50_in_rule__Opv__Alternatives2979 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_51_in_rule__PropertyType__Alternatives3015 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_52_in_rule__PropertyType__Alternatives3036 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_53_in_rule__PropertyType__Alternatives3057 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_54_in_rule__PropertyType__Alternatives3078 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_55_in_rule__PropertyType__Alternatives3099 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_56_in_rule__PropertyType__Alternatives3120 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_57_in_rule__PropertyType__Alternatives3141 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_58_in_rule__PropertyType__Alternatives3162 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_59_in_rule__PropertyType__Alternatives3183 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_60_in_rule__PropertyType__Alternatives3204 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_61_in_rule__PropertyType__Alternatives3225 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_62_in_rule__PropertyType__Alternatives3246 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_63_in_rule__PropertyType__Alternatives3267 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__0__Impl_in_rule__NodeTypeDefinition__Group__03300 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__1_in_rule__NodeTypeDefinition__Group__03303 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_64_in_rule__NodeTypeDefinition__Group__0__Impl3331 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__1__Impl_in_rule__NodeTypeDefinition__Group__13362 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__2_in_rule__NodeTypeDefinition__Group__13365 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__NameAssignment_1_in_rule__NodeTypeDefinition__Group__1__Impl3392 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__2__Impl_in_rule__NodeTypeDefinition__Group__23422 = new BitSet(new long[]{0x00001FFF48000000L,0x0000000000000004L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__3_in_rule__NodeTypeDefinition__Group__23425 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_65_in_rule__NodeTypeDefinition__Group__2__Impl3453 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__3__Impl_in_rule__NodeTypeDefinition__Group__33484 = new BitSet(new long[]{0x00001FFF48000000L,0x0000000000000004L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__4_in_rule__NodeTypeDefinition__Group__33487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__0_in_rule__NodeTypeDefinition__Group__3__Impl3514 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__4__Impl_in_rule__NodeTypeDefinition__Group__43545 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000110L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__5_in_rule__NodeTypeDefinition__Group__43548 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4_in_rule__NodeTypeDefinition__Group__4__Impl3575 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__5__Impl_in_rule__NodeTypeDefinition__Group__53605 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Alternatives_5_in_rule__NodeTypeDefinition__Group__5__Impl3632 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000110L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__0__Impl_in_rule__NodeTypeDefinition__Group_3__03675 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__1_in_rule__NodeTypeDefinition__Group_3__03678 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_66_in_rule__NodeTypeDefinition__Group_3__0__Impl3706 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__1__Impl_in_rule__NodeTypeDefinition__Group_3__13737 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__2_in_rule__NodeTypeDefinition__Group_3__13740 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1_in_rule__NodeTypeDefinition__Group_3__1__Impl3767 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__2__Impl_in_rule__NodeTypeDefinition__Group_3__23797 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3_2__0_in_rule__NodeTypeDefinition__Group_3__2__Impl3824 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000008L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3_2__0__Impl_in_rule__NodeTypeDefinition__Group_3_2__03861 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3_2__1_in_rule__NodeTypeDefinition__Group_3_2__03864 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_67_in_rule__NodeTypeDefinition__Group_3_2__0__Impl3892 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3_2__1__Impl_in_rule__NodeTypeDefinition__Group_3_2__13923 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1_in_rule__NodeTypeDefinition__Group_3_2__1__Impl3950 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group__0__Impl_in_rule__NodeDefinition__Group__03984 = new BitSet(new long[]{0x0000020000002030L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group__1_in_rule__NodeDefinition__Group__03987 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_68_in_rule__NodeDefinition__Group__0__Impl4015 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group__1__Impl_in_rule__NodeDefinition__Group__14046 = new BitSet(new long[]{0x0007E0007FC07000L,0x00000000000000A0L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group__2_in_rule__NodeDefinition__Group__14049 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Alternatives_1_in_rule__NodeDefinition__Group__1__Impl4076 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group__2__Impl_in_rule__NodeDefinition__Group__24106 = new BitSet(new long[]{0x0007E0007FC07000L,0x00000000000000A0L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group__3_in_rule__NodeDefinition__Group__24109 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__0_in_rule__NodeDefinition__Group__2__Impl4136 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group__3__Impl_in_rule__NodeDefinition__Group__34167 = new BitSet(new long[]{0x0007E0007FC07000L,0x00000000000000A0L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group__4_in_rule__NodeDefinition__Group__34170 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_3__0_in_rule__NodeDefinition__Group__3__Impl4197 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group__4__Impl_in_rule__NodeDefinition__Group__44228 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4_in_rule__NodeDefinition__Group__4__Impl4255 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__0__Impl_in_rule__NodeDefinition__Group_2__04295 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__1_in_rule__NodeDefinition__Group_2__04298 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_69_in_rule__NodeDefinition__Group_2__0__Impl4326 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__1__Impl_in_rule__NodeDefinition__Group_2__14357 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__2_in_rule__NodeDefinition__Group_2__14360 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1__0_in_rule__NodeDefinition__Group_2__1__Impl4387 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__2__Impl_in_rule__NodeDefinition__Group_2__24417 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_70_in_rule__NodeDefinition__Group_2__2__Impl4445 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1__0__Impl_in_rule__NodeDefinition__Group_2_1__04482 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1__1_in_rule__NodeDefinition__Group_2_1__04485 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__RequiredTypesAssignment_2_1_0_in_rule__NodeDefinition__Group_2_1__0__Impl4512 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1__1__Impl_in_rule__NodeDefinition__Group_2_1__14542 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1_1__0_in_rule__NodeDefinition__Group_2_1__1__Impl4569 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000008L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1_1__0__Impl_in_rule__NodeDefinition__Group_2_1_1__04604 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1_1__1_in_rule__NodeDefinition__Group_2_1_1__04607 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_67_in_rule__NodeDefinition__Group_2_1_1__0__Impl4635 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1_1__1__Impl_in_rule__NodeDefinition__Group_2_1_1__14666 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1_in_rule__NodeDefinition__Group_2_1_1__1__Impl4693 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_3__0__Impl_in_rule__NodeDefinition__Group_3__04727 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_3__1_in_rule__NodeDefinition__Group_3__04730 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_71_in_rule__NodeDefinition__Group_3__0__Impl4758 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__Group_3__1__Impl_in_rule__NodeDefinition__Group_3__14789 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__DefaultTypeAssignment_3_1_in_rule__NodeDefinition__Group_3__1__Impl4816 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__0__Impl_in_rule__PropertyDefinition__Group__04850 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000100L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__1_in_rule__PropertyDefinition__Group__04853 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__1__Impl_in_rule__PropertyDefinition__Group__14911 = new BitSet(new long[]{0x0000020000002030L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__2_in_rule__PropertyDefinition__Group__14914 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_72_in_rule__PropertyDefinition__Group__1__Impl4942 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__2__Impl_in_rule__PropertyDefinition__Group__24973 = new BitSet(new long[]{0x0007E001FFFFE000L,0x00000000000000A0L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__3_in_rule__PropertyDefinition__Group__24976 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Alternatives_2_in_rule__PropertyDefinition__Group__2__Impl5003 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__3__Impl_in_rule__PropertyDefinition__Group__35033 = new BitSet(new long[]{0x0007E001FFFFE000L,0x00000000000000A0L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__4_in_rule__PropertyDefinition__Group__35036 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__0_in_rule__PropertyDefinition__Group__3__Impl5063 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__4__Impl_in_rule__PropertyDefinition__Group__45094 = new BitSet(new long[]{0x0007E001FFFFE000L,0x00000000000000A0L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__5_in_rule__PropertyDefinition__Group__45097 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4__0_in_rule__PropertyDefinition__Group__4__Impl5124 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__5__Impl_in_rule__PropertyDefinition__Group__55155 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000200L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__6_in_rule__PropertyDefinition__Group__55158 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5_in_rule__PropertyDefinition__Group__5__Impl5185 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__6__Impl_in_rule__PropertyDefinition__Group__65215 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6__0_in_rule__PropertyDefinition__Group__6__Impl5242 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__0__Impl_in_rule__PropertyDefinition__Group_3__05287 = new BitSet(new long[]{0xFFF8000000000000L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__1_in_rule__PropertyDefinition__Group_3__05290 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_69_in_rule__PropertyDefinition__Group_3__0__Impl5318 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__1__Impl_in_rule__PropertyDefinition__Group_3__15349 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__2_in_rule__PropertyDefinition__Group_3__15352 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__TypeAssignment_3_1_in_rule__PropertyDefinition__Group_3__1__Impl5379 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__2__Impl_in_rule__PropertyDefinition__Group_3__25409 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_70_in_rule__PropertyDefinition__Group_3__2__Impl5437 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4__0__Impl_in_rule__PropertyDefinition__Group_4__05474 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4__1_in_rule__PropertyDefinition__Group_4__05477 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_71_in_rule__PropertyDefinition__Group_4__0__Impl5505 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4__1__Impl_in_rule__PropertyDefinition__Group_4__15536 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1__0_in_rule__PropertyDefinition__Group_4__1__Impl5563 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1__0__Impl_in_rule__PropertyDefinition__Group_4_1__05597 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1__1_in_rule__PropertyDefinition__Group_4_1__05600 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__DefaultValuesAssignment_4_1_0_in_rule__PropertyDefinition__Group_4_1__0__Impl5627 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1__1__Impl_in_rule__PropertyDefinition__Group_4_1__15657 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1_1__0_in_rule__PropertyDefinition__Group_4_1__1__Impl5684 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000008L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1_1__0__Impl_in_rule__PropertyDefinition__Group_4_1_1__05719 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1_1__1_in_rule__PropertyDefinition__Group_4_1_1__05722 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_67_in_rule__PropertyDefinition__Group_4_1_1__0__Impl5750 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1_1__1__Impl_in_rule__PropertyDefinition__Group_4_1_1__15781 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1_in_rule__PropertyDefinition__Group_4_1_1__1__Impl5808 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6__0__Impl_in_rule__PropertyDefinition__Group_6__05842 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6__1_in_rule__PropertyDefinition__Group_6__05845 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_73_in_rule__PropertyDefinition__Group_6__0__Impl5873 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6__1__Impl_in_rule__PropertyDefinition__Group_6__15904 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1__0_in_rule__PropertyDefinition__Group_6__1__Impl5931 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1__0__Impl_in_rule__PropertyDefinition__Group_6_1__05965 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1__1_in_rule__PropertyDefinition__Group_6_1__05968 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0_in_rule__PropertyDefinition__Group_6_1__0__Impl5995 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1__1__Impl_in_rule__PropertyDefinition__Group_6_1__16025 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1_1__0_in_rule__PropertyDefinition__Group_6_1__1__Impl6052 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000008L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1_1__0__Impl_in_rule__PropertyDefinition__Group_6_1_1__06087 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1_1__1_in_rule__PropertyDefinition__Group_6_1_1__06090 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_67_in_rule__PropertyDefinition__Group_6_1_1__0__Impl6118 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1_1__1__Impl_in_rule__PropertyDefinition__Group_6_1_1__16149 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1_in_rule__PropertyDefinition__Group_6_1_1__1__Impl6176 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__QueryOps__Group__0__Impl_in_rule__QueryOps__Group__06210 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__QueryOps__Group__1_in_rule__QueryOps__Group__06213 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__QueryOps__Alternatives_0_in_rule__QueryOps__Group__0__Impl6240 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__QueryOps__Group__1__Impl_in_rule__QueryOps__Group__16270 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__QueryOps__Group__1__Impl6297 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PrimaryItem__Group__0__Impl_in_rule__PrimaryItem__Group__06330 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__PrimaryItem__Group__1_in_rule__PrimaryItem__Group__06333 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PrimaryItem__Alternatives_0_in_rule__PrimaryItem__Group__0__Impl6360 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PrimaryItem__Group__1__Impl_in_rule__PrimaryItem__Group__16390 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__PrimaryItem__Group__1__Impl6417 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NsMapping__Group__0__Impl_in_rule__NsMapping__Group__06450 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__NsMapping__Group__1_in_rule__NsMapping__Group__06453 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_73_in_rule__NsMapping__Group__0__Impl6481 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NsMapping__Group__1__Impl_in_rule__NsMapping__Group__16512 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
-    public static final BitSet FOLLOW_rule__NsMapping__Group__2_in_rule__NsMapping__Group__16515 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NsMapping__NameAssignment_1_in_rule__NsMapping__Group__1__Impl6542 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NsMapping__Group__2__Impl_in_rule__NsMapping__Group__26572 = new BitSet(new long[]{0x0000020000000030L});
-    public static final BitSet FOLLOW_rule__NsMapping__Group__3_in_rule__NsMapping__Group__26575 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_71_in_rule__NsMapping__Group__2__Impl6603 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NsMapping__Group__3__Impl_in_rule__NsMapping__Group__36634 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000004L});
-    public static final BitSet FOLLOW_rule__NsMapping__Group__4_in_rule__NsMapping__Group__36637 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NsMapping__UriAssignment_3_in_rule__NsMapping__Group__3__Impl6664 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NsMapping__Group__4__Impl_in_rule__NsMapping__Group__46694 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_66_in_rule__NsMapping__Group__4__Impl6722 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__0_in_rule__NodeTypeDefinition__UnorderedGroup_46764 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__OrderableAssignment_4_0_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl6851 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__MixinAssignment_4_1_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl6942 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__AbstractAssignment_4_2_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7033 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__QueryableAssignment_4_3_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7124 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__NotqueryableAssignment_4_4_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7215 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__PrimaryItemAssignment_4_5_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7306 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__07365 = new BitSet(new long[]{0x00001FFF48000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__1_in_rule__NodeTypeDefinition__UnorderedGroup_4__07368 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__17393 = new BitSet(new long[]{0x00001FFF48000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__2_in_rule__NodeTypeDefinition__UnorderedGroup_4__17396 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__27421 = new BitSet(new long[]{0x00001FFF48000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__3_in_rule__NodeTypeDefinition__UnorderedGroup_4__27424 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__37449 = new BitSet(new long[]{0x00001FFF48000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__4_in_rule__NodeTypeDefinition__UnorderedGroup_4__37452 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__47477 = new BitSet(new long[]{0x00001FFF48000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__5_in_rule__NodeTypeDefinition__UnorderedGroup_4__47480 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__57505 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__0_in_rule__NodeDefinition__UnorderedGroup_47541 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__AutocreatedAssignment_4_0_in_rule__NodeDefinition__UnorderedGroup_4__Impl7628 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__ManadatoryAssignment_4_1_in_rule__NodeDefinition__UnorderedGroup_4__Impl7719 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__ProtectedAssignment_4_2_in_rule__NodeDefinition__UnorderedGroup_4__Impl7810 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__OnParentVersionAssignment_4_3_in_rule__NodeDefinition__UnorderedGroup_4__Impl7901 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__SameNameSiblingsAssignment_4_4_in_rule__NodeDefinition__UnorderedGroup_4__Impl7992 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__08051 = new BitSet(new long[]{0x0007E0007FC07002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__1_in_rule__NodeDefinition__UnorderedGroup_4__08054 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__18079 = new BitSet(new long[]{0x0007E0007FC07002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__2_in_rule__NodeDefinition__UnorderedGroup_4__18082 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__28107 = new BitSet(new long[]{0x0007E0007FC07002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__3_in_rule__NodeDefinition__UnorderedGroup_4__28110 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__38135 = new BitSet(new long[]{0x0007E0007FC07002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__4_in_rule__NodeDefinition__UnorderedGroup_4__38138 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__48163 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__0_in_rule__PropertyDefinition__UnorderedGroup_58197 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__AutocreatedAssignment_5_0_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8284 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__MandatoryAssignment_5_1_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8375 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__ProtectedAssignment_5_2_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8466 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__OnParentVersionAssignment_5_3_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8557 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__MultipleAssignment_5_4_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8648 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__QueryOpsAssignment_5_5_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8739 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__NoFullTextAssignment_5_6_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8830 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__NoQueryOrderAssignment_5_7_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8921 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__PrimaryAssignment_5_8_in_rule__PropertyDefinition__UnorderedGroup_5__Impl9012 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__09071 = new BitSet(new long[]{0x0007E001FFFFE002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__1_in_rule__PropertyDefinition__UnorderedGroup_5__09074 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__19099 = new BitSet(new long[]{0x0007E001FFFFE002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__2_in_rule__PropertyDefinition__UnorderedGroup_5__19102 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__29127 = new BitSet(new long[]{0x0007E001FFFFE002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__3_in_rule__PropertyDefinition__UnorderedGroup_5__29130 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__39155 = new BitSet(new long[]{0x0007E001FFFFE002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__4_in_rule__PropertyDefinition__UnorderedGroup_5__39158 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__49183 = new BitSet(new long[]{0x0007E001FFFFE002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__5_in_rule__PropertyDefinition__UnorderedGroup_5__49186 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__59211 = new BitSet(new long[]{0x0007E001FFFFE002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__6_in_rule__PropertyDefinition__UnorderedGroup_5__59214 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__69239 = new BitSet(new long[]{0x0007E001FFFFE002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__7_in_rule__PropertyDefinition__UnorderedGroup_5__69242 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__79267 = new BitSet(new long[]{0x0007E001FFFFE002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__8_in_rule__PropertyDefinition__UnorderedGroup_5__79270 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__89295 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNsMapping_in_rule__Model__NamespacesAssignment_09341 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNodeTypeDefinition_in_rule__Model__NodeTypesAssignment_19372 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__NameAssignment_19403 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_19434 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_19465 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOrderable_in_rule__NodeTypeDefinition__OrderableAssignment_4_09496 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMixin_in_rule__NodeTypeDefinition__MixinAssignment_4_19527 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAbstract_in_rule__NodeTypeDefinition__AbstractAssignment_4_29558 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQueryable_in_rule__NodeTypeDefinition__QueryableAssignment_4_39589 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNotqueryable_in_rule__NodeTypeDefinition__NotqueryableAssignment_4_49620 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePrimaryItem_in_rule__NodeTypeDefinition__PrimaryItemAssignment_4_59651 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePropertyDefinition_in_rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_09682 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNodeDefinition_in_rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_19713 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeDefinition__NameAssignment_1_09744 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__NodeDefinition__NameAssignment_1_19780 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeDefinition__RequiredTypesAssignment_2_1_09819 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeDefinition__RequiredTypesAssignment_2_1_1_19850 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeDefinition__DefaultTypeAssignment_3_19881 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAutocreated_in_rule__NodeDefinition__AutocreatedAssignment_4_09912 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMandatory_in_rule__NodeDefinition__ManadatoryAssignment_4_19943 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleProtected_in_rule__NodeDefinition__ProtectedAssignment_4_29974 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpv_in_rule__NodeDefinition__OnParentVersionAssignment_4_310005 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleSns_in_rule__NodeDefinition__SameNameSiblingsAssignment_4_410036 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__PropertyDefinition__NameAssignment_2_010067 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePropertyType_in_rule__PropertyDefinition__TypeAssignment_3_110098 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__PropertyDefinition__DefaultValuesAssignment_4_1_010129 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_110160 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAutocreated_in_rule__PropertyDefinition__AutocreatedAssignment_5_010191 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMandatory_in_rule__PropertyDefinition__MandatoryAssignment_5_110222 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleProtected_in_rule__PropertyDefinition__ProtectedAssignment_5_210253 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpv_in_rule__PropertyDefinition__OnParentVersionAssignment_5_310284 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMultiple_in_rule__PropertyDefinition__MultipleAssignment_5_410315 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQueryOps_in_rule__PropertyDefinition__QueryOpsAssignment_5_510346 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNoFullText_in_rule__PropertyDefinition__NoFullTextAssignment_5_610377 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNoQueryOrder_in_rule__PropertyDefinition__NoQueryOrderAssignment_5_710408 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePrimary_in_rule__PropertyDefinition__PrimaryAssignment_5_810439 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_010470 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJcrString_in_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_110501 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePrefix_in_rule__NsMapping__NameAssignment_110532 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleUri_in_rule__NsMapping__UriAssignment_310563 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_EXID_in_ruleXiD1473 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Opv__Alternatives_in_ruleOpv1509 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyType__Alternatives_in_rulePropertyType1545 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__NamespacesAssignment_0_in_rule__Model__Alternatives1580 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__NodeTypesAssignment_1_in_rule__Model__Alternatives1598 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0_in_rule__NodeTypeDefinition__Alternatives_51631 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1_in_rule__NodeTypeDefinition__Alternatives_51649 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__NameAssignment_1_0_in_rule__NodeDefinition__Alternatives_11682 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__NameAssignment_1_1_in_rule__NodeDefinition__Alternatives_11700 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_12_in_rule__Sns__Alternatives1734 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__Sns__Alternatives1754 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__Sns__Alternatives1774 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__NameAssignment_2_0_in_rule__PropertyDefinition__Alternatives_21808 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__PropertyDefinition__Alternatives_21827 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__NoQueryOrder__Alternatives1862 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__NoQueryOrder__Alternatives1882 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__NoFullText__Alternatives1917 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__NoFullText__Alternatives1937 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__QueryOps__Alternatives_01972 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__QueryOps__Alternatives_01992 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__Multiple__Alternatives2027 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__Multiple__Alternatives2047 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__Multiple__Alternatives2067 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__Protected__Alternatives2102 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__Protected__Alternatives2122 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_rule__Protected__Alternatives2142 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rule__Mandatory__Alternatives2177 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__Mandatory__Alternatives2197 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__Mandatory__Alternatives2217 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__Autocreated__Alternatives2252 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__Autocreated__Alternatives2272 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__Autocreated__Alternatives2292 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_rule__Primary__Alternatives2327 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_rule__Primary__Alternatives2347 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__PrimaryItem__Alternatives_02382 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_rule__PrimaryItem__Alternatives_02402 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_rule__Queryable__Alternatives2437 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_rule__Queryable__Alternatives2457 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_rule__Notqueryable__Alternatives2492 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_37_in_rule__Notqueryable__Alternatives2512 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_rule__Abstract__Alternatives2547 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_39_in_rule__Abstract__Alternatives2567 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__Abstract__Alternatives2587 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_rule__Mixin__Alternatives2622 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_41_in_rule__Mixin__Alternatives2642 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__Mixin__Alternatives2662 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_42_in_rule__Orderable__Alternatives2697 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_43_in_rule__Orderable__Alternatives2717 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_44_in_rule__Orderable__Alternatives2737 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__JcrString__Alternatives2771 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXiD_in_rule__JcrString__Alternatives2788 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_rule__Opv__Alternatives2821 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_46_in_rule__Opv__Alternatives2842 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_47_in_rule__Opv__Alternatives2863 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_48_in_rule__Opv__Alternatives2884 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_49_in_rule__Opv__Alternatives2905 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_50_in_rule__Opv__Alternatives2926 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_51_in_rule__PropertyType__Alternatives2962 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_52_in_rule__PropertyType__Alternatives2983 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_53_in_rule__PropertyType__Alternatives3004 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_54_in_rule__PropertyType__Alternatives3025 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_55_in_rule__PropertyType__Alternatives3046 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_56_in_rule__PropertyType__Alternatives3067 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_57_in_rule__PropertyType__Alternatives3088 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_58_in_rule__PropertyType__Alternatives3109 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_59_in_rule__PropertyType__Alternatives3130 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_60_in_rule__PropertyType__Alternatives3151 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_61_in_rule__PropertyType__Alternatives3172 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_62_in_rule__PropertyType__Alternatives3193 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_63_in_rule__PropertyType__Alternatives3214 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__0__Impl_in_rule__NodeTypeDefinition__Group__03247 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__1_in_rule__NodeTypeDefinition__Group__03250 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_64_in_rule__NodeTypeDefinition__Group__0__Impl3278 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__1__Impl_in_rule__NodeTypeDefinition__Group__13309 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__2_in_rule__NodeTypeDefinition__Group__13312 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__NameAssignment_1_in_rule__NodeTypeDefinition__Group__1__Impl3339 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__2__Impl_in_rule__NodeTypeDefinition__Group__23369 = new BitSet(new long[]{0x00001FFF48000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__3_in_rule__NodeTypeDefinition__Group__23372 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_65_in_rule__NodeTypeDefinition__Group__2__Impl3400 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__3__Impl_in_rule__NodeTypeDefinition__Group__33431 = new BitSet(new long[]{0x00001FFF48000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__4_in_rule__NodeTypeDefinition__Group__33434 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__0_in_rule__NodeTypeDefinition__Group__3__Impl3461 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__4__Impl_in_rule__NodeTypeDefinition__Group__43492 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000110L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__5_in_rule__NodeTypeDefinition__Group__43495 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4_in_rule__NodeTypeDefinition__Group__4__Impl3522 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group__5__Impl_in_rule__NodeTypeDefinition__Group__53552 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Alternatives_5_in_rule__NodeTypeDefinition__Group__5__Impl3579 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000110L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__0__Impl_in_rule__NodeTypeDefinition__Group_3__03622 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__1_in_rule__NodeTypeDefinition__Group_3__03625 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_66_in_rule__NodeTypeDefinition__Group_3__0__Impl3653 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__1__Impl_in_rule__NodeTypeDefinition__Group_3__13684 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__2_in_rule__NodeTypeDefinition__Group_3__13687 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_1_in_rule__NodeTypeDefinition__Group_3__1__Impl3714 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3__2__Impl_in_rule__NodeTypeDefinition__Group_3__23744 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3_2__0_in_rule__NodeTypeDefinition__Group_3__2__Impl3771 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000008L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3_2__0__Impl_in_rule__NodeTypeDefinition__Group_3_2__03808 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3_2__1_in_rule__NodeTypeDefinition__Group_3_2__03811 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_67_in_rule__NodeTypeDefinition__Group_3_2__0__Impl3839 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__Group_3_2__1__Impl_in_rule__NodeTypeDefinition__Group_3_2__13870 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_1_in_rule__NodeTypeDefinition__Group_3_2__1__Impl3897 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group__0__Impl_in_rule__NodeDefinition__Group__03931 = new BitSet(new long[]{0x0000000000002030L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group__1_in_rule__NodeDefinition__Group__03934 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_68_in_rule__NodeDefinition__Group__0__Impl3962 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group__1__Impl_in_rule__NodeDefinition__Group__13993 = new BitSet(new long[]{0x0007E0007FC07000L,0x00000000000000A0L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group__2_in_rule__NodeDefinition__Group__13996 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Alternatives_1_in_rule__NodeDefinition__Group__1__Impl4023 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group__2__Impl_in_rule__NodeDefinition__Group__24053 = new BitSet(new long[]{0x0007E0007FC07000L,0x00000000000000A0L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group__3_in_rule__NodeDefinition__Group__24056 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__0_in_rule__NodeDefinition__Group__2__Impl4083 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group__3__Impl_in_rule__NodeDefinition__Group__34114 = new BitSet(new long[]{0x0007E0007FC07000L,0x00000000000000A0L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group__4_in_rule__NodeDefinition__Group__34117 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_3__0_in_rule__NodeDefinition__Group__3__Impl4144 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group__4__Impl_in_rule__NodeDefinition__Group__44175 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4_in_rule__NodeDefinition__Group__4__Impl4202 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__0__Impl_in_rule__NodeDefinition__Group_2__04242 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__1_in_rule__NodeDefinition__Group_2__04245 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_69_in_rule__NodeDefinition__Group_2__0__Impl4273 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__1__Impl_in_rule__NodeDefinition__Group_2__14304 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__2_in_rule__NodeDefinition__Group_2__14307 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1__0_in_rule__NodeDefinition__Group_2__1__Impl4334 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2__2__Impl_in_rule__NodeDefinition__Group_2__24364 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_70_in_rule__NodeDefinition__Group_2__2__Impl4392 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1__0__Impl_in_rule__NodeDefinition__Group_2_1__04429 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1__1_in_rule__NodeDefinition__Group_2_1__04432 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__RequiredTypesAssignment_2_1_0_in_rule__NodeDefinition__Group_2_1__0__Impl4459 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1__1__Impl_in_rule__NodeDefinition__Group_2_1__14489 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1_1__0_in_rule__NodeDefinition__Group_2_1__1__Impl4516 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000008L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1_1__0__Impl_in_rule__NodeDefinition__Group_2_1_1__04551 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1_1__1_in_rule__NodeDefinition__Group_2_1_1__04554 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_67_in_rule__NodeDefinition__Group_2_1_1__0__Impl4582 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_2_1_1__1__Impl_in_rule__NodeDefinition__Group_2_1_1__14613 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__RequiredTypesAssignment_2_1_1_1_in_rule__NodeDefinition__Group_2_1_1__1__Impl4640 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_3__0__Impl_in_rule__NodeDefinition__Group_3__04674 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_3__1_in_rule__NodeDefinition__Group_3__04677 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_71_in_rule__NodeDefinition__Group_3__0__Impl4705 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__Group_3__1__Impl_in_rule__NodeDefinition__Group_3__14736 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__DefaultTypeAssignment_3_1_in_rule__NodeDefinition__Group_3__1__Impl4763 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__0__Impl_in_rule__PropertyDefinition__Group__04797 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000100L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__1_in_rule__PropertyDefinition__Group__04800 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__1__Impl_in_rule__PropertyDefinition__Group__14858 = new BitSet(new long[]{0x0000000000002030L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__2_in_rule__PropertyDefinition__Group__14861 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_72_in_rule__PropertyDefinition__Group__1__Impl4889 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__2__Impl_in_rule__PropertyDefinition__Group__24920 = new BitSet(new long[]{0x0007E001FFFFE000L,0x00000000000000A0L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__3_in_rule__PropertyDefinition__Group__24923 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Alternatives_2_in_rule__PropertyDefinition__Group__2__Impl4950 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__3__Impl_in_rule__PropertyDefinition__Group__34980 = new BitSet(new long[]{0x0007E001FFFFE000L,0x00000000000000A0L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__4_in_rule__PropertyDefinition__Group__34983 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__0_in_rule__PropertyDefinition__Group__3__Impl5010 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__4__Impl_in_rule__PropertyDefinition__Group__45041 = new BitSet(new long[]{0x0007E001FFFFE000L,0x00000000000000A0L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__5_in_rule__PropertyDefinition__Group__45044 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4__0_in_rule__PropertyDefinition__Group__4__Impl5071 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__5__Impl_in_rule__PropertyDefinition__Group__55102 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000200L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__6_in_rule__PropertyDefinition__Group__55105 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5_in_rule__PropertyDefinition__Group__5__Impl5132 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group__6__Impl_in_rule__PropertyDefinition__Group__65162 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6__0_in_rule__PropertyDefinition__Group__6__Impl5189 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__0__Impl_in_rule__PropertyDefinition__Group_3__05234 = new BitSet(new long[]{0xFFF8000000000000L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__1_in_rule__PropertyDefinition__Group_3__05237 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_69_in_rule__PropertyDefinition__Group_3__0__Impl5265 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__1__Impl_in_rule__PropertyDefinition__Group_3__15296 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__2_in_rule__PropertyDefinition__Group_3__15299 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__TypeAssignment_3_1_in_rule__PropertyDefinition__Group_3__1__Impl5326 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_3__2__Impl_in_rule__PropertyDefinition__Group_3__25356 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_70_in_rule__PropertyDefinition__Group_3__2__Impl5384 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4__0__Impl_in_rule__PropertyDefinition__Group_4__05421 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4__1_in_rule__PropertyDefinition__Group_4__05424 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_71_in_rule__PropertyDefinition__Group_4__0__Impl5452 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4__1__Impl_in_rule__PropertyDefinition__Group_4__15483 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1__0_in_rule__PropertyDefinition__Group_4__1__Impl5510 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1__0__Impl_in_rule__PropertyDefinition__Group_4_1__05544 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1__1_in_rule__PropertyDefinition__Group_4_1__05547 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__DefaultValuesAssignment_4_1_0_in_rule__PropertyDefinition__Group_4_1__0__Impl5574 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1__1__Impl_in_rule__PropertyDefinition__Group_4_1__15604 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1_1__0_in_rule__PropertyDefinition__Group_4_1__1__Impl5631 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000008L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1_1__0__Impl_in_rule__PropertyDefinition__Group_4_1_1__05666 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1_1__1_in_rule__PropertyDefinition__Group_4_1_1__05669 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_67_in_rule__PropertyDefinition__Group_4_1_1__0__Impl5697 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_4_1_1__1__Impl_in_rule__PropertyDefinition__Group_4_1_1__15728 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_1_in_rule__PropertyDefinition__Group_4_1_1__1__Impl5755 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6__0__Impl_in_rule__PropertyDefinition__Group_6__05789 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6__1_in_rule__PropertyDefinition__Group_6__05792 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_73_in_rule__PropertyDefinition__Group_6__0__Impl5820 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6__1__Impl_in_rule__PropertyDefinition__Group_6__15851 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1__0_in_rule__PropertyDefinition__Group_6__1__Impl5878 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1__0__Impl_in_rule__PropertyDefinition__Group_6_1__05912 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1__1_in_rule__PropertyDefinition__Group_6_1__05915 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_0_in_rule__PropertyDefinition__Group_6_1__0__Impl5942 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1__1__Impl_in_rule__PropertyDefinition__Group_6_1__15972 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1_1__0_in_rule__PropertyDefinition__Group_6_1__1__Impl5999 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000008L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1_1__0__Impl_in_rule__PropertyDefinition__Group_6_1_1__06034 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1_1__1_in_rule__PropertyDefinition__Group_6_1_1__06037 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_67_in_rule__PropertyDefinition__Group_6_1_1__0__Impl6065 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__Group_6_1_1__1__Impl_in_rule__PropertyDefinition__Group_6_1_1__16096 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_1_in_rule__PropertyDefinition__Group_6_1_1__1__Impl6123 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__QueryOps__Group__0__Impl_in_rule__QueryOps__Group__06157 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__QueryOps__Group__1_in_rule__QueryOps__Group__06160 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__QueryOps__Alternatives_0_in_rule__QueryOps__Group__0__Impl6187 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__QueryOps__Group__1__Impl_in_rule__QueryOps__Group__16217 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__QueryOps__Group__1__Impl6244 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PrimaryItem__Group__0__Impl_in_rule__PrimaryItem__Group__06277 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__PrimaryItem__Group__1_in_rule__PrimaryItem__Group__06280 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PrimaryItem__Alternatives_0_in_rule__PrimaryItem__Group__0__Impl6307 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PrimaryItem__Group__1__Impl_in_rule__PrimaryItem__Group__16337 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__PrimaryItem__Group__1__Impl6364 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NsMapping__Group__0__Impl_in_rule__NsMapping__Group__06397 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__NsMapping__Group__1_in_rule__NsMapping__Group__06400 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_73_in_rule__NsMapping__Group__0__Impl6428 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NsMapping__Group__1__Impl_in_rule__NsMapping__Group__16459 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
+    public static final BitSet FOLLOW_rule__NsMapping__Group__2_in_rule__NsMapping__Group__16462 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NsMapping__NameAssignment_1_in_rule__NsMapping__Group__1__Impl6489 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NsMapping__Group__2__Impl_in_rule__NsMapping__Group__26519 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__NsMapping__Group__3_in_rule__NsMapping__Group__26522 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_71_in_rule__NsMapping__Group__2__Impl6550 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NsMapping__Group__3__Impl_in_rule__NsMapping__Group__36581 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_rule__NsMapping__Group__4_in_rule__NsMapping__Group__36584 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NsMapping__UriAssignment_3_in_rule__NsMapping__Group__3__Impl6611 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NsMapping__Group__4__Impl_in_rule__NsMapping__Group__46641 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_66_in_rule__NsMapping__Group__4__Impl6669 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__0_in_rule__NodeTypeDefinition__UnorderedGroup_46711 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__OrderableAssignment_4_0_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl6798 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__MixinAssignment_4_1_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl6889 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__AbstractAssignment_4_2_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl6980 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__QueryableAssignment_4_3_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7071 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__NotqueryableAssignment_4_4_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7162 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__PrimaryItemAssignment_4_5_in_rule__NodeTypeDefinition__UnorderedGroup_4__Impl7253 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__07312 = new BitSet(new long[]{0x00001FFF48000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__1_in_rule__NodeTypeDefinition__UnorderedGroup_4__07315 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__17340 = new BitSet(new long[]{0x00001FFF48000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__2_in_rule__NodeTypeDefinition__UnorderedGroup_4__17343 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__27368 = new BitSet(new long[]{0x00001FFF48000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__3_in_rule__NodeTypeDefinition__UnorderedGroup_4__27371 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__37396 = new BitSet(new long[]{0x00001FFF48000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__4_in_rule__NodeTypeDefinition__UnorderedGroup_4__37399 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__47424 = new BitSet(new long[]{0x00001FFF48000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__5_in_rule__NodeTypeDefinition__UnorderedGroup_4__47427 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeTypeDefinition__UnorderedGroup_4__Impl_in_rule__NodeTypeDefinition__UnorderedGroup_4__57452 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__0_in_rule__NodeDefinition__UnorderedGroup_47488 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__AutocreatedAssignment_4_0_in_rule__NodeDefinition__UnorderedGroup_4__Impl7575 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__ManadatoryAssignment_4_1_in_rule__NodeDefinition__UnorderedGroup_4__Impl7666 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__ProtectedAssignment_4_2_in_rule__NodeDefinition__UnorderedGroup_4__Impl7757 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__OnParentVersionAssignment_4_3_in_rule__NodeDefinition__UnorderedGroup_4__Impl7848 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__SameNameSiblingsAssignment_4_4_in_rule__NodeDefinition__UnorderedGroup_4__Impl7939 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__07998 = new BitSet(new long[]{0x0007E0007FC07002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__1_in_rule__NodeDefinition__UnorderedGroup_4__08001 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__18026 = new BitSet(new long[]{0x0007E0007FC07002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__2_in_rule__NodeDefinition__UnorderedGroup_4__18029 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__28054 = new BitSet(new long[]{0x0007E0007FC07002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__3_in_rule__NodeDefinition__UnorderedGroup_4__28057 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__38082 = new BitSet(new long[]{0x0007E0007FC07002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__4_in_rule__NodeDefinition__UnorderedGroup_4__38085 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NodeDefinition__UnorderedGroup_4__Impl_in_rule__NodeDefinition__UnorderedGroup_4__48110 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__0_in_rule__PropertyDefinition__UnorderedGroup_58144 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__AutocreatedAssignment_5_0_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8231 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__MandatoryAssignment_5_1_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8322 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__ProtectedAssignment_5_2_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8413 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__OnParentVersionAssignment_5_3_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8504 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__MultipleAssignment_5_4_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8595 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__QueryOpsAssignment_5_5_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8686 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__NoFullTextAssignment_5_6_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8777 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__NoQueryOrderAssignment_5_7_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8868 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__PrimaryAssignment_5_8_in_rule__PropertyDefinition__UnorderedGroup_5__Impl8959 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__09018 = new BitSet(new long[]{0x0007E001FFFFE002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__1_in_rule__PropertyDefinition__UnorderedGroup_5__09021 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__19046 = new BitSet(new long[]{0x0007E001FFFFE002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__2_in_rule__PropertyDefinition__UnorderedGroup_5__19049 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__29074 = new BitSet(new long[]{0x0007E001FFFFE002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__3_in_rule__PropertyDefinition__UnorderedGroup_5__29077 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__39102 = new BitSet(new long[]{0x0007E001FFFFE002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__4_in_rule__PropertyDefinition__UnorderedGroup_5__39105 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__49130 = new BitSet(new long[]{0x0007E001FFFFE002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__5_in_rule__PropertyDefinition__UnorderedGroup_5__49133 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__59158 = new BitSet(new long[]{0x0007E001FFFFE002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__6_in_rule__PropertyDefinition__UnorderedGroup_5__59161 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__69186 = new BitSet(new long[]{0x0007E001FFFFE002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__7_in_rule__PropertyDefinition__UnorderedGroup_5__69189 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__79214 = new BitSet(new long[]{0x0007E001FFFFE002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__8_in_rule__PropertyDefinition__UnorderedGroup_5__79217 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PropertyDefinition__UnorderedGroup_5__Impl_in_rule__PropertyDefinition__UnorderedGroup_5__89242 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNsMapping_in_rule__Model__NamespacesAssignment_09288 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNodeTypeDefinition_in_rule__Model__NodeTypesAssignment_19319 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__NameAssignment_19350 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_19385 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeTypeDefinition__DeclaredSupertypeNamesAssignment_3_2_19424 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOrderable_in_rule__NodeTypeDefinition__OrderableAssignment_4_09459 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMixin_in_rule__NodeTypeDefinition__MixinAssignment_4_19490 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAbstract_in_rule__NodeTypeDefinition__AbstractAssignment_4_29521 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQueryable_in_rule__NodeTypeDefinition__QueryableAssignment_4_39552 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNotqueryable_in_rule__NodeTypeDefinition__NotqueryableAssignment_4_49583 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePrimaryItem_in_rule__NodeTypeDefinition__PrimaryItemAssignment_4_59614 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePropertyDefinition_in_rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_09645 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNodeDefinition_in_rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_19676 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeDefinition__NameAssignment_1_09707 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__NodeDefinition__NameAssignment_1_19743 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeDefinition__RequiredTypesAssignment_2_1_09786 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeDefinition__RequiredTypesAssignment_2_1_1_19825 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__NodeDefinition__DefaultTypeAssignment_3_19864 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAutocreated_in_rule__NodeDefinition__AutocreatedAssignment_4_09899 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMandatory_in_rule__NodeDefinition__ManadatoryAssignment_4_19930 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleProtected_in_rule__NodeDefinition__ProtectedAssignment_4_29961 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpv_in_rule__NodeDefinition__OnParentVersionAssignment_4_39992 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleSns_in_rule__NodeDefinition__SameNameSiblingsAssignment_4_410023 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__PropertyDefinition__NameAssignment_2_010054 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePropertyType_in_rule__PropertyDefinition__TypeAssignment_3_110085 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__PropertyDefinition__DefaultValuesAssignment_4_1_010116 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__PropertyDefinition__DefaultValuesAssignment_4_1_1_110147 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAutocreated_in_rule__PropertyDefinition__AutocreatedAssignment_5_010178 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMandatory_in_rule__PropertyDefinition__MandatoryAssignment_5_110209 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleProtected_in_rule__PropertyDefinition__ProtectedAssignment_5_210240 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpv_in_rule__PropertyDefinition__OnParentVersionAssignment_5_310271 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMultiple_in_rule__PropertyDefinition__MultipleAssignment_5_410302 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQueryOps_in_rule__PropertyDefinition__QueryOpsAssignment_5_510333 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNoFullText_in_rule__PropertyDefinition__NoFullTextAssignment_5_610364 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNoQueryOrder_in_rule__PropertyDefinition__NoQueryOrderAssignment_5_710395 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePrimary_in_rule__PropertyDefinition__PrimaryAssignment_5_810426 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_010457 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJcrString_in_rule__PropertyDefinition__ValueConstraintsAssignment_6_1_1_110488 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePrefix_in_rule__NsMapping__NameAssignment_110519 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleUri_in_rule__NsMapping__UriAssignment_310550 = new BitSet(new long[]{0x0000000000000002L});
 
 }
