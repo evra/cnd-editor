@@ -38,6 +38,7 @@ public class CndParser extends AbstractContentAssistParser {
 				private static final long serialVersionUID = 1L;
 				{
 					put(grammarAccess.getModelAccess().getAlternatives(), "rule__Model__Alternatives");
+					put(grammarAccess.getNodeTypeDefinitionAccess().getAlternatives_4_5_0(), "rule__NodeTypeDefinition__Alternatives_4_5_0");
 					put(grammarAccess.getNodeTypeDefinitionAccess().getAlternatives_5(), "rule__NodeTypeDefinition__Alternatives_5");
 					put(grammarAccess.getNodeDefinitionAccess().getAlternatives_1(), "rule__NodeDefinition__Alternatives_1");
 					put(grammarAccess.getSnsAccess().getAlternatives(), "rule__Sns__Alternatives");
@@ -50,18 +51,19 @@ public class CndParser extends AbstractContentAssistParser {
 					put(grammarAccess.getMandatoryAccess().getAlternatives(), "rule__Mandatory__Alternatives");
 					put(grammarAccess.getAutocreatedAccess().getAlternatives(), "rule__Autocreated__Alternatives");
 					put(grammarAccess.getPrimaryAccess().getAlternatives(), "rule__Primary__Alternatives");
-					put(grammarAccess.getPrimaryItemAccess().getAlternatives_0(), "rule__PrimaryItem__Alternatives_0");
 					put(grammarAccess.getQueryableAccess().getAlternatives(), "rule__Queryable__Alternatives");
 					put(grammarAccess.getNotqueryableAccess().getAlternatives(), "rule__Notqueryable__Alternatives");
 					put(grammarAccess.getAbstractAccess().getAlternatives(), "rule__Abstract__Alternatives");
 					put(grammarAccess.getMixinAccess().getAlternatives(), "rule__Mixin__Alternatives");
 					put(grammarAccess.getOrderableAccess().getAlternatives(), "rule__Orderable__Alternatives");
 					put(grammarAccess.getJcrStringAccess().getAlternatives(), "rule__JcrString__Alternatives");
+					put(grammarAccess.getXiDAccess().getAlternatives(), "rule__XiD__Alternatives");
 					put(grammarAccess.getOpvAccess().getAlternatives(), "rule__Opv__Alternatives");
 					put(grammarAccess.getPropertyTypeAccess().getAlternatives(), "rule__PropertyType__Alternatives");
 					put(grammarAccess.getNodeTypeDefinitionAccess().getGroup(), "rule__NodeTypeDefinition__Group__0");
 					put(grammarAccess.getNodeTypeDefinitionAccess().getGroup_3(), "rule__NodeTypeDefinition__Group_3__0");
 					put(grammarAccess.getNodeTypeDefinitionAccess().getGroup_3_2(), "rule__NodeTypeDefinition__Group_3_2__0");
+					put(grammarAccess.getNodeTypeDefinitionAccess().getGroup_4_5(), "rule__NodeTypeDefinition__Group_4_5__0");
 					put(grammarAccess.getNodeDefinitionAccess().getGroup(), "rule__NodeDefinition__Group__0");
 					put(grammarAccess.getNodeDefinitionAccess().getGroup_2(), "rule__NodeDefinition__Group_2__0");
 					put(grammarAccess.getNodeDefinitionAccess().getGroup_2_1(), "rule__NodeDefinition__Group_2_1__0");
@@ -76,7 +78,6 @@ public class CndParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPropertyDefinitionAccess().getGroup_6_1(), "rule__PropertyDefinition__Group_6_1__0");
 					put(grammarAccess.getPropertyDefinitionAccess().getGroup_6_1_1(), "rule__PropertyDefinition__Group_6_1_1__0");
 					put(grammarAccess.getQueryOpsAccess().getGroup(), "rule__QueryOps__Group__0");
-					put(grammarAccess.getPrimaryItemAccess().getGroup(), "rule__PrimaryItem__Group__0");
 					put(grammarAccess.getNsMappingAccess().getGroup(), "rule__NsMapping__Group__0");
 					put(grammarAccess.getModelAccess().getNamespacesAssignment_0(), "rule__Model__NamespacesAssignment_0");
 					put(grammarAccess.getModelAccess().getNodeTypesAssignment_1(), "rule__Model__NodeTypesAssignment_1");
@@ -88,7 +89,7 @@ public class CndParser extends AbstractContentAssistParser {
 					put(grammarAccess.getNodeTypeDefinitionAccess().getAbstractAssignment_4_2(), "rule__NodeTypeDefinition__AbstractAssignment_4_2");
 					put(grammarAccess.getNodeTypeDefinitionAccess().getQueryableAssignment_4_3(), "rule__NodeTypeDefinition__QueryableAssignment_4_3");
 					put(grammarAccess.getNodeTypeDefinitionAccess().getNotqueryableAssignment_4_4(), "rule__NodeTypeDefinition__NotqueryableAssignment_4_4");
-					put(grammarAccess.getNodeTypeDefinitionAccess().getPrimaryItemAssignment_4_5(), "rule__NodeTypeDefinition__PrimaryItemAssignment_4_5");
+					put(grammarAccess.getNodeTypeDefinitionAccess().getPrimaryItemAssignment_4_5_1(), "rule__NodeTypeDefinition__PrimaryItemAssignment_4_5_1");
 					put(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredPropertyDefinitionsAssignment_5_0(), "rule__NodeTypeDefinition__DeclaredPropertyDefinitionsAssignment_5_0");
 					put(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredChildNodeDefinitionsAssignment_5_1(), "rule__NodeTypeDefinition__DeclaredChildNodeDefinitionsAssignment_5_1");
 					put(grammarAccess.getNodeDefinitionAccess().getNameAssignment_1_0(), "rule__NodeDefinition__NameAssignment_1_0");

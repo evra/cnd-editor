@@ -1,5 +1,9 @@
 package com.github.evra.jcr.connector.ui.importWizards;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.HashMap;
+
 import javax.jcr.Repository;
 import javax.jcr.RepositoryException;
 
@@ -12,6 +16,11 @@ import javax.jcr.nodetype.NodeTypeIterator;
 import javax.jcr.nodetype.NodeTypeManager;
 
 import org.apache.jackrabbit.commons.JcrUtils;
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.jface.wizard.WizardPage;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
@@ -22,6 +31,11 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
+
+import com.github.evra.jcr.cnd.CndFactory;
+import com.github.evra.jcr.cnd.CndPackage;
+import com.github.evra.jcr.cnd.Model;
+import com.github.evra.jcr.connector.ui.adapter.NodeTypeDefintitionConverter;
 
 public class RepositryConnectionWizardPage extends WizardPage {
 
@@ -34,6 +48,7 @@ public class RepositryConnectionWizardPage extends WizardPage {
 		super(pageName);
 		setTitle(pageName); //NON-NLS-1
 		setDescription("JCR WebDav connection"); //NON-NLS-1
+		
 	}
 
 	@Override
@@ -109,22 +124,56 @@ public class RepositryConnectionWizardPage extends WizardPage {
 			
 			Repository repository = JcrUtils.getRepository(repositoryUrl);			
 			Session session = repository.login( 
-					new SimpleCredentials(txtUser.getText(), txtPassword.getText().toCharArray()));			
-			NodeTypeManager nodeTypeManager = session.getWorkspace().getNodeTypeManager();
-			NodeTypeIterator nodeTypeIterator = nodeTypeManager.getAllNodeTypes();
-			while(nodeTypeIterator.hasNext()) {
-				NodeType nodeType = nodeTypeIterator.nextNodeType();
-				System.out.println("["+nodeType.getName() + "]");
-			}
+					new SimpleCredentials(txtUser.getText(), txtPassword.getText().toCharArray()));
 			session.logout();
 			
-			lblStatusValue.setText("Connection check successful");			
+//			NodeTypeManager nodeTypeManager = session.getWorkspace().getNodeTypeManager();
+//			NodeTypeIterator nodeTypeIterator = nodeTypeManager.getAllNodeTypes();
+//			
+//			Model model = CndFactory.eINSTANCE.createModel();
+//			NodeTypeDefintitionConverter converter = new NodeTypeDefintitionConverter();
+//			
+//			while(nodeTypeIterator.hasNext()) {
+//				NodeType nodeType = nodeTypeIterator.nextNodeType();
+//				System.out.println("["+nodeType.getName() + "]");
+//				model.getNodeTypes().add(converter.asDslElement(nodeType));
+//			}
+//			session.logout();
+//			
+//			ResourceSet rs = new ResourceSetImpl();
+//			URI uri = URI.createURI(new File("D:\\data\\projects\\jcr-modeling\\tmp\\model.cnd").toURI().toString());
+//			System.out.println("save to " + uri.toFileString());
+//			Resource resource = rs.getResource(uri, true);
+//			resource.getContents().add(model);
+//			resource.save(new HashMap());
+//						
+			lblStatusValue.setText("Connection check successful");
+			
+			this.setPageComplete(true);
+			setErrorMessage(null);
 		} catch (RepositoryException e) {
 			lblStatusValue.setText("Error: " + e.getMessage());
-			
+			setErrorMessage(e.getMessage());
+			this.setPageComplete(false);
 			//TODO log proper
-			e.printStackTrace();
+			
+			//e.printStackTrace();
 		}
+//		catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 	
+	public String getUrl() {
+		return txtUrl.getText();
+	}
+	
+	public String getUser() {
+		return txtUser.getText();
+	}
+	
+	public String getPassword() {
+		return txtPassword.getText();
+	}
 }

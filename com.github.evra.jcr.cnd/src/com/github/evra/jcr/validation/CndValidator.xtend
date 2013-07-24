@@ -10,7 +10,7 @@ package com.github.evra.jcr.validation
  * see http://www.eclipse.org/Xtext/documentation.html#validation
  */
 class CndValidator extends AbstractCndValidator {
-	public static val MISSING_NODETYPEDEF = "missing.nodetypedef"
+	public static val MISSING_NODETYPEDEF = "com.github.evra.jcr.missing.nodetypedef"
 //  public static val INVALID_NAME = 'invalidName'
 //
 //	@Check

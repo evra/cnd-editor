@@ -7,6 +7,8 @@ generate cnd "http://www.github.com/evra/jcr/Cnd"
 
 //!! http://www.eclipse.org/forums/index.php/t/489632/
 
+// unittesting https://code.google.com/a/eclipselabs.org/p/xtext-utils/wiki/Unit_Testing
+
 Model :
 	 (namespaces+=NsMapping | nodeTypes+=NodeTypeDefinition)*;
 
@@ -22,9 +24,10 @@ NodeTypeDefinition:
 		queryable?=Queryable? &
 		notqueryable?=Notqueryable? & //TODO find a way to map query flags on one field
 		
-		primaryItem=PrimaryItem?
+		//primaryItem=PrimaryItem?
+		(('primaryitem'| '!')(primaryItem=JcrString /* | '?' //variant */ ))?
 		
-		//TODO property can be also a primary item 
+		//TODO property can also be a primary item 
 		//(PropertyDefinitions and NodeDefinitions must have the same super class ItemDeinition)
 		//(('primaryitem'| '!')(primaryItem=[NodeDefinition|JcrString] /* | '?' //variant */ ))?
 		
@@ -162,9 +165,9 @@ enum PropertyType:
 ;
 
 
-PrimaryItem:
-	('primaryitem'| '!')(JcrString /* | '?' //variant */ )
-;
+//PrimaryItem:
+//	(('primaryitem'| '!')(JcrString /* | '?' //variant */ ))
+//;
 
 Queryable:
 	('query' | 'q' )
@@ -199,8 +202,8 @@ JcrString:
 ;
 
 XiD:
-	//EXID|('mix')
-	EXID
+	EXID|('mix')
+	//EXID
 ;
 
 terminal EXID :  ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9'|':'|'*')* ;

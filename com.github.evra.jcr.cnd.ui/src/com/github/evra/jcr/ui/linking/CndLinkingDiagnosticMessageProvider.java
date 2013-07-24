@@ -1,6 +1,8 @@
 package com.github.evra.jcr.ui.linking;
 
+import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EReference;
 import org.eclipse.xtext.diagnostics.DiagnosticMessage;
 import org.eclipse.xtext.diagnostics.Severity;
 import org.eclipse.xtext.linking.impl.LinkingDiagnosticMessageProvider;
@@ -15,8 +17,12 @@ public class CndLinkingDiagnosticMessageProvider extends
 	@Override
 	public DiagnosticMessage getUnresolvedProxyMessage(final ILinkingDiagnosticContext context) {
 		EObject element = context.getContext();		
-		//TODO  check reference type (use CndSwitch ?) 
-		context.getReference().getEReferenceType();
+		//TODO  check reference type (use CndSwitch ?)
+		EReference reference = context.getReference();
+		System.out.println(reference.getName() + "=" + context.getLinkText());
+		EClass eReferenceType = context.getReference().getEReferenceType();
+		
+		
 				
 //		if (element instanceof NodeTypeDefinition) {			
 //			NodeTypeDefinition nodeTypeDefReference = (NodeTypeDefinition) element;

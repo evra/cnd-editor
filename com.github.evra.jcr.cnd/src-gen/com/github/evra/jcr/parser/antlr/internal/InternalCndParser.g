@@ -362,25 +362,36 @@ ruleNodeTypeDefinition returns [EObject current=null]
 					{ 
 	 				  getUnorderedGroupHelper().select(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4(), 5);
 	 				}
-					({true}?=>(
+					({true}?=>((
+	otherlv_13=KEYWORD_60
+    {
+    	newLeafNode(otherlv_13, grammarAccess.getNodeTypeDefinitionAccess().getPrimaryitemKeyword_4_5_0_0());
+    }
+
+    |
+	otherlv_14=KEYWORD_1
+    {
+    	newLeafNode(otherlv_14, grammarAccess.getNodeTypeDefinitionAccess().getExclamationMarkKeyword_4_5_0_1());
+    }
+)(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getNodeTypeDefinitionAccess().getPrimaryItemPrimaryItemParserRuleCall_4_5_0()); 
+	        newCompositeNode(grammarAccess.getNodeTypeDefinitionAccess().getPrimaryItemJcrStringParserRuleCall_4_5_1_0()); 
 	    }
-		lv_primaryItem_13_0=rulePrimaryItem		{
+		lv_primaryItem_15_0=ruleJcrString		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getNodeTypeDefinitionRule());
 	        }
        		set(
        			$current, 
        			"primaryItem",
-        		lv_primaryItem_13_0, 
-        		"PrimaryItem");
+        		lv_primaryItem_15_0, 
+        		"JcrString");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))
+)))
 					{ 
 	 				  getUnorderedGroupHelper().returnFromSelection(grammarAccess.getNodeTypeDefinitionAccess().getUnorderedGroup_4());
 	 				}
@@ -399,14 +410,14 @@ ruleNodeTypeDefinition returns [EObject current=null]
 		{ 
 	        newCompositeNode(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredPropertyDefinitionsPropertyDefinitionParserRuleCall_5_0_0()); 
 	    }
-		lv_declaredPropertyDefinitions_14_0=rulePropertyDefinition		{
+		lv_declaredPropertyDefinitions_16_0=rulePropertyDefinition		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getNodeTypeDefinitionRule());
 	        }
        		add(
        			$current, 
        			"declaredPropertyDefinitions",
-        		lv_declaredPropertyDefinitions_14_0, 
+        		lv_declaredPropertyDefinitions_16_0, 
         		"PropertyDefinition");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -418,14 +429,14 @@ ruleNodeTypeDefinition returns [EObject current=null]
 		{ 
 	        newCompositeNode(grammarAccess.getNodeTypeDefinitionAccess().getDeclaredChildNodeDefinitionsNodeDefinitionParserRuleCall_5_1_0()); 
 	    }
-		lv_declaredChildNodeDefinitions_15_0=ruleNodeDefinition		{
+		lv_declaredChildNodeDefinitions_17_0=ruleNodeDefinition		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getNodeTypeDefinitionRule());
 	        }
        		add(
        			$current, 
        			"declaredChildNodeDefinitions",
-        		lv_declaredChildNodeDefinitions_15_0, 
+        		lv_declaredChildNodeDefinitions_17_0, 
         		"NodeDefinition");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -1553,52 +1564,6 @@ rulePrimary returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()
 
 
 
-// Entry rule entryRulePrimaryItem
-entryRulePrimaryItem returns [String current=null] 
-:
-	{ newCompositeNode(grammarAccess.getPrimaryItemRule()); } 
-	 iv_rulePrimaryItem=rulePrimaryItem 
-	 { $current=$iv_rulePrimaryItem.current.getText(); }  
-	 EOF 
-;
-
-// Rule PrimaryItem
-rulePrimaryItem returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
-    @init { enterRule(); 
-    }
-    @after { leaveRule();
-    }:
-((
-	kw=KEYWORD_60 
-    {
-        $current.merge(kw);
-        newLeafNode(kw, grammarAccess.getPrimaryItemAccess().getPrimaryitemKeyword_0_0()); 
-    }
-
-    |
-	kw=KEYWORD_1 
-    {
-        $current.merge(kw);
-        newLeafNode(kw, grammarAccess.getPrimaryItemAccess().getExclamationMarkKeyword_0_1()); 
-    }
-)
-    { 
-        newCompositeNode(grammarAccess.getPrimaryItemAccess().getJcrStringParserRuleCall_1()); 
-    }
-    this_JcrString_2=ruleJcrString    {
-		$current.merge(this_JcrString_2);
-    }
-
-    { 
-        afterParserOrEnumRuleCall();
-    }
-)
-    ;
-
-
-
-
-
 // Entry rule entryRuleQueryable
 entryRuleQueryable returns [String current=null] 
 :
@@ -1989,14 +1954,21 @@ ruleXiD returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
     }
     @after { leaveRule();
     }:
-    this_EXID_0=RULE_EXID    {
+(    this_EXID_0=RULE_EXID    {
 		$current.merge(this_EXID_0);
     }
 
     { 
-    newLeafNode(this_EXID_0, grammarAccess.getXiDAccess().getEXIDTerminalRuleCall()); 
+    newLeafNode(this_EXID_0, grammarAccess.getXiDAccess().getEXIDTerminalRuleCall_0()); 
     }
 
+    |
+	kw=KEYWORD_23 
+    {
+        $current.merge(kw);
+        newLeafNode(kw, grammarAccess.getXiDAccess().getMixKeyword_1()); 
+    }
+)
     ;
 
 

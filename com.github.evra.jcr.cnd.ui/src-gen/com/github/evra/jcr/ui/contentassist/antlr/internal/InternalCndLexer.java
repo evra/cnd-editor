@@ -52,7 +52,7 @@ public class InternalCndLexer extends Lexer {
     public static final int T__14=14;
     public static final int T__13=13;
     public static final int T__59=59;
-    public static final int RULE_EXID=4;
+    public static final int RULE_EXID=5;
     public static final int RULE_INT=7;
     public static final int T__50=50;
     public static final int T__42=42;
@@ -70,7 +70,7 @@ public class InternalCndLexer extends Lexer {
     public static final int T__30=30;
     public static final int T__31=31;
     public static final int T__32=32;
-    public static final int RULE_STRING=5;
+    public static final int RULE_STRING=4;
     public static final int T__33=33;
     public static final int T__71=71;
     public static final int T__34=34;
@@ -102,10 +102,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__12;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:11:7: ( 'sns' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:11:9: 'sns'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:11:7: ( 'primaryitem' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:11:9: 'primaryitem'
             {
-            match("sns"); 
+            match("primaryitem"); 
 
 
             }
@@ -123,10 +123,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:12:7: ( '*' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:12:9: '*'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:12:7: ( '!' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:12:9: '!'
             {
-            match('*'); 
+            match('!'); 
 
             }
 
@@ -143,10 +143,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:13:7: ( 'multiple' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:13:9: 'multiple'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:13:7: ( 'sns' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:13:9: 'sns'
             {
-            match("multiple"); 
+            match("sns"); 
 
 
             }
@@ -164,11 +164,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:14:7: ( 'noqueryorder' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:14:9: 'noqueryorder'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:14:7: ( '*' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:14:9: '*'
             {
-            match("noqueryorder"); 
-
+            match('*'); 
 
             }
 
@@ -185,10 +184,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:15:7: ( 'nqord' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:15:9: 'nqord'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:15:7: ( 'multiple' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:15:9: 'multiple'
             {
-            match("nqord"); 
+            match("multiple"); 
 
 
             }
@@ -206,10 +205,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:16:7: ( 'nofulltext' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:16:9: 'nofulltext'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:16:7: ( 'noqueryorder' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:16:9: 'noqueryorder'
             {
-            match("nofulltext"); 
+            match("noqueryorder"); 
 
 
             }
@@ -227,10 +226,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:17:7: ( 'nof' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:17:9: 'nof'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:17:7: ( 'nqord' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:17:9: 'nqord'
             {
-            match("nof"); 
+            match("nqord"); 
 
 
             }
@@ -248,10 +247,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:18:7: ( 'queryops' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:18:9: 'queryops'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:18:7: ( 'nofulltext' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:18:9: 'nofulltext'
             {
-            match("queryops"); 
+            match("nofulltext"); 
 
 
             }
@@ -269,10 +268,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:19:7: ( 'qop' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:19:9: 'qop'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:19:7: ( 'nof' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:19:9: 'nof'
             {
-            match("qop"); 
+            match("nof"); 
 
 
             }
@@ -290,10 +289,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:20:7: ( 'mul' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:20:9: 'mul'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:20:7: ( 'queryops' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:20:9: 'queryops'
             {
-            match("mul"); 
+            match("queryops"); 
 
 
             }
@@ -311,10 +310,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:21:7: ( 'protected' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:21:9: 'protected'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:21:7: ( 'qop' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:21:9: 'qop'
             {
-            match("protected"); 
+            match("qop"); 
 
 
             }
@@ -332,10 +331,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:22:7: ( 'pro' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:22:9: 'pro'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:22:7: ( 'mul' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:22:9: 'mul'
             {
-            match("pro"); 
+            match("mul"); 
 
 
             }
@@ -353,10 +352,11 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:23:7: ( 'p' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:23:9: 'p'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:23:7: ( 'protected' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:23:9: 'protected'
             {
-            match('p'); 
+            match("protected"); 
+
 
             }
 
@@ -373,10 +373,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:24:7: ( 'mandatory' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:24:9: 'mandatory'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:24:7: ( 'pro' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:24:9: 'pro'
             {
-            match("mandatory"); 
+            match("pro"); 
 
 
             }
@@ -394,11 +394,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:25:7: ( 'man' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:25:9: 'man'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:25:7: ( 'p' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:25:9: 'p'
             {
-            match("man"); 
-
+            match('p'); 
 
             }
 
@@ -415,10 +414,11 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:26:7: ( 'm' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:26:9: 'm'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:26:7: ( 'mandatory' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:26:9: 'mandatory'
             {
-            match('m'); 
+            match("mandatory"); 
+
 
             }
 
@@ -435,10 +435,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:27:7: ( 'autocreated' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:27:9: 'autocreated'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:27:7: ( 'man' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:27:9: 'man'
             {
-            match("autocreated"); 
+            match("man"); 
 
 
             }
@@ -456,11 +456,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:28:7: ( 'aut' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:28:9: 'aut'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:28:7: ( 'm' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:28:9: 'm'
             {
-            match("aut"); 
-
+            match('m'); 
 
             }
 
@@ -477,10 +476,11 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:29:7: ( 'a' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:29:9: 'a'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:29:7: ( 'autocreated' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:29:9: 'autocreated'
             {
-            match('a'); 
+            match("autocreated"); 
+
 
             }
 
@@ -497,10 +497,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:30:7: ( 'primary' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:30:9: 'primary'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:30:7: ( 'aut' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:30:9: 'aut'
             {
-            match("primary"); 
+            match("aut"); 
 
 
             }
@@ -518,10 +518,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:31:7: ( '!' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:31:9: '!'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:31:7: ( 'a' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:31:9: 'a'
             {
-            match('!'); 
+            match('a'); 
 
             }
 
@@ -538,10 +538,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:32:7: ( 'primaryitem' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:32:9: 'primaryitem'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:32:7: ( 'primary' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:32:9: 'primary'
             {
-            match("primaryitem"); 
+            match("primary"); 
 
 
             }
@@ -1387,8 +1387,8 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = RULE_EXID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4614:11: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' | ':' | '*' )* )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4614:13: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' | ':' | '*' )*
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4610:11: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' | ':' | '*' )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4610:13: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' | ':' | '*' )*
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -1399,7 +1399,7 @@ public class InternalCndLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4614:37: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' | ':' | '*' )*
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4610:37: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' | ':' | '*' )*
             loop1:
             do {
                 int alt1=2;
@@ -1448,10 +1448,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4612:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4612:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:11: ( '^' )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4612:11: ( '^' )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -1460,7 +1460,7 @@ public class InternalCndLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:11: '^'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4612:11: '^'
                     {
                     match('^'); 
 
@@ -1478,7 +1478,7 @@ public class InternalCndLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4612:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop3:
             do {
                 int alt3=2;
@@ -1527,10 +1527,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4618:10: ( ( '0' .. '9' )+ )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4618:12: ( '0' .. '9' )+
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4614:10: ( ( '0' .. '9' )+ )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4614:12: ( '0' .. '9' )+
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4618:12: ( '0' .. '9' )+
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4614:12: ( '0' .. '9' )+
             int cnt4=0;
             loop4:
             do {
@@ -1544,7 +1544,7 @@ public class InternalCndLexer extends Lexer {
 
                 switch (alt4) {
             	case 1 :
-            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4618:13: '0' .. '9'
+            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4614:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1576,10 +1576,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1597,10 +1597,10 @@ public class InternalCndLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -1616,7 +1616,7 @@ public class InternalCndLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1632,7 +1632,7 @@ public class InternalCndLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1657,10 +1657,10 @@ public class InternalCndLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop6:
                     do {
                         int alt6=3;
@@ -1676,7 +1676,7 @@ public class InternalCndLexer extends Lexer {
 
                         switch (alt6) {
                     	case 1 :
-                    	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1692,7 +1692,7 @@ public class InternalCndLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4616:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1735,12 +1735,12 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4622:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4622:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4618:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4618:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4622:24: ( options {greedy=false; } : . )*
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4618:24: ( options {greedy=false; } : . )*
             loop8:
             do {
                 int alt8=2;
@@ -1765,7 +1765,7 @@ public class InternalCndLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4622:52: .
+            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4618:52: .
             	    {
             	    matchAny(); 
 
@@ -1795,12 +1795,12 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4624:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4624:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4624:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop9:
             do {
                 int alt9=2;
@@ -1813,7 +1813,7 @@ public class InternalCndLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4624:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1833,7 +1833,7 @@ public class InternalCndLexer extends Lexer {
                 }
             } while (true);
 
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4624:40: ( ( '\\r' )? '\\n' )?
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:40: ( ( '\\r' )? '\\n' )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -1842,9 +1842,9 @@ public class InternalCndLexer extends Lexer {
             }
             switch (alt11) {
                 case 1 :
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4624:41: ( '\\r' )? '\\n'
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:41: ( '\\r' )? '\\n'
                     {
-                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4624:41: ( '\\r' )?
+                    // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:41: ( '\\r' )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -1853,7 +1853,7 @@ public class InternalCndLexer extends Lexer {
                     }
                     switch (alt10) {
                         case 1 :
-                            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4624:41: '\\r'
+                            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4620:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1885,10 +1885,10 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4626:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4626:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4622:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4622:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4626:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4622:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt12=0;
             loop12:
             do {
@@ -1942,8 +1942,8 @@ public class InternalCndLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4628:16: ( . )
-            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4628:18: .
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4624:16: ( . )
+            // ../com.github.evra.jcr.cnd.ui/src-gen/com/github/evra/jcr/ui/contentassist/antlr/internal/InternalCnd.g:4624:18: .
             {
             matchAny(); 
 
@@ -2460,93 +2460,92 @@ public class InternalCndLexer extends Lexer {
 
     protected DFA13 dfa13 = new DFA13(this);
     static final String DFA13_eotS =
-        "\1\uffff\1\52\1\uffff\1\60\1\52\1\65\1\67\1\72\1\uffff\1\75\15"+
-        "\52\12\uffff\1\52\1\50\1\uffff\3\50\2\uffff\1\52\1\uffff\1\52\1"+
-        "\uffff\3\52\1\uffff\1\52\1\147\2\52\1\uffff\1\52\1\uffff\2\52\2"+
-        "\uffff\1\52\1\uffff\22\52\20\uffff\1\u0082\1\u0084\1\u0086\1\u0088"+
-        "\1\52\1\u008b\1\52\1\uffff\1\52\1\u008e\1\u0090\1\52\1\u0093\1\u0095"+
-        "\1\u0097\7\52\1\u009f\13\52\1\uffff\1\52\1\uffff\1\52\1\uffff\1"+
-        "\52\1\uffff\2\52\1\uffff\2\52\1\uffff\1\52\1\uffff\2\52\1\uffff"+
-        "\1\52\1\uffff\1\52\1\uffff\1\u00b7\6\52\1\uffff\3\52\1\u00c1\1\52"+
-        "\1\u00c3\1\52\1\u00c5\1\u00c6\4\52\1\u00cb\2\52\1\u00ce\1\u00d0"+
-        "\5\52\1\uffff\4\52\1\u00da\4\52\1\uffff\1\52\1\uffff\1\52\2\uffff"+
-        "\4\52\1\uffff\2\52\1\uffff\1\52\1\uffff\10\52\1\u00f0\1\uffff\1"+
-        "\52\1\u00f2\1\u00f3\1\52\1\u00f5\5\52\1\u00fc\3\52\1\u0101\3\52"+
-        "\1\u0105\1\u0106\1\52\1\uffff\1\52\2\uffff\1\u0109\1\uffff\1\u010a"+
-        "\2\52\1\u010d\2\52\1\uffff\1\52\1\u0111\2\52\1\uffff\1\52\1\u0115"+
-        "\1\52\2\uffff\2\52\2\uffff\2\52\1\uffff\1\u011b\2\52\1\uffff\1\u011e"+
-        "\2\52\1\uffff\1\u0121\1\52\1\u0123\1\u0124\1\52\1\uffff\1\52\1\u0127"+
-        "\1\uffff\2\52\1\uffff\1\u012a\2\uffff\2\52\1\uffff\1\u012d\1\u012e"+
-        "\1\uffff\1\52\1\u0130\2\uffff\1\52\1\uffff\1\u0132\1\uffff";
+        "\1\uffff\1\52\1\uffff\1\54\1\uffff\1\63\1\54\1\70\1\73\1\75\15"+
+        "\54\12\uffff\1\54\1\50\1\uffff\3\50\2\uffff\1\54\1\uffff\1\54\2"+
+        "\uffff\1\54\1\uffff\3\54\1\uffff\1\54\1\151\2\54\1\uffff\2\54\1"+
+        "\uffff\1\54\1\uffff\22\54\20\uffff\1\54\1\u0084\1\u0085\1\u0087"+
+        "\1\u0089\1\u008b\1\54\1\u008e\1\54\1\uffff\1\54\1\u0091\1\u0093"+
+        "\1\u0095\1\u0097\7\54\1\u009f\15\54\2\uffff\1\54\1\uffff\1\54\1"+
+        "\uffff\1\54\1\uffff\2\54\1\uffff\2\54\1\uffff\1\54\1\uffff\1\54"+
+        "\1\uffff\1\54\1\uffff\1\u00b7\6\54\1\uffff\3\54\1\u00c1\1\54\1\u00c3"+
+        "\1\54\1\u00c5\1\u00c6\6\54\1\u00cd\2\54\1\u00d0\1\u00d2\3\54\1\uffff"+
+        "\4\54\1\u00da\4\54\1\uffff\1\54\1\uffff\1\54\2\uffff\6\54\1\uffff"+
+        "\2\54\1\uffff\1\54\1\uffff\6\54\1\u00f0\1\uffff\1\54\1\u00f2\1\u00f3"+
+        "\1\54\1\u00f5\3\54\1\u00fa\3\54\1\u00ff\5\54\1\u0105\1\u0106\1\54"+
+        "\1\uffff\1\54\2\uffff\1\u0109\1\uffff\1\u010a\3\54\1\uffff\1\54"+
+        "\1\u010f\2\54\1\uffff\1\54\1\u0113\1\54\1\u0115\1\54\2\uffff\2\54"+
+        "\2\uffff\3\54\1\u011c\1\uffff\1\u011d\2\54\1\uffff\1\54\1\uffff"+
+        "\1\u0121\1\54\1\u0123\1\u0124\2\54\2\uffff\1\54\1\u0128\1\54\1\uffff"+
+        "\1\u012a\2\uffff\1\54\1\u012c\1\54\1\uffff\1\u012e\1\uffff\1\54"+
+        "\1\uffff\1\u0130\1\uffff\1\54\1\uffff\1\u0132\1\uffff";
     static final String DFA13_eofS =
         "\u0133\uffff";
     static final String DFA13_minS =
-        "\1\0\1\60\1\uffff\1\52\1\60\3\52\1\uffff\1\52\15\60\12\uffff\1"+
-        "\60\1\101\1\uffff\2\0\1\52\2\uffff\1\60\1\uffff\1\60\1\uffff\3\60"+
-        "\1\uffff\1\60\1\52\2\60\1\uffff\1\60\1\uffff\2\60\2\uffff\1\60\1"+
-        "\uffff\22\60\20\uffff\4\52\1\60\1\52\1\60\1\uffff\1\60\2\52\1\60"+
-        "\3\52\7\60\1\52\13\60\1\uffff\1\60\1\uffff\1\60\1\uffff\1\60\1\uffff"+
-        "\2\60\1\uffff\2\60\1\uffff\1\60\1\uffff\2\60\1\uffff\1\60\1\uffff"+
-        "\1\60\1\uffff\1\52\6\60\1\uffff\3\60\1\52\1\60\1\52\1\60\2\52\4"+
-        "\60\1\52\2\60\2\52\5\60\1\uffff\4\60\1\52\4\60\1\uffff\1\60\1\uffff"+
-        "\1\60\2\uffff\4\60\1\uffff\2\60\1\uffff\1\60\1\uffff\10\60\1\52"+
-        "\1\uffff\1\60\2\52\1\60\1\52\5\60\1\52\3\60\1\52\3\60\2\52\1\60"+
-        "\1\uffff\1\60\2\uffff\1\52\1\uffff\1\52\2\60\1\52\2\60\1\uffff\1"+
-        "\60\1\52\2\60\1\uffff\1\60\1\52\1\60\2\uffff\2\60\2\uffff\2\60\1"+
-        "\uffff\1\52\2\60\1\uffff\1\52\2\60\1\uffff\1\52\1\60\2\52\1\60\1"+
-        "\uffff\1\60\1\52\1\uffff\2\60\1\uffff\1\52\2\uffff\2\60\1\uffff"+
-        "\2\52\1\uffff\1\60\1\52\2\uffff\1\60\1\uffff\1\52\1\uffff";
+        "\1\0\1\52\1\uffff\1\60\1\uffff\1\52\1\60\3\52\15\60\12\uffff\1"+
+        "\60\1\101\1\uffff\2\0\1\52\2\uffff\1\60\1\uffff\1\60\2\uffff\1\60"+
+        "\1\uffff\3\60\1\uffff\1\60\1\52\2\60\1\uffff\2\60\1\uffff\1\60\1"+
+        "\uffff\22\60\20\uffff\1\60\5\52\1\60\1\52\1\60\1\uffff\1\60\4\52"+
+        "\7\60\1\52\15\60\2\uffff\1\60\1\uffff\1\60\1\uffff\1\60\1\uffff"+
+        "\2\60\1\uffff\2\60\1\uffff\1\60\1\uffff\1\60\1\uffff\1\60\1\uffff"+
+        "\1\52\6\60\1\uffff\3\60\1\52\1\60\1\52\1\60\2\52\6\60\1\52\2\60"+
+        "\2\52\3\60\1\uffff\4\60\1\52\4\60\1\uffff\1\60\1\uffff\1\60\2\uffff"+
+        "\6\60\1\uffff\2\60\1\uffff\1\60\1\uffff\6\60\1\52\1\uffff\1\60\2"+
+        "\52\1\60\1\52\3\60\1\52\3\60\1\52\5\60\2\52\1\60\1\uffff\1\60\2"+
+        "\uffff\1\52\1\uffff\1\52\3\60\1\uffff\1\60\1\52\2\60\1\uffff\1\60"+
+        "\1\52\1\60\1\52\1\60\2\uffff\2\60\2\uffff\3\60\1\52\1\uffff\1\52"+
+        "\2\60\1\uffff\1\60\1\uffff\1\52\1\60\2\52\2\60\2\uffff\1\60\1\52"+
+        "\1\60\1\uffff\1\52\2\uffff\1\60\1\52\1\60\1\uffff\1\52\1\uffff\1"+
+        "\60\1\uffff\1\52\1\uffff\1\60\1\uffff\1\52\1\uffff";
     static final String DFA13_maxS =
-        "\1\uffff\1\172\1\uffff\5\172\1\uffff\16\172\12\uffff\2\172\1\uffff"+
-        "\2\uffff\1\57\2\uffff\1\172\1\uffff\1\172\1\uffff\3\172\1\uffff"+
-        "\4\172\1\uffff\1\172\1\uffff\2\172\2\uffff\1\172\1\uffff\22\172"+
-        "\20\uffff\7\172\1\uffff\32\172\1\uffff\1\172\1\uffff\1\172\1\uffff"+
-        "\1\172\1\uffff\2\172\1\uffff\2\172\1\uffff\1\172\1\uffff\2\172\1"+
-        "\uffff\1\172\1\uffff\1\172\1\uffff\7\172\1\uffff\27\172\1\uffff"+
-        "\11\172\1\uffff\1\172\1\uffff\1\172\2\uffff\4\172\1\uffff\2\172"+
-        "\1\uffff\1\172\1\uffff\11\172\1\uffff\25\172\1\uffff\1\172\2\uffff"+
-        "\1\172\1\uffff\6\172\1\uffff\4\172\1\uffff\3\172\2\uffff\2\172\2"+
-        "\uffff\2\172\1\uffff\3\172\1\uffff\3\172\1\uffff\5\172\1\uffff\2"+
-        "\172\1\uffff\2\172\1\uffff\1\172\2\uffff\2\172\1\uffff\2\172\1\uffff"+
-        "\2\172\2\uffff\1\172\1\uffff\1\172\1\uffff";
+        "\1\uffff\1\172\1\uffff\1\172\1\uffff\22\172\12\uffff\2\172\1\uffff"+
+        "\2\uffff\1\57\2\uffff\1\172\1\uffff\1\172\2\uffff\1\172\1\uffff"+
+        "\3\172\1\uffff\4\172\1\uffff\2\172\1\uffff\1\172\1\uffff\22\172"+
+        "\20\uffff\11\172\1\uffff\32\172\2\uffff\1\172\1\uffff\1\172\1\uffff"+
+        "\1\172\1\uffff\2\172\1\uffff\2\172\1\uffff\1\172\1\uffff\1\172\1"+
+        "\uffff\1\172\1\uffff\7\172\1\uffff\27\172\1\uffff\11\172\1\uffff"+
+        "\1\172\1\uffff\1\172\2\uffff\6\172\1\uffff\2\172\1\uffff\1\172\1"+
+        "\uffff\7\172\1\uffff\25\172\1\uffff\1\172\2\uffff\1\172\1\uffff"+
+        "\4\172\1\uffff\4\172\1\uffff\5\172\2\uffff\2\172\2\uffff\4\172\1"+
+        "\uffff\3\172\1\uffff\1\172\1\uffff\6\172\2\uffff\3\172\1\uffff\1"+
+        "\172\2\uffff\3\172\1\uffff\1\172\1\uffff\1\172\1\uffff\1\172\1\uffff"+
+        "\1\172\1\uffff\1\172\1\uffff";
     static final String DFA13_acceptS =
-        "\2\uffff\1\2\5\uffff\1\25\16\uffff\1\65\1\66\1\67\1\70\1\71\1\72"+
+        "\2\uffff\1\2\1\uffff\1\4\22\uffff\1\65\1\66\1\67\1\70\1\71\1\72"+
         "\1\73\1\74\1\75\1\76\2\uffff\1\101\3\uffff\1\105\1\106\1\uffff\1"+
-        "\77\1\uffff\1\2\3\uffff\1\20\4\uffff\1\30\1\uffff\1\15\2\uffff\1"+
-        "\23\1\25\1\uffff\1\41\22\uffff\1\65\1\66\1\67\1\70\1\71\1\72\1\73"+
-        "\1\74\1\75\1\76\1\100\1\101\1\102\1\103\1\104\1\105\7\uffff\1\32"+
-        "\32\uffff\1\1\1\uffff\1\12\1\uffff\1\17\1\uffff\1\36\2\uffff\1\7"+
-        "\2\uffff\1\11\1\uffff\1\14\2\uffff\1\22\1\uffff\1\34\1\uffff\1\40"+
-        "\7\uffff\1\63\27\uffff\1\42\11\uffff\1\53\1\uffff\1\55\1\uffff\1"+
-        "\57\1\60\4\uffff\1\35\2\uffff\1\5\1\uffff\1\27\11\uffff\1\47\25"+
-        "\uffff\1\46\1\uffff\1\51\1\52\1\uffff\1\54\6\uffff\1\31\4\uffff"+
-        "\1\24\3\uffff\1\45\1\43\2\uffff\1\56\1\64\2\uffff\1\3\3\uffff\1"+
-        "\10\3\uffff\1\33\5\uffff\1\16\2\uffff\1\13\2\uffff\1\37\1\uffff"+
-        "\1\50\1\61\2\uffff\1\6\2\uffff\1\44\2\uffff\1\26\1\21\1\uffff\1"+
-        "\4\1\uffff\1\62";
+        "\17\1\uffff\1\77\1\2\1\uffff\1\4\3\uffff\1\22\4\uffff\1\30\2\uffff"+
+        "\1\25\1\uffff\1\41\22\uffff\1\65\1\66\1\67\1\70\1\71\1\72\1\73\1"+
+        "\74\1\75\1\76\1\100\1\101\1\102\1\103\1\104\1\105\11\uffff\1\32"+
+        "\32\uffff\1\16\1\3\1\uffff\1\14\1\uffff\1\21\1\uffff\1\36\2\uffff"+
+        "\1\11\2\uffff\1\13\1\uffff\1\24\1\uffff\1\34\1\uffff\1\40\7\uffff"+
+        "\1\63\27\uffff\1\42\11\uffff\1\53\1\uffff\1\55\1\uffff\1\57\1\60"+
+        "\6\uffff\1\35\2\uffff\1\7\1\uffff\1\27\7\uffff\1\47\25\uffff\1\46"+
+        "\1\uffff\1\51\1\52\1\uffff\1\54\4\uffff\1\26\4\uffff\1\31\5\uffff"+
+        "\1\45\1\43\2\uffff\1\56\1\64\4\uffff\1\5\3\uffff\1\12\1\uffff\1"+
+        "\33\6\uffff\1\15\1\20\3\uffff\1\37\1\uffff\1\50\1\61\3\uffff\1\10"+
+        "\1\uffff\1\44\1\uffff\1\1\1\uffff\1\23\1\uffff\1\6\1\uffff\1\62";
     static final String DFA13_specialS =
-        "\1\1\43\uffff\1\0\1\2\u010d\uffff}>";
+        "\1\0\43\uffff\1\1\1\2\u010d\uffff}>";
     static final String[] DFA13_transitionS = {
-            "\11\50\2\47\2\50\1\47\22\50\1\47\1\10\1\44\4\50\1\45\1\34\1"+
-            "\35\1\2\1\33\1\32\1\37\1\50\1\46\12\43\2\50\1\40\1\36\1\31\2"+
+            "\11\50\2\47\2\50\1\47\22\50\1\47\1\2\1\44\4\50\1\45\1\34\1"+
+            "\35\1\4\1\33\1\32\1\37\1\50\1\46\12\43\2\50\1\40\1\36\1\31\2"+
             "\50\1\15\1\20\1\12\1\22\4\41\1\14\2\41\1\21\1\41\1\23\1\41\1"+
             "\24\1\41\1\25\1\17\1\41\1\16\1\13\1\26\3\41\1\27\1\50\1\30\1"+
-            "\42\1\41\1\50\1\7\13\41\1\3\1\4\1\11\1\6\1\5\1\41\1\1\7\41\uff85"+
-            "\50",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\15\53\1\51\14\53",
+            "\42\1\41\1\50\1\10\13\41\1\5\1\6\1\11\1\1\1\7\1\41\1\3\7\41"+
+            "\uff85\50",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\21\53\1\51\10\53",
             "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\1\56\7\53\1\57\13\53\1\55\5\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\16\53\1\61\1\53"+
-            "\1\62\11\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\16\53\1\64\5\53\1\63\5\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\21\53\1\66\10\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\1\53\1\71\22\53\1\70\5\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\15\53\1\56\14\53",
             "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\61\7\53\1\62\13\53\1\60\5\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\16\53\1\64\1\53"+
+            "\1\65\11\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\16\53\1\67\5\53\1\66\5\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\53\1\72\22\53\1\71\5\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\21\53\1\74\10\53",
             "\12\53\7\uffff\16\53\1\76\13\53\4\uffff\1\53\1\uffff\32\53",
             "\12\53\7\uffff\4\53\1\77\25\53\4\uffff\1\53\1\uffff\32\53",
@@ -2583,27 +2582,27 @@ public class InternalCndLexer extends Lexer {
             "\1\135\4\uffff\1\136",
             "",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\22\53\1\140\7\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\10\53\1\140\5\53"+
+            "\1\141\13\53",
             "",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\32\53",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\13\53\1\141\16\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\15\53\1\142\14\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\27\53\1\143\2\53",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\5\53\1\145\12\53"+
-            "\1\144\11\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\16\53\1\146\13\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\150\25\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\17\53\1\151\12\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\22\53\1\142\7\53",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\10\53\1\153\5\53"+
-            "\1\152\13\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\13\53\1\143\16\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\15\53\1\144\14\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\27\53\1\145\2\53",
+            "",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\5\53\1\147\12\53"+
+            "\1\146\11\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\16\53\1\150\13\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\152\25\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\17\53\1\153\12\53",
             "",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\154\6\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\22\53\1\155\7\53",
-            "",
             "",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\3\53\1\156\26\53",
             "",
@@ -2643,34 +2642,34 @@ public class InternalCndLexer extends Lexer {
             "",
             "",
             "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\32\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\23\53\1\u0083\6\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\3\53\1\u0085\26\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\10\53\1\u0087\21\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\24\53\1\u0089\5"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\14\53\1\u0082\15"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\24\53\1\u008a\5\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u008c\10"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\23\53\1\u0083\6\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\32\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\23\53\1\u0086\6\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\3\53\1\u0088\26\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\10\53\1\u008a\21\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\24\53\1\u008c\5"+
+            "\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\24\53\1\u008d\5\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u008f\10"+
             "\53",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u008d\10"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u0090\10"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\23\53\1\u008f\6\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\14\53\1\u0091\15"+
-            "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\16\53\1\u0092\13\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\23\53\1\u0094\6\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\4\53\1\u0096\25\53",
             "\12\53\7\uffff\30\53\1\u0098\1\53\4\uffff\1\53\1\uffff\32"+
             "\53",
@@ -2686,7 +2685,7 @@ public class InternalCndLexer extends Lexer {
             "\53",
             "\12\53\7\uffff\4\53\1\u009e\25\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\10\53\1\u00a0\21\53\4\uffff\1\53\1\uffff\32"+
             "\53",
@@ -2709,29 +2708,29 @@ public class InternalCndLexer extends Lexer {
             "\53",
             "\12\53\7\uffff\12\53\1\u00aa\17\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\10\53\1\u00ab\21"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\1\u00ab\31\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u00ac\25"+
             "\53",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\1\u00ac\31\53",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\15\53\1\u00ad\14"+
-            "\53",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u00ae\25"+
-            "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\13\53\1\u00af\16"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\10\53\1\u00ad\21"+
             "\53",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\3\53\1\u00b0\26"+
-            "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\30\53\1\u00b1\1"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\1\u00ae\31\53",
+            "",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\15\53\1\u00af\14"+
             "\53",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u00b2\25"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u00b0\25"+
+            "\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\13\53\1\u00b1\16"+
             "\53",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\1\u00b3\31\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\3\53\1\u00b2\26"+
+            "\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\30\53\1\u00b3\1"+
+            "\53",
+            "",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\2\53\1\u00b4\27"+
             "\53",
             "",
@@ -2741,7 +2740,7 @@ public class InternalCndLexer extends Lexer {
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u00b6\10"+
             "\53",
             "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\24\53\1\u00b8\5\53\4\uffff\1\53\1\uffff\32"+
             "\53",
@@ -2762,40 +2761,40 @@ public class InternalCndLexer extends Lexer {
             "\53",
             "\12\53\7\uffff\4\53\1\u00c0\25\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\13\53\1\u00c2\16\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\14\53\1\u00c4\15\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\21\53\1\u00c7\10\53\4\uffff\1\53\1\uffff\32"+
             "\53",
             "\12\53\7\uffff\21\53\1\u00c8\10\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\17\53\1\u00c9\12"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u00c9\10"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\u00ca\6"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\2\53\1\u00ca\27"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\17\53\1\u00cb\12"+
+            "\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\u00cc\6"+
+            "\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u00cc\10"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u00ce\10"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\13\53\1\u00cd\16"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\13\53\1\u00cf\16"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\16\53\1\u00cf\13\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\2\53\1\u00d1\27"+
-            "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u00d2\10"+
-            "\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\16\53\1\u00d1\13\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u00d3\10"+
             "\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\1\u00d4\31\53",
@@ -2808,7 +2807,7 @@ public class InternalCndLexer extends Lexer {
             "\12\53\7\uffff\1\u00d8\31\53\4\uffff\1\53\1\uffff\32\53",
             "\12\53\7\uffff\4\53\1\u00d9\25\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\10\53\1\u00db\21\53\4\uffff\1\53\1\uffff\32"+
             "\53",
@@ -2828,23 +2827,23 @@ public class InternalCndLexer extends Lexer {
             "\53",
             "\12\53\7\uffff\4\53\1\u00e2\25\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\13\53\1\u00e3\16"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\30\53\1\u00e3\1"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\16\53\1\u00e4\13"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\u00e4\6"+
             "\53",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\30\53\1\u00e5\1"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\13\53\1\u00e5\16"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\u00e6\6"+
-            "\53",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\17\53\1\u00e7\12"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\16\53\1\u00e6\13"+
             "\53",
             "",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\30\53\1\u00e7\1"+
+            "\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\u00e8\6"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\30\53\1\u00e9\1"+
+            "",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\17\53\1\u00e9\12"+
             "\53",
+            "",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u00ea\25"+
             "\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\2\53\1\u00eb\27"+
@@ -2857,18 +2856,18 @@ public class InternalCndLexer extends Lexer {
             "\53",
             "\12\53\7\uffff\13\53\1\u00ef\16\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "",
             "\12\53\7\uffff\15\53\1\u00f1\14\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\15\53\1\u00f4\14\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\13\53\1\u00f6\16\53\4\uffff\1\53\1\uffff\32"+
             "\53",
@@ -2876,28 +2875,28 @@ public class InternalCndLexer extends Lexer {
             "\53",
             "\12\53\7\uffff\5\53\1\u00f8\24\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u00f9\25"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\10\53\1\u00f9\21\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u00fb\25"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u00fa\10"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u00fc\25"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\16\53\1\u00fb\13\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u00fd\25"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u00fd\10"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\22\53\1\u00fe\7"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\16\53\1\u00fe\13\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u0100\25"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u00ff\25"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\22\53\1\u0101\7"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\10\53\1\u0100\21\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\1\u0102\31\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\u0103\6"+
             "\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\13\53\1\u0104\16"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\10\53\1\u0107\21\53\4\uffff\1\53\1\uffff\32"+
             "\53",
@@ -2906,34 +2905,34 @@ public class InternalCndLexer extends Lexer {
             "\53",
             "",
             "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\2\53\1\u010b\27\53\4\uffff\1\53\1\uffff\32"+
             "\53",
             "\12\53\7\uffff\4\53\1\u010c\25\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\30\53\1\u010e\1"+
-            "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u010f\10"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\u010d\6"+
             "\53",
             "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\27\53\1\u0110\2"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\3\53\1\u010e\26"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\3\53\1\u0112\26"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\30\53\1\u0110\1"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\u0113\6"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u0111\10"+
             "\53",
             "",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\27\53\1\u0112\2"+
+            "\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\32\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\u0114\6"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u0116\25"+
             "\53",
@@ -2948,66 +2947,66 @@ public class InternalCndLexer extends Lexer {
             "\53",
             "\12\53\7\uffff\21\53\1\u011a\10\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u011b\25"+
+            "\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\3\53\1\u011c\26"+
+            "",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\32\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\3\53\1\u011e\26"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\u011d\6"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\23\53\1\u011f\6"+
             "\53",
             "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\32\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u011f\25"+
-            "\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u0120\25"+
             "\53",
             "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\4\53\1\u0122\25\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "\12\53\7\uffff\4\53\1\u0125\25\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u0126\25"+
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\14\53\1\u0126\15"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "",
+            "",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\4\53\1\u0127\25"+
+            "\53",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
-            "",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\14\53\1\u0128\15"+
-            "\53",
             "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\3\53\1\u0129\26"+
             "\53",
             "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "",
             "",
             "\12\53\7\uffff\15\53\1\u012b\14\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u012c\10"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\32\53",
+            "\12\53\7\uffff\32\53\4\uffff\1\53\1\uffff\21\53\1\u012d\10"+
             "\53",
             "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\32\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             "",
             "\12\53\7\uffff\2\53\1\u012f\27\53\4\uffff\1\53\1\uffff\32"+
             "\53",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
-            "\32\53",
             "",
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\32\53",
             "",
             "\12\53\7\uffff\4\53\1\u0131\25\53\4\uffff\1\53\1\uffff\32"+
             "\53",
             "",
-            "\1\52\5\uffff\12\53\1\52\6\uffff\32\53\4\uffff\1\53\1\uffff"+
+            "\1\54\5\uffff\12\53\1\54\6\uffff\32\53\4\uffff\1\53\1\uffff"+
             "\32\53",
             ""
     };
@@ -3049,34 +3048,24 @@ public class InternalCndLexer extends Lexer {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA13_36 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA13_36>='\u0000' && LA13_36<='\uFFFF')) ) {s = 92;}
-
-                        else s = 40;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
                         int LA13_0 = input.LA(1);
 
                         s = -1;
-                        if ( (LA13_0=='s') ) {s = 1;}
+                        if ( (LA13_0=='p') ) {s = 1;}
 
-                        else if ( (LA13_0=='*') ) {s = 2;}
+                        else if ( (LA13_0=='!') ) {s = 2;}
 
-                        else if ( (LA13_0=='m') ) {s = 3;}
+                        else if ( (LA13_0=='s') ) {s = 3;}
 
-                        else if ( (LA13_0=='n') ) {s = 4;}
+                        else if ( (LA13_0=='*') ) {s = 4;}
 
-                        else if ( (LA13_0=='q') ) {s = 5;}
+                        else if ( (LA13_0=='m') ) {s = 5;}
 
-                        else if ( (LA13_0=='p') ) {s = 6;}
+                        else if ( (LA13_0=='n') ) {s = 6;}
 
-                        else if ( (LA13_0=='a') ) {s = 7;}
+                        else if ( (LA13_0=='q') ) {s = 7;}
 
-                        else if ( (LA13_0=='!') ) {s = 8;}
+                        else if ( (LA13_0=='a') ) {s = 8;}
 
                         else if ( (LA13_0=='o') ) {s = 9;}
 
@@ -3141,6 +3130,16 @@ public class InternalCndLexer extends Lexer {
                         else if ( ((LA13_0>='\t' && LA13_0<='\n')||LA13_0=='\r'||LA13_0==' ') ) {s = 39;}
 
                         else if ( ((LA13_0>='\u0000' && LA13_0<='\b')||(LA13_0>='\u000B' && LA13_0<='\f')||(LA13_0>='\u000E' && LA13_0<='\u001F')||(LA13_0>='#' && LA13_0<='&')||LA13_0=='.'||(LA13_0>=':' && LA13_0<=';')||(LA13_0>='?' && LA13_0<='@')||LA13_0=='\\'||LA13_0=='`'||(LA13_0>='{' && LA13_0<='\uFFFF')) ) {s = 40;}
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA13_36 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA13_36>='\u0000' && LA13_36<='\uFFFF')) ) {s = 92;}
+
+                        else s = 40;
 
                         if ( s>=0 ) return s;
                         break;

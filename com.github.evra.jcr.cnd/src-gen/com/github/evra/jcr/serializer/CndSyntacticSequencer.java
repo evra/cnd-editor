@@ -8,6 +8,9 @@ import org.eclipse.xtext.IGrammarAccess;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.xtext.serializer.analysis.GrammarAlias.AbstractElementAlias;
+import org.eclipse.xtext.serializer.analysis.GrammarAlias.AlternativeAlias;
+import org.eclipse.xtext.serializer.analysis.GrammarAlias.TokenAlias;
+import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynNavigable;
 import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynTransition;
 import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 
@@ -15,10 +18,12 @@ import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 public class CndSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected CndGrammarAccess grammarAccess;
+	protected AbstractElementAlias match_NodeTypeDefinition_ExclamationMarkKeyword_4_5_0_1_or_PrimaryitemKeyword_4_5_0_0;
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
 		grammarAccess = (CndGrammarAccess) access;
+		match_NodeTypeDefinition_ExclamationMarkKeyword_4_5_0_1_or_PrimaryitemKeyword_4_5_0_0 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getNodeTypeDefinitionAccess().getExclamationMarkKeyword_4_5_0_1()), new TokenAlias(false, false, grammarAccess.getNodeTypeDefinitionAccess().getPrimaryitemKeyword_4_5_0_0()));
 	}
 	
 	@Override
@@ -201,8 +206,18 @@ public class CndSyntacticSequencer extends AbstractSyntacticSequencer {
 		List<INode> transitionNodes = collectNodes(fromNode, toNode);
 		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
-			acceptNodes(getLastNavigableState(), syntaxNodes);
+			if(match_NodeTypeDefinition_ExclamationMarkKeyword_4_5_0_1_or_PrimaryitemKeyword_4_5_0_0.equals(syntax))
+				emit_NodeTypeDefinition_ExclamationMarkKeyword_4_5_0_1_or_PrimaryitemKeyword_4_5_0_0(semanticObject, getLastNavigableState(), syntaxNodes);
+			else acceptNodes(getLastNavigableState(), syntaxNodes);
 		}
 	}
 
+	/**
+	 * Syntax:
+	 *     'primaryitem' | '!'
+	 */
+	protected void emit_NodeTypeDefinition_ExclamationMarkKeyword_4_5_0_1_or_PrimaryitemKeyword_4_5_0_0(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
 }

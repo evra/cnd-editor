@@ -100,7 +100,7 @@ public class CndSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *         abstract?=Abstract? 
 	 *         queryable?=Queryable? 
 	 *         notqueryable?=Notqueryable? 
-	 *         primaryItem=PrimaryItem? 
+	 *         primaryItem=JcrString? 
 	 *         (declaredPropertyDefinitions+=PropertyDefinition | declaredChildNodeDefinitions+=NodeDefinition)*
 	 *     )
 	 */

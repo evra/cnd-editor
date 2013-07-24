@@ -28,6 +28,8 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		
 		////!! http://www.eclipse.org/forums/index.php/t/489632/
 		//
+		//// unittesting https://code.google.com/a/eclipselabs.org/p/xtext-utils/wiki/Unit_Testing
+		//
 		//Model:
 		//
 		//	(namespaces+=NsMapping | nodeTypes+=NodeTypeDefinition)*;
@@ -77,8 +79,12 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cQueryableQueryableParserRuleCall_4_3_0 = (RuleCall)cQueryableAssignment_4_3.eContents().get(0);
 		private final Assignment cNotqueryableAssignment_4_4 = (Assignment)cUnorderedGroup_4.eContents().get(4);
 		private final RuleCall cNotqueryableNotqueryableParserRuleCall_4_4_0 = (RuleCall)cNotqueryableAssignment_4_4.eContents().get(0);
-		private final Assignment cPrimaryItemAssignment_4_5 = (Assignment)cUnorderedGroup_4.eContents().get(5);
-		private final RuleCall cPrimaryItemPrimaryItemParserRuleCall_4_5_0 = (RuleCall)cPrimaryItemAssignment_4_5.eContents().get(0);
+		private final Group cGroup_4_5 = (Group)cUnorderedGroup_4.eContents().get(5);
+		private final Alternatives cAlternatives_4_5_0 = (Alternatives)cGroup_4_5.eContents().get(0);
+		private final Keyword cPrimaryitemKeyword_4_5_0_0 = (Keyword)cAlternatives_4_5_0.eContents().get(0);
+		private final Keyword cExclamationMarkKeyword_4_5_0_1 = (Keyword)cAlternatives_4_5_0.eContents().get(1);
+		private final Assignment cPrimaryItemAssignment_4_5_1 = (Assignment)cGroup_4_5.eContents().get(1);
+		private final RuleCall cPrimaryItemJcrStringParserRuleCall_4_5_1_0 = (RuleCall)cPrimaryItemAssignment_4_5_1.eContents().get(0);
 		private final Alternatives cAlternatives_5 = (Alternatives)cGroup.eContents().get(5);
 		private final Assignment cDeclaredPropertyDefinitionsAssignment_5_0 = (Assignment)cAlternatives_5.eContents().get(0);
 		private final RuleCall cDeclaredPropertyDefinitionsPropertyDefinitionParserRuleCall_5_0_0 = (RuleCall)cDeclaredPropertyDefinitionsAssignment_5_0.eContents().get(0);
@@ -91,7 +97,13 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		//
 		//	declaredSupertypeNames+=[NodeTypeDefinition|JcrString])* / *|'?' //variant  * /)? (orderable?=Orderable? //TODO find a way to map query flags on one field
 		//
-		//	& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & primaryItem=PrimaryItem?) //TODO property can be also a primary item 
+		//
+		//
+		//	//primaryItem=PrimaryItem?
+		//
+		//	& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & (("primaryitem" | "!")
+		//
+		//	primaryItem=JcrString / * | '?' //variant * /)?) //TODO property can also be a primary item 
 		//
 		//	//(PropertyDefinitions and NodeDefinitions must have the same super class ItemDeinition)
 		//
@@ -104,7 +116,11 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		//
 		//declaredSupertypeNames+=[NodeTypeDefinition|JcrString])* / *|'?' //variant  * /)? (orderable?=Orderable? //TODO find a way to map query flags on one field
 		//
-		//& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & primaryItem=PrimaryItem?) //TODO property can be also a primary item 
+		////primaryItem=PrimaryItem?
+		//
+		//& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & (("primaryitem" | "!")
+		//
+		//primaryItem=JcrString / * | '?' //variant * /)?) //TODO property can also be a primary item 
 		//
 		////(PropertyDefinitions and NodeDefinitions must have the same super class ItemDeinition)
 		//
@@ -159,7 +175,11 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 
 		//orderable?=Orderable? //TODO find a way to map query flags on one field
 		//
-		//& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & primaryItem=PrimaryItem?
+		////primaryItem=PrimaryItem?
+		//
+		//& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & (("primaryitem" | "!")
+		//
+		//primaryItem=JcrString / * | '?' //variant * /)?
 		public UnorderedGroup getUnorderedGroup_4() { return cUnorderedGroup_4; }
 
 		//orderable?=Orderable?
@@ -192,11 +212,23 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		//Notqueryable
 		public RuleCall getNotqueryableNotqueryableParserRuleCall_4_4_0() { return cNotqueryableNotqueryableParserRuleCall_4_4_0; }
 
-		//primaryItem=PrimaryItem?
-		public Assignment getPrimaryItemAssignment_4_5() { return cPrimaryItemAssignment_4_5; }
+		//(("primaryitem" | "!") primaryItem=JcrString / * | '?' //variant * /)?
+		public Group getGroup_4_5() { return cGroup_4_5; }
 
-		//PrimaryItem
-		public RuleCall getPrimaryItemPrimaryItemParserRuleCall_4_5_0() { return cPrimaryItemPrimaryItemParserRuleCall_4_5_0; }
+		//"primaryitem" | "!"
+		public Alternatives getAlternatives_4_5_0() { return cAlternatives_4_5_0; }
+
+		//"primaryitem"
+		public Keyword getPrimaryitemKeyword_4_5_0_0() { return cPrimaryitemKeyword_4_5_0_0; }
+
+		//"!"
+		public Keyword getExclamationMarkKeyword_4_5_0_1() { return cExclamationMarkKeyword_4_5_0_1; }
+
+		//primaryItem=JcrString
+		public Assignment getPrimaryItemAssignment_4_5_1() { return cPrimaryItemAssignment_4_5_1; }
+
+		//JcrString
+		public RuleCall getPrimaryItemJcrStringParserRuleCall_4_5_1_0() { return cPrimaryItemJcrStringParserRuleCall_4_5_1_0; }
 
 		//(declaredPropertyDefinitions+=PropertyDefinition | declaredChildNodeDefinitions+=NodeDefinition)*
 		public Alternatives getAlternatives_5() { return cAlternatives_5; }
@@ -841,41 +873,18 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		public Keyword getExclamationMarkKeyword_1() { return cExclamationMarkKeyword_1; }
 	}
 
-	public class PrimaryItemElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "PrimaryItem");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Alternatives cAlternatives_0 = (Alternatives)cGroup.eContents().get(0);
-		private final Keyword cPrimaryitemKeyword_0_0 = (Keyword)cAlternatives_0.eContents().get(0);
-		private final Keyword cExclamationMarkKeyword_0_1 = (Keyword)cAlternatives_0.eContents().get(1);
-		private final RuleCall cJcrStringParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
-		
-		//PrimaryItem:
-		//
-		//	("primaryitem" | "!") JcrString / * | '?' //variant * /;
-		public ParserRule getRule() { return rule; }
-
-		//("primaryitem" | "!") JcrString / * | '?' //variant * /
-		public Group getGroup() { return cGroup; }
-
-		//"primaryitem" | "!"
-		public Alternatives getAlternatives_0() { return cAlternatives_0; }
-
-		//"primaryitem"
-		public Keyword getPrimaryitemKeyword_0_0() { return cPrimaryitemKeyword_0_0; }
-
-		//"!"
-		public Keyword getExclamationMarkKeyword_0_1() { return cExclamationMarkKeyword_0_1; }
-
-		//JcrString
-		public RuleCall getJcrStringParserRuleCall_1() { return cJcrStringParserRuleCall_1; }
-	}
-
 	public class QueryableElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Queryable");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Keyword cQueryKeyword_0 = (Keyword)cAlternatives.eContents().get(0);
 		private final Keyword cQKeyword_1 = (Keyword)cAlternatives.eContents().get(1);
 		
+		////PrimaryItem:
+		//
+		////	(('primaryitem'| '!')(JcrString / * | '?' //variant * / ))
+		//
+		////;
+		//
 		//Queryable:
 		//
 		//	"query" | "q";
@@ -1077,17 +1086,25 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class XiDElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "XiD");
-		private final RuleCall cEXIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cEXIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final Keyword cMixKeyword_1 = (Keyword)cAlternatives.eContents().get(1);
 		
-		//XiD: //EXID|('mix')
+		////EXID
 		//
-		//	EXID;
+		//XiD:
+		//
+		//	EXID | "mix";
 		public ParserRule getRule() { return rule; }
 
-		////EXID|('mix')
-		//
+		//EXID | "mix"
+		public Alternatives getAlternatives() { return cAlternatives; }
+
 		//EXID
-		public RuleCall getEXIDTerminalRuleCall() { return cEXIDTerminalRuleCall; }
+		public RuleCall getEXIDTerminalRuleCall_0() { return cEXIDTerminalRuleCall_0; }
+
+		//"mix"
+		public Keyword getMixKeyword_1() { return cMixKeyword_1; }
 	}
 	
 	
@@ -1304,7 +1321,6 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 	private AutocreatedElements pAutocreated;
 	private PrimaryElements pPrimary;
 	private PropertyTypeElements unknownRulePropertyType;
-	private PrimaryItemElements pPrimaryItem;
 	private QueryableElements pQueryable;
 	private NotqueryableElements pNotqueryable;
 	private AbstractElements pAbstract;
@@ -1357,6 +1373,8 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 	
 	////!! http://www.eclipse.org/forums/index.php/t/489632/
 	//
+	//// unittesting https://code.google.com/a/eclipselabs.org/p/xtext-utils/wiki/Unit_Testing
+	//
 	//Model:
 	//
 	//	(namespaces+=NsMapping | nodeTypes+=NodeTypeDefinition)*;
@@ -1374,7 +1392,13 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 	//
 	//	declaredSupertypeNames+=[NodeTypeDefinition|JcrString])* / *|'?' //variant  * /)? (orderable?=Orderable? //TODO find a way to map query flags on one field
 	//
-	//	& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & primaryItem=PrimaryItem?) //TODO property can be also a primary item 
+	//
+	//
+	//	//primaryItem=PrimaryItem?
+	//
+	//	& mixin?=Mixin? & abstract?=Abstract? & queryable?=Queryable? & notqueryable?=Notqueryable? & (("primaryitem" | "!")
+	//
+	//	primaryItem=JcrString / * | '?' //variant * /)?) //TODO property can also be a primary item 
 	//
 	//	//(PropertyDefinitions and NodeDefinitions must have the same super class ItemDeinition)
 	//
@@ -1578,17 +1602,12 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		return getPropertyTypeAccess().getRule();
 	}
 
-	//PrimaryItem:
+	////PrimaryItem:
 	//
-	//	("primaryitem" | "!") JcrString / * | '?' //variant * /;
-	public PrimaryItemElements getPrimaryItemAccess() {
-		return (pPrimaryItem != null) ? pPrimaryItem : (pPrimaryItem = new PrimaryItemElements());
-	}
-	
-	public ParserRule getPrimaryItemRule() {
-		return getPrimaryItemAccess().getRule();
-	}
-
+	////	(('primaryitem'| '!')(JcrString / * | '?' //variant * / ))
+	//
+	////;
+	//
 	//Queryable:
 	//
 	//	"query" | "q";
@@ -1688,9 +1707,11 @@ public class CndGrammarAccess extends AbstractGrammarElementFinder {
 		return getJcrStringAccess().getRule();
 	}
 
-	//XiD: //EXID|('mix')
+	////EXID
 	//
-	//	EXID;
+	//XiD:
+	//
+	//	EXID | "mix";
 	public XiDElements getXiDAccess() {
 		return (pXiD != null) ? pXiD : (pXiD = new XiDElements());
 	}
