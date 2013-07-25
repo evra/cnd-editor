@@ -1,0 +1,19 @@
+[x]>y,z orderable mixin -d(DATE)=e,b primary mandatory autocreated protected multiple VERSION <c,d
+
+[x]>y,z o m -d(DATE)=k,b ! m a p * VERSION <c,d
+
+[nt:resource] > mix:referenceable
+- jcr:encoding
+- jcr:mimeType mandatory
+- jcr:data (binary) mandatory
+- jcr:lastModified (date) mandatory ignore
+- df (string) mandatory
+
+<ns='http://namespace.com/ns'>
+[ns:NodeType]>ns:ParentType1, ns:ParentType2 o m
+-ex:property='default1','default2' ! m a p * version
+ <'constraint1', 'constraint2'
++ns:node(ns:reqType1,ns:reqType2)=ns:defaultType
+ m a p *  version
+ 
+ 

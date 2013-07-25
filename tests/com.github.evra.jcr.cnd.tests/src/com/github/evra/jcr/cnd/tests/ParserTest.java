@@ -1,12 +1,23 @@
 package com.github.evra.jcr.cnd.tests;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URISyntaxException;
+import java.net.URL;
+
+import org.eclipse.core.runtime.FileLocator;
+import org.eclipse.core.runtime.Platform;
 import org.eclipse.xtext.junit4.InjectWith;
 import org.eclipse.xtext.junit4.XtextRunner;
 import org.eclipse.xtext.junit4.util.ParseHelper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.osgi.framework.Bundle;
 
 import com.github.evra.jcr.CndInjectorProvider;
 import com.github.evra.jcr.cnd.Model;
@@ -20,10 +31,53 @@ public class ParserTest {
 	ParseHelper<Model> parser;
 		
 	@Test 
-	public void parseModelPrimitive() throws Exception {
+	public void parseModelSmoke() throws Exception {
 	    Model model = parser.parse("[a:b]");
 	    assertEquals("a:b", model.getNodeTypes().get(0).getName());
 	}
 
+	@Test
+	public void testParseJackrabbitBuildinCND() throws Exception {
+		String cndContent = loadResource("/test-cnd/JackrabbitBuildin.cnd");
+		Model model = parser.parse(cndContent);
+		assertNotNull(model);
+	}
+
+	@Test
+	public void testParseWorstcaseJSRCND() throws Exception {
+		String cndContent = loadResource("/test-cnd/worstcase-JSR283.cnd");
+		Model model = parser.parse(cndContent);
+		assertNotNull(model);
+	}
+
+	@Test
+	public void testParseWorstcaseJackRabbitCND() throws Exception {
+		String cndContent = loadResource("/test-cnd/worstcase-Jackrabbit.cnd");
+		Model model = parser.parse(cndContent);
+		assertNotNull(model);
+	}
+
+	@Test
+	public void testParseSupercompactJackRabbitCND() throws Exception {
+		String cndContent = loadResource("/test-cnd/supercompact-Jackrabbit.cnd");
+		Model model = parser.parse(cndContent);
+		assertNotNull(model);
+	}
+
 	
+	public static String loadResource(String resource) throws IOException, URISyntaxException
+	{
+		Bundle bundle = Platform.getBundle("com.github.evra.jcr.cnd.tests");
+		URL fileURL = bundle.getEntry(resource);
+		File  file = new File(FileLocator.resolve(fileURL).toURI());
+		
+	    BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+	    StringBuilder out = new StringBuilder();
+	    String line;
+	    while ((line = reader.readLine()) != null) {
+	        out.append(line);
+	    }
+	    reader.close();
+	    return out.toString();
+	}
 }
