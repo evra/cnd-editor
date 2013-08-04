@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
     <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001 XMLSchema-instance"
              xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
         <modelVersion>4.0.0</modelVersion>
@@ -15,7 +15,6 @@
         </parent>
     
  <!--   http://stackoverflow.com/questions/16567296/features-based-on-different-target-platforms-in-a-single-p2-site -->
-
  
         <build>
             <plugins>
@@ -61,45 +60,7 @@
                         </execution>
                     </executions>
                 </plugin>           
-
-                <!--plugin>
-                <groupId>org.eclipse.tycho.extras</groupId>
-                <artifactId>tycho-p2-extras-plugin</artifactId>
-                <version>${tycho-version}</version>
-                <executions>
-                    <execution>
-                        <id>merge-repos</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>mirror</goal>
-                        </goals>
-                        <configuration>
-                            <source>
-                                <repository>
-                                    
-                                    <url>file:///D:/data/projects/jcr-modeling/git/releng/com.github.evra.jcr.repository/target/repository</url>                                    
-                                </repository>
-                                <repository>
-                                    <url>file:///D:/data/projects/jcr-modeling/git/releng/com.github.evra.jcr.repository/../com.github.evra.jcr.repository.3rdparty/target/repository</url>
-                                </repository>
-
-                            </source>
-                            <append>true</append>
-                            <destination>${project.build.directory}\joint-repository</destination>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin-->
-
             </plugins>            
         </build>
-
-        <!-- remove after debug, use repository defined in parent pom -->
-        <!--pluginRepositories>
-            <pluginRepository>
-                <id>reficio</id>
-                <url>http://repo.reficio.org/maven/</url>
-            </pluginRepository>
-        </pluginRepositories-->
 
     </project>
