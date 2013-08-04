@@ -31,7 +31,11 @@
                             </goals>
                             <configuration>
                                 <artifacts>
-                                    <artifact><id>javax.jcr:jcr:2.0</id></artifact>
+                                    <artifact>
+                                    	<id>javax.jcr:jcr:2.0</id>
+                                    	<source>true</source>
+                                    </artifact>
+                                    
                                     <!--artifact>
                                         <id>org.apache.jackrabbit:jackrabbit-spi2dav:2.6.2</id>
                                          <transitive>true</transitive>
