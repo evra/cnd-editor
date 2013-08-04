@@ -19,6 +19,7 @@
 
    <url>
       <update label="%updateSiteName" url="https://github.com/evra"/>
+      <discovery label="Eclipse Orbit 20130517111416" url="http://download.eclipse.org/tools/orbit/downloads/drops/R20130517111416/repository/"/>
    </url>
 
    <includes

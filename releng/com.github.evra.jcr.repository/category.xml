@@ -6,5 +6,51 @@
    <feature url="features/org.eclipse.sdk_4.3.0.v20130605-2000.jar" id="org.eclipse.sdk" version="4.3.0.v20130605-2000">
       <category name="3rdparty"/>
    </feature>
+   <feature url="features/de.itemis.xtext.antlr.sdk_2.0.0.v201108011202.jar" id="de.itemis.xtext.antlr.sdk" version="2.0.0.v201108011202">
+      <category name="3rdparty"/>
+   </feature>
+   <feature url="features/org.eclipse.emf.mwe2.runtime.sdk_2.4.0.v201306110341.jar" id="org.eclipse.emf.mwe2.runtime.sdk" version="2.4.0.v201306110341">
+      <category name="3rdparty"/>
+   </feature>
+   <feature url="features/org.eclipse.emf.mwe2.language.sdk_2.4.0.v201306110940.jar" id="org.eclipse.emf.mwe2.language.sdk" version="2.4.0.v201306110940">
+      <category name="3rdparty"/>
+   </feature>
+   <feature url="features/org.eclipse.equinox.executable_3.6.0.v20130521-0416.jar" id="org.eclipse.equinox.executable" version="3.6.0.v20130521-0416">
+      <category name="3rdparty"/>
+   </feature>
+   <bundle id="org.apache.commons.httpclient" version="3.1.0.v201012070820">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.slf4j.api" version="1.7.2.v20121108-1250">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.slf4j.jcl" version="1.7.2.v20130115-1340">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.commons.codec" version="1.2.0.v20100518-1135">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.commons.collections" version="3.2.0.v2013030210310">
+      <category name="3rdparty"/>
+   </bundle>
+   <!--bundle id="javax.jcr" version="2.0.0">
+      <category name="jackrabbit"/>
+   </bundle>
+   <bundle id="org.apache.jackrabbit.jackrabbit-jcr-commons" version="2.6.2">
+      <category name="jackrabbit"/>
+   </bundle>
+   <bundle id="org.apache.jackrabbit.jackrabbit-spi" version="2.6.2">
+      <category name="jackrabbit"/>
+   </bundle>
+   <bundle id="org.apache.jackrabbit.jackrabbit-spi-commons" version="2.6.2">
+      <category name="jackrabbit"/>
+   </bundle>
+   <bundle id="org.apache.jackrabbit.jackrabbit-webdav" version="2.6.2">
+      <category name="jackrabbit"/>
+   </bundle-->
+   <!--bundle id="org.apache.jackrabbit.spi2dav" version="2.6.2">
+      <category name="jackrabbit"/>
+   </bundle-->
    <category-def name="3rdparty" label="3rdparty"/>
+   <category-def name="jackrabbit" label="Apache Jackrabbit JCR"/>
 </site>

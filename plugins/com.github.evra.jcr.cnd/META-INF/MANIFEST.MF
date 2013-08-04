@@ -1,7 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: com.github.evra.jcr.cnd
-Bundle-Vendor: My Company
 Bundle-Version: 0.1.0.qualifier
 Bundle-SymbolicName: com.github.evra.jcr.cnd; singleton:=true
 Bundle-ActivationPolicy: lazy

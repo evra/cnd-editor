@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map;
 
 import javax.jcr.Repository;
 import javax.jcr.RepositoryException;
@@ -14,6 +15,8 @@ import javax.jcr.nodetype.NodeTypeIterator;
 import javax.jcr.nodetype.NodeTypeManager;
 
 import org.apache.jackrabbit.commons.JcrUtils;
+import org.apache.jackrabbit.jcr2dav.Jcr2davRepositoryFactory;
+import org.apache.jackrabbit.spi2davex.Spi2davexRepositoryServiceFactory;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -44,7 +47,9 @@ public class ImportWizard extends Wizard implements IImportWizard {
             return false;
         
         try {
-    	Repository repository = JcrUtils.getRepository(repositoryConnectionPage.getUrl());			
+    
+    	Repository repository = createRepository(repositoryConnectionPage.getUrl());
+    	
 		Session session = repository.login( 
 				new SimpleCredentials(repositoryConnectionPage.getUser(), repositoryConnectionPage.getPassword().toCharArray()));
 		                
@@ -83,6 +88,15 @@ public class ImportWizard extends Wizard implements IImportWizard {
         
         
         return true;
+	}
+
+	public static Repository createRepository(String repositoryUrl) throws RepositoryException {
+		//Repository repository = JcrUtils.getRepository(repositoryConnectionPage.getUrl());
+		Jcr2davRepositoryFactory factory = new Jcr2davRepositoryFactory();    
+    	Map<String, String> parameters = new HashMap<String,String>();
+    	parameters.put(Spi2davexRepositoryServiceFactory.PARAM_REPOSITORY_URI,repositoryUrl );
+    	Repository repository = factory.getRepository(parameters);
+		return repository;
 	}
 	 
 	public void init(IWorkbench workbench, IStructuredSelection selection) {

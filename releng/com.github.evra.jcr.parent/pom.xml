@@ -21,6 +21,7 @@
 	<modules>
 		<module>../../plugins/com.github.evra.jcr.cnd</module>
 		<module>../../plugins/com.github.evra.jcr.cnd.ui</module>
+		<module>../../plugins/com.github.evra.jcr.connector.ui</module>
 		<module>../../tests/com.github.evra.jcr.cnd.tests</module>
 		<module>../../features/com.github.evra.jcr.cnd.feature</module>
 		<module>../../features/com.github.evra.jcr.cnd.feature.source</module>

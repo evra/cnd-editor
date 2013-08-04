@@ -19,10 +19,42 @@
 	</properties>
 
 	<modules>
-		<module>../../releng/com.github.evra.jcr.targetplatform</module>		
-		<module>../../releng/com.github.evra.jcr.repository</module>
+		<module>../../releng/com.github.evra.jcr.targetplatform</module>					
+		<module>../../releng/com.github.evra.jcr.repository.3rdparty</module>
+		<module>../../releng/com.github.evra.jcr.repository</module>				
 	</modules>
-		
+
+    <build>
+		<!--plugins>
+				<plugin>
+		            <groupId>org.eclipse.tycho.extras</groupId>
+		            <artifactId>tycho-p2-extras-plugin</artifactId>
+		            <version>${tycho-version}</version>
+		            <executions>
+		                <execution>
+		                    <id>merge-repos</id>
+		                    <phase>package</phase>
+		                    <goals>
+		                        <goal>mirror</goal>
+		                    </goals>
+		                    <configuration>
+		                        <source>
+		                            <repository>	                               
+		                                <url>file:///D:/data/projects/jcr-modeling/git/releng/com.github.evra.jcr.repository/target/repository</url>	                                
+		                            </repository>
+		             	            <repository>
+		                                <url>file:///D:/data/projects/jcr-modeling/git/releng/com.github.evra.jcr.repository/../com.github.evra.jcr.repository.3rdparty/target/repository</url>
+		                            </repository>
+		                        </source>
+		                        <append>true</append>
+		                        <destination>${project.build.directory}\joint-repository</destination>
+		                    </configuration>
+		                </execution>
+		            </executions>
+		        </plugin>
+		</plugins-->
+	</build>
+
 	<pluginRepositories>
 		<pluginRepository>
 			<id>sonatype</id>
@@ -49,5 +81,9 @@
 			<id>xtend</id>
 			<url>http://build.eclipse.org/common/xtend/maven/</url>
 		</pluginRepository>
+		<pluginRepository>
+                <id>reficio</id>
+                <url>http://repo.reficio.org/maven/</url>
+        </pluginRepository>
 	</pluginRepositories>
 </project>

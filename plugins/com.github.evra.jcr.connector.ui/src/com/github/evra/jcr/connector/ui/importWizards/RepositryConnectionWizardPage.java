@@ -122,7 +122,7 @@ public class RepositryConnectionWizardPage extends WizardPage {
 			String repositoryUrl = txtUrl.getText();
 			lblStatusValue.setText("Connecting " + repositoryUrl);
 			
-			Repository repository = JcrUtils.getRepository(repositoryUrl);			
+			Repository repository = ImportWizard.createRepository(repositoryUrl);			
 			Session session = repository.login( 
 					new SimpleCredentials(txtUser.getText(), txtPassword.getText().toCharArray()));
 			session.logout();

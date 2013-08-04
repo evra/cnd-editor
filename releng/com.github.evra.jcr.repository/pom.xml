@@ -14,14 +14,52 @@
 	<artifactId>com.github.evra.jcr.repository</artifactId>
 	<packaging>eclipse-repository</packaging>
 	
+	<dependencies>
+		<!-- Apache Jackrabbit dependencies. These jars contain OSGi metadata -->
+	    
+	    <!--dependency>
+			<groupId>org.apache.jackrabbit</groupId>
+			<artifactId>jackrabbit-spi2dav</artifactId>
+			<version>2.6.2</version>
+		</dependency-->    
+		<!--dependency>
+	      <groupId>javax.jcr</groupId>
+	      <artifactId>jcr</artifactId>
+	      <version>2.0</version>
+	    </dependency>
+		<dependency>
+			<groupId>org.apache.jackrabbit</groupId>
+			<artifactId>jackrabbit-spi</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jackrabbit</groupId>
+			<artifactId>jackrabbit-spi-commons</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jackrabbit</groupId>
+			<artifactId>jackrabbit-webdav</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jackrabbit</groupId>
+			<artifactId>jackrabbit-jcr-commons</artifactId>
+			<version>2.6.2</version>
+		</dependency-->
+  	</dependencies>
+
 	<build>
 		<plugins>
+            
+            <!-- file:///D:/data/projects/jcr-modeling/git/releng/com.github.evra.jcr.repository/target/repository -->
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-maven-plugin</artifactId>
 				<version>${tycho-version}</version>
 				<extensions>true</extensions>
 			</plugin>
+	
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
@@ -71,6 +109,36 @@
 					</environments>
 				</configuration>
 			</plugin>
+
+			<plugin>
+	            <groupId>org.eclipse.tycho.extras</groupId>
+	            <artifactId>tycho-p2-extras-plugin</artifactId>
+	            <version>${tycho-version}</version>
+	            <executions>
+	                <execution>
+	                    <id>merge-repos</id>
+	                    <phase>package</phase>
+	                    <goals>
+	                        <goal>mirror</goal>
+	                    </goals>
+	                    <configuration>
+	                        <source>
+	                            <!--repository>	                               
+	                                <url>file:///D:/data/projects/jcr-modeling/git/releng/com.github.evra.jcr.repository/target/repository</url>	                                
+	                            </repository-->
+	             	            <repository>
+	             	            	
+	             	            	<url>${project.baseUri}/../com.github.evra.jcr.repository.3rdparty/target/repository</url>
+	                                <!--url>file:///D:/data/projects/jcr-modeling/git/releng/com.github.evra.jcr.repository.3rdparty/target/repository</url-->
+	                            </repository>
+	                        </source>
+	                        <append>true</append>
+	                        <!--destination>${project.build.directory}\joint-repository</destination-->
+	                        <destination>${project.build.directory}${file.separator}repository</destination>
+	                    </configuration>
+	                </execution>
+	            </executions>
+	        </plugin>
 		</plugins>	
 		<pluginManagement>
 			<plugins>
