@@ -3,20 +3,6 @@
 <plugin>
 
    <extension
-         point="org.eclipse.ui.views">
-      <category
-            name="Sample Category"
-            id="com.github.evra.jcr.connector.ui">
-      </category>
-      <view
-            name="Sample View"
-            icon="icons/sample.gif"
-            category="com.github.evra.jcr.connector.ui"
-            class="com.github.evra.jcr.connector.ui.views.SampleView"
-            id="com.github.evra.jcr.connector.ui.views.SampleView">
-      </view>
-   </extension>
-   <extension
          point="org.eclipse.ui.perspectiveExtensions">
       <perspectiveExtension
             targetID="org.eclipse.jdt.ui.JavaPerspective">
@@ -37,17 +23,17 @@
    <extension
          point="org.eclipse.ui.importWizards">
       <category
-            id="com.github.evra.jcr.connector.ui.importWizards.sampleCategory"
-            name="Sample File Import">
+            id="com.github.evra.jcr.connector.ui.importWizards.cndCategory"
+            name="CND Editor">
       </category>
       <wizard
-            category="com.github.evra.jcr.connector.ui.importWizards.sampleCategory"
+            category="com.github.evra.jcr.connector.ui.importWizards.cndCategory"
             class="com.github.evra.jcr.connector.ui.importWizards.ImportWizard"
-            icon="icons/sample.gif"
+            icon="icons/16_structure.png"
             id="com.github.evra.jcr.connector.ui.importWizards.ImportWizard"
-            name="Import File">
+            name="Import CND From Repository">
          <description>
-            Import a file from the local file system into the workspace.
+            Import compact node definition from JCR2 repository.
          </description>
       </wizard>
    </extension>

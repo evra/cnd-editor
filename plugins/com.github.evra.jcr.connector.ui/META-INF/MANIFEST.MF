@@ -14,9 +14,11 @@ Require-Bundle: org.eclipse.ui,
  org.apache.jackrabbit.jackrabbit-spi;bundle-version="2.6.2",
  org.apache.jackrabbit.jackrabbit-spi-commons;bundle-version="2.6.2",
  org.apache.jackrabbit.jackrabbit-webdav;bundle-version="2.6.2",
- org.apache.jackrabbit.jackrabbit-jcr2spi;bundle-version="2.6.2",
  org.apache.jackrabbit.jcr2dav;bundle-version="2.6.2",
- org.apache.jackrabbit.spi2dav;bundle-version="2.6.2"
+ org.apache.jackrabbit.spi2dav;bundle-version="2.6.2",
+ org.slf4j.jcl;bundle-version="1.7.2",
+ org.apache.commons.logging;bundle-version="1.1.1",
+ org.eclipse.draw2d;bundle-version="3.9.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .
@@ -32,4 +34,6 @@ Import-Package: javax.jcr;version="2.0.0",
  javax.jcr.version;version="2.0.0",
  org.apache.commons.logging;version="1.1.1",
  org.apache.jackrabbit.commons;version="2.4.0",
+ org.apache.jackrabbit.jcr2spi;version="2.6.2",
+ org.apache.jackrabbit.jcr2spi.config;version="2.6.2",
  org.slf4j;version="1.7.2"

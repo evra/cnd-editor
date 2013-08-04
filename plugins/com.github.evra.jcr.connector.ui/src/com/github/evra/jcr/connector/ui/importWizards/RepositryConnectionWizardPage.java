@@ -1,28 +1,16 @@
 package com.github.evra.jcr.connector.ui.importWizards;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.HashMap;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 import javax.jcr.Repository;
-import javax.jcr.RepositoryException;
-
-
-
 import javax.jcr.Session;
 import javax.jcr.SimpleCredentials;
-import javax.jcr.nodetype.NodeType;
-import javax.jcr.nodetype.NodeTypeIterator;
-import javax.jcr.nodetype.NodeTypeManager;
 
-import org.apache.jackrabbit.commons.JcrUtils;
-import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.jface.wizard.WizardPage;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.ModifyEvent;
+import org.eclipse.swt.events.ModifyListener;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.layout.GridData;
@@ -32,23 +20,19 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 
-import com.github.evra.jcr.cnd.CndFactory;
-import com.github.evra.jcr.cnd.CndPackage;
-import com.github.evra.jcr.cnd.Model;
-import com.github.evra.jcr.connector.ui.adapter.NodeTypeDefintitionConverter;
-
 public class RepositryConnectionWizardPage extends WizardPage {
 
 	private Text txtUrl;
 	private Text txtUser;
 	private Text txtPassword;
-	private Label lblStatusValue;
+	private Text lblStatusValue;
+	private Text txtWorkspace;
 
 	protected RepositryConnectionWizardPage(String pageName) {
 		super(pageName);
-		setTitle(pageName); //NON-NLS-1
-		setDescription("JCR WebDav connection"); //NON-NLS-1
-		
+		setTitle(pageName); // NON-NLS-1
+		setDescription("JCR WebDav connection"); // NON-NLS-1
+
 	}
 
 	@Override
@@ -58,7 +42,7 @@ public class RepositryConnectionWizardPage extends WizardPage {
 				| GridData.FILL_HORIZONTAL);
 		selectionArea.setLayoutData(fileSelectionData);
 		setControl(selectionArea);
-		
+
 		GridLayout fileSelectionLayout = new GridLayout();
 		fileSelectionLayout.numColumns = 2;
 		fileSelectionLayout.makeColumnsEqualWidth = false;
@@ -66,113 +50,172 @@ public class RepositryConnectionWizardPage extends WizardPage {
 		fileSelectionLayout.marginHeight = 10;
 		selectionArea.setLayout(fileSelectionLayout);
 
-	    Label lblUrl = new Label(selectionArea, SWT.NONE);
-	    lblUrl.setText("URL:");
-	    
-	    txtUrl = new Text(selectionArea, SWT.BORDER);
-	    txtUrl.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false,1, 1));
-	    txtUrl.setText("http://localhost:8080/server");
-	    
-	    Label lblUser = new Label(selectionArea, SWT.NONE);
-	    lblUser.setText("User:");
+		Label lblUrl = new Label(selectionArea, SWT.NONE);
+		lblUrl.setText("URL:");
 
-	    txtUser = new Text(selectionArea, SWT.BORDER);
-	    txtUser.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false,1, 1));
-	    txtUser.setText("admin");
-	    
+		txtUrl = new Text(selectionArea, SWT.BORDER);
+		txtUrl.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1,
+				1));
+		txtUrl.setText("http://localhost:8080/server");
 
-	    Label lblPassword = new Label(selectionArea, SWT.NONE);
-	    lblPassword.setText("Password:");
-	    
+		txtUrl.addModifyListener(new ModifyListener() {
 
-	    txtPassword = new Text(selectionArea, SWT.BORDER | SWT.PASSWORD);
-	    txtPassword.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false,1, 1));	    
-	    txtPassword.setText("admin");
-	    
-	    Label lblStatus = new Label(selectionArea, SWT.NONE);
-	    lblStatus.setText("Status:");
+			@Override
+			public void modifyText(ModifyEvent e) {
+				String txt = ((Text) e.getSource()).getText();
+				if (txt == null || txt.isEmpty()) {
+					setErrorMessage("Invalid URL");
+					return;
+				}
+				try {
+					new URI(txt);
+					setErrorMessage(null);
+				} catch (URISyntaxException e1) {
+					setErrorMessage("Invalid URL");
+				}
+			}
+		});
 
-	    lblStatusValue = new Label(selectionArea, SWT.NONE);
-	    lblStatusValue.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false,1, 1));
-	    lblStatusValue.setText("Unknown");
-	    	    
-	    Label stub = new Label(selectionArea, SWT.NONE);	    
-	    Button testButon = new Button(selectionArea, SWT.NONE);
-	    testButon.setLayoutData(new GridData(SWT.FILL, SWT.RIGHT, false, false,1, 1));
-	    testButon.setText("Test connection");
-	
-	    testButon.addSelectionListener(new SelectionListener() {
-			
+		Label lblUser = new Label(selectionArea, SWT.NONE);
+		lblUser.setText("User:");
+
+		txtUser = new Text(selectionArea, SWT.BORDER);
+		txtUser.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false,
+				1, 1));
+		txtUser.setText("admin");
+
+		Label lblPassword = new Label(selectionArea, SWT.NONE);
+		lblPassword.setText("Password:");
+
+		txtPassword = new Text(selectionArea, SWT.BORDER | SWT.PASSWORD);
+		txtPassword.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true,
+				false, 1, 1));
+		txtPassword.setText("admin");
+
+		Label lblWorkspace = new Label(selectionArea, SWT.NONE);
+		lblWorkspace.setText("Workspace:");
+
+		txtWorkspace = new Text(selectionArea, SWT.BORDER);
+		txtWorkspace.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true,
+				false, 1, 1));
+		txtWorkspace.setText("");
+		txtWorkspace
+				.setToolTipText("Repository workspace. If empty default workspace is used.");
+
+		Label stub = new Label(selectionArea, SWT.NONE);
+		Button testButon = new Button(selectionArea, SWT.NONE);
+		testButon.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false,
+				false, 1, 1));
+		testButon.setText("Test connection");
+
+		testButon.addSelectionListener(new SelectionListener() {
+
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				testConnection();				
+				testConnection();
 			}
-			
+
 			@Override
 			public void widgetDefaultSelected(SelectionEvent e) {
 				testConnection();
 			}
 		});
-	    
-	    
+
+		Label lblStatus = new Label(selectionArea, SWT.NONE);
+		lblStatus.setText("Status:");
+
+		lblStatusValue = new Text(selectionArea, SWT.MULTI | SWT.READ_ONLY
+				| SWT.BORDER | SWT.WRAP);
+
+		lblStatusValue.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true,
+				false, 1, 5));
+		lblStatusValue.setText("Unknown");
+
 	}
 
 	protected void testConnection() {
 		try {
 			String repositoryUrl = txtUrl.getText();
 			lblStatusValue.setText("Connecting " + repositoryUrl);
-			
-			Repository repository = ImportWizard.createRepository(repositoryUrl);			
-			Session session = repository.login( 
-					new SimpleCredentials(txtUser.getText(), txtPassword.getText().toCharArray()));
+
+			Repository repository = ImportWizard
+					.createRepository(repositoryUrl);
+
+			if (repository == null) {
+				lblStatusValue.setText("Error: cannot get JCR repository");
+				this.setPageComplete(false);
+				return;
+			}
+
+			String workspaceName = "".equals(txtWorkspace.getText()) ? null
+					: txtWorkspace.getText();
+
+			Session session = repository.login(
+					new SimpleCredentials(txtUser.getText(), txtPassword
+							.getText().toCharArray()), workspaceName);
+
 			session.logout();
-			
-//			NodeTypeManager nodeTypeManager = session.getWorkspace().getNodeTypeManager();
-//			NodeTypeIterator nodeTypeIterator = nodeTypeManager.getAllNodeTypes();
-//			
-//			Model model = CndFactory.eINSTANCE.createModel();
-//			NodeTypeDefintitionConverter converter = new NodeTypeDefintitionConverter();
-//			
-//			while(nodeTypeIterator.hasNext()) {
-//				NodeType nodeType = nodeTypeIterator.nextNodeType();
-//				System.out.println("["+nodeType.getName() + "]");
-//				model.getNodeTypes().add(converter.asDslElement(nodeType));
-//			}
-//			session.logout();
-//			
-//			ResourceSet rs = new ResourceSetImpl();
-//			URI uri = URI.createURI(new File("D:\\data\\projects\\jcr-modeling\\tmp\\model.cnd").toURI().toString());
-//			System.out.println("save to " + uri.toFileString());
-//			Resource resource = rs.getResource(uri, true);
-//			resource.getContents().add(model);
-//			resource.save(new HashMap());
-//						
+
+			// NodeTypeManager nodeTypeManager =
+			// session.getWorkspace().getNodeTypeManager();
+			// NodeTypeIterator nodeTypeIterator =
+			// nodeTypeManager.getAllNodeTypes();
+			//
+			// Model model = CndFactory.eINSTANCE.createModel();
+			// NodeTypeDefintitionConverter converter = new
+			// NodeTypeDefintitionConverter();
+			//
+			// while(nodeTypeIterator.hasNext()) {
+			// NodeType nodeType = nodeTypeIterator.nextNodeType();
+			// System.out.println("["+nodeType.getName() + "]");
+			// model.getNodeTypes().add(converter.asDslElement(nodeType));
+			// }
+			// session.logout();
+			//
+			// ResourceSet rs = new ResourceSetImpl();
+			// URI uri = URI.createURI(new
+			// File("D:\\data\\projects\\jcr-modeling\\tmp\\model.cnd").toURI().toString());
+			// System.out.println("save to " + uri.toFileString());
+			// Resource resource = rs.getResource(uri, true);
+			// resource.getContents().add(model);
+			// resource.save(new HashMap());
+			//
 			lblStatusValue.setText("Connection check successful");
-			
+
 			this.setPageComplete(true);
-			setErrorMessage(null);
-		} catch (RepositoryException e) {
-			lblStatusValue.setText("Error: " + e.getMessage());
-			setErrorMessage(e.getMessage());
+
+		} catch (Exception e) {
+			String newline = System.getProperty("line.separator");
+			StringBuilder log = new StringBuilder();
+			log.append("Connection failed:");
+			for (Throwable c = e; c != null; c = c.getCause()) {
+				log.append(newline);
+				log.append("        because of ");
+				log.append(c.getClass().getSimpleName());
+				log.append(": ");
+				log.append(c.getMessage());
+			}
+
+			lblStatusValue.setText(log.toString());
+
+			lblStatusValue.pack(true);
+			lblStatusValue.setRedraw(true);
+			lblStatusValue.redraw();
+
 			this.setPageComplete(false);
-			//TODO log proper
-			
-			//e.printStackTrace();
+
 		}
-//		catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+
 	}
-	
+
 	public String getUrl() {
 		return txtUrl.getText();
 	}
-	
+
 	public String getUser() {
 		return txtUser.getText();
 	}
-	
+
 	public String getPassword() {
 		return txtPassword.getText();
 	}
