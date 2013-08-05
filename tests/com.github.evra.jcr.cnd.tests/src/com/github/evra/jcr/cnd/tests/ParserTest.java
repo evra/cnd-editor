@@ -1,6 +1,7 @@
 package com.github.evra.jcr.cnd.tests;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -29,11 +30,11 @@ public class ParserTest {
 
 	@Inject
 	ParseHelper<Model> parser;
-		
-	@Test 
+
+	@Test
 	public void parseModelSmoke() throws Exception {
-	    Model model = parser.parse("[a:b]");
-	    assertEquals("a:b", model.getNodeTypes().get(0).getName());
+		Model model = parser.parse("[a:b]");
+		assertEquals("a:b", model.getNodeTypes().get(0).getName());
 	}
 
 	@Test
@@ -64,20 +65,25 @@ public class ParserTest {
 		assertNotNull(model);
 	}
 
-	
-	public static String loadResource(String resource) throws IOException, URISyntaxException
-	{
+	@Test
+	public void testParseBuildInJSRModeShapeCND() throws Exception {
+		String cndContent = loadResource("/test-cnd/BuildIn-JSR283_ModeShape.cnd");
+		Model model = parser.parse(cndContent);
+		assertNotNull(model);
+	}
+
+	public static String loadResource(String resource) throws IOException, URISyntaxException {
 		Bundle bundle = Platform.getBundle("com.github.evra.jcr.cnd.tests");
 		URL fileURL = bundle.getEntry(resource);
-		File  file = new File(FileLocator.resolve(fileURL).toURI());
-		
-	    BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
-	    StringBuilder out = new StringBuilder();
-	    String line;
-	    while ((line = reader.readLine()) != null) {
-	        out.append(line);
-	    }
-	    reader.close();
-	    return out.toString();
+		File file = new File(FileLocator.resolve(fileURL).toURI());
+
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+		StringBuilder out = new StringBuilder();
+		String line;
+		while ((line = reader.readLine()) != null) {
+			out.append(line);
+		}
+		reader.close();
+		return out.toString();
 	}
 }
