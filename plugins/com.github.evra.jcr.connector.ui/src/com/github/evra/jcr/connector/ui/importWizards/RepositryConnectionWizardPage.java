@@ -38,8 +38,7 @@ public class RepositryConnectionWizardPage extends WizardPage {
 	@Override
 	public void createControl(Composite parent) {
 		Composite selectionArea = new Composite(parent, SWT.NONE);
-		GridData fileSelectionData = new GridData(GridData.GRAB_HORIZONTAL
-				| GridData.FILL_HORIZONTAL);
+		GridData fileSelectionData = new GridData(GridData.GRAB_HORIZONTAL | GridData.FILL_HORIZONTAL);
 		selectionArea.setLayoutData(fileSelectionData);
 		setControl(selectionArea);
 
@@ -54,8 +53,7 @@ public class RepositryConnectionWizardPage extends WizardPage {
 		lblUrl.setText("URL:");
 
 		txtUrl = new Text(selectionArea, SWT.BORDER);
-		txtUrl.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1,
-				1));
+		txtUrl.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		txtUrl.setText("http://localhost:8080/server");
 
 		txtUrl.addModifyListener(new ModifyListener() {
@@ -80,32 +78,27 @@ public class RepositryConnectionWizardPage extends WizardPage {
 		lblUser.setText("User:");
 
 		txtUser = new Text(selectionArea, SWT.BORDER);
-		txtUser.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false,
-				1, 1));
+		txtUser.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		txtUser.setText("admin");
 
 		Label lblPassword = new Label(selectionArea, SWT.NONE);
 		lblPassword.setText("Password:");
 
 		txtPassword = new Text(selectionArea, SWT.BORDER | SWT.PASSWORD);
-		txtPassword.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true,
-				false, 1, 1));
+		txtPassword.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		txtPassword.setText("admin");
 
 		Label lblWorkspace = new Label(selectionArea, SWT.NONE);
 		lblWorkspace.setText("Workspace:");
 
 		txtWorkspace = new Text(selectionArea, SWT.BORDER);
-		txtWorkspace.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true,
-				false, 1, 1));
+		txtWorkspace.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		txtWorkspace.setText("");
-		txtWorkspace
-				.setToolTipText("Repository workspace. If empty default workspace is used.");
+		txtWorkspace.setToolTipText("Repository workspace. If empty default workspace is used.");
 
 		Label stub = new Label(selectionArea, SWT.NONE);
 		Button testButon = new Button(selectionArea, SWT.NONE);
-		testButon.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false,
-				false, 1, 1));
+		testButon.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		testButon.setText("Test connection");
 
 		testButon.addSelectionListener(new SelectionListener() {
@@ -124,11 +117,9 @@ public class RepositryConnectionWizardPage extends WizardPage {
 		Label lblStatus = new Label(selectionArea, SWT.NONE);
 		lblStatus.setText("Status:");
 
-		lblStatusValue = new Text(selectionArea, SWT.MULTI | SWT.READ_ONLY
-				| SWT.BORDER | SWT.WRAP);
+		lblStatusValue = new Text(selectionArea, SWT.MULTI | SWT.READ_ONLY | SWT.BORDER | SWT.WRAP);
 
-		lblStatusValue.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true,
-				false, 1, 5));
+		lblStatusValue.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, false, 1, 5));
 		lblStatusValue.setText("Unknown");
 
 	}
@@ -138,8 +129,7 @@ public class RepositryConnectionWizardPage extends WizardPage {
 			String repositoryUrl = txtUrl.getText();
 			lblStatusValue.setText("Connecting " + repositoryUrl);
 
-			Repository repository = ImportWizard
-					.createRepository(repositoryUrl);
+			Repository repository = ImportWizard.createRepository(repositoryUrl);
 
 			if (repository == null) {
 				lblStatusValue.setText("Error: cannot get JCR repository");
@@ -147,39 +137,12 @@ public class RepositryConnectionWizardPage extends WizardPage {
 				return;
 			}
 
-			String workspaceName = "".equals(txtWorkspace.getText()) ? null
-					: txtWorkspace.getText();
-
-			Session session = repository.login(
-					new SimpleCredentials(txtUser.getText(), txtPassword
-							.getText().toCharArray()), workspaceName);
+			String workspaceName = "".equals(txtWorkspace.getText()) ? null : txtWorkspace.getText();
+			Session session = repository.login(new SimpleCredentials(txtUser.getText(), txtPassword.getText()
+					.toCharArray()), workspaceName);
 
 			session.logout();
 
-			// NodeTypeManager nodeTypeManager =
-			// session.getWorkspace().getNodeTypeManager();
-			// NodeTypeIterator nodeTypeIterator =
-			// nodeTypeManager.getAllNodeTypes();
-			//
-			// Model model = CndFactory.eINSTANCE.createModel();
-			// NodeTypeDefintitionConverter converter = new
-			// NodeTypeDefintitionConverter();
-			//
-			// while(nodeTypeIterator.hasNext()) {
-			// NodeType nodeType = nodeTypeIterator.nextNodeType();
-			// System.out.println("["+nodeType.getName() + "]");
-			// model.getNodeTypes().add(converter.asDslElement(nodeType));
-			// }
-			// session.logout();
-			//
-			// ResourceSet rs = new ResourceSetImpl();
-			// URI uri = URI.createURI(new
-			// File("D:\\data\\projects\\jcr-modeling\\tmp\\model.cnd").toURI().toString());
-			// System.out.println("save to " + uri.toFileString());
-			// Resource resource = rs.getResource(uri, true);
-			// resource.getContents().add(model);
-			// resource.save(new HashMap());
-			//
 			lblStatusValue.setText("Connection check successful");
 
 			this.setPageComplete(true);
@@ -218,5 +181,9 @@ public class RepositryConnectionWizardPage extends WizardPage {
 
 	public String getPassword() {
 		return txtPassword.getText();
+	}
+
+	public String getWorkspace() {
+		return txtWorkspace.getText();
 	}
 }
