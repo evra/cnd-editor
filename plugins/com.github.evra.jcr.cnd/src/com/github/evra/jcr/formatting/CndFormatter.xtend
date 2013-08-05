@@ -32,7 +32,9 @@ class CndFormatter extends AbstractDeclarativeFormatter {
 
 		c.setLinewrap(2).around(nodeTypeDefinitionRule);
 		c.setLinewrap(1).around(propertyDefinitionRule);
-		c.setLinewrap(1).around(nodeDefinitionRule);		
+		c.setLinewrap(1).around(nodeDefinitionRule);
+		
+		c.setLinewrap(1).around(nsMappingRule);				
 	}
 		
 }
