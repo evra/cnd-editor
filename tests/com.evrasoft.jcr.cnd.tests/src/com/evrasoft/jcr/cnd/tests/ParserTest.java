@@ -3,11 +3,9 @@ package com.evrasoft.jcr.cnd.tests;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.URISyntaxException;
 import java.net.URL;
 
@@ -77,13 +75,27 @@ public class ParserTest {
 		URL fileURL = bundle.getEntry(resource);
 		File file = new File(FileLocator.resolve(fileURL).toURI());
 
-		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
-		StringBuilder out = new StringBuilder();
-		String line;
-		while ((line = reader.readLine()) != null) {
-			out.append(line);
+		String content = null;
+		try {
+			FileReader reader = new FileReader(file);
+			char[] chars = new char[(int) file.length()];
+			reader.read(chars);
+			content = new String(chars);
+			reader.close();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-		reader.close();
-		return out.toString();
+		return content;
+
+		// BufferedReader reader = new BufferedReader(new InputStreamReader(new
+		// FileInputStream(file)));
+		// StringBuilder out = new StringBuilder();
+		// String line;
+		// while ((line = reader.readLine()) != null) {
+		// out.append(line);
+		// }
+		// reader.close();
+		// return out.toString();
 	}
+
 }
