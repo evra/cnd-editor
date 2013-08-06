@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.evrasoft.jcr</groupId>
+		<artifactId>com.evrasoft.jcr.repository.parent</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+		<relativePath>../../releng/com.evrasoft.jcr.repository.parent/pom.xml</relativePath>
+	</parent>
+	<groupId>com.evrasoft.jcr</groupId>
+	<artifactId>com.evrasoft.jcr.repository</artifactId>
+	<packaging>eclipse-repository</packaging>
+	
+	<dependencies>
+		<!-- Apache Jackrabbit dependencies. These jars contain OSGi metadata -->
+	    
+	    <!--dependency>
+			<groupId>org.apache.jackrabbit</groupId>
+			<artifactId>jackrabbit-spi2dav</artifactId>
+			<version>2.6.2</version>
+		</dependency-->    
+		<!--dependency>
+	      <groupId>javax.jcr</groupId>
+	      <artifactId>jcr</artifactId>
+	      <version>2.0</version>
+	    </dependency>
+		<dependency>
+			<groupId>org.apache.jackrabbit</groupId>
+			<artifactId>jackrabbit-spi</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jackrabbit</groupId>
+			<artifactId>jackrabbit-spi-commons</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jackrabbit</groupId>
+			<artifactId>jackrabbit-webdav</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jackrabbit</groupId>
+			<artifactId>jackrabbit-jcr-commons</artifactId>
+			<version>2.6.2</version>
+		</dependency-->
+  	</dependencies>
+
+	<build>
+		<plugins>
+            
+            <!-- file:///D:/data/projects/jcr-modeling/git/releng/com.evrasoft.jcr.repository/target/repository -->
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+	
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<resolver>p2</resolver>
+					<pomDependencies>consider</pomDependencies>
+					<target>
+						<artifact>
+							<groupId>com.evrasoft.jcr</groupId>
+							<artifactId>com.evrasoft.jcr.targetplatform</artifactId>
+							<version>0.1.0-SNAPSHOT</version>
+							<classifier>xtextexample</classifier>
+						</artifact>
+					</target>
+					<environments>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+
+			<plugin>
+	            <groupId>org.eclipse.tycho.extras</groupId>
+	            <artifactId>tycho-p2-extras-plugin</artifactId>
+	            <version>${tycho-version}</version>
+	            <executions>
+	                <execution>
+	                    <id>merge-repos</id>
+	                    <phase>package</phase>
+	                    <goals>
+	                        <goal>mirror</goal>
+	                    </goals>
+	                    <configuration>
+	                        <source>
+	                            <!--repository>	                               
+	                                <url>file:///D:/data/projects/jcr-modeling/git/releng/com.evrasoft.jcr.repository/target/repository</url>	                                
+	                            </repository-->
+	             	            <repository>
+	             	            	
+	             	            	<url>${project.baseUri}/../com.evrasoft.jcr.repository.3rdparty/target/repository</url>
+	                                <!--url>file:///D:/data/projects/jcr-modeling/git/releng/com.evrasoft.jcr.repository.3rdparty/target/repository</url-->
+	                            </repository>
+	                        </source>
+	                        <append>true</append>
+	                        <!--destination>${project.build.directory}\joint-repository</destination-->
+	                        <destination>${project.build.directory}${file.separator}repository</destination>
+	                    </configuration>
+	                </execution>
+	            </executions>
+	        </plugin>
+		</plugins>	
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-p2-repository-plugin</artifactId>
+					<configuration>
+						<compress>false</compress>
+						<includeAllDependencies>true</includeAllDependencies>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

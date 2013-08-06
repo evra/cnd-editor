@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- Tycho requires Maven 3 -->
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+	
+	<groupId>com.evrasoft.jcr</groupId>
+	<artifactId>com.evrasoft.jcr.repository.parent</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<properties>
+		<tycho-version>0.18.0</tycho-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>		
+	</properties>
+
+	<modules>
+		<module>../../releng/com.evrasoft.jcr.targetplatform</module>					
+		<module>../../releng/com.evrasoft.jcr.repository.3rdparty</module>
+		<module>../../releng/com.evrasoft.jcr.repository</module>				
+	</modules>
+
+    <build>
+		<!--plugins>
+				<plugin>
+		            <groupId>org.eclipse.tycho.extras</groupId>
+		            <artifactId>tycho-p2-extras-plugin</artifactId>
+		            <version>${tycho-version}</version>
+		            <executions>
+		                <execution>
+		                    <id>merge-repos</id>
+		                    <phase>package</phase>
+		                    <goals>
+		                        <goal>mirror</goal>
+		                    </goals>
+		                    <configuration>
+		                        <source>
+		                            <repository>	                               
+		                                <url>file:///D:/data/projects/jcr-modeling/git/releng/com.evrasoft.jcr.repository/target/repository</url>	                                
+		                            </repository>
+		             	            <repository>
+		                                <url>file:///D:/data/projects/jcr-modeling/git/releng/com.evrasoft.jcr.repository/../com.evrasoft.jcr.repository.3rdparty/target/repository</url>
+		                            </repository>
+		                        </source>
+		                        <append>true</append>
+		                        <destination>${project.build.directory}\joint-repository</destination>
+		                    </configuration>
+		                </execution>
+		            </executions>
+		        </plugin>
+		</plugins-->
+	</build>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>sonatype</id>
+			<url>http://repository.sonatype.org/content/groups/sonatype-public-grid/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+		<!-- Fornax Workflow Runner plugin -->
+		<pluginRepository>
+			<id>fornax</id>
+			<url>http://www.fornax-platform.org/m2/repository</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>xtend</id>
+			<url>http://build.eclipse.org/common/xtend/maven/</url>
+		</pluginRepository>
+		<pluginRepository>
+                <id>reficio</id>
+                <url>http://repo.reficio.org/maven/</url>
+        </pluginRepository>
+	</pluginRepositories>
+</project>

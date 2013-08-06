@@ -1,0 +1,241 @@
+grammar com.evrasoft.jcr.Cnd with org.eclipse.xtext.common.Terminals 
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+generate cnd "http://www.evrasoft.com/jcr/Cnd"
+
+//!! http://www.eclipse.org/forums/index.php/t/489632/
+
+// unittesting https://code.google.com/a/eclipselabs.org/p/xtext-utils/wiki/Unit_Testing
+
+Model :
+	 (namespaces+=NsMapping | nodeTypes+=NodeTypeDefinition)*;
+
+NodeTypeDefinition:
+	'[' name=JcrString ']' 
+	
+	('>' declaredSupertypeNames+=[NodeTypeDefinition|JcrString] (',' declaredSupertypeNames+=[NodeTypeDefinition|JcrString] /*|'?' //variant  */)* )?  
+		
+	(
+		orderable?=Orderable? &
+		mixin?=Mixin? &
+		abstract?=Abstract? & 
+		queryable?=Queryable? &
+		notqueryable?=Notqueryable? & //TODO find a way to map query flags on one field
+		
+		//primaryItem=PrimaryItem?
+		(('primaryitem'| '!')(primaryItem=JcrString /* | '?' //variant */ ))?
+		
+		//TODO property can also be a primary item 
+		//(PropertyDefinitions and NodeDefinitions must have the same super class ItemDeinition)
+		//(('primaryitem'| '!')(primaryItem=[NodeDefinition|JcrString] /* | '?' //variant */ ))?
+		
+	)
+	 
+	(	
+	 	declaredPropertyDefinitions+=PropertyDefinition |
+		declaredChildNodeDefinitions+=NodeDefinition
+	)*  
+;
+
+NodeDefinition:
+	
+	'+' (name=JcrString|name='*' /*Jackrabbit feature */) 
+	
+	('(' (requiredTypes+=[NodeTypeDefinition|JcrString] (',' requiredTypes+=[NodeTypeDefinition|JcrString])* /*| '?' //variant  */) ')')?
+	 	
+	('=' (defaultType=[NodeTypeDefinition|JcrString] /*| '?' //variant  */))?
+	 
+	(
+		autocreated?=Autocreated? &
+		manadatory?=Mandatory? &
+		protected?=Protected? &
+		onParentVersion=Opv? &
+		sameNameSiblings?=Sns?
+	)
+;
+
+Sns:
+	('sns' | '*' | 'multiple' /* Jackrabbit feature*/) /* '?' //variant */
+;
+
+PropertyDefinition:
+	
+	{PropertyDefinition} //force creation
+	
+	'-' (name=JcrString|'*' /*Jackrabbit feature */) 
+
+	('(' type=PropertyType')')? 
+
+	('=' (defaultValues+=JcrString (',' defaultValues+=JcrString)* /* | '?' //variant */))?
+	 
+	(
+		autocreated?=Autocreated? & 
+		mandatory?=Mandatory? &
+		protected?=Protected? &
+		onParentVersion=Opv? &
+		multiple?=Multiple? & 
+		queryOps=QueryOps? & 					
+		noFullText?=NoFullText? & 
+		noQueryOrder?=NoQueryOrder? &
+		primary?=Primary?
+	)
+
+	('<' (valueConstraints+=JcrString (',' valueConstraints+=JcrString)* /* | '?' //variant */))?
+;
+
+
+
+NoQueryOrder:
+	('noqueryorder' | 'nqord')/* '?' //variant */
+;
+
+NoFullText:
+	('nofulltext' | 'nof') /* '?' //variant */
+;
+
+QueryOps:
+	('queryops' | 'qop') ( JcrString /*| '?' //variant */)
+;
+
+
+//TODO does not work. probably conflict with STRING terminal: 
+
+//QueryOps:
+//	(('queryops' | 'qop') "'" queryOperators+=Operator ("," queryOperators+=Operator)* "'" /* | '?' //variant  */)? &
+//;
+//Operator:
+//	'=' | '<>' | '<' | '<=' | '>' | '>=' | 'LIKE'
+//;
+
+Multiple:
+	('multiple' | 'mul' | '*') /* '?' //variant */
+;
+
+enum Opv:
+	COPY='COPY' |
+	VERSION='VERSION' |
+	INITIALIZE='INITIALIZE' |
+	COMPUTE='COMPUTE' |
+	IGNORE='IGNORE' |
+	ABORT='ABORT' 
+	//| ('OPV' '?') //variant
+;
+
+Protected:
+	('protected' | 'pro' | 'p') /* '?' //variant */
+;
+
+Mandatory:
+	('mandatory' | 'man' | 'm') /* '?' //variant */
+;
+
+Autocreated:
+	('autocreated' | 'aut' | 'a' )/* '?' //variant */
+;
+
+Primary:	
+	//This attribute is not defined by JCR
+	('primary'|'!') /* Jackrabbit feature. */	
+;
+
+
+/*
+ *  The order of the enum elements is important. 
+ *  It defines same ordinal as in javax.jcr.PropertyType
+ *  Do not change the order!  
+ */
+enum PropertyType:
+	 UNDEFINED='UNDEFINED'|
+	 TSTRING='STRING' | 
+	 TBINARY='BINARY' |
+	 TLONG='LONG' |
+	 TDOUBLE='DOUBLE' |
+	 DDATE='DATE' |
+	 TBOOLEAN='BOOLEAN' |	
+	 TNAME='NAME' |
+	 TPATH='PATH' |
+	 TREFERENCE='REFERENCE' | 
+	 TWEAKREFERENCE='WEAKREFERENCE' |
+	 TURI='URI' |
+	 TDECIMAL='DECIMAL' 
+	 	 
+	 //| '?' /* variant */	  
+;
+
+
+//PrimaryItem:
+//	(('primaryitem'| '!')(JcrString /* | '?' //variant */ ))
+//;
+
+Queryable:
+	('query' | 'q' )
+;
+Notqueryable:
+	('noquery' | 'nq')
+;
+
+Abstract:
+	('abstract' | 'abs' | 'a') /* '?' //variant */
+;
+
+Mixin:
+	('mixin' | 'mix' | 'm') /* '?' //variant */
+;
+
+Orderable:
+	('orderable' | 'ord' | 'o') /* '?' //variant */	
+;
+
+NsMapping :
+	 '<' name=Prefix '=' uri=Uri '>';
+
+Prefix :
+	 XiD;
+
+Uri: 
+	 JcrString;
+
+JcrString:
+	STRING | XiD		
+;
+
+XiD:
+	EXID|('mix')
+	//EXID
+;
+
+terminal EXID :  ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9'|':'|'*')* ;
+
+//jcr_string:
+//	quoted_string|UNQUOTED_STRING		
+//;
+
+//quoted_string:
+//	"'" UNQUOTED_STRING "'"
+//;
+
+//TODO 
+//According to JCR2.0 string terminal must follow XML char definition  /* see §3.2.2 Local Names */
+
+//terminal NAMESPACE_PREFIX : 
+//	ID
+//;
+
+//terminal STRING	: 
+//			'"' ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* '"' |
+//			"'" ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'" 
+//			|(!('\\'|"'"|'"') )+
+//		; 
+ 
+//terminal NAMESPACE_PREFIX : ('A'..'Z'|'a'..'z'|'0'..'9'|'_')+;
+
+//terminal UNQUOTED_STRING : (XML_CHAR)+;
+//terminal fragment XML_CHAR : ('\u0022'..'\u007E');
+
+//terminal ML_COMMENT	: '/*' -> '*/';
+//terminal SL_COMMENT 	: '//' !('\n'|'\r')* ('\r'? '\n')?;
+//
+//terminal WS			: (' '|'\t'|'\r'|'\n')+;
+
+
