@@ -33,17 +33,21 @@ NodeTypeDefinition:
 	)*  
 ;
 
-ItemDefinition returns ItemDefinition:	
-	(name=JcrString|name='*' /*Jackrabbit feature */) //ItemDef
-	(
-		autocreated?=Autocreated? & //ItemDef
-		manadatory?=Mandatory? &	//ItemDef
-		protected?=Protected? &		//ItemDef
-		onParentVersion=Opv?       //ItemDef
-	)
+ItemDefinition :
+	NodeDefinition | PropertyDefinition
 ;
 
-NodeDefinition returns ItemDefinition:
+//ItemDefinition returns ItemDefinition:	
+//	(name=JcrString|name='*' /*Jackrabbit feature */) //ItemDef
+//	(
+//		autocreated?=Autocreated? & //ItemDef
+//		manadatory?=Mandatory? &	//ItemDef
+//		protected?=Protected? &		//ItemDef
+//		onParentVersion=Opv?       //ItemDef
+//	)
+//;
+
+NodeDefinition:// returns ItemDefinition:
 	
 	{NodeDefinition}
 	
@@ -68,7 +72,7 @@ Sns:
 	('sns' | '*' | 'multiple' /* Jackrabbit feature*/) /* '?' //variant */
 ;
 
-PropertyDefinition returns ItemDefinition:
+PropertyDefinition:// returns ItemDefinition:
 	
 	{PropertyDefinition}
 	
