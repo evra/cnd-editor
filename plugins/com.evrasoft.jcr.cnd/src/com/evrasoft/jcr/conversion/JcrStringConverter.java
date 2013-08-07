@@ -9,7 +9,7 @@ public class JcrStringConverter extends AbstractLexerBasedConverter<String> {
 
 	@Override
 	protected String toEscapedString(String value) {
-		return '"' + Strings.convertToJavaString(value, false) + '"';
+		return '\'' + Strings.convertToJavaString(value, false) + '\'';
 	}
 
 	public String toValue(String string, INode node) {

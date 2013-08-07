@@ -4,6 +4,7 @@ import org.eclipse.xtext.junit4.AbstractXtextTests;
 import org.eclipse.xtext.junit4.InjectWith;
 import org.eclipse.xtext.junit4.XtextRunner;
 import org.eclipse.xtext.junit4.util.ParseHelper;
+import org.eclipse.xtext.resource.SaveOptions;
 import org.eclipse.xtext.serializer.ISerializer;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,6 +13,7 @@ import org.junit.runner.RunWith;
 import com.evrasoft.jcr.CndInjectorProvider;
 import com.evrasoft.jcr.cnd.CndFactory;
 import com.evrasoft.jcr.cnd.Model;
+import com.evrasoft.jcr.cnd.NodeTypeDefinition;
 import com.evrasoft.jcr.cnd.NsMapping;
 import com.google.inject.Inject;
 import com.google.inject.Injector;
@@ -27,7 +29,7 @@ public class SerializerTest extends AbstractXtextTests {
 	Injector injector;
 
 	@Inject
-	ISerializer serilizer;
+	ISerializer serializer;
 
 	@Before
 	public void setUp() throws Exception {
@@ -41,8 +43,8 @@ public class SerializerTest extends AbstractXtextTests {
 		nsMapping.setName("test");
 		nsMapping.setUri("testUri");
 
-		String string = serilizer.serialize(nsMapping);
-		assertEquals("<test=\"testUri\">", string.replace(" ", ""));
+		String string = serializer.serialize(nsMapping);
+		assertEquals("<test=\'testUri\'>", string.replace(" ", ""));
 	}
 
 	@Test
@@ -51,8 +53,8 @@ public class SerializerTest extends AbstractXtextTests {
 		NsMapping nsMapping = CndFactory.eINSTANCE.createNsMapping();
 		nsMapping.setName("test");
 		nsMapping.setUri("http://test.host:8080/a/b");
-		String string = serilizer.serialize(nsMapping);
-		assertEquals("<test=\"http://test.host:8080/a/b\">", string.replace(" ", ""));
+		String string = serializer.serialize(nsMapping);
+		assertEquals("<test=\'http://test.host:8080/a/b\'>", string.replace(" ", ""));
 	}
 
 	@Test
@@ -61,8 +63,20 @@ public class SerializerTest extends AbstractXtextTests {
 		NsMapping nsMapping = CndFactory.eINSTANCE.createNsMapping();
 		nsMapping.setName("test");
 		nsMapping.setUri("");
-		String string = serilizer.serialize(nsMapping);
-		assertEquals("<test=\"\">", string.replace(" ", ""));
+		String string = serializer.serialize(nsMapping);
+		assertEquals("<test=\'\'>", string.replace(" ", ""));
 	}
 
+	@Test
+	public void testUnresolvedNodeTypeReference() throws Exception {
+		NodeTypeDefinition dslNtd = CndFactory.eINSTANCE.createNodeTypeDefinition();
+		dslNtd.setName("test:nodeType");
+
+		NodeTypeDefinition dslNtdUnresolvedSuperType = CndFactory.eINSTANCE.createNodeTypeDefinition();
+		dslNtdUnresolvedSuperType.setName("mySuperType");
+		dslNtd.getDeclaredSupertypeNames().add(dslNtdUnresolvedSuperType);
+
+		String string = serializer.serialize(dslNtd, SaveOptions.defaultOptions());
+		assertEquals("[ test:nodeType ] > mySuperType", string);
+	}
 }
