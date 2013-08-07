@@ -19,7 +19,9 @@ public class NodeTypeDefintitionConverter {
 		dslNtd.setName(ntd.getName());
 		dslNtd.setNotqueryable(!ntd.isQueryable());
 		dslNtd.setQueryable(ntd.isQueryable());
-		dslNtd.setPrimaryItem(ntd.getPrimaryItemName());
+
+		// TODO set reference
+		// dslNtd.setPrimaryItem(ntd.getPrimaryItemName());
 
 		String[] declaredSupertypeNames = ntd.getDeclaredSupertypeNames();
 		if (declaredSupertypeNames != null) {

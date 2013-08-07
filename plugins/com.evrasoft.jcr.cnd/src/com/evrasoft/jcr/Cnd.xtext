@@ -23,12 +23,7 @@ NodeTypeDefinition:
 		queryable?=Queryable? &
 		notqueryable?=Notqueryable? & //TODO find a way to map query flags on one field
 		
-		//primaryItem=PrimaryItem?
-		(('primaryitem'| '!')(primaryItem=JcrString /* | '?' //variant */ ))?
-		
-		//TODO property can also be a primary item 
-		//(PropertyDefinitions and NodeDefinitions must have the same super class ItemDeinition)
-		//(('primaryitem'| '!')(primaryItem=[NodeDefinition|JcrString] /* | '?' //variant */ ))?
+		(('primaryitem'| '!')(primaryItem=[ItemDefinition|JcrString] /* | '?' //variant */ ))?
 		
 	)
 	 
@@ -38,20 +33,34 @@ NodeTypeDefinition:
 	)*  
 ;
 
-NodeDefinition:
+ItemDefinition returns ItemDefinition:	
+	(name=JcrString|name='*' /*Jackrabbit feature */) //ItemDef
+	(
+		autocreated?=Autocreated? & //ItemDef
+		manadatory?=Mandatory? &	//ItemDef
+		protected?=Protected? &		//ItemDef
+		onParentVersion=Opv?       //ItemDef
+	)
+;
+
+NodeDefinition returns ItemDefinition:
 	
-	'+' (name=JcrString|name='*' /*Jackrabbit feature */) 
+	{NodeDefinition}
+	
+	'+' (name=JcrString|name='*' /*Jackrabbit feature */) //ItemDef
 	
 	('(' (requiredTypes+=[NodeTypeDefinition|JcrString] (',' requiredTypes+=[NodeTypeDefinition|JcrString])* /*| '?' //variant  */) ')')?
 	 	
 	('=' (defaultType=[NodeTypeDefinition|JcrString] /*| '?' //variant  */))?
 	 
 	(
-		autocreated?=Autocreated? &
-		manadatory?=Mandatory? &
-		protected?=Protected? &
-		onParentVersion=Opv? &
-		sameNameSiblings?=Sns?
+		autocreated?=Autocreated? & //ItemDef
+		manadatory?=Mandatory? &	//ItemDef
+		protected?=Protected? &		//ItemDef
+		onParentVersion=Opv? &      //ItemDef
+		
+		sameNameSiblings?=Sns? &
+		primary?=Primary? /* Jackrabbit feature */
 	)
 ;
 
@@ -59,26 +68,27 @@ Sns:
 	('sns' | '*' | 'multiple' /* Jackrabbit feature*/) /* '?' //variant */
 ;
 
-PropertyDefinition:
+PropertyDefinition returns ItemDefinition:
 	
-	{PropertyDefinition} //force creation
+	{PropertyDefinition}
 	
-	'-' (name=JcrString|'*' /*Jackrabbit feature */) 
+	'-' (name=JcrString|name='*' /*Jackrabbit feature */) //ItemDef 
 
 	('(' type=PropertyType')')? 
 
 	('=' (defaultValues+=JcrString (',' defaultValues+=JcrString)* /* | '?' //variant */))?
 	 
 	(
-		autocreated?=Autocreated? & 
-		mandatory?=Mandatory? &
-		protected?=Protected? &
-		onParentVersion=Opv? &
+		autocreated?=Autocreated? & //ItemDef
+		manadatory?=Mandatory? &	//ItemDef
+		protected?=Protected? &		//ItemDef
+		onParentVersion=Opv? &      //ItemDef
+		
 		multiple?=Multiple? & 
 		queryOps=QueryOps? & 					
 		noFullText?=NoFullText? & 
 		noQueryOrder?=NoQueryOrder? &
-		primary?=Primary?
+		primary?=Primary? /* Jackrabbit feature */
 	)
 
 	('<' (valueConstraints+=JcrString (',' valueConstraints+=JcrString)* /* | '?' //variant */))?
@@ -135,7 +145,7 @@ Autocreated:
 ;
 
 Primary:	
-	//This attribute is not defined by JCR
+	//This attribute is not defined by JSR-283
 	('primary'|'!') /* Jackrabbit feature. */	
 ;
 
@@ -163,10 +173,6 @@ enum PropertyType:
 	 //| '?' /* variant */	  
 ;
 
-
-//PrimaryItem:
-//	(('primaryitem'| '!')(JcrString /* | '?' //variant */ ))
-//;
 
 Queryable:
 	('query' | 'q' )
@@ -217,6 +223,9 @@ terminal EXID :  ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9'|':'|'*'
 
 //TODO 
 //According to JCR2.0 string terminal must follow XML char definition  /* see §3.2.2 Local Names */
+
+//see NCNAME in Antlr XPath grammar http://www.antlr3.org/grammar/1264460091565/XPath2.g
+
 
 //terminal NAMESPACE_PREFIX : 
 //	ID
