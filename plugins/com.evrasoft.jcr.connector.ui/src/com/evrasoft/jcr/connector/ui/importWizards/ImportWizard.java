@@ -114,7 +114,7 @@ public class ImportWizard extends Wizard implements IImportWizard {
 
 			while (nodeTypeIterator.hasNext()) {
 				NodeType nodeType = nodeTypeIterator.nextNodeType();
-				model.getNodeTypes().add(converter.asDslElement(nodeType));
+				model.getNodeTypes().add(converter.asDslElement(nodeType, nodeTypeManager));
 
 				monitor.worked(importTaskTick);
 				if (monitor.isCanceled()) {
