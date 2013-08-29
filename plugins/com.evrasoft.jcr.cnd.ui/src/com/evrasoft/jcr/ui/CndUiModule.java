@@ -4,7 +4,9 @@
 package com.evrasoft.jcr.ui;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.eclipse.xtext.formatting.IIndentationInformation;
 import org.eclipse.xtext.linking.ILinkingDiagnosticMessageProvider;
+import org.eclipse.xtext.ui.editor.formatting.PreferenceStoreIndentationInformation;
 
 import com.evrasoft.jcr.ui.linking.CndLinkingDiagnosticMessageProvider;
 
@@ -15,8 +17,12 @@ public class CndUiModule extends com.evrasoft.jcr.ui.AbstractCndUiModule {
 	public CndUiModule(AbstractUIPlugin plugin) {
 		super(plugin);
 	}
-	
+
 	public Class<? extends ILinkingDiagnosticMessageProvider> bindILinkingDiagnosticMessageProvider() {
 		return CndLinkingDiagnosticMessageProvider.class;
+	}
+
+	public Class<? extends IIndentationInformation> bindIIndentationInformation() {
+		return PreferenceStoreIndentationInformation.class;
 	}
 }
