@@ -10,6 +10,7 @@
 		<relativePath>../../releng/com.evrasoft.jcr.parent/pom.xml</relativePath>
 	</parent>
 
+	<groupId>com.evrasoft.jcr</groupId>
 	<artifactId>com.evrasoft.jcr.cnd.tests</artifactId>
 	<packaging>eclipse-test-plugin</packaging>
 

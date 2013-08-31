@@ -10,6 +10,7 @@
 		<relativePath>../../releng/com.evrasoft.jcr.parent/pom.xml</relativePath>
 	</parent>
 
+	<groupId>com.evrasoft.jcr</groupId>
 	<artifactId>com.evrasoft.jcr.cnd.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
 </project>

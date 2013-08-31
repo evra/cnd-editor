@@ -10,6 +10,7 @@
 		<relativePath>../../releng/com.evrasoft.jcr.parent/pom.xml</relativePath>
 	</parent>
 
+	<groupId>com.evrasoft.jcr</groupId>
 	<artifactId>com.evrasoft.jcr.updatesite</artifactId>
 	<packaging>eclipse-repository</packaging>
 	
