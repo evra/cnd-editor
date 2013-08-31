@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: com.evrasoft.jcr.cnd
+Bundle-Name: %pluginName
 Bundle-Version: 0.1.0.qualifier
 Bundle-SymbolicName: com.evrasoft.jcr.cnd;singleton:=true
 Bundle-ActivationPolicy: lazy
@@ -32,3 +32,4 @@ Export-Package: com.evrasoft.jcr,
  com.evrasoft.jcr.serializer,
  com.evrasoft.jcr.services,
  com.evrasoft.jcr.validation
+Bundle-Vendor: %providerName

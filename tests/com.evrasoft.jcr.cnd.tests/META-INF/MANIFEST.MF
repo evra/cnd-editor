@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: com.evrasoft.jcr.cnd.tests
-Bundle-Vendor: evrasoft
+Bundle-Name: %pluginName
+Bundle-Vendor: %providerName
 Bundle-Version: 0.1.0.qualifier
 Bundle-SymbolicName: com.evrasoft.jcr.cnd.tests;singleton:=true
 Bundle-ActivationPolicy: lazy

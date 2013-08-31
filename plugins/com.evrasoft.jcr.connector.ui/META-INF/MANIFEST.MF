@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: JCR2.0 Connector UI
+Bundle-Name: %pluginName
 Bundle-SymbolicName: com.evrasoft.jcr.connector.ui;singleton:=true
 Bundle-Version: 0.1.0.qualifier
 Bundle-Activator: com.evrasoft.jcr.connector.ui.Activator
-Bundle-Vendor: evra
+Bundle-Vendor: %pluginProvider
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.ui.ide,
