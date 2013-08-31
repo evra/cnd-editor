@@ -43,15 +43,16 @@ echo ("Release version: " + args.releaseVersion + ", development version: " + ar
 if args.dryRun:
 	echo ("Dry run, no changes will be committed")
 
-if isGitWorikingDirectoryClean():
+if isGitWorikingDirectoryClean() or (not isGitWorikingDirectoryClean()  and  args.dryRun):
 
 	# Doing the release
 	
 	echo ("Set new version to release version " + args.releaseVersion)
 	call ("mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=" + args.releaseVersion)
-	call ("sed -i .bak 's/.qualifier//g' ../" + updatesiteDir + "/category.xml")
+	call ("sed -i.bak 's/.qualifier//g' ../" + updatesiteDir + "/category.xml")
 	call ("./build.py clean verify")
-	call ("mv ../" + updatesiteDir + "/target/" + updatesiteDir + ".zip ../" + releaseDir + "/" + releaseDir + "-" + args.releaseVersion + ".zip")
+	call ("mkdir ../" + releaseDir)
+	call ("mv ../" + updatesiteDir + "/target/" + updatesiteDir + "-" + args.releaseVersion + ".zip ../" + releaseDir + "/")
 	
 	if not args.dryRun:
 		call ("git commit -a -m '[release]	Release " + args.releaseVersion + "'")
@@ -61,7 +62,7 @@ if isGitWorikingDirectoryClean():
 	
 	echo ("Set new version to development version " + args.devVersion + "-SNAPSHOT")
 	call ("mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=" + args.devVersion + "-SNAPSHOT")
-	call ('sed -i .bak "s/' + args.releaseVersion + '/' + args.devVersion + '\.qualifier/g" ../' + updatesiteDir + '/category.xml')
+	call ('sed -i.bak "s/' + args.releaseVersion + '/' + args.devVersion + '\.qualifier/g" ../' + updatesiteDir + '/category.xml')
 	call ("./build.py clean verify")
 	
 	if not args.dryRun:
