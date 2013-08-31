@@ -99,7 +99,7 @@ public class SerializerTest extends AbstractXtextTests {
 		dslNtd.getDeclaredSupertypeNames().add(dslNtdUnresolvedSuperType);
 
 		String string = serializer.serialize(dslNtd, SaveOptions.defaultOptions());
-		assertEquals("[ test:nodeType ] > mySuperType", string);
+		assertEquals("[test:nodeType] > mySuperType", string);
 	}
 
 	@Test
@@ -118,7 +118,7 @@ public class SerializerTest extends AbstractXtextTests {
 		model.getNodeTypes().add(dslNtdResolvedSuperType);
 
 		String string = serializer.serialize(dslNtd, SaveOptions.defaultOptions());
-		assertEquals("[ test:nodeType ] > mySuperType", unform(string));
+		assertEquals("[test:nodeType] > mySuperType", unform(string));
 	}
 
 	@Test(expected = Exception.class)
@@ -131,7 +131,7 @@ public class SerializerTest extends AbstractXtextTests {
 		dslNtd.setPrimaryItem(itemDefinition);
 
 		String string = serializer.serialize(dslNtd, SaveOptions.newBuilder().noValidation().getOptions());
-		assertEquals("[ test:nodeType ] primaryitem myItem", string);
+		assertEquals("[test:nodeType] primaryitem myItem", string);
 	}
 
 	@Test()
@@ -148,11 +148,11 @@ public class SerializerTest extends AbstractXtextTests {
 		dslNtd.getDeclaredChildNodeDefinitions().add(itemDefinition);
 
 		String string = serializer.serialize(dslNtd);
-		assertEquals("[ test:nodeType ] primaryitem myItem + myItem", unform(string));
+		assertEquals("[test:nodeType] primaryitem myItem + myItem", unform(string));
 	}
 
 	protected static String unform(String string) {
-		return string.replace("\r\n", " ").replace("\\s+", " ");
+		return string.replace("\r", " ").replace("\n", " ").replace("\t", " ").replaceAll("\\s+", " ");
 	}
 
 	public Model createModel() {
