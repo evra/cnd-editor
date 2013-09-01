@@ -19,7 +19,7 @@ public class CndLinkingDiagnosticMessageProvider extends
 		EObject element = context.getContext();		
 		//TODO  check reference type (use CndSwitch ?)
 		EReference reference = context.getReference();
-		System.out.println(reference.getName() + "=" + context.getLinkText());
+
 		EClass eReferenceType = context.getReference().getEReferenceType();
 		
 		

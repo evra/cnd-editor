@@ -14,14 +14,12 @@ import com.evrasoft.jcr.cnd.NodeTypeDefinition;
 public class DummySerializationScope implements IScope {
 
 	@Override
-	public IEObjectDescription getSingleElement(EObject object) {
-		System.out.println(object);
+	public IEObjectDescription getSingleElement(EObject object) {		
 		return null;
 	}
 	
 	@Override
-	public IEObjectDescription getSingleElement(QualifiedName name) {
-		System.out.println(name);
+	public IEObjectDescription getSingleElement(QualifiedName name) {		
 		return null;
 	}
 	
@@ -37,13 +35,11 @@ public class DummySerializationScope implements IScope {
 	
 	@Override
 	public Iterable<IEObjectDescription> getElements(QualifiedName name) {
-		System.out.println(name);
 		return null;
 	}
 	
 	@Override
 	public Iterable<IEObjectDescription> getAllElements() {
-		System.out.println("Get all elements");
 		return null;
 	}
 }
