@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+	<template id="TEMPLATE_CHILDNODE" autoinsert="true" context="com.evrasoft.jcr.Cnd.NodeTypeDefinition"
+		deleted="false" description="Insert new child node" enabled="true"
+		name="New child node">+ ${name} = ${defaultType}</template>
+	<template id="TEMPLATE_NODETYPEDEF" autoinsert="true" context="com.evrasoft.jcr.Cnd.Model"
+		deleted="false" description="Create new node type definition" enabled="true"
+		name="New node type definition">[${name}]</template>
+	<template id="TEMPLATE_PROPERTY" autoinsert="true" context="com.evrasoft.jcr.Cnd.NodeTypeDefinition"
+		deleted="false" description="Insert new property" enabled="true"
+		name="New property">- ${name} (${type})</template>
+</templates>
