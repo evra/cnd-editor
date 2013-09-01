@@ -4,7 +4,7 @@ cnd-editor
 JCR (JSR-283) Compact Namespace and Node Type Definition (CND) Editor.
 
 The editor is built as eclipse plugin and supports code completion, validation, navigation, basic refactoring, syntax highlighting, 
-auto formatting, code templates, outline and code generation. 
+auto formatting, code templates, outline and code generation. See [screenshots](https://github.com/evra/cnd-editor/wiki) 
 
 The editor is based on [Xtext](http://www.eclipse.org/Xtext/) and can be used to build other DSL which need to reference CND.
 For example one can reuse CND grammar to build jcr content descriptor DSL. It can be also used for java code generation using
