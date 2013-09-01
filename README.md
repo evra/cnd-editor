@@ -20,7 +20,7 @@ Installation
 --
 This is an eclipse plugin and requires eclipse 4.3 (Kepler). 
 
-* Download the latest release package.
+* Download the latest [release](https://github.com/evra/cnd-editor/releases) package.
 * Install the package using the eclipse update manager: Help -> Insall new software -> Add -> Archive -> Select downloaded package
 * Select "JCR CND Editor Feature", select "Contact all update sites during install to find required software" 
 * Click finish and restart eclipse.
