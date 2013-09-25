@@ -392,5 +392,53 @@
             extensions="cnd">
     </provider>
   </extension>
+  <extension
+        point="org.eclipse.ui.navigator.viewer">
+     <!--viewerActionBinding
+           viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+        <includes>
+           <actionExtension
+                 pattern="org.eclipse.ui.navigator.resources.*">
+           </actionExtension>
+        </includes>
+     </viewerActionBinding-->
+     <viewerContentBinding
+           viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+        <includes>
+           <contentExtension
+                 pattern="com.evrasoft.jcr.cnd.ui.xtext.resourceset">
+           </contentExtension>
+        </includes>
+     </viewerContentBinding>
+  </extension>
+  <extension
+        point="org.eclipse.ui.navigator.navigatorContent">
+     <navigatorContent
+           activeByDefault="false"
+           contentProvider="com.evrasoft.jcr.ui.CndExecutableExtensionFactory:com.evrasoft.jcr.ui.navigator.ContainerResourcesContentProvider"
+           id="com.evrasoft.jcr.cnd.ui.xtext.resourceset"
+           labelProvider="com.evrasoft.jcr.ui.CndExecutableExtensionFactory:com.evrasoft.jcr.ui.navigator.ContainerResourcesLabelProvider"
+           name="Visible Xtext resources"
+           priority="low">
+        <triggerPoints>
+                <or>
+           <adapt type="org.eclipse.core.resources.IProject" >
+						<test
+            forcePluginActivation="true"
+            property="org.eclipse.core.resources.projectNature"
+            value="org.eclipse.xtext.ui.shared.xtextNature"/>
+					</adapt>
+           </or>
+         	
+		</triggerPoints> 
+		<possibleChildren> 
+		    <or> 
+		        <instanceof value="org.eclipse.core.resources.IFile"/>
+		        <instanceof value="org.eclipse.emf.common.util.URI"/>  
+		    </or> 
+		</possibleChildren>   
+		                      
+     </navigatorContent>
+  </extension>
 
 </plugin>

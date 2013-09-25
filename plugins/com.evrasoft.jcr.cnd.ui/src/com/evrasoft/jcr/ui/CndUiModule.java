@@ -22,7 +22,9 @@ public class CndUiModule extends com.evrasoft.jcr.ui.AbstractCndUiModule {
 		return CndLinkingDiagnosticMessageProvider.class;
 	}
 
+	@Override
 	public Class<? extends IIndentationInformation> bindIIndentationInformation() {
 		return PreferenceStoreIndentationInformation.class;
 	}
+
 }
