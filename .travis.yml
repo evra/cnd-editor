@@ -1,0 +1,2 @@
+language: java
+script: "./releng/com.evrasoft.jcr.parent/build.py"
