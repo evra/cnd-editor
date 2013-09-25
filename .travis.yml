@@ -1,2 +1,2 @@
 language: java
-script: "./releng/com.evrasoft.jcr.parent/build.py"
+script: "mvn -f ./releng/com.evrasoft.jcr.repository.parent/pom.xml"
