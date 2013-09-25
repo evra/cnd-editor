@@ -18,7 +18,8 @@ Require-Bundle: com.evrasoft.jcr.cnd;visibility:=reexport,
  org.eclipse.ui.navigator,
  org.eclipse.core.resources,
  org.eclipse.ui.navigator.resources,
- org.eclipse.xtext
+ org.eclipse.xtext,
+ org.eclipse.jface
 Import-Package: org.apache.log4j,
  org.eclipse.xtext.xbase.lib
 Bundle-RequiredExecutionEnvironment: J2SE-1.5

@@ -440,5 +440,13 @@
 		                      
      </navigatorContent>
   </extension>
+  <extension
+        point="org.eclipse.core.resources.variableResolvers">
+        <!--value="platform:/plugin/com.evrasoft.jcr.cnd/jcr-cnd" -->
+     <variableResolver
+           class="com.evrasoft.jcr.ui.variableresolvers.Jsr283NodeTypesVarPathResolver"
+           variable="JSR283_NODETYPES">
+     </variableResolver>
+  </extension>
 
 </plugin>
