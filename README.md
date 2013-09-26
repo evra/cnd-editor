@@ -1,4 +1,4 @@
-cnd-editor
+cnd-editor 
 ==========
 
 JCR (JSR-283) Compact Namespace and Node Type Definition (CND) Editor.
@@ -11,7 +11,7 @@ For example one can reuse CND grammar to build jcr content descriptor DSL. It ca
 [xtend](http://www.eclipse.org/xtend/) language (for example POJO classes generation based on node type definitions).
 
 
-Status
+Status [![Build Status](https://travis-ci.org/evra/cnd-editor.png)](https://travis-ci.org/evra/cnd-editor)
 --
 The project is in beta phase however the editor is stable and has most of the features required to create complex CND files. 
 Bug reports, feature requests, merge requests are wellcome.
