@@ -24,7 +24,7 @@ public class Container {
 
 	public Object[] getResources() {
 
-		LinkedList resources = new LinkedList<>();
+		LinkedList resources = new LinkedList();
 		Collection<URI> containedURIs = containersState.getContainedURIs(name);
 		for (URI uri : containedURIs) {
 
