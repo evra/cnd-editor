@@ -20,39 +20,10 @@
 
 	<modules>
 		<module>../../releng/com.evrasoft.jcr.targetplatform</module>					
-		<module>../../releng/com.evrasoft.jcr.repository.3rdparty</module>
 		<module>../../releng/com.evrasoft.jcr.repository</module>				
 	</modules>
 
     <build>
-		<!--plugins>
-				<plugin>
-		            <groupId>org.eclipse.tycho.extras</groupId>
-		            <artifactId>tycho-p2-extras-plugin</artifactId>
-		            <version>${tycho-version}</version>
-		            <executions>
-		                <execution>
-		                    <id>merge-repos</id>
-		                    <phase>package</phase>
-		                    <goals>
-		                        <goal>mirror</goal>
-		                    </goals>
-		                    <configuration>
-		                        <source>
-		                            <repository>	                               
-		                                <url>file:///D:/data/projects/jcr-modeling/git/releng/com.evrasoft.jcr.repository/target/repository</url>	                                
-		                            </repository>
-		             	            <repository>
-		                                <url>file:///D:/data/projects/jcr-modeling/git/releng/com.evrasoft.jcr.repository/../com.evrasoft.jcr.repository.3rdparty/target/repository</url>
-		                            </repository>
-		                        </source>
-		                        <append>true</append>
-		                        <destination>${project.build.directory}\joint-repository</destination>
-		                    </configuration>
-		                </execution>
-		            </executions>
-		        </plugin>
-		</plugins-->
 	</build>
 
 	<pluginRepositories>

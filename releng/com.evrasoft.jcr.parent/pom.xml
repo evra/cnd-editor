@@ -20,8 +20,7 @@
 
 	<modules>
 		<module>../../plugins/com.evrasoft.jcr.cnd</module>
-		<module>../../plugins/com.evrasoft.jcr.cnd.ui</module>
-		<module>../../plugins/com.evrasoft.jcr.connector.ui</module>
+		<module>../../plugins/com.evrasoft.jcr.cnd.ui</module>		
 		<module>../../tests/com.evrasoft.jcr.cnd.tests</module>
 		<module>../../features/com.evrasoft.jcr.cnd.feature</module>
 		<module>../../features/com.evrasoft.jcr.cnd.feature.source</module>
