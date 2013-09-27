@@ -20,7 +20,8 @@ Installation
 --
 This is an eclipse plugin and requires eclipse 4.3 (Kepler). 
 
-You can use eclipse update site [http://dl.bintray.com/evra/eclipse](http://dl.bintray.com/evra/eclipse)
+You can use our eclipse update site [http://dl.bintray.com/evra/eclipse](http://dl.bintray.com/evra/eclipse). 
+Release information is also available at our [bintray page](https://bintray.com/evra/eclipse/cnd-editor).
 
 Alternatively you can install the package manually from github:
 * Download the latest [release](https://github.com/evra/cnd-editor/releases) package.
