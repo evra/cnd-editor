@@ -6,9 +6,14 @@ import org.eclipse.xtext.conversion.ValueConverter;
 
 public class CndConverters extends DefaultTerminalConverters {
 
+	@ValueConverter(rule = "JcrString")
+	public IValueConverter<String> JcrString() {
+		return new JcrStringConverter("");
+	}
+
 	@ValueConverter(rule = "Uri")
 	public IValueConverter<String> Uri() {
-		return new JcrStringConverter();
+		return new JcrStringConverter("'");
 	}
 
 }

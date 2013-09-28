@@ -1,4 +1,4 @@
-grammar com.evrasoft.jcr.Cnd with org.eclipse.xtext.common.Terminals 
+grammar com.evrasoft.jcr.Cnd hidden(WS, ML_COMMENT, SL_COMMENT) 
 
 import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 
@@ -36,17 +36,16 @@ NodeTypeDefinition:
  */
 ItemDefinition :
 	NodeDefinition | PropertyDefinition
-;
 
-//ItemDefinition returns ItemDefinition:	
-//	(name=JcrString|name='*' /*Jackrabbit feature */) //ItemDef
-//	(
-//		autocreated?=Autocreated? & //ItemDef
-//		manadatory?=Mandatory? &	//ItemDef
-//		protected?=Protected? &		//ItemDef
-//		onParentVersion=Opv?       //ItemDef
-//	)
-//;
+	//Properties shared by NodeDefinition and PropertyDefinition
+	//	(name=JcrString|name='*' /*Jackrabbit feature */) //ItemDef
+	//	(
+	//		autocreated?=Autocreated? & //ItemDef
+	//		manadatory?=Mandatory? &	//ItemDef
+	//		protected?=Protected? &		//ItemDef
+	//		onParentVersion=Opv?       //ItemDef
+	//	)
+;
 
 NodeDefinition:// returns ItemDefinition:
 	
@@ -199,58 +198,36 @@ Orderable:
 ;
 
 NsMapping :
-	 '<' name=Prefix '=' uri=Uri '>';
+	 '<' name=JcrString '=' uri=Uri '>';
 
-Prefix :
-	 XiD;
 
 Uri: 
 	 JcrString;
 
 JcrString:
-	STRING | XiD		
+	STRING | UNQUOTED_STRING | ('mix') | ('name')		
 ;
 
-XiD:
-	EXID|('mix')
-	// Fix ID rule conflicts. http://www.eclipse.org/forums/index.php/t/489632/
-	//EXID
+terminal UNQUOTED_STRING:
+	 //dots in names are not allowed by the JSR but some implementations support them 
+	 ('a'..'z'|'A'..'Z'|'_'|'0'..'9'|':'|'*'|'.')*
 ;
-
-terminal EXID :  ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9'|':'|'*')* ;
-
-//jcr_string:
-//	quoted_string|UNQUOTED_STRING		
-//;
-
-//quoted_string:
-//	"'" UNQUOTED_STRING "'"
-//;
 
 //TODO 
 //According to JCR2.0 string terminal must follow XML char definition  /* see §3.2.2 Local Names */
 
 //see NCNAME in Antlr XPath grammar http://www.antlr3.org/grammar/1264460091565/XPath2.g
 
-
-//terminal NAMESPACE_PREFIX : 
-//	ID
-//;
-
-//terminal STRING	: 
-//			'"' ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* '"' |
-//			"'" ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'" 
-//			|(!('\\'|"'"|'"') )+
-//		; 
- 
-//terminal NAMESPACE_PREFIX : ('A'..'Z'|'a'..'z'|'0'..'9'|'_')+;
-
 //terminal UNQUOTED_STRING : (XML_CHAR)+;
 //terminal fragment XML_CHAR : ('\u0022'..'\u007E');
 
-//terminal ML_COMMENT	: '/*' -> '*/';
-//terminal SL_COMMENT 	: '//' !('\n'|'\r')* ('\r'? '\n')?;
-//
-//terminal WS			: (' '|'\t'|'\r'|'\n')+;
 
+terminal STRING	: 
+			'"' ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* '"' |
+			"'" ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'"
+		; 
+terminal ML_COMMENT	: '/*' -> '*/';
+terminal SL_COMMENT 	: '//' !('\n'|'\r')* ('\r'? '\n')?;
+
+terminal WS			: (' '|'\t'|'\r'|'\n')+;
 
