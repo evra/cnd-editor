@@ -418,7 +418,7 @@
            contentProvider="com.evrasoft.jcr.ui.CndExecutableExtensionFactory:com.evrasoft.jcr.ui.navigator.ContainerResourcesContentProvider"
            id="com.evrasoft.jcr.cnd.ui.xtext.resourceset"
            labelProvider="com.evrasoft.jcr.ui.CndExecutableExtensionFactory:com.evrasoft.jcr.ui.navigator.ContainerResourcesLabelProvider"
-           name="Visible Xtext resources"
+           name="Linked Xtext resources"
            priority="low">
         <triggerPoints>
                 <or>
