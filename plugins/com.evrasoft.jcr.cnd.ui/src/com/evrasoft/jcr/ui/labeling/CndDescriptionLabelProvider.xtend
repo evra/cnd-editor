@@ -3,6 +3,8 @@
 */
 package com.evrasoft.jcr.ui.labeling
 
+import com.evrasoft.jcr.cnd.NodeTypeDefinition
+
 //import org.eclipse.xtext.resource.IEObjectDescription
 
 /**
@@ -21,4 +23,9 @@ class CndDescriptionLabelProvider extends org.eclipse.xtext.ui.label.DefaultDesc
 //	override image(IEObjectDescription ele) {
 //		ele.EClass.name + '.gif'
 //	}	 
+
+	def image(NodeTypeDefinition ntd) {
+		return 'nodetypedef.gif'
+	}	 
+
 }
