@@ -4,9 +4,18 @@
 package com.evrasoft.jcr.ui.contentassist
 
 import com.evrasoft.jcr.ui.contentassist.AbstractCndProposalProvider
+import org.eclipse.emf.ecore.EObject
+import org.eclipse.xtext.RuleCall
+import org.eclipse.xtext.ui.editor.contentassist.ContentAssistContext
+import org.eclipse.xtext.ui.editor.contentassist.ICompletionProposalAcceptor
 
 /**
  * see http://www.eclipse.org/Xtext/documentation.html#contentAssist on how to customize content assistant
  */
 class CndProposalProvider extends AbstractCndProposalProvider {
+	
+	override complete_NodeTypeDefinition(EObject model, RuleCall ruleCall, ContentAssistContext context, ICompletionProposalAcceptor acceptor) {						
+		//acceptor.accept(createCompletionProposal("> parentNodeType", context));
+	}
+	
 }
