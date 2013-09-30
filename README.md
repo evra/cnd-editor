@@ -11,6 +11,7 @@ The editor is based on [Xtext](http://www.eclipse.org/Xtext/) and can be used to
 For example one can reuse CND grammar to [build](https://github.com/evra/sling-contenteditor) jcr content descriptor DSL. It can be also used for java code generation using
 [xtend](http://www.eclipse.org/xtend/) language (for example POJO classes generation based on node type definitions).
 
+Visit users and developers discussion [group](https://groups.google.com/forum/#!forum/cnd-editor) if you have any questions or suggestions. 
 
 Status [![Build Status](https://travis-ci.org/evra/cnd-editor.png)](https://travis-ci.org/evra/cnd-editor)
 --
