@@ -7,6 +7,7 @@ import org.eclipse.core.resources.IPathVariableManager;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IWorkspace;
+import org.eclipse.core.resources.ResourceAttributes;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IAdaptable;
@@ -80,6 +81,16 @@ public class LinkedNodeTypesPropertyPage extends PropertyPage {
 
 		IFolder link = project.getFolder(Jsr283NodeTypesVarPathResolver.NAME);
 		IPath location = new Path(targetUri.getSchemeSpecificPart());
+		ResourceAttributes attributes = link.getResourceAttributes();
+		if (attributes != null) {
+			attributes.setReadOnly(true);
+			try {
+				link.setResourceAttributes(attributes);
+			} catch (CoreException e) {
+				return;
+			}
+		}
+
 		if (!link.exists() && workspace.validateLinkLocation(link, location).isOK()) {
 			try {
 				link.createLink(location, IResource.NONE, null);
