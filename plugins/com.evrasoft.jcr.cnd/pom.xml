@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.evrasoft.jcr</groupId>
 		<artifactId>com.evrasoft.jcr.parent</artifactId>
-		<version>0.2.0</version>
+		<version>0.2.1-SNAPSHOT</version>
 		<relativePath>../../releng/com.evrasoft.jcr.parent/pom.xml</relativePath>
 	</parent>
 
