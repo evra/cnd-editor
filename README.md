@@ -8,7 +8,7 @@ The editor is built as eclipse plugin and supports code completion, validation, 
 auto formatting, code templates, outline and code generation. See [project site](http://evra.github.io/cnd-editor/) for more details. 
 
 The editor is based on [Xtext](http://www.eclipse.org/Xtext/) and can be used to build other DSL which need to reference CND.
-For example one can reuse CND grammar to build jcr content descriptor DSL. It can be also used for java code generation using
+For example one can reuse CND grammar to [build](https://github.com/evra/sling-contenteditor) jcr content descriptor DSL. It can be also used for java code generation using
 [xtend](http://www.eclipse.org/xtend/) language (for example POJO classes generation based on node type definitions).
 
 
