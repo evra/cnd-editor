@@ -38,42 +38,54 @@
 Compact Namespace and Node Type Definition (CND) Editor.</p>
 
 <p>The editor is built as eclipse plugin and supports code completion, validation, navigation, basic refactoring, syntax highlighting, 
-auto formatting, code templates, outline and code generation. See <a href="https://github.com/evra/cnd-editor/wiki">screenshots</a> </p>
+auto formatting, code templates, outline and code generation. </p>
 
 <p>The editor is based on <a href="http://www.eclipse.org/Xtext/">Xtext</a> and can be used to build other DSL which need to reference CND.
 For example one can reuse CND grammar to build jcr content descriptor DSL. It can be also used for java code generation using
 <a href="http://www.eclipse.org/xtend/">xtend</a> language (for example POJO classes generation based on node type definitions).</p>
 
 <h2>
-<a name="main-features" class="anchor" href="#main-features"><span class="octicon octicon-link"></span></a>Main features</h2>
-
-<p>Syntax highlighting, formatting, outline</p>
-
-<h2>
-<a name="status-" class="anchor" href="#status-"><span class="octicon octicon-link"></span></a>Status </h2>
-
-<p>The project is in beta phase however the editor is stable and has most of the features required to create complex CND files. 
-Bug reports, feature requests, merge requests are wellcome.</p>
-
-<h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>This is an eclipse plugin and requires eclipse 4.3 (Kepler). </p>
 
-<p>You can use our eclipse update site <a href="http://dl.bintray.com/evra/eclipse">http://dl.bintray.com/evra/eclipse</a>. 
-Release information is also available at our <a href="https://bintray.com/evra/eclipse/cnd-editor">bintray page</a>.</p>
+<p>You can use our eclipse update site <a href="http://dl.bintray.com/evra/eclipse">http://dl.bintray.com/evra/eclipse</a>. </p>
 
 <p>Alternatively you can install the package manually from github:</p>
 
 <ul>
 <li>Download the latest <a href="https://github.com/evra/cnd-editor/releases">release</a> package.</li>
-<li>Install the package using the eclipse update manager: Help -&gt; Insall new software -&gt; Add -&gt; Archive -&gt; Select downloaded package</li>
+<li>Install the package using the eclipse update manager: Help -&gt; Install new software -&gt; Add -&gt; Archive -&gt; Select downloaded package</li>
 <li>Select "JCR CND Editor Feature", select "Contact all update sites during install to find required software" </li>
 <li>Click finish and restart eclipse.</li>
 </ul><h2>
 <a name="development" class="anchor" href="#development"><span class="octicon octicon-link"></span></a>Development</h2>
 
 <p>See <a href="https://github.com/evra/cnd-editor">project page</a> how to start contributing to the project</p>
+
+<h2>
+<a name="main-features" class="anchor" href="#main-features"><span class="octicon octicon-link"></span></a>Main features</h2>
+
+<p><strong>Syntax highlighting, formatting, outline</strong>
+<img src="http://evra.github.io/cnd-editor/images/screenshots/outline-lighlighting-formatting.PNG" alt="highlighting, formatting, outline"></p>
+
+<p><strong>Navigation in CND file.</strong> You can follow any valid node type reference, for example parent node type or primary node. You can also lookup node type documentation defined as comments before node type definition.
+<img src="http://evra.github.io/cnd-editor/images/screenshots/navigation.png" alt="navigation"></p>
+
+<p><strong>Content assist.</strong> CND editor provides you a list of possible references to node types which can be inserted as parent types, primary types etc.
+<img src="http://evra.github.io/cnd-editor/images/screenshots/content-assist.png" alt="content-assist"></p>
+
+<p><strong>Validation.</strong> The editor marks invalid (not existing) node type references.
+<img src="http://evra.github.io/cnd-editor/images/screenshots/validation.png" alt="validation"></p>
+
+<p><strong>Refactoring.</strong> You can change the node type name and all references will be updated automatically.
+<img src="http://evra.github.io/cnd-editor/images/screenshots/refactoring.png" alt="refactoring"></p>
+
+<p><strong>Linked resources.</strong> The editor automatically descovers all CND files in the referenced projects and in the java project classpath and adds find resources to project index. You can also add standard JSR283 node types provided as path variable for linked resources, alternatively you can add them in project properties dialog under Cnd category.
+<img src="http://evra.github.io/cnd-editor/images/screenshots/linked-resources.PNG" alt="linked-resources"></p>
+
+<p><strong>Code templates.</strong> You can define your own CND code templates and apply them from the content assist popup. Some usefull templates are already provided by the editor plugin-in.
+<img src="http://evra.github.io/cnd-editor/images/screenshots/templates.PNG" alt="templates"></p>
       </section>
     </div>
 
