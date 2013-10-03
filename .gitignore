@@ -1,6 +1,10 @@
 target/
 bin/
 
+#xtext generated files 
+src-gen/
+xtend-gen/
+
 # OS generated files
 .DS_Store
 Thumbs.db
