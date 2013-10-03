@@ -100,12 +100,12 @@ cd ../com.evrasoft.jcr.parent/
 	
 	echo "Set new version to development version $NEXTDEV_VERSION-SNAPSHOT"
 	mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=$NEXTDEV_VERSION-SNAPSHOT
-	sed -i.bak 's/$RELEASE_VERSION/$NEXTDEV_VERSION\.qualifier/g' ../$updatesiteDir/category.xml
+	sed -i.bak "s/$RELEASE_VERSION/$NEXTDEV_VERSION\.qualifier/g" ../$updatesiteDir/category.xml
 	
 	#mvn clean verify
 		
 	if [ ! "$DRY_RUN" ]; then
-		git commit -a -m '[release] Set version to $NEXTDEV_VERSION-SNAPSHOT'
+		git commit -a -m "[release] Set version to $NEXTDEV_VERSION-SNAPSHOT"
 	fi
 	
 	# Success message
