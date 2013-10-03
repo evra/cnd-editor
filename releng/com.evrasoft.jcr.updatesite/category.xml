@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.evrasoft.jcr.cnd.feature_0.2.0.qualifier.jar" id="com.evrasoft.jcr.cnd.feature" version="0.2.0.qualifier">
+   <feature url="features/com.evrasoft.jcr.cnd.feature_0.2.1.qualifier.jar" id="com.evrasoft.jcr.cnd.feature" version="0.2.1.qualifier">
       <category name="jcrcndeditor"/>
    </feature>
-   <feature url="features/com.evrasoft.jcr.cnd.feature.sdk_0.2.0.qualifier.jar" id="com.evrasoft.jcr.cnd.feature.sdk" version="0.2.0.qualifier">
+   <feature url="features/com.evrasoft.jcr.cnd.feature.sdk_0.2.1.qualifier.jar" id="com.evrasoft.jcr.cnd.feature.sdk" version="0.2.1.qualifier">
       <category name="jcrcndeditor"/>
    </feature>
-   <feature url="features/com.evrasoft.jcr.cnd.feature.source_0.2.0.qualifier.jar" id="com.evrasoft.jcr.cnd.feature.source" version="0.2.0.qualifier">
+   <feature url="features/com.evrasoft.jcr.cnd.feature.source_0.2.1.qualifier.jar" id="com.evrasoft.jcr.cnd.feature.source" version="0.2.1.qualifier">
       <category name="jcrcndeditor"/>
    </feature>
    <category-def name="jcrcndeditor" label="JCR CND Editor"/>
