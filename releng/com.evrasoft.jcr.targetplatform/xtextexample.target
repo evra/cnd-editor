@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.8"?>
 
-<target includeMode="feature" name="CND Editor Target Platform" sequenceNumber="110">
+<target includeMode="feature" name="CND Editor Target Platform" sequenceNumber="114">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.sdk.ide" version="4.3.0.I20130605-2000"/>
@@ -9,15 +9,15 @@
 <repository location="http://download.eclipse.org/eclipse/updates/4.3"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="de.itemis.xtext.antlr.sdk.feature.group" version="2.0.0.v201108011202"/>
-<unit id="de.itemis.xtext.antlr.feature.feature.group" version="2.0.0.v201108011202"/>
+<unit id="de.itemis.xtext.antlr.sdk.feature.group" version="2.1.0.v201308291703"/>
+<unit id="de.itemis.xtext.antlr.feature.feature.group" version="2.1.0.v201308291703"/>
 <repository location="http://download.itemis.de/updates/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.emf.mwe2.language.sdk.feature.group" version="2.4.0.v201306110940"/>
-<unit id="org.eclipse.emf.sdk.feature.group" version="2.9.0.v20130610-0406"/>
-<unit id="org.eclipse.xtext.sdk.feature.group" version="2.4.2.v201306120542"/>
-<unit id="org.eclipse.emf.mwe2.runtime.sdk.feature.group" version="2.4.0.v201306110341"/>
+<unit id="org.eclipse.emf.mwe2.runtime.sdk.feature.group" version="2.4.1.v201309030422"/>
+<unit id="org.eclipse.xtext.sdk.feature.group" version="2.4.3.v201309030823"/>
+<unit id="org.eclipse.emf.mwe2.language.sdk.feature.group" version="2.4.1.v201309030840"/>
+<unit id="org.eclipse.emf.sdk.feature.group" version="2.9.1.v20130902-0605"/>
 <repository location="http://download.eclipse.org/releases/kepler"/>
 </location>
 </locations>

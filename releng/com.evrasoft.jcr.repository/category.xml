@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.xtext.sdk_2.4.2.v201306120542.jar" id="org.eclipse.xtext.sdk" version="2.4.2.v201306120542">
-      <category name="3rdparty"/>
-   </feature>
    <feature url="features/org.eclipse.sdk_4.3.0.v20130605-2000.jar" id="org.eclipse.sdk" version="4.3.0.v20130605-2000">
-      <category name="3rdparty"/>
-   </feature>
-   <feature url="features/de.itemis.xtext.antlr.sdk_2.0.0.v201108011202.jar" id="de.itemis.xtext.antlr.sdk" version="2.0.0.v201108011202">
-      <category name="3rdparty"/>
-   </feature>
-   <feature url="features/org.eclipse.emf.mwe2.runtime.sdk_2.4.0.v201306110341.jar" id="org.eclipse.emf.mwe2.runtime.sdk" version="2.4.0.v201306110341">
-      <category name="3rdparty"/>
-   </feature>
-   <feature url="features/org.eclipse.emf.mwe2.language.sdk_2.4.0.v201306110940.jar" id="org.eclipse.emf.mwe2.language.sdk" version="2.4.0.v201306110940">
       <category name="3rdparty"/>
    </feature>
    <feature url="features/org.eclipse.equinox.executable_3.6.0.v20130521-0416.jar" id="org.eclipse.equinox.executable" version="3.6.0.v20130521-0416">
       <category name="3rdparty"/>
    </feature>
-   <category-def name="3rdparty" label="3rdparty"/> 
+   <feature url="features/de.itemis.xtext.antlr.sdk_2.1.0.v201308291703.jar" id="de.itemis.xtext.antlr.sdk" version="2.1.0.v201308291703">
+      <category name="3rdparty"/>
+   </feature>
+   <feature url="features/org.eclipse.xtext.sdk_2.4.3.v201309030823.jar" id="org.eclipse.xtext.sdk" version="2.4.3.v201309030823">
+      <category name="3rdparty"/>
+   </feature>
+   <feature url="features/org.eclipse.emf.mwe2.language.sdk_2.4.1.v201309030840.jar" id="org.eclipse.emf.mwe2.language.sdk" version="2.4.1.v201309030840">
+      <category name="3rdparty"/>
+   </feature>
+   <feature url="features/org.eclipse.emf.mwe2.runtime.sdk_2.4.1.v201309030422.jar" id="org.eclipse.emf.mwe2.runtime.sdk" version="2.4.1.v201309030422">
+      <category name="3rdparty"/>
+   </feature>
+   <category-def name="3rdparty" label="3rdparty"/>
 </site>
