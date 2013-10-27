@@ -2,7 +2,7 @@ cnd-editor
 ==========
 
 [JCR](http://en.wikipedia.org/wiki/Content_repository_API_for_Java) ([JSR-283](http://jcp.org/en/jsr/detail?id=283))
-Compact Namespace and Node Type Definition (CND) Editor.
+Compact Namespace and Node Type Definition ([CND](http://jackrabbit.apache.org/node-type-notation.html)) Editor.
 
 The editor is built as eclipse plugin and supports code completion, validation, navigation, basic refactoring, syntax highlighting, 
 auto formatting, code templates, outline and code generation. See [project site](http://evra.github.io/cnd-editor/) for more details. 
