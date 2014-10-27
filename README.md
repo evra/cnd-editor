@@ -34,3 +34,7 @@ Alternatively you can install the package manually from github:
 Development
 --
 See [dev README](/releng/com.evrasoft.jcr.repository.parent/README.md) how to setup dev environment and start extending the editor.
+
+Contact
+--
+evgeny@evrasoft.com
