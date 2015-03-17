@@ -8,11 +8,9 @@ import org.eclipse.xtext.ui.generator.*
 var fileExtensions = "cnd"
 var projectName = "com.evrasoft.jcr.cnd"
 
-// var grammarURI = "classpath:/com/evrasoft/jcr/Cnd.xtext"
 var grammarURI = "platform:/resource/${projectName}/src/com/evrasoft/jcr/Cnd.xtext"
 var runtimeProject = "../${projectName}"
 var generateXtendStub = true
-var encoding = "UTF-8"
 
 Workflow {
     bean = StandaloneSetup {
@@ -51,18 +49,16 @@ Workflow {
     }
     
     component = DirectoryCleaner {
-    	//directory = "${runtimeProject}.tests/src-gen"
     	directory = "../../tests/${projectName}.tests/src-gen"
-    	
     }
     
-    component = Generator {
+    component = Generator auto-inject {
     	pathRtProject = runtimeProject
     	pathUiProject = "${runtimeProject}.ui"
-    	//pathTestProject = "${runtimeProject}.tests"
     	pathTestProject = "../../tests/${projectName}.tests"
     	projectNameRt = projectName
     	projectNameUi = "${projectName}.ui"
+    	
     	language = auto-inject {
             // make sure we use the resourceSet created during standalone setup.
             forcedResourceSet = theResourceSet
@@ -73,9 +69,10 @@ Workflow {
             fragment = grammarAccess.GrammarAccessFragment auto-inject {}
     
             // generates Java API for the generated EPackages
-        fragment = ecore.EMFGeneratorFragment auto-inject {
+        	fragment = ecore.EMFGeneratorFragment auto-inject {
                     javaModelDirectory = "/${projectName}/src-gen"
-                }
+                    emfRuntimeVersion = "2.10"
+            }
     
             // the old serialization component
             // fragment = parseTreeConstructor.ParseTreeConstructorFragment auto-inject {}    
@@ -86,20 +83,22 @@ Workflow {
             }
     
             // a custom ResourceFactory for use with EMF
-            fragment = resourceFactory.ResourceFactoryFragment auto-inject {}
-    
-            // The antlr parser generator fragment.
-            fragment = parser.antlr.XtextAntlrGeneratorFragment auto-inject {
-                // For the very slow servers
-                antlrParam = "-Xconversiontimeout" antlrParam = "5000"
+            fragment = resourceFactory.ResourceFactoryFragment auto-inject {
+            	fileExtensions = fileExtensions
             }
     
-    		//make language case insansitive
-//            fragment = org.eclipse.xtext.generator.parser.antlr.ex.rt.AntlrGeneratorFragment {
-//              options = {
-//                  ignoreCase = true
-//              }
+//            // The antlr parser generator fragment.
+//            fragment = parser.antlr.XtextAntlrGeneratorFragment auto-inject {
+//                // For the very slow servers
+//                antlrParam = "-Xconversiontimeout" antlrParam = "5000"
 //            }
+    
+    		//make language case insansitive
+            fragment = org.eclipse.xtext.generator.parser.antlr.ex.rt.AntlrGeneratorFragment {
+              options = {
+                  ignoreCase = true
+              }
+            }
         	//make language case insansitive
 //      		fragment = org.eclipse.xtext.generator.parser.antlr.ex.ca.ContentAssistParserGeneratorFragment{
 //            	options = {
@@ -113,11 +112,13 @@ Workflow {
             //    composedCheck = "org.eclipse.xtext.validation.ImportUriValidator"
             //    composedCheck = "org.eclipse.xtext.validation.NamesAreUniqueValidator"
             }
+    		
+    		//2.8
+//    		fragment = validation.JavaValidatorFragment {
+//				composedCheck = "org.eclipse.xtext.validation.NamesAreUniqueValidator"
+//			}
     
-            // old scoping and exporting API
-            // fragment = scoping.ImportURIScopingFragment auto-inject {}
-            // fragment = exporting.SimpleNamesFragment auto-inject {}
-    
+       
             // scoping and exporting API
             fragment = scoping.ImportNamespacesScopingFragment auto-inject {
                 ignoreCase = true
@@ -130,6 +131,9 @@ Workflow {
     
             // formatter API
             fragment = formatting.FormatterFragment auto-inject {}
+            //2.8
+            //fragment = formatting2.Formatter2Fragment {}
+            
     
             // labeling API
             fragment = labeling.LabelProviderFragment auto-inject {}
@@ -143,9 +147,15 @@ Workflow {
     
             // content assist API
             fragment = contentAssist.ContentAssistFragment auto-inject {}
+            
+            //2.8
+            //fragment = contentAssist.JavaBasedContentAssistFragment {}
     
             // generates a more lightweight Antlr parser and lexer tailored for content assist
-            fragment = parser.antlr.XtextAntlrUiGeneratorFragment auto-inject {}
+            fragment = parser.antlr.XtextAntlrUiGeneratorFragment auto-inject {
+            	//2.8
+            	partialParsing = true
+            }
     
             // generates junit test support classes into Generator#pathTestProject
             fragment = junit.Junit4Fragment auto-inject {}
@@ -163,7 +173,9 @@ Workflow {
             fragment = templates.CodetemplatesGeneratorFragment auto-inject {}
     
             // provides a compare view
-            fragment = compare.CompareFragment auto-inject {}
+            fragment = compare.CompareFragment auto-inject {
+            	fileExtensions = fileExtensions
+            }
         }
     }
 }
