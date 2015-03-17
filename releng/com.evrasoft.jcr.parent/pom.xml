@@ -13,9 +13,10 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho-version>0.18.0</tycho-version>
+		<tycho-version>0.22.0</tycho-version>
 		<junit-version>4.8.1</junit-version>
 		<project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+		<xtext.version>2.8.0</xtext.version>
 	</properties>
 
 	<modules>
@@ -28,8 +29,68 @@
 		<module>../../releng/com.evrasoft.jcr.updatesite</module>
 		<!-- <module>../../releng/com.evrasoft.jcr.product</module> -->
 	</modules>
-			
+	
+	<repositories>
+		<repository>
+			<id>eclipse</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/luna</url>
+		</repository>
+		<repository>
+			<id>Xtext Update Site</id>
+			<layout>p2</layout>
+			<url>http://download.itemis.de/updates/</url>
+		</repository>
+	</repositories>
+
 	<build>
+		<pluginManagement>
+			<plugins>
+				<!-- xtend-maven-plugin is in pluginManagement instead of in plugins 
+					so that it doesn't run before the exec-maven-plugin's *.mwe2 gen; this way 
+					we can list it after. -->
+
+				<plugin>
+					<groupId>org.eclipse.xtend</groupId>
+					<artifactId>xtend-maven-plugin</artifactId>
+					<version>${xtext.version}</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>compile</goal>
+								<goal>xtend-install-debug-info</goal>
+								<goal>testCompile</goal>
+								<goal>xtend-test-install-debug-info</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<outputDirectory>xtend-gen</outputDirectory>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>2.5</version>
+					<executions>
+						<execution>
+							<id>gen-clean</id>
+							<goals>
+								<goal>clean</goal>
+							</goals>
+							<configuration>
+								<filesets>
+									<fileset>
+										<directory>${basedir}/xtend-gen</directory>
+									</fileset>
+								</filesets>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
 		<plugins>
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
@@ -38,271 +99,23 @@
 				<extensions>true</extensions>
 			</plugin>
 			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-				<version>${tycho-version}</version>
-				<configuration>
-					<resolver>p2</resolver>
-					<pomDependencies>consider</pomDependencies>
-					<environments>
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86</arch>
-						</environment>
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86_64</arch>
-						</environment>
-						<environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
-							<arch>x86_64</arch>
-						</environment>
-						<environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
-							<arch>x86</arch>
-						</environment>
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86</arch>
-						</environment>
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86_64</arch>
-						</environment>
-					</environments>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-source-plugin</artifactId>
-				<version>${tycho-version}</version>
-				<executions>
-					<execution>
-						<id>attach-source</id>
-						<goals>
-							<goal>plugin-source</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+		        <groupId>org.eclipse.tycho</groupId>
+		        <artifactId>tycho-source-plugin</artifactId>
+		        <version>${tycho-version}</version>
+		        <executions>
+		          <execution>
+		            <id>plugin-source</id>
+		            <goals>
+		              <goal>plugin-source</goal>
+		            </goals>
+		          </execution>
+		        </executions>
+      		</plugin>
 		</plugins>
-		<pluginManagement>
-			<plugins>
-				<!-- TYCHO -->
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>tycho-compiler-plugin</artifactId>
-					<version>${tycho-version}</version>
-					<configuration>
-						<encoding>ISO-8859-1</encoding>
-						<source>6.0</source>
-						<target>6.0</target>
-						<excludeResources>
-				            <exludeResource>**/*.xtend</exludeResource>
-			        	</excludeResources>						
-					</configuration>
-				</plugin>
-				<!-- enable source bundle generation -->
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>tycho-surefire-plugin</artifactId>
-					<version>${tycho-version}</version>
-				</plugin>
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>maven-osgi-test-plugin</artifactId>
-					<version>${tycho-version}</version>
-				</plugin>
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>tycho-p2-repository-plugin</artifactId>
-					<version>${tycho-version}</version>
-				</plugin>
-				<!-- APACHE MAVEN PLUGINS -->
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-resources-plugin</artifactId>
-					<version>2.4.1</version>
-					<configuration>
-						<encoding>ISO-8859-1</encoding>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-antrun-plugin</artifactId>
-					<version>1.3</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.9</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-clean-plugin</artifactId>
-					<version>2.4.1</version>
-					<configuration>
-						<filesets>
-							<fileset>
-								<directory>${basedir}/xtend-gen</directory>
-								<includes>
-										<include>**</include>
-								</includes>                            
-								<excludes>
-									<exclude>.gitignore</exclude>
-								</excludes>
-							</fileset>
-							<fileset>
-								<directory>${basedir}/src-gen</directory>
-								<includes>
-										<include>**</include>
-								</includes>                            
-								<excludes>
-									<exclude>.gitignore</exclude>
-								</excludes>
-							</fileset>
-							<fileset>
-								<directory>${basedir}/emf-gen</directory>
-								<includes>
-										<include>**</include>
-								</includes>                            
-								<excludes>
-									<exclude>.gitignore</exclude>
-								</excludes>
-							</fileset>
-							<fileset>
-								<directory>${basedir}/test-gen</directory>
-								<includes>
-										<include>**</include>
-								</includes>                            
-								<excludes>
-									<exclude>.gitignore</exclude>
-								</excludes>
-							</fileset>
-						</filesets>
-					</configuration>					
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-assembly-plugin</artifactId>
-					<version>2.2-beta-4</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-release-plugin</artifactId>
-					<configuration>
-						<preparationGoals>clean -DnewVersion=${releaseVersion}
-							-Dprudent=true
-							org.eclipse.tycho:tycho-versions-plugin:set-version
-							verify
-							scm:checkin</preparationGoals>
-						<arguments>-Prelease</arguments>
-					</configuration>
-				</plugin>
-				<!-- OTHER PLUGINS -->
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>findbugs-maven-plugin</artifactId>
-					<version>2.3.2</version>
-					<configuration>
-						<findbugsXmlOutput>true</findbugsXmlOutput>
-						<failOnError>false</failOnError>
-					</configuration>
-					<executions>
-						<execution>
-							<goals>
-								<goal>check</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>build-helper-maven-plugin</artifactId>
-					<version>1.3</version>
-					<executions>
-						<execution>
-							<id>add-source</id>
-							<phase>generate-sources</phase>
-							<goals>
-								<goal>add-source</goal>
-							</goals>
-							<configuration>
-								<sources>
-									<source>${project.build.directory}/src-gen</source>
-								</sources>
-								<sources>
-									<source>${project.build.directory}/emf-gen</source>
-								</sources>								
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>
-				<plugin>
-					<groupId>org.eclipse.dash.maven</groupId>
-					<artifactId>eclipse-signing-maven-plugin</artifactId>
-					<version>1.0.2</version>
-				</plugin>
-				<plugin>
-					<groupId>org.fornax.toolsupport</groupId>
-					<artifactId>fornax-oaw-m2-plugin</artifactId>
-					<version>3.3.0</version>
-				</plugin>
-				<plugin>
-					<groupId>org.eclipse.xtend</groupId>
-					<artifactId>xtend-maven-plugin</artifactId>
-					<version>2.4.2</version>
-					<configuration>
-						<!-- need to prefix by basedir to generate to currently built module -->
-						<outputDirectory>${basedir}/xtend-gen</outputDirectory>
-					</configuration>
-				</plugin>				
-			</plugins>
-		</pluginManagement>
 	</build>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>sonatype</id>
-			<url>http://repository.sonatype.org/content/groups/sonatype-public-grid/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</pluginRepository>
-		<!-- Fornax Workflow Runner plugin -->
-		<pluginRepository>
-			<id>fornax</id>
-			<url>http://www.fornax-platform.org/m2/repository</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</pluginRepository>
-		<pluginRepository>
-			<id>xtend</id>
-			<url>http://build.eclipse.org/common/xtend/maven/</url>
-		</pluginRepository>
-	</pluginRepositories>
-
-	<repositories>
-		<repository>
-			<id>local-repository</id>
-			<layout>p2</layout>
-			<url>file:../../releng/com.evrasoft.jcr.repository/target/repository</url>
-		</repository>
-	</repositories>
+		
             
-	<profiles>
+	<!--profiles>
 		<profile>
 			<id>release</id>
 			<build>
@@ -361,7 +174,7 @@
 				<ui.test.vmargs>-Xmx512m -XX:MaxPermSize=256m</ui.test.vmargs>
 			</properties>
 		</profile>
-	</profiles>
+	</profiles-->
 
 
 	<dependencyManagement>
