@@ -250,7 +250,9 @@
    <extension
          point="org.eclipse.xtext.builder.participant">
       <participant
-            class="com.evrasoft.jcr.ui.CndExecutableExtensionFactory:org.eclipse.xtext.builder.IXtextBuilderParticipant">
+            class="com.evrasoft.jcr.ui.CndExecutableExtensionFactory:org.eclipse.xtext.builder.IXtextBuilderParticipant"
+            fileExtensions="cnd"
+            >
       </participant>
    </extension>
    <extension
@@ -277,6 +279,27 @@
 	        <filter name="projectNature" value="org.eclipse.xtext.ui.shared.xtextNature"/>
         </page>
     </extension>
+    <extension point="org.eclipse.ui.menus">
+		<menuContribution locationURI="popup:#TextEditorContext?after=xtext.ui.openDeclaration">
+			<command
+				commandId="org.eclipse.xtext.ui.OpenGeneratedFileCommand"
+				id="com.evrasoft.jcr.Cnd.OpenGeneratedCode"
+				style="push">
+					<visibleWhen checkEnabled="false">
+						<reference definitionId="com.evrasoft.jcr.Cnd.Editor.opened" />
+					</visibleWhen>
+			</command>
+		</menuContribution>
+	</extension>
+	<extension point="org.eclipse.ui.handlers">
+		<handler
+			class="com.evrasoft.jcr.ui.CndExecutableExtensionFactory:org.eclipse.xtext.ui.generator.trace.OpenGeneratedFileHandler"
+			commandId="org.eclipse.xtext.ui.OpenGeneratedFileCommand">
+				<activeWhen>
+					<reference definitionId="com.evrasoft.jcr.Cnd.Editor.opened" />
+				</activeWhen>
+		</handler>
+	</extension>
 
 	<!-- Quick Outline -->
 	<extension
@@ -391,6 +414,12 @@
             class="com.evrasoft.jcr.ui.CndExecutableExtensionFactory:org.eclipse.xtext.ui.editor.model.XtextDocumentProvider"
             extensions="cnd">
     </provider>
+  </extension>
+  <extension point="org.eclipse.team.core.fileTypes">
+    <fileTypes
+            extension="cnd"
+            type="text">
+    </fileTypes>
   </extension>
 
 </plugin>

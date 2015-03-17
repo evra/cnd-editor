@@ -7,7 +7,7 @@
     <package 
        uri = "http://www.evrasoft.com/jcr/Cnd" 
        class = "com.evrasoft.jcr.cnd.CndPackage"
-       genModel = "com/evrasoft/jcr/Cnd.genmodel" /> 
+       genModel = "model/generated/Cnd.genmodel" /> 
 	
   </extension>
 

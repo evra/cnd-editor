@@ -14,114 +14,119 @@
 	<artifactId>com.evrasoft.jcr.cnd</artifactId>
 	<packaging>eclipse-plugin</packaging>
 	<build>
-		<sourceDirectory>src</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>${project.build.directory}/mwe2</directory>
-			</resource>
-		</resources>
 		<plugins>
-			<!-- Clean the src-gen folders of the ui and test project. The Xtext generator 
-				will create files in those directories during generation. The ui and test 
-				project will *not* clean those directories later. -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>2.4.1</version>
-				<configuration>
-					<filesets combine.children="append">
-						<fileset>
-							<directory>${basedir}/../com.evrasoft.jcr.cnd.ui/src-gen</directory>
-							<includes>
-								<include>**</include>
-							</includes>
-							<excludes>
-								<exclude>.gitignore</exclude>
-							</excludes>
-						</fileset>
-						<fileset>
-							<directory>${basedir}/../../tests/com.evrasoft.jcr.cnd.tests/src-gen</directory>
-							<includes>
-								<include>**</include>
-							</includes>
-							<excludes>
-								<exclude>.gitignore</exclude>
-							</excludes>
-						</fileset>
-					</filesets>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>copy-resources</id>
-						<phase>initialize</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
+						<id>gen-clean</id>
+						<phase>clean</phase>
+						<!-- Clean up generated files in all projects -->
 						<configuration>
-							<outputDirectory>${project.build.directory}/mwe2</outputDirectory>
-							<resources>
-								<resource>
-									<directory>src</directory>
-									<includes>
-										<include>**/*.mwe2</include>
-										<include>**/*.xtext</include>
-									</includes>
-								</resource>
-							</resources>
+							<filesets combine.children="append">
+								<fileset>
+									<directory>${basedir}/src-gen/</directory>
+								</fileset>
+								<fileset>
+									<directory>${basedir}/model/generated/</directory>
+								</fileset>
+								<!--fileset>
+									<directory>${basedir}/../${project.artifactId}.ui/src-gen/</directory>
+								</fileset>
+								<fileset>
+									<directory>${basedir}/../${project.artifactId}.tests/src-gen/</directory>
+								</fileset-->
+							</filesets>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
+
 			<plugin>
-				<groupId>org.fornax.toolsupport</groupId>
-				<artifactId>fornax-oaw-m2-plugin</artifactId>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
 				<executions>
 					<execution>
 						<phase>generate-sources</phase>
 						<goals>
-							<goal>run-workflow</goal>
+							<goal>java</goal>
 						</goals>
-						<configuration>
-							<workflowEngine>mwe2</workflowEngine>
-							<workflowDescriptor>com.evrasoft.jcr.GenerateCnd</workflowDescriptor>
-							<timestampFileName>generator.timestamp</timestampFileName>
-							<checkFilesets>
-								<checkFileset>
-									<directory>${basedir}</directory>
-									<includes>
-										<include>src/com/evrasoft/jcr/*.xtext</include>
-										<include>src/com/evrasoft/jcr/*.mwe2</include>
-									</includes>
-								</checkFileset>
-							</checkFilesets>
-							<jvmSettings>
-								<fork>true</fork>
-								<jvmArgs>
-									<jvmArg>-Xms100m</jvmArg>
-									<jvmArg>-Xmx700m</jvmArg>
-									<jvmArg>-XX:MaxPermSize=128m</jvmArg>
-								</jvmArgs>
-							</jvmSettings>
-						</configuration>
 					</execution>
 				</executions>
+				<configuration>
+					<includeProjectDependencies>false</includeProjectDependencies>
+					<includePluginDependencies>true</includePluginDependencies>
+					<mainClass>org.eclipse.emf.mwe2.launch.runtime.Mwe2Launcher</mainClass>
+					<arguments>
+						<argument>file://${project.basedir}/src/com/evrasoft/jcr/GenerateCnd.mwe2</argument>
+						<argument>
+							-p
+						</argument>
+						<argument>
+							runtimeProject=/${project.basedir}
+						</argument>
+					</arguments>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.eclipse.xtext</groupId>
+						<artifactId>org.eclipse.xtext.xtext</artifactId>
+						<version>${xtext.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.xtext</groupId>
+						<artifactId>org.eclipse.xtext.xbase</artifactId>
+						<version>${xtext.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.equinox</groupId>
+						<artifactId>org.eclipse.equinox.common</artifactId>
+						<version>[3.6.0,)</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 			<plugin>
 				<groupId>org.eclipse.xtend</groupId>
 				<artifactId>xtend-maven-plugin</artifactId>
-				<version>2.4.2</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>compile</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.codehaus.mojo
+										</groupId>
+										<artifactId>
+											exec-maven-plugin
+										</artifactId>
+										<versionRange>
+											[1.2.1,)
+										</versionRange>
+										<goals>
+											<goal>java</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 </project>

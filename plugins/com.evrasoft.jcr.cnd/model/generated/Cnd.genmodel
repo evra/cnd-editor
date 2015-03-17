@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.evrasoft.jcr.cnd/src-gen" editDirectory="//Users/erachi/evra/cnd-editor/sources/cnd-editor/plugins/com.evrasoft.jcr.cnd.edit/src"
+    editorDirectory="//Users/erachi/evra/cnd-editor/sources/cnd-editor/plugins/com.evrasoft.jcr.cnd.editor/src"
+    modelPluginID="com.evrasoft.jcr.cnd" forceOverwrite="true" modelName="Cnd" updateClasspath="false"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" complianceLevel="6.0"
+    copyrightFields="false" editPluginID="com.evrasoft.jcr.cnd.edit" editorPluginID="com.evrasoft.jcr.cnd.edit"
+    runtimeVersion="2.10">
+  <genPackages prefix="Cnd" basePackage="com.evrasoft.jcr" disposableProviderFactory="true"
+      fileExtensions="cnd" ecorePackage="Cnd.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Cnd.ecore#//Opv">
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//Opv/COPY"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//Opv/VERSION"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//Opv/INITIALIZE"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//Opv/COMPUTE"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//Opv/IGNORE"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//Opv/ABORT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Cnd.ecore#//PropertyType">
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/UNDEFINED"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/TSTRING"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/TBINARY"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/TLONG"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/TDOUBLE"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/DDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/TBOOLEAN"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/TNAME"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/TPATH"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/TREFERENCE"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/TWEAKREFERENCE"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/TURI"/>
+      <genEnumLiterals ecoreEnumLiteral="Cnd.ecore#//PropertyType/TDECIMAL"/>
+    </genEnums>
+    <genClasses ecoreClass="Cnd.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cnd.ecore#//Model/namespaces"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cnd.ecore#//Model/nodeTypes"/>
+    </genClasses>
+    <genClasses ecoreClass="Cnd.ecore#//NodeTypeDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeTypeDefinition/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Cnd.ecore#//NodeTypeDefinition/declaredSupertypeNames"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeTypeDefinition/orderable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeTypeDefinition/mixin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeTypeDefinition/abstract"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeTypeDefinition/queryable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeTypeDefinition/notqueryable"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Cnd.ecore#//NodeTypeDefinition/primaryItem"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cnd.ecore#//NodeTypeDefinition/declaredPropertyDefinitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Cnd.ecore#//NodeTypeDefinition/declaredChildNodeDefinitions"/>
+    </genClasses>
+    <genClasses ecoreClass="Cnd.ecore#//ItemDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//ItemDefinition/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//ItemDefinition/autocreated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//ItemDefinition/manadatory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//ItemDefinition/protected"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//ItemDefinition/onParentVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//ItemDefinition/primary"/>
+    </genClasses>
+    <genClasses ecoreClass="Cnd.ecore#//NodeDefinition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Cnd.ecore#//NodeDefinition/requiredTypes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Cnd.ecore#//NodeDefinition/defaultType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NodeDefinition/sameNameSiblings"/>
+    </genClasses>
+    <genClasses ecoreClass="Cnd.ecore#//PropertyDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//PropertyDefinition/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//PropertyDefinition/defaultValues"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//PropertyDefinition/multiple"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//PropertyDefinition/queryOps"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//PropertyDefinition/noFullText"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//PropertyDefinition/noQueryOrder"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//PropertyDefinition/valueConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="Cnd.ecore#//NsMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NsMapping/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cnd.ecore#//NsMapping/uri"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

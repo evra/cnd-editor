@@ -15,10 +15,12 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.eclipse.emf.ecore,
  org.eclipse.emf.common,
  org.antlr.runtime,
- org.eclipse.xtext.common.types
+ org.eclipse.xtext.common.types,
+ org.eclipse.xtext.xbase.lib,
+ org.objectweb.asm;bundle-version="[5.0.1,6.0.0)";resolution:=optional
 Import-Package: org.apache.log4j,
  org.eclipse.xtext.xbase.lib
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: com.evrasoft.jcr,
  com.evrasoft.jcr.cnd,
  com.evrasoft.jcr.cnd.impl,
@@ -27,9 +29,9 @@ Export-Package: com.evrasoft.jcr,
  com.evrasoft.jcr.generator,
  com.evrasoft.jcr.parser.antlr,
  com.evrasoft.jcr.parser.antlr.internal,
- com.evrasoft.jcr.parser.antlr.lexer,
  com.evrasoft.jcr.scoping,
  com.evrasoft.jcr.serializer,
  com.evrasoft.jcr.services,
- com.evrasoft.jcr.validation
+ com.evrasoft.jcr.validation,
+ com.evrasoft.jcr.parser.antlr.lexer
 Bundle-Vendor: %providerName
