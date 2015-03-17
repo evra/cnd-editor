@@ -19,10 +19,10 @@ Workflow {
         resourceSet = org.eclipse.xtext.resource.XtextResourceSet:theResourceSet {}
         
         // add mappings from platform:/resource to classpath:/
-        uriMap = {
-            from = "platform:/resource/org.eclipse.xtext.xbase/"
-            to = "classpath:/"
-        }
+//        uriMap = {
+//            from = "platform:/resource/org.eclipse.xtext.xbase/"
+//            to = "classpath:/"
+//        }
         uriMap = {
             from = "platform:/resource/org.eclipse.xtext.common.types/"
             to = "classpath:/"
@@ -30,9 +30,9 @@ Workflow {
         
         // register current projects and its siblings for platform URI map, as they are not on the classpath.
         platformUri = "${runtimeProject}/.."
-        // The following two lines can be removed, if Xbase is not used.
-        registerGeneratedEPackage = "org.eclipse.xtext.xbase.XbasePackage"
-        registerGenModelFile = "platform:/resource/org.eclipse.xtext.xbase/model/Xbase.genmodel"
+        // The following two lines can be removed, if Xbase is not used.        
+//        registerGeneratedEPackage = "org.eclipse.xtext.xbase.XbasePackage"
+//        registerGenModelFile = "platform:/resource/org.eclipse.xtext.xbase/model/Xbase.genmodel"
 
     }
     
@@ -164,10 +164,10 @@ Workflow {
             fragment = refactoring.RefactorElementNameFragment auto-inject {}
     
             // provides the necessary bindings for java types integration
-            fragment = types.TypesGeneratorFragment auto-inject {}
+//            fragment = types.TypesGeneratorFragment auto-inject {}
     
             // generates the required bindings only if the grammar inherits from Xbase
-            fragment = xbase.XbaseGeneratorFragment auto-inject {}
+//            fragment = xbase.XbaseGeneratorFragment auto-inject {}
     
             // provides a preference page for template proposals
             fragment = templates.CodetemplatesGeneratorFragment auto-inject {}
