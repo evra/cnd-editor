@@ -23,10 +23,10 @@
 		<module>../../plugins/com.evrasoft.jcr.cnd</module>
 		<module>../../plugins/com.evrasoft.jcr.cnd.ui</module>		
 		<module>../../tests/com.evrasoft.jcr.cnd.tests</module>
-		<!--module>../../features/com.evrasoft.jcr.cnd.feature</module>
+		<module>../../features/com.evrasoft.jcr.cnd.feature</module>
 		<module>../../features/com.evrasoft.jcr.cnd.feature.source</module>
 		<module>../../features/com.evrasoft.jcr.cnd.feature.sdk</module>
-		<module>../../releng/com.evrasoft.jcr.updatesite</module-->
+		<module>../../releng/com.evrasoft.jcr.updatesite</module>
 		<!-- <module>../../releng/com.evrasoft.jcr.product</module> -->
 	</modules>
 	
@@ -39,7 +39,6 @@
 		<repository>
 			<id>Xtext Update Site</id>
 			<layout>p2</layout>
-			<!--url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/maintenance/</url-->
 			<url>http://download.itemis.de/updates/</url>
 		</repository>
 	</repositories>
@@ -99,6 +98,19 @@
 				<version>${tycho-version}</version>
 				<extensions>true</extensions>
 			</plugin>
+			<plugin>
+		        <groupId>org.eclipse.tycho</groupId>
+		        <artifactId>tycho-source-plugin</artifactId>
+		        <version>${tycho-version}</version>
+		        <executions>
+		          <execution>
+		            <id>plugin-source</id>
+		            <goals>
+		              <goal>plugin-source</goal>
+		            </goals>
+		          </execution>
+		        </executions>
+      		</plugin>
 		</plugins>
 	</build>
 		
